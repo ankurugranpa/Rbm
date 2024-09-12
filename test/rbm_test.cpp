@@ -19,6 +19,20 @@ namespace {
 TEST_F(RbmTest, Constructor){
   ASSERT_EQ(4, calc_rbm.visible_dim);
   ASSERT_EQ(2, calc_rbm.hidden_dim);
+
+  for(int i=0; i<calc_rbm.visible_dim; i++){
+    ASSERT_TRUE(calc_rbm.parametar.visible_bias[i] >= -1 || calc_rbm.parametar.visible_bias[i] <= 1);
+  }
+
+  for(int i=0; i<calc_rbm.hidden_dim; i++){
+    ASSERT_TRUE(calc_rbm.parametar.hidden_bias[i] >= -1 || calc_rbm.parametar.hidden_bias[i] <= 1);
+  }
+
+  for(int i=0; i<calc_rbm.visible_dim; i++){
+    for(int j=0; j<calc_rbm.hidden_dim; j++){
+      ASSERT_TRUE(calc_rbm.parametar.weight(i, j) >= -1 || calc_rbm.parametar.weight(i, j) <= 1);
+    }
+  }
 }
 
 
@@ -73,7 +87,7 @@ TEST_F(RbmTest, LambdaHidenn){
     ASSERT_DOUBLE_EQ(answer(i), calc_rbm.lambda_hidden(test_parametaer, v)(i));
   }
 }
-TEST_F(RbmTest, Cost){
+TEST_F(RbmTest, CostFunc){
   rbm::Parametar test_parametaer(2, 2);
 
   test_parametaer.visible_bias << 1,
@@ -96,5 +110,4 @@ TEST_F(RbmTest, Cost){
   test_parametaer.weight(1, 1) = 12;
 
   ASSERT_DOUBLE_EQ(-1215, calc_rbm.cost_func(test_parametaer, rand_visible, rand_hidden));
-  ;
 }

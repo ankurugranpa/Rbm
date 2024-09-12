@@ -41,3 +41,23 @@ TEST_F(SigmoidTest, Bias){
     ASSERT_DOUBLE_EQ(out(i), answer(i));
   }
 }
+
+TEST_F(SigmoidTest, Sigmoid_VECTOR_D){
+  Eigen::Vector3d in;
+  in << 5.0,
+        0.0,
+       -5.0;
+
+  Eigen::Vector3d out;
+  out << 0.9933071490757153,
+         0.5,
+         0.006692850924284856;
+
+  Eigen::VectorXd answer;
+  answer = rbm_utils::sig(in);
+
+  for(int i=0; i<in.size(); i++){
+    ASSERT_DOUBLE_EQ(out(i), answer(i));
+  }
+}
+
