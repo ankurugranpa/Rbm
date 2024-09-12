@@ -12,10 +12,19 @@ double rbm_utils::sig(double x){
 }
 
 
-rbm::Bias rbm_utils::sig(rbm::Bias X){
-  rbm::Bias sig_X(X.size());
-  for(int i=0; i<X.size(); i++){
-    sig_X(i) = sig(X(i));
+rbm::Bias rbm_utils::sig(rbm::Bias x){
+  rbm::Bias sig_X(x.size());
+  for(int i=0; i<x.size(); i++){
+    sig_X(i) = sig(x(i));
   }
   return sig_X;
+}
+
+Eigen::VectorXd rbm_utils::sig(Eigen::VectorXd x){
+  Eigen::VectorXd sig_x(x.size());
+  
+  for(int i=0; i<x.size(); i++){
+    sig_x(i) = rbm_utils::sig(x(i));
+  }
+  return sig_x;
 }

@@ -22,9 +22,18 @@ namespace rbm{
     @brief  Modelの型定義
   */
   class Model{
+
     public:
-      int visible_dim, hidden_dim;
-      // Parametar parametar;
+      //! 可視変数の次元
+      int visible_dim;
+        
+      //! 隠れ変数の次元
+      int hidden_dim;
+       
+      //! パラメータ
+      Parametar parametar;
+
+
 
       Model();
       /**
@@ -40,14 +49,14 @@ namespace rbm{
        *  @param[in] parametar パラメーター
        *  @param[in] rand_hidden 隠れ変数の確率変数
        */
-      Eigen::VectorXd lambda_visible(Parametar parametar, Eigen::VectorXi rand_hidden);
+      Eigen::VectorXd lambda_visible(const Parametar& parametar, const Eigen::VectorXi& rand_hidden) const;
 
       /**
        *  @brief Init Rbm
        *  @param[in] parametar パラメーター
        *  @param[in] rand_visible 可視変数の確率変数
        */
-      Eigen::VectorXd lambda_hidden(Parametar parametar, Eigen::VectorXi rand_visible);
+      Eigen::VectorXd lambda_hidden(const Parametar& parametar, const Eigen::VectorXi& rand_visible) const;
 
       /**
        *  @brief Init Rbm
@@ -55,9 +64,8 @@ namespace rbm{
        *  @param[in] rand_visible 可視変数の確率変数
        *  @param[in] rand_hidden 隠れ変数の確率変数
        */
-      double cost_func(Parametar parametar, Eigen::VectorXi rand_visible, Eigen::VectorXi rand_hidden);
+      double cost_func(const Parametar& parametar, const Eigen::VectorXi& rand_visible, const Eigen::VectorXi& rand_hidden) const;
   };
-
 }
 
 

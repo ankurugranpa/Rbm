@@ -5,6 +5,10 @@ add_library(librbm
             SHARED
             rbm.cpp)
 
+add_library(libsampling
+            SHARED
+            sampling.cpp)
+
 add_library(libsigmoid
             SHARED
             utils/sigmoid.cpp)
@@ -21,6 +25,11 @@ add_library(libweight
 add_library(libparametar
             SHARED
             data_types/parametar.cpp)
+
+add_library(libdata
+            SHARED
+            data_types/data.cpp)
+
 
   # Serch Boost
 find_package(Boost REQUIRED COMPONENTS)
@@ -47,7 +56,9 @@ target_include_directories(libsigmoid
   PUBLIC ./utils
   PUBLIC ${EIGEN3_INCLUDE_DIR})
 
-
+target_include_directories(libsampling
+  PUBLIC . 
+  PUBLIC ${EIGEN3_INCLUDE_DIR})
 
 
 target_include_directories(libbias
@@ -59,6 +70,10 @@ target_include_directories(libweight
   PUBLIC ${EIGEN3_INCLUDE_DIR})
 
 target_include_directories(libparametar
+  PUBLIC ./data_types
+  PUBLIC ${EIGEN3_INCLUDE_DIR})
+
+target_include_directories(libdata
   PUBLIC ./data_types
   PUBLIC ${EIGEN3_INCLUDE_DIR})
 
@@ -74,6 +89,11 @@ target_link_libraries(
   ${Boost_LIBRARIES}
   Eigen3::Eigen)
 
+target_link_libraries(
+  libsampling
+  libdata
+  libsigmoid
+  Eigen3::Eigen)
 # target_link_libraries(
 #   libsigmoid
 #   librbm
@@ -98,6 +118,8 @@ target_link_libraries(
   libweight
   Eigen3::Eigen)
 
+target_link_libraries(
+  Eigen3::Eigen)
 # target_link_libraries(
 #   arg_config
 #   ${Boost_LIBRARIES}
