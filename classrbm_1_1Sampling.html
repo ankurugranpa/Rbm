@@ -1,0 +1,268 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>My Project: rbm::Sampling クラス</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacerbm.html">rbm</a></li><li class="navelem"><a class="el" href="classrbm_1_1Sampling.html">Sampling</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="classrbm_1_1Sampling-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle">
+<div class="title">rbm::Sampling クラス</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Samplingを行うクラス  
+ <a href="classrbm_1_1Sampling.html#details">[詳解]</a></p>
+
+<p><code>#include &lt;<a class="el" href="sampling_8h_source.html">sampling.h</a>&gt;</code></p>
+<div class="dynheader">
+rbm::Sampling 連携図</div>
+<div class="dyncontent">
+<div class="center"><img src="classrbm_1_1Sampling__coll__graph.png" border="0" usemap="#arbm_1_1Sampling_coll__map" alt="Collaboration graph"/></div>
+<map name="arbm_1_1Sampling_coll__map" id="arbm_1_1Sampling_coll__map">
+<area shape="rect" title="Samplingを行うクラス" alt="" coords="5,5,196,127"/>
+</map>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:af9663da4dc646edd685544522fa39c0f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrbm_1_1Sampling.html#af9663da4dc646edd685544522fa39c0f">Sampling</a> ()</td></tr>
+<tr class="separator:af9663da4dc646edd685544522fa39c0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9649a8bc39af498347a72b7964f4014b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrbm_1_1Sampling.html#a9649a8bc39af498347a72b7964f4014b">~Sampling</a> ()</td></tr>
+<tr class="separator:a9649a8bc39af498347a72b7964f4014b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acfd8f69803fcdede45b59f5332be2f4a"><td class="memItemLeft" align="right" valign="top">std::tuple&lt; <a class="el" href="structrbm_1_1DataSet.html">DataSet</a>, <a class="el" href="structrbm_1_1DataSet.html">DataSet</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrbm_1_1Sampling.html#acfd8f69803fcdede45b59f5332be2f4a">block_gibbs_sampling</a> (<a class="el" href="structrbm_1_1DataSet.html">DataSet</a> observation_data, const <a class="el" href="classrbm_1_1Model.html">rbm::Model</a> &amp;model_object, int data_num, int sampling_rate)</td></tr>
+<tr class="memdesc:acfd8f69803fcdede45b59f5332be2f4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">ブロック化ギブスサンプリング  <a href="classrbm_1_1Sampling.html#acfd8f69803fcdede45b59f5332be2f4a">[詳解]</a><br /></td></tr>
+<tr class="separator:acfd8f69803fcdede45b59f5332be2f4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe332d1d121220df60321d3075245f4d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structrbm_1_1DataSet.html">DataSet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrbm_1_1Sampling.html#abe332d1d121220df60321d3075245f4d">create_data_set</a> (const <a class="el" href="classrbm_1_1Model.html">rbm::Model</a> &amp;model_object, int data_num, int sampling_rate)</td></tr>
+<tr class="memdesc:abe332d1d121220df60321d3075245f4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">バイナリデータセットの作成  <a href="classrbm_1_1Sampling.html#abe332d1d121220df60321d3075245f4d">[詳解]</a><br /></td></tr>
+<tr class="separator:abe332d1d121220df60321d3075245f4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock"><p>Samplingを行うクラス </p>
+</div><h2 class="groupheader">構築子と解体子</h2>
+<a id="af9663da4dc646edd685544522fa39c0f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9663da4dc646edd685544522fa39c0f">&#9670;&nbsp;</a></span>Sampling()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Sampling::Sampling </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9649a8bc39af498347a72b7964f4014b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9649a8bc39af498347a72b7964f4014b">&#9670;&nbsp;</a></span>~Sampling()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Sampling::~Sampling </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">関数詳解</h2>
+<a id="acfd8f69803fcdede45b59f5332be2f4a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acfd8f69803fcdede45b59f5332be2f4a">&#9670;&nbsp;</a></span>block_gibbs_sampling()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::tuple&lt; <a class="el" href="structrbm_1_1DataSet.html">DataSet</a>, <a class="el" href="structrbm_1_1DataSet.html">DataSet</a> &gt; Sampling::block_gibbs_sampling </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structrbm_1_1DataSet.html">DataSet</a>&#160;</td>
+          <td class="paramname"><em>observation_data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classrbm_1_1Model.html">rbm::Model</a> &amp;&#160;</td>
+          <td class="paramname"><em>model_object</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>data_num</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>sampling_rate</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ブロック化ギブスサンプリング </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">observation_data</td><td>観測データ </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">model_object</td><td>RBMのモデルデータ </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">data_num</td><td>データの数 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sampling_rate</td><td>サンプリング周期(CK-k法のkのような奴) </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classrbm_1_1Sampling_acfd8f69803fcdede45b59f5332be2f4a_cgraph.png" border="0" usemap="#aclassrbm_1_1Sampling_acfd8f69803fcdede45b59f5332be2f4a_cgraph" alt=""/></div>
+<map name="aclassrbm_1_1Sampling_acfd8f69803fcdede45b59f5332be2f4a_cgraph" id="aclassrbm_1_1Sampling_acfd8f69803fcdede45b59f5332be2f4a_cgraph">
+<area shape="rect" title="ブロック化ギブスサンプリング" alt="" coords="5,71,165,112"/>
+<area shape="rect" href="classrbm_1_1Model.html#afa97d6bccaf2f99eed01ec8800091675" title="Init Rbm" alt="" coords="213,5,367,47"/>
+<area shape="rect" href="classrbm_1_1Model.html#a187c24b014e169aa55293d6640beeb25" title="Init Rbm" alt="" coords="213,71,367,112"/>
+<area shape="rect" href="namespacerbm__utils.html#af60332fbf0bcb0204d4b8dcd65bf3b81" title="calc sigmoid" alt="" coords="235,137,345,163"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="abe332d1d121220df60321d3075245f4d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe332d1d121220df60321d3075245f4d">&#9670;&nbsp;</a></span>create_data_set()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structrbm_1_1DataSet.html">DataSet</a> Sampling::create_data_set </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classrbm_1_1Model.html">rbm::Model</a> &amp;&#160;</td>
+          <td class="paramname"><em>model_object</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>data_num</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>sampling_rate</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>バイナリデータセットの作成 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">model_object</td><td>モデルデータ </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">data_num</td><td>データの数 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sampling_rate</td><td>サンプリングの周期 </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classrbm_1_1Sampling_abe332d1d121220df60321d3075245f4d_cgraph.png" border="0" usemap="#aclassrbm_1_1Sampling_abe332d1d121220df60321d3075245f4d_cgraph" alt=""/></div>
+<map name="aclassrbm_1_1Sampling_abe332d1d121220df60321d3075245f4d_cgraph" id="aclassrbm_1_1Sampling_abe332d1d121220df60321d3075245f4d_cgraph">
+<area shape="rect" title="バイナリデータセットの作成" alt="" coords="5,71,172,112"/>
+<area shape="rect" href="classrbm_1_1Sampling.html#acfd8f69803fcdede45b59f5332be2f4a" title="ブロック化ギブスサンプリング" alt="" coords="220,71,380,112"/>
+<area shape="rect" href="classrbm_1_1Model.html#afa97d6bccaf2f99eed01ec8800091675" title="Init Rbm" alt="" coords="428,5,581,47"/>
+<area shape="rect" href="classrbm_1_1Model.html#a187c24b014e169aa55293d6640beeb25" title="Init Rbm" alt="" coords="428,71,581,112"/>
+<area shape="rect" href="namespacerbm__utils.html#af60332fbf0bcb0204d4b8dcd65bf3b81" title="calc sigmoid" alt="" coords="449,137,560,163"/>
+</map>
+</div>
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>src/<a class="el" href="sampling_8h_source.html">sampling.h</a></li>
+<li>src/<a class="el" href="sampling_8cpp.html">sampling.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

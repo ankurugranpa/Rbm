@@ -1,0 +1,105 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>My Project: src/data_types/parametar.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_eaa769653453aaefd8cc10e98e9bb3eb.html">data_types</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">parametar.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="parametar_8h.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef PARAMETAR_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define PARAMETAR_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include&quot;<a class="code" href="bias_8h.html">bias.h</a>&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include&quot;<a class="code" href="weight_8h.html">weight.h</a>&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacerbm.html">rbm</a>{</div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="classrbm_1_1Parametar.html">   11</a></span>&#160;  <span class="keyword">class </span><a class="code" href="classrbm_1_1Parametar.html">Parametar</a> {</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="classrbm_1_1Parametar.html#a435f2ec191ca95552e0b9622f5e88cfe">   13</a></span>&#160;      <a class="code" href="classrbm_1_1Bias.html">Bias</a> <a class="code" href="classrbm_1_1Parametar.html#a435f2ec191ca95552e0b9622f5e88cfe">visible_bias</a>;</div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="classrbm_1_1Parametar.html#a1e4497e0362b1145492a6856d0a0793c">   14</a></span>&#160;      <a class="code" href="classrbm_1_1Bias.html">Bias</a> <a class="code" href="classrbm_1_1Parametar.html#a1e4497e0362b1145492a6856d0a0793c">hidden_bias</a>;</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="classrbm_1_1Parametar.html#a07888c65ccb2d327cc530eae5f54e168">   15</a></span>&#160;      <a class="code" href="classrbm_1_1Weight.html">Weight</a> <a class="code" href="classrbm_1_1Parametar.html#a07888c65ccb2d327cc530eae5f54e168">weight</a>;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;      <a class="code" href="classrbm_1_1Parametar.html#a6cfb85cc7e75390e8019bea4398d9f86">Parametar</a>(<span class="keywordtype">int</span> visible_dim, <span class="keywordtype">int</span> hidden_dim);</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  };</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;}</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="abias_8h_html"><div class="ttname"><a href="bias_8h.html">bias.h</a></div></div>
+<div class="ttc" id="aclassrbm_1_1Bias_html"><div class="ttname"><a href="classrbm_1_1Bias.html">rbm::Bias</a></div><div class="ttdoc">Biasの型定義</div><div class="ttdef"><b>Definition:</b> bias.h:18</div></div>
+<div class="ttc" id="aclassrbm_1_1Parametar_html"><div class="ttname"><a href="classrbm_1_1Parametar.html">rbm::Parametar</a></div><div class="ttdoc">Parametar型の定義</div><div class="ttdef"><b>Definition:</b> parametar.h:11</div></div>
+<div class="ttc" id="aclassrbm_1_1Parametar_html_a07888c65ccb2d327cc530eae5f54e168"><div class="ttname"><a href="classrbm_1_1Parametar.html#a07888c65ccb2d327cc530eae5f54e168">rbm::Parametar::weight</a></div><div class="ttdeci">Weight weight</div><div class="ttdef"><b>Definition:</b> parametar.h:15</div></div>
+<div class="ttc" id="aclassrbm_1_1Parametar_html_a1e4497e0362b1145492a6856d0a0793c"><div class="ttname"><a href="classrbm_1_1Parametar.html#a1e4497e0362b1145492a6856d0a0793c">rbm::Parametar::hidden_bias</a></div><div class="ttdeci">Bias hidden_bias</div><div class="ttdef"><b>Definition:</b> parametar.h:14</div></div>
+<div class="ttc" id="aclassrbm_1_1Parametar_html_a435f2ec191ca95552e0b9622f5e88cfe"><div class="ttname"><a href="classrbm_1_1Parametar.html#a435f2ec191ca95552e0b9622f5e88cfe">rbm::Parametar::visible_bias</a></div><div class="ttdeci">Bias visible_bias</div><div class="ttdef"><b>Definition:</b> parametar.h:13</div></div>
+<div class="ttc" id="aclassrbm_1_1Parametar_html_a6cfb85cc7e75390e8019bea4398d9f86"><div class="ttname"><a href="classrbm_1_1Parametar.html#a6cfb85cc7e75390e8019bea4398d9f86">rbm::Parametar::Parametar</a></div><div class="ttdeci">Parametar(int visible_dim, int hidden_dim)</div><div class="ttdef"><b>Definition:</b> parametar.cpp:4</div></div>
+<div class="ttc" id="aclassrbm_1_1Weight_html"><div class="ttname"><a href="classrbm_1_1Weight.html">rbm::Weight</a></div><div class="ttdoc">Weight(重み)の型定義</div><div class="ttdef"><b>Definition:</b> weight.h:19</div></div>
+<div class="ttc" id="anamespacerbm_html"><div class="ttname"><a href="namespacerbm.html">rbm</a></div><div class="ttdef"><b>Definition:</b> bias.h:14</div></div>
+<div class="ttc" id="aweight_8h_html"><div class="ttname"><a href="weight_8h.html">weight.h</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

@@ -1,0 +1,6 @@
+<map id="rbm::Sampling::block_gibbs_sampling" name="rbm::Sampling::block_gibbs_sampling">
+<area shape="rect" id="node1" title="ブロック化ギブスサンプリング" alt="" coords="5,71,165,112"/>
+<area shape="rect" id="node2" href="$classrbm_1_1Model.html#afa97d6bccaf2f99eed01ec8800091675" title="Init Rbm" alt="" coords="213,5,367,47"/>
+<area shape="rect" id="node3" href="$classrbm_1_1Model.html#a187c24b014e169aa55293d6640beeb25" title="Init Rbm" alt="" coords="213,71,367,112"/>
+<area shape="rect" id="node4" href="$namespacerbm__utils.html#af60332fbf0bcb0204d4b8dcd65bf3b81" title="calc sigmoid" alt="" coords="235,137,345,163"/>
+</map>
