@@ -5,6 +5,9 @@
 #include"weight.h"
 
 namespace rbm{
+  /*! @class Parametar
+    @brief  Parametar型の定義
+  */
   class Parametar {
     public:
       Bias visible_bias;
