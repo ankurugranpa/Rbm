@@ -19,5 +19,19 @@ int main(void){
   for(const auto& item: sample){
     std::cout<<item.transpose() << std::endl;
   }
+  std::cout<<"####可視変数(4次元)####" << std::endl;
+
+  auto [data1, data2] = sampler.block_gibbs_sampling(sample, calc_rbm, 5);
+  for(const auto& item: data1){
+    std::cout<<item.transpose() << std::endl;
+  }
+
+  std::cout<<"####隠れ変数(2次元)####" << std::endl;
+  for(const auto& item: data2){
+    std::cout<<item.transpose() << std::endl;
+  }
+
+
+
   // TODO: ギブスサンプリングの成功かどうかの実装確認
 }

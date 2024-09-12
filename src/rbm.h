@@ -65,6 +65,16 @@ namespace rbm{
        *  @param[in] rand_hidden 隠れ変数の確率変数
        */
       double cost_func(const Parametar& parametar, const Eigen::VectorXi& rand_visible, const Eigen::VectorXi& rand_hidden) const;
+
+      /**
+       *  @brief calc cost function 
+       *  @param[in] parametar パラメーター
+       *  @param[in] rand_visible 可視変数の確率変数
+       *  @return double calced cost func C_v(v;\theta) 
+       *  @details C_v = - ( sum_i b_i x_i + sum_j log(1+e^lamdbda_hidden) 
+       */
+      double cost_v(const Parametar& parametar, const Eigen::VectorXi& rand_visible) const;
+
   };
 }
 
