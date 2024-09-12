@@ -31,6 +31,14 @@ namespace rbm_utils{
   *  @details sig(x) = 1/(1+exp(-x)
   */
   rbm::Bias sig(rbm::Bias x);
+
+  /**
+  *  @brief calc sigmoid 
+  *  @param[in] x x
+  *  @return double シグモイド関数の計算結果
+  *  @details sig(x) = 1/(1+exp(-x)
+  */
+  Eigen::VectorXd sig(Eigen::VectorXd x);
 } 
 
 #endif
