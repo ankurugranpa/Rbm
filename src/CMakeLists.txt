@@ -17,15 +17,15 @@ find_package(Eigen3 REQUIRED NO_MODULE)
 if(NOT Eigen3_FOUND)
     message(FATAL_ERROR "Eigen3 not found!")
 endif()
-# target_compile_definitions(librbm PRIVATE EIGEN_MPL2_ONLY)
+# target_compile_definitions(libmodel PRIVATE EIGEN_MPL2_ONLY)
 
 
 
 
 # Main
-add_library(librbm
+add_library(libmodel
             SHARED
-            rbm.cpp)
+            model.cpp)
 
 add_library(libsampling
             SHARED
@@ -65,8 +65,8 @@ add_library(libdata
 
 
 
-target_compile_definitions(librbm PRIVATE EIGEN_MPL2_ONLY)
-target_include_directories(librbm
+target_compile_definitions(libmodel PRIVATE EIGEN_MPL2_ONLY)
+target_include_directories(libmodel
   PUBLIC . 
   PUBLIC ${Boost_INCLUDE_DIRS}
   PUBLIC ${EIGEN3_INCLUDE_DIR})
@@ -111,7 +111,7 @@ target_include_directories(libdata
 
 
 target_link_libraries(
-  librbm
+  libmodel
   libparametar
   ${Boost_LIBRARIES}
   Eigen3::Eigen)

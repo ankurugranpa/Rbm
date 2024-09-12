@@ -2,7 +2,7 @@
 #include<iostream>
 
 #include<gtest/gtest.h>
-#include<rbm.h>
+#include<model.h>
 
 namespace {
   class RbmTest: public testing::Test{

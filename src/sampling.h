@@ -4,7 +4,7 @@
 #include<tuple>
 
 #include<data_types/data.h>
-#include<rbm.h>
+#include<model.h>
 
 namespace rbm{
 

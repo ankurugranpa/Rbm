@@ -1,7 +1,7 @@
 #include<iostream>
 #include<tuple>
 
-#include<rbm.h>
+#include<model.h>
 #include<sampling.h>
 #include<data.h>
 
