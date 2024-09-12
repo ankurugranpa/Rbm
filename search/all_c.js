@@ -1,7 +1,6 @@
 var searchData=
 [
-  ['weight_41',['Weight',['../classrbm_1_1Weight.html',1,'rbm::Weight'],['../classrbm_1_1Weight.html#aced6c627aa4778c25d94238e04c29001',1,'rbm::Weight::Weight()'],['../classrbm_1_1Weight.html#a37d35f988c36729838c24d5d1ff03de8',1,'rbm::Weight::Weight(int rows, int cols)'],['../classrbm_1_1Weight.html#ad1a4b59aa682f3a90f81b7d3a5929eda',1,'rbm::Weight::Weight(const Eigen::MatrixXd &amp;other)']]],
-  ['weight_42',['weight',['../classrbm_1_1Parametar.html#a07888c65ccb2d327cc530eae5f54e168',1,'rbm::Parametar']]],
-  ['weight_2ecpp_43',['weight.cpp',['../weight_8cpp.html',1,'']]],
-  ['weight_2eh_44',['weight.h',['../weight_8h.html',1,'']]]
+  ['vector2csv_55',['vector2csv',['../classrbm__utils_1_1Csv.html#a729cb7a1309c5553d6101d0fcd8bfe4a',1,'rbm_utils::Csv']]],
+  ['visible_5fbias_56',['visible_bias',['../classrbm_1_1Parametar.html#a435f2ec191ca95552e0b9622f5e88cfe',1,'rbm::Parametar']]],
+  ['visible_5fdim_57',['visible_dim',['../classrbm_1_1Model.html#a31d11dee3b4dc1bca434fef62826a169',1,'rbm::Model']]]
 ];

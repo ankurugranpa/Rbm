@@ -1,0 +1,124 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>My Project: src/utils/csv.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_313caf1132e152dd9b58bea13a4052ca.html">utils</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">csv.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="csv_8h.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#ifndef CSV_H</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#define CSV_H</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include&lt;vector&gt;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include&lt;<a class="code" href="data_8h.html">data.h</a>&gt;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include&lt;<a class="code" href="parametar_8h.html">parametar.h</a>&gt;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacerbm__utils.html">rbm_utils</a>{</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="classrbm__utils_1_1Csv.html">   19</a></span>&#160;  <span class="keyword">class </span><a class="code" href="classrbm__utils_1_1Csv.html">Csv</a>{</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="classrbm__utils_1_1Csv.html#a242ff3bce38e5ee26dc06a01db49317b">   21</a></span>&#160;      std::string <a class="code" href="classrbm__utils_1_1Csv.html#a242ff3bce38e5ee26dc06a01db49317b">work_dir</a>;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;      <a class="code" href="classrbm__utils_1_1Csv.html#a7b3018fbae271dacd77369bb8fa251a9">Csv</a>();</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;      <a class="code" href="classrbm__utils_1_1Csv.html#a7b3018fbae271dacd77369bb8fa251a9">Csv</a>(std::string <a class="code" href="classrbm__utils_1_1Csv.html#a242ff3bce38e5ee26dc06a01db49317b">work_dir</a>);</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;      <a class="code" href="classrbm__utils_1_1Csv.html#a79f8c90fe16f837e202021a8797a8c63">~Csv</a>();</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;      <span class="keywordtype">void</span> <a class="code" href="classrbm__utils_1_1Csv.html#ae91a55b07fc28e6af8781ba430b81cb4">set_work_dir</a>(std::string <a class="code" href="classrbm__utils_1_1Csv.html#a242ff3bce38e5ee26dc06a01db49317b">work_dir</a>);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;      <span class="keywordtype">void</span> <a class="code" href="classrbm__utils_1_1Csv.html#a729cb7a1309c5553d6101d0fcd8bfe4a">vector2csv</a>(std::vector&lt;double&gt; vector, std::string file_name);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;      <span class="keywordtype">void</span> <a class="code" href="classrbm__utils_1_1Csv.html#a75542603a4fbca0ef6fb0ad371580ab4">dataset2csv</a>(<a class="code" href="structrbm_1_1DataSet.html">rbm::DataSet</a> data_set, std::string file_name);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;      <a class="code" href="structrbm_1_1DataSet.html">rbm::DataSet</a> <a class="code" href="classrbm__utils_1_1Csv.html#af9f82310c49d3693a88d7990af531e18">csv2dataset</a>(std::string file_name);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;      <span class="keywordtype">void</span> <a class="code" href="classrbm__utils_1_1Csv.html#aab8d8f79fb7cf35c3b8e4de20c1d5c3d">parametar2csv</a>(<a class="code" href="classrbm_1_1Parametar.html">rbm::Parametar</a> parametar);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="classrbm__utils_1_1Csv.html#a151046870544757929122d2e836880ef">   65</a></span>&#160;      <a class="code" href="classrbm_1_1Parametar.html">rbm::Parametar</a> <a class="code" href="classrbm__utils_1_1Csv.html#a151046870544757929122d2e836880ef">csv2parametar</a>(std::string file_name);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  };</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;}</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aclassrbm_1_1Parametar_html"><div class="ttname"><a href="classrbm_1_1Parametar.html">rbm::Parametar</a></div><div class="ttdoc">Parametar型の定義</div><div class="ttdef"><b>Definition:</b> parametar.h:11</div></div>
+<div class="ttc" id="aclassrbm__utils_1_1Csv_html"><div class="ttname"><a href="classrbm__utils_1_1Csv.html">rbm_utils::Csv</a></div><div class="ttdef"><b>Definition:</b> csv.h:19</div></div>
+<div class="ttc" id="aclassrbm__utils_1_1Csv_html_a151046870544757929122d2e836880ef"><div class="ttname"><a href="classrbm__utils_1_1Csv.html#a151046870544757929122d2e836880ef">rbm_utils::Csv::csv2parametar</a></div><div class="ttdeci">rbm::Parametar csv2parametar(std::string file_name)</div><div class="ttdoc">csv2parametar</div></div>
+<div class="ttc" id="aclassrbm__utils_1_1Csv_html_a242ff3bce38e5ee26dc06a01db49317b"><div class="ttname"><a href="classrbm__utils_1_1Csv.html#a242ff3bce38e5ee26dc06a01db49317b">rbm_utils::Csv::work_dir</a></div><div class="ttdeci">std::string work_dir</div><div class="ttdef"><b>Definition:</b> csv.h:21</div></div>
+<div class="ttc" id="aclassrbm__utils_1_1Csv_html_a729cb7a1309c5553d6101d0fcd8bfe4a"><div class="ttname"><a href="classrbm__utils_1_1Csv.html#a729cb7a1309c5553d6101d0fcd8bfe4a">rbm_utils::Csv::vector2csv</a></div><div class="ttdeci">void vector2csv(std::vector&lt; double &gt; vector, std::string file_name)</div><div class="ttdoc">vector2csv</div><div class="ttdef"><b>Definition:</b> csv.cpp:16</div></div>
+<div class="ttc" id="aclassrbm__utils_1_1Csv_html_a75542603a4fbca0ef6fb0ad371580ab4"><div class="ttname"><a href="classrbm__utils_1_1Csv.html#a75542603a4fbca0ef6fb0ad371580ab4">rbm_utils::Csv::dataset2csv</a></div><div class="ttdeci">void dataset2csv(rbm::DataSet data_set, std::string file_name)</div><div class="ttdoc">dataset2csv</div><div class="ttdef"><b>Definition:</b> csv.cpp:28</div></div>
+<div class="ttc" id="aclassrbm__utils_1_1Csv_html_a79f8c90fe16f837e202021a8797a8c63"><div class="ttname"><a href="classrbm__utils_1_1Csv.html#a79f8c90fe16f837e202021a8797a8c63">rbm_utils::Csv::~Csv</a></div><div class="ttdeci">~Csv()</div><div class="ttdef"><b>Definition:</b> csv.cpp:14</div></div>
+<div class="ttc" id="aclassrbm__utils_1_1Csv_html_a7b3018fbae271dacd77369bb8fa251a9"><div class="ttname"><a href="classrbm__utils_1_1Csv.html#a7b3018fbae271dacd77369bb8fa251a9">rbm_utils::Csv::Csv</a></div><div class="ttdeci">Csv()</div><div class="ttdef"><b>Definition:</b> csv.cpp:8</div></div>
+<div class="ttc" id="aclassrbm__utils_1_1Csv_html_aab8d8f79fb7cf35c3b8e4de20c1d5c3d"><div class="ttname"><a href="classrbm__utils_1_1Csv.html#aab8d8f79fb7cf35c3b8e4de20c1d5c3d">rbm_utils::Csv::parametar2csv</a></div><div class="ttdeci">void parametar2csv(rbm::Parametar parametar)</div><div class="ttdoc">parametar2csv</div><div class="ttdef"><b>Definition:</b> csv.cpp:67</div></div>
+<div class="ttc" id="aclassrbm__utils_1_1Csv_html_ae91a55b07fc28e6af8781ba430b81cb4"><div class="ttname"><a href="classrbm__utils_1_1Csv.html#ae91a55b07fc28e6af8781ba430b81cb4">rbm_utils::Csv::set_work_dir</a></div><div class="ttdeci">void set_work_dir(std::string work_dir)</div><div class="ttdef"><b>Definition:</b> csv.cpp:24</div></div>
+<div class="ttc" id="aclassrbm__utils_1_1Csv_html_af9f82310c49d3693a88d7990af531e18"><div class="ttname"><a href="classrbm__utils_1_1Csv.html#af9f82310c49d3693a88d7990af531e18">rbm_utils::Csv::csv2dataset</a></div><div class="ttdeci">rbm::DataSet csv2dataset(std::string file_name)</div><div class="ttdoc">csv2dataset</div><div class="ttdef"><b>Definition:</b> csv.cpp:36</div></div>
+<div class="ttc" id="adata_8h_html"><div class="ttname"><a href="data_8h.html">data.h</a></div><div class="ttdoc">バイナリのRBMで扱うデータ型</div></div>
+<div class="ttc" id="anamespacerbm__utils_html"><div class="ttname"><a href="namespacerbm__utils.html">rbm_utils</a></div><div class="ttdef"><b>Definition:</b> binary.h:9</div></div>
+<div class="ttc" id="aparametar_8h_html"><div class="ttname"><a href="parametar_8h.html">parametar.h</a></div></div>
+<div class="ttc" id="astructrbm_1_1DataSet_html"><div class="ttname"><a href="structrbm_1_1DataSet.html">rbm::DataSet</a></div><div class="ttdef"><b>Definition:</b> data.h:32</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

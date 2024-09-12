@@ -1,5 +1,5 @@
 <map id="rbm::Model" name="rbm::Model">
-<area shape="rect" id="node1" title="Modelの型定義" alt="" coords="67,471,213,636"/>
+<area shape="rect" id="node1" title="Modelの型定義" alt="" coords="67,471,213,651"/>
 <area shape="rect" id="node2" href="$classrbm_1_1Parametar.html" title="Parametar型の定義" alt="" coords="79,331,201,408"/>
 <area shape="rect" id="node3" href="$classrbm_1_1Weight.html" title="Weight(重み)の型定義" alt="" coords="15,132,129,253"/>
 <area shape="rect" id="node4" title=" " alt="" coords="5,5,131,83"/>

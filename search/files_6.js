@@ -1,8 +1,7 @@
 var searchData=
 [
-  ['sampling_2ecpp_69',['sampling.cpp',['../sampling_8cpp.html',1,'']]],
-  ['sampling_2eh_70',['sampling.h',['../sampling_8h.html',1,'']]],
-  ['sigmoid_2ecpp_71',['sigmoid.cpp',['../sigmoid_8cpp.html',1,'']]],
-  ['sigmoid_2eh_72',['sigmoid.h',['../sigmoid_8h.html',1,'']]],
-  ['sigmoid_5ftest_2ecpp_73',['sigmoid_test.cpp',['../sigmoid__test_8cpp.html',1,'']]]
+  ['rbm_2ecpp_93',['rbm.cpp',['../rbm_8cpp.html',1,'']]],
+  ['rbm_2eh_94',['rbm.h',['../rbm_8h.html',1,'']]],
+  ['rbm_5ftest_2ecpp_95',['rbm_test.cpp',['../rbm__test_8cpp.html',1,'']]],
+  ['readme_2emd_96',['README.md',['../README_8md.html',1,'']]]
 ];

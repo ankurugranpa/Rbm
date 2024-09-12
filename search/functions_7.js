@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['sampling_87',['Sampling',['../classrbm_1_1Sampling.html#af9663da4dc646edd685544522fa39c0f',1,'rbm::Sampling']]],
-  ['sig_88',['sig',['../namespacerbm__utils.html#af60332fbf0bcb0204d4b8dcd65bf3b81',1,'rbm_utils::sig(double x)'],['../namespacerbm__utils.html#ae241946902b3c531442960b8d61ec367',1,'rbm_utils::sig(rbm::Bias x)'],['../namespacerbm__utils.html#a59e42edb878ab011318c1dea7e50603f',1,'rbm_utils::sig(Eigen::VectorXd x)']]]
+  ['parametar_121',['Parametar',['../classrbm_1_1Parametar.html#a6cfb85cc7e75390e8019bea4398d9f86',1,'rbm::Parametar']]],
+  ['parametar2csv_122',['parametar2csv',['../classrbm__utils_1_1Csv.html#aab8d8f79fb7cf35c3b8e4de20c1d5c3d',1,'rbm_utils::Csv']]]
 ];

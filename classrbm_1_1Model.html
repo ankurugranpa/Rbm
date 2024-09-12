@@ -83,7 +83,7 @@ rbm::Model 連携図</div>
 <div class="dyncontent">
 <div class="center"><img src="classrbm_1_1Model__coll__graph.png" border="0" usemap="#arbm_1_1Model_coll__map" alt="Collaboration graph"/></div>
 <map name="arbm_1_1Model_coll__map" id="arbm_1_1Model_coll__map">
-<area shape="rect" title="Modelの型定義" alt="" coords="67,471,213,636"/>
+<area shape="rect" title="Modelの型定義" alt="" coords="67,471,213,651"/>
 <area shape="rect" href="classrbm_1_1Parametar.html" title="Parametar型の定義" alt="" coords="79,331,201,408"/>
 <area shape="rect" href="classrbm_1_1Weight.html" title="Weight(重み)の型定義" alt="" coords="15,132,129,253"/>
 <area shape="rect" title=" " alt="" coords="5,5,131,83"/>
@@ -110,6 +110,9 @@ rbm::Model 連携図</div>
 <tr class="memitem:aadf0dbfeca23a4969b4b7ef55fc9fb97"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrbm_1_1Model.html#aadf0dbfeca23a4969b4b7ef55fc9fb97">cost_func</a> (const <a class="el" href="classrbm_1_1Parametar.html">Parametar</a> &amp;<a class="el" href="classrbm_1_1Model.html#aff2acad3651ec863e60c155b8c3bb4f9">parametar</a>, const Eigen::VectorXi &amp;rand_visible, const Eigen::VectorXi &amp;rand_hidden) const</td></tr>
 <tr class="memdesc:aadf0dbfeca23a4969b4b7ef55fc9fb97"><td class="mdescLeft">&#160;</td><td class="mdescRight">Init Rbm  <a href="classrbm_1_1Model.html#aadf0dbfeca23a4969b4b7ef55fc9fb97">[詳解]</a><br /></td></tr>
 <tr class="separator:aadf0dbfeca23a4969b4b7ef55fc9fb97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae24367a3bf9bc0f336bf703a4a487123"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrbm_1_1Model.html#ae24367a3bf9bc0f336bf703a4a487123">cost_v</a> (const <a class="el" href="classrbm_1_1Parametar.html">Parametar</a> &amp;<a class="el" href="classrbm_1_1Model.html#aff2acad3651ec863e60c155b8c3bb4f9">parametar</a>, const Eigen::VectorXi &amp;rand_visible) const</td></tr>
+<tr class="memdesc:ae24367a3bf9bc0f336bf703a4a487123"><td class="mdescLeft">&#160;</td><td class="mdescRight">calc cost function  <a href="classrbm_1_1Model.html#ae24367a3bf9bc0f336bf703a4a487123">[詳解]</a><br /></td></tr>
+<tr class="separator:ae24367a3bf9bc0f336bf703a4a487123"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 公開変数類</h2></td></tr>
@@ -239,6 +242,54 @@ rbm::Model 連携図</div>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="ae24367a3bf9bc0f336bf703a4a487123"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae24367a3bf9bc0f336bf703a4a487123">&#9670;&nbsp;</a></span>cost_v()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Model::cost_v </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classrbm_1_1Parametar.html">Parametar</a> &amp;&#160;</td>
+          <td class="paramname"><em>parametar</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Eigen::VectorXi &amp;&#160;</td>
+          <td class="paramname"><em>rand_visible</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>calc cost function </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">parametar</td><td>パラメーター </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">rand_visible</td><td>可視変数の確率変数 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>double calced cost func C_v(v;\theta)</dd></dl>
+<p>C_v = - ( sum_i b_i x_i + sum_j log(1+e^lamdbda_hidden) </p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classrbm_1_1Model_ae24367a3bf9bc0f336bf703a4a487123_cgraph.png" border="0" usemap="#aclassrbm_1_1Model_ae24367a3bf9bc0f336bf703a4a487123_cgraph" alt=""/></div>
+<map name="aclassrbm_1_1Model_ae24367a3bf9bc0f336bf703a4a487123_cgraph" id="aclassrbm_1_1Model_ae24367a3bf9bc0f336bf703a4a487123_cgraph">
+<area shape="rect" title="calc cost function" alt="" coords="5,13,152,39"/>
+<area shape="rect" href="classrbm_1_1Model.html#afa97d6bccaf2f99eed01ec8800091675" title="Init Rbm" alt="" coords="200,5,353,47"/>
+</map>
+</div>
 
 </div>
 </div>

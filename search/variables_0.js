@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['hidden_5fbias_93',['hidden_bias',['../classrbm_1_1Parametar.html#a1e4497e0362b1145492a6856d0a0793c',1,'rbm::Parametar']]],
-  ['hidden_5fdim_94',['hidden_dim',['../classrbm_1_1Model.html#a55b047818f1b8ef7b9ddbe1e9784fbba',1,'rbm::Model']]]
+  ['bit_5fnum_133',['bit_num',['../classrbm__utils_1_1Binary.html#adad1dc44ed66ec7b36b1408550a72fdc',1,'rbm_utils::Binary']]]
 ];

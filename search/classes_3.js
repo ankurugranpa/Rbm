@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['parametar_51',['Parametar',['../classrbm_1_1Parametar.html',1,'rbm']]]
+  ['model_73',['Model',['../classrbm_1_1Model.html',1,'rbm']]]
 ];

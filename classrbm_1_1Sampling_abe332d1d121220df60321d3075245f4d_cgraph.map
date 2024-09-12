@@ -1,6 +1,6 @@
 <map id="rbm::Sampling::create_data_set" name="rbm::Sampling::create_data_set">
 <area shape="rect" id="node1" title="バイナリデータセットの作成" alt="" coords="5,71,172,112"/>
-<area shape="rect" id="node2" href="$classrbm_1_1Sampling.html#acfd8f69803fcdede45b59f5332be2f4a" title="ブロック化ギブスサンプリング" alt="" coords="220,71,380,112"/>
+<area shape="rect" id="node2" href="$classrbm_1_1Sampling.html#a46e4401b5723aa88fd4f444fc600f5e6" title="ブロック化ギブスサンプリング" alt="" coords="220,71,380,112"/>
 <area shape="rect" id="node3" href="$classrbm_1_1Model.html#afa97d6bccaf2f99eed01ec8800091675" title="Init Rbm" alt="" coords="428,5,581,47"/>
 <area shape="rect" id="node4" href="$classrbm_1_1Model.html#a187c24b014e169aa55293d6640beeb25" title="Init Rbm" alt="" coords="428,71,581,112"/>
 <area shape="rect" id="node5" href="$namespacerbm__utils.html#af60332fbf0bcb0204d4b8dcd65bf3b81" title="calc sigmoid" alt="" coords="449,137,560,163"/>

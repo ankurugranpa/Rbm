@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['weight_53',['Weight',['../classrbm_1_1Weight.html',1,'rbm']]]
+  ['sampling_75',['Sampling',['../classrbm_1_1Sampling.html',1,'rbm']]]
 ];
