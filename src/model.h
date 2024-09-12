@@ -7,8 +7,8 @@
 * @details RBMクラス
 */
 
-#ifndef RBM_H
-#define RBM_H
+#ifndef MODEL_H
+#define MODEL_H
 #include<Eigen/Dense>
 
 #include<parametar.h>

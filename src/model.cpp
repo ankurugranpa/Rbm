@@ -1,7 +1,7 @@
 #include<random>
 #include<iostream>
 
-#include"rbm.h"
+#include"model.h"
 
 using namespace rbm;
 

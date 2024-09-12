@@ -29,22 +29,22 @@ add_executable(binary_test  binary_test.cpp)
 # add_executable(cd_rbm_test cd_rbm_test/cd_rbm_test.cpp)
 # add_executable(mnist_test mnist_test/mnist_test.cpp)
 
-target_link_libraries(rbm_test PRIVATE librbm GTest::gtest GTest::gtest_main)
+target_link_libraries(rbm_test PRIVATE libmodel GTest::gtest GTest::gtest_main)
 target_link_libraries(sigmoid_test PRIVATE libsigmoid GTest::gtest GTest::gtest_main)
 target_link_libraries(binary_test PRIVATE libbinary GTest::gtest GTest::gtest_main)
-# target_link_libraries(gibbssampling_test PRIVATE librbm)
+# target_link_libraries(gibbssampling_test PRIVATE libmodel)
 # target_link_libraries(rbm_result_test
-#   PRIVATE librbm
+#   PRIVATE libmodel
 #   PRIVATE arg_config
 #   ${Boost_LIBRARIES}
 # )
 # target_link_libraries(cd_rbm_test
-#   PRIVATE librbm
+#   PRIVATE libmodel
 #   PRIVATE arg_config
 #   ${Boost_LIBRARIES}
 # )
 # target_link_libraries(mnist_test
-#   PRIVATE librbm
+#   PRIVATE libmodel
 #   PRIVATE arg_config
 #   PRIVATE csv2vector
 #   ${Boost_LIBRARIES}
