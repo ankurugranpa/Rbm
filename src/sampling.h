@@ -23,7 +23,7 @@ namespace rbm{
        *  @param[in] data_num データの数
        *  @param[in] sampling_rate サンプリング周期(CK-k法のkのような奴)
        */
-      std::tuple<DataSet, DataSet> block_gibbs_sampling(DataSet observation_data, const rbm::Model& model_object,int data_num, int sampling_rate);
+      std::tuple<DataSet, DataSet> block_gibbs_sampling(DataSet observation_data, const rbm::Model& model_object, int sampling_rate);
 
       /**
        *  @brief バイナリデータセットの作成

@@ -10,7 +10,7 @@ Sampling::Sampling(){}
 Sampling::~Sampling(){}
 
 
-std::tuple<DataSet, DataSet> Sampling::block_gibbs_sampling(DataSet observation_data, const rbm::Model& model_object,int data_num, int sampling_rate){
+std::tuple<DataSet, DataSet> Sampling::block_gibbs_sampling(DataSet observation_data, const rbm::Model& model_object, int sampling_rate){
   DataSet visible_gen_data_set; // 作成したデータの格納先
   DataSet hidden_gen_data_set; // 作成したデータの格納先
   Data visible_gen_data(model_object.visible_dim); // 作成したデータ
@@ -94,7 +94,7 @@ DataSet Sampling::create_data_set(const rbm::Model& model_object,int data_num, i
 
   
   for(int i=0; i<data_num; i++){
-    std::tie(data_set, std::ignore) = block_gibbs_sampling(data_set, model_object, data_num, sampling_rate);
+    std::tie(data_set, std::ignore) = block_gibbs_sampling(data_set, model_object,  sampling_rate);
     result.push_back(data_set[0]);
   }
   return result;

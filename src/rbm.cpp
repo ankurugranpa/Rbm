@@ -50,3 +50,15 @@ double Model::cost_func(const Parametar& parametar, const Eigen::VectorXi& rand_
   return - (visible_bias_term + hideen_bias_term + weight_bias_term);
 }
 
+double Model::cost_v(const Parametar& parametar, const Eigen::VectorXi& rand_visible) const{
+  Eigen::VectorXd lambda, exp_lambda, buf;
+  double result;
+
+  lambda= lambda_hidden(parametar, rand_visible);
+  exp_lambda = lambda.array().exp();
+  buf = - (1 + exp_lambda.array()).log();
+  result = buf.sum();
+  result =  result - (parametar.visible_bias.transpose() * rand_visible.cast<double>());
+  return result;
+}
+

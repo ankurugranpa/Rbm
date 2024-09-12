@@ -23,6 +23,7 @@ include(GoogleTest)
 # Add the executable for the testcase which is using googletest
 add_executable(rbm_test rbm_test.cpp)
 add_executable(sigmoid_test  sigmoid_test.cpp)
+add_executable(binary_test  binary_test.cpp)
 # add_executable(gibbssampling_test  gibbssampling_test/gibbssampling_test.cpp)
 # add_executable(rbm_result_test rbm_result_test/rbm_result_test.cpp)
 # add_executable(cd_rbm_test cd_rbm_test/cd_rbm_test.cpp)
@@ -30,6 +31,7 @@ add_executable(sigmoid_test  sigmoid_test.cpp)
 
 target_link_libraries(rbm_test PRIVATE librbm GTest::gtest GTest::gtest_main)
 target_link_libraries(sigmoid_test PRIVATE libsigmoid GTest::gtest GTest::gtest_main)
+target_link_libraries(binary_test PRIVATE libbinary GTest::gtest GTest::gtest_main)
 # target_link_libraries(gibbssampling_test PRIVATE librbm)
 # target_link_libraries(rbm_result_test
 #   PRIVATE librbm
@@ -55,4 +57,5 @@ gtest_discover_tests(rbm_test)
 
 # ctestの設定
 add_test(NAME SigmoidTests COMMAND sigmoid_test)
+add_test(NAME BinaryTests COMMAND binary_test)
 add_test(NAME RBMTests COMMAND rbm_test)
