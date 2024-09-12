@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['num2binary_31',['num2binary',['../classrbm__utils_1_1Binary.html#a769e7938ef122712f2a7a175a59d789b',1,'rbm_utils::Binary']]]
+  ['num2binary_33',['num2binary',['../classrbm__utils_1_1Binary.html#a769e7938ef122712f2a7a175a59d789b',1,'rbm_utils::Binary']]]
 ];
