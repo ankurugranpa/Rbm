@@ -40,8 +40,18 @@ namespace rbm{
        *  @brief Init Rbm
        *  @param[in] visible_dim 可視変数の次元
        *  @param[in] hidden_dim 隠れ変数の次元
+       *  @details パラメータを自動で初期化する 
        */
       Model(int visible_dim, int hidden_dim);
+
+      /**
+       *  @brief Init Rbm
+       *  @param[in] visible_dim 可視変数の次元
+       *  @param[in] hidden_dim 隠れ変数の次元
+       *  @param[in] parametar 初期パラメータ 
+       *  @details 任意のパラメーターを初期値の演算が行われないため初期値を自分で設定する必要がある
+       */
+      Model(int visible_dim, int hidden_dim, Parametar parametar);
       ~Model();
 
       /**
@@ -74,6 +84,9 @@ namespace rbm{
        *  @details C_v = - ( sum_i b_i x_i + sum_j log(1+e^lamdbda_hidden) 
        */
       double cost_v(const Parametar& parametar, const Eigen::VectorXi& rand_visible) const;
+
+      void set_parameter(Parametar parametar);
+
 
   };
 }

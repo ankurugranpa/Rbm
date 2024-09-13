@@ -11,7 +11,7 @@
 
 #include<Eigen/Dense>
 
-namespace rbm{
+namespace rbm_types{
   /*! @class Bias
     @brief  Biasの型定義
   */

@@ -6,6 +6,8 @@
 
 #include<data.h>
 
+using namespace rbm_types;
+
 namespace rbm_utils{
   class Binary{
     public:
@@ -22,10 +24,10 @@ namespace rbm_utils{
       /**
       *  @brief num2binary
       *  @param[in] num 変換する数字
-      *  @return rbm::Data バイナリデータ
+      *  @return Data バイナリデータ
       *  @details 数字をバイナリデータに変換する関数
       */
-      rbm::Data num2binary(int num);
+      Data num2binary(int num);
   };
 }
 

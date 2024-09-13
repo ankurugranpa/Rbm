@@ -2,8 +2,8 @@
 #include<sstream>
 
 #include"csv.h"
-
 using namespace rbm_utils;
+
 
 Csv::Csv(){}
 
@@ -25,7 +25,7 @@ void Csv::set_work_dir(std::string work_dir){
   this->work_dir = work_dir;
 }
 
-void Csv::dataset2csv(rbm::DataSet data_set, std::string file_name){
+void Csv::dataset2csv(DataSet data_set, std::string file_name){
    std::ofstream data_file(work_dir+ "/" + file_name);
    for (auto &&item : data_set ) {
         data_file << item.transpose();
@@ -33,8 +33,8 @@ void Csv::dataset2csv(rbm::DataSet data_set, std::string file_name){
    }
 }
 
-rbm::DataSet Csv::csv2dataset(std::string file_name){
-  rbm::DataSet result_data;
+DataSet Csv::csv2dataset(std::string file_name){
+  DataSet result_data;
   std::ifstream file(work_dir+ "/" + file_name);
   std::string line;
   std::stringstream line_stream(line);
@@ -64,7 +64,7 @@ rbm::DataSet Csv::csv2dataset(std::string file_name){
   return result_data;
 }
 
-void Csv::parametar2csv(rbm::Parametar parametar){
+void Csv::parametar2csv(Parametar parametar){
    std::ofstream visible_data_file(work_dir+ "/visible_bias.csv");
    visible_data_file << parametar.visible_bias;
    visible_data_file.close();
@@ -78,8 +78,8 @@ void Csv::parametar2csv(rbm::Parametar parametar){
    weight_data_file.close();
 }
 
-// rbm::Parametar Csv::csv2parametar(std::string file_name){
-//   rbm::DataSet result_data;
+// Parametar Csv::csv2parametar(std::string file_name){
+//   DataSet result_data;
 //   std::ifstream file(work_dir+ "/" + file_name);
 //   std::string line;
 //   std::stringstream line_stream(line);

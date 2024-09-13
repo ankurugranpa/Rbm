@@ -12,7 +12,7 @@
 
 #include<Eigen/Dense>
 
-namespace rbm{
+namespace rbm_types{
   /*! @class Weight
     @brief  Weight(重み)の型定義
   */

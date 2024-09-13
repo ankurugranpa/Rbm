@@ -3,8 +3,9 @@
 
 #include"bias.h"
 #include"weight.h"
+using namespace rbm_types;
 
-namespace rbm{
+namespace rbm_types{
   /*! @class Parametar
     @brief  Parametar型の定義
   */

@@ -37,13 +37,13 @@ TEST_F(RbmTest, Constructor){
 
 
 TEST_F(RbmTest, LambdaVisible){
-  rbm::Parametar test_parametaer(3, 2);
-  rbm::Bias b(3);
+  Parametar test_parametaer(3, 2);
+  Bias b(3);
   b << 1,
        2,
        3;
 
-  rbm::Weight w(3, 2);
+  Weight w(3, 2);
   w << 1, 4,
        2, 5,
        3, 6;
@@ -65,11 +65,11 @@ TEST_F(RbmTest, LambdaVisible){
 
 
 TEST_F(RbmTest, LambdaHidenn){
-  rbm::Parametar test_parametaer(3, 2);
-  rbm::Bias c(2);
+  Parametar test_parametaer(3, 2);
+  Bias c(2);
   c << 1,
        2;
-  rbm::Weight w(3, 2);
+  Weight w(3, 2);
   w << 1, 4,
        2, 5,
        3, 6;
@@ -88,7 +88,7 @@ TEST_F(RbmTest, LambdaHidenn){
   }
 }
 TEST_F(RbmTest, CostFunc){
-  rbm::Parametar test_parametaer(2, 2);
+  Parametar test_parametaer(2, 2);
 
   test_parametaer.visible_bias << 1,
                                   2;

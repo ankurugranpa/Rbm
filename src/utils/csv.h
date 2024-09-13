@@ -14,6 +14,7 @@
 
 #include<data.h>
 #include<parametar.h>
+using namespace rbm_types;
 
 namespace rbm_utils{
   class Csv{
@@ -39,30 +40,30 @@ namespace rbm_utils{
        *  @param[in] file_name ファイル名
        *  @details データ集合をcsvファイルに出力するツール
        */
-      void dataset2csv(rbm::DataSet data_set, std::string file_name);
+      void dataset2csv(DataSet data_set, std::string file_name);
 
       /**
        *  @brief csv2dataset
        *  @param[in] file_name ファイルの名前
-       *  @return rbm::DataSet バイナリのデータセット.csv
+       *  @return DataSet バイナリのデータセット.csv
        *  @details csvファイルからDataSet型のデータ集合を構築するツール
        *  */
-      rbm::DataSet csv2dataset(std::string file_name);
+      DataSet csv2dataset(std::string file_name);
 
       /**
        *  @brief parametar2csv
        *  @param[in] file_name ファイルを保存するディレクトリ
-       *  @return rbm::DataSet バイナリのデータセット.csv
+       *  @return DataSet バイナリのデータセット.csv
        *  @details パラメータを visible_bias.csv, hidden_bias.csv, weight.csvにそれぞれ保存するツール
        */
-      void parametar2csv(rbm::Parametar parametar);
+      void parametar2csv(Parametar parametar);
 
       /**
        *  @brief csv2parametar
        *  @param[in] file_name 読み込むファイル名
        *  @details csvファイルからパラメータを作成するツール
        */
-      rbm::Parametar csv2parametar(std::string file_name);
+      Parametar csv2parametar(std::string file_name);
 
   };
 }
