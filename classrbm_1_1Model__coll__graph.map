@@ -1,8 +1,8 @@
 <map id="rbm::Model" name="rbm::Model">
-<area shape="rect" id="node1" title="Modelの型定義" alt="" coords="67,471,213,651"/>
-<area shape="rect" id="node2" href="$classrbm_1_1Parametar.html" title="Parametar型の定義" alt="" coords="79,331,201,408"/>
-<area shape="rect" id="node3" href="$classrbm_1_1Weight.html" title="Weight(重み)の型定義" alt="" coords="15,132,129,253"/>
-<area shape="rect" id="node4" title=" " alt="" coords="5,5,131,83"/>
-<area shape="rect" id="node5" href="$classrbm_1_1Bias.html" title="Biasの型定義" alt="" coords="158,132,271,253"/>
-<area shape="rect" id="node6" title=" " alt="" coords="155,5,279,83"/>
+<area shape="rect" id="node1" title="Modelの型定義" alt="" coords="74,471,221,680"/>
+<area shape="rect" id="node2" href="$classrbm__types_1_1Parametar.html" title="Parametar型の定義" alt="" coords="64,331,231,408"/>
+<area shape="rect" id="node3" href="$classrbm__types_1_1Bias.html" title="Biasの型定義" alt="" coords="5,132,132,253"/>
+<area shape="rect" id="node4" title=" " alt="" coords="7,5,131,83"/>
+<area shape="rect" id="node5" href="$classrbm__types_1_1Weight.html" title="Weight(重み)の型定義" alt="" coords="157,132,301,253"/>
+<area shape="rect" id="node6" title=" " alt="" coords="166,5,291,83"/>
 </map>

@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['data_71',['Data',['../classrbm_1_1Data.html',1,'rbm']]],
-  ['dataset_72',['DataSet',['../structrbm_1_1DataSet.html',1,'rbm']]]
+  ['data_92',['Data',['../classrbm__types_1_1Data.html',1,'rbm_types']]],
+  ['dataset_93',['DataSet',['../structrbm__types_1_1DataSet.html',1,'rbm_types']]]
 ];

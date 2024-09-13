@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['vector2csv_127',['vector2csv',['../classrbm__utils_1_1Csv.html#a729cb7a1309c5553d6101d0fcd8bfe4a',1,'rbm_utils::Csv']]]
+  ['parametar_159',['Parametar',['../classrbm__types_1_1Parametar.html#a6cfb85cc7e75390e8019bea4398d9f86',1,'rbm_types::Parametar']]],
+  ['parametar2csv_160',['parametar2csv',['../classrbm__utils_1_1Csv.html#afdad382f11135e081e8aa8f2971c5475',1,'rbm_utils::Csv']]]
 ];

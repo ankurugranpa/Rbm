@@ -76,45 +76,40 @@ $(function() {
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include&lt;<a class="code" href="data_8h.html">data.h</a>&gt;</span></div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include&lt;<a class="code" href="parametar_8h.html">parametar.h</a>&gt;</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacerbm__utils.html">rbm_utils</a>{</div>
-<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="classrbm__utils_1_1Csv.html">   19</a></span>&#160;  <span class="keyword">class </span><a class="code" href="classrbm__utils_1_1Csv.html">Csv</a>{</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="classrbm__utils_1_1Csv.html#a242ff3bce38e5ee26dc06a01db49317b">   21</a></span>&#160;      std::string <a class="code" href="classrbm__utils_1_1Csv.html#a242ff3bce38e5ee26dc06a01db49317b">work_dir</a>;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;      <a class="code" href="classrbm__utils_1_1Csv.html#a7b3018fbae271dacd77369bb8fa251a9">Csv</a>();</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;      <a class="code" href="classrbm__utils_1_1Csv.html#a7b3018fbae271dacd77369bb8fa251a9">Csv</a>(std::string <a class="code" href="classrbm__utils_1_1Csv.html#a242ff3bce38e5ee26dc06a01db49317b">work_dir</a>);</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;      <a class="code" href="classrbm__utils_1_1Csv.html#a79f8c90fe16f837e202021a8797a8c63">~Csv</a>();</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;      <span class="keywordtype">void</span> <a class="code" href="classrbm__utils_1_1Csv.html#ae91a55b07fc28e6af8781ba430b81cb4">set_work_dir</a>(std::string <a class="code" href="classrbm__utils_1_1Csv.html#a242ff3bce38e5ee26dc06a01db49317b">work_dir</a>);</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;      <span class="keywordtype">void</span> <a class="code" href="classrbm__utils_1_1Csv.html#a729cb7a1309c5553d6101d0fcd8bfe4a">vector2csv</a>(std::vector&lt;double&gt; vector, std::string file_name);</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;      <span class="keywordtype">void</span> <a class="code" href="classrbm__utils_1_1Csv.html#a75542603a4fbca0ef6fb0ad371580ab4">dataset2csv</a>(<a class="code" href="structrbm_1_1DataSet.html">rbm::DataSet</a> data_set, std::string file_name);</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;      <a class="code" href="structrbm_1_1DataSet.html">rbm::DataSet</a> <a class="code" href="classrbm__utils_1_1Csv.html#af9f82310c49d3693a88d7990af531e18">csv2dataset</a>(std::string file_name);</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;      <span class="keywordtype">void</span> <a class="code" href="classrbm__utils_1_1Csv.html#aab8d8f79fb7cf35c3b8e4de20c1d5c3d">parametar2csv</a>(<a class="code" href="classrbm_1_1Parametar.html">rbm::Parametar</a> parametar);</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
-<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="classrbm__utils_1_1Csv.html#a151046870544757929122d2e836880ef">   65</a></span>&#160;      <a class="code" href="classrbm_1_1Parametar.html">rbm::Parametar</a> <a class="code" href="classrbm__utils_1_1Csv.html#a151046870544757929122d2e836880ef">csv2parametar</a>(std::string file_name);</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  };</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;}</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="aclassrbm_1_1Parametar_html"><div class="ttname"><a href="classrbm_1_1Parametar.html">rbm::Parametar</a></div><div class="ttdoc">Parametar型の定義</div><div class="ttdef"><b>Definition:</b> parametar.h:11</div></div>
-<div class="ttc" id="aclassrbm__utils_1_1Csv_html"><div class="ttname"><a href="classrbm__utils_1_1Csv.html">rbm_utils::Csv</a></div><div class="ttdef"><b>Definition:</b> csv.h:19</div></div>
-<div class="ttc" id="aclassrbm__utils_1_1Csv_html_a151046870544757929122d2e836880ef"><div class="ttname"><a href="classrbm__utils_1_1Csv.html#a151046870544757929122d2e836880ef">rbm_utils::Csv::csv2parametar</a></div><div class="ttdeci">rbm::Parametar csv2parametar(std::string file_name)</div><div class="ttdoc">csv2parametar</div></div>
-<div class="ttc" id="aclassrbm__utils_1_1Csv_html_a242ff3bce38e5ee26dc06a01db49317b"><div class="ttname"><a href="classrbm__utils_1_1Csv.html#a242ff3bce38e5ee26dc06a01db49317b">rbm_utils::Csv::work_dir</a></div><div class="ttdeci">std::string work_dir</div><div class="ttdef"><b>Definition:</b> csv.h:21</div></div>
-<div class="ttc" id="aclassrbm__utils_1_1Csv_html_a729cb7a1309c5553d6101d0fcd8bfe4a"><div class="ttname"><a href="classrbm__utils_1_1Csv.html#a729cb7a1309c5553d6101d0fcd8bfe4a">rbm_utils::Csv::vector2csv</a></div><div class="ttdeci">void vector2csv(std::vector&lt; double &gt; vector, std::string file_name)</div><div class="ttdoc">vector2csv</div><div class="ttdef"><b>Definition:</b> csv.cpp:16</div></div>
-<div class="ttc" id="aclassrbm__utils_1_1Csv_html_a75542603a4fbca0ef6fb0ad371580ab4"><div class="ttname"><a href="classrbm__utils_1_1Csv.html#a75542603a4fbca0ef6fb0ad371580ab4">rbm_utils::Csv::dataset2csv</a></div><div class="ttdeci">void dataset2csv(rbm::DataSet data_set, std::string file_name)</div><div class="ttdoc">dataset2csv</div><div class="ttdef"><b>Definition:</b> csv.cpp:28</div></div>
-<div class="ttc" id="aclassrbm__utils_1_1Csv_html_a79f8c90fe16f837e202021a8797a8c63"><div class="ttname"><a href="classrbm__utils_1_1Csv.html#a79f8c90fe16f837e202021a8797a8c63">rbm_utils::Csv::~Csv</a></div><div class="ttdeci">~Csv()</div><div class="ttdef"><b>Definition:</b> csv.cpp:14</div></div>
-<div class="ttc" id="aclassrbm__utils_1_1Csv_html_a7b3018fbae271dacd77369bb8fa251a9"><div class="ttname"><a href="classrbm__utils_1_1Csv.html#a7b3018fbae271dacd77369bb8fa251a9">rbm_utils::Csv::Csv</a></div><div class="ttdeci">Csv()</div><div class="ttdef"><b>Definition:</b> csv.cpp:8</div></div>
-<div class="ttc" id="aclassrbm__utils_1_1Csv_html_aab8d8f79fb7cf35c3b8e4de20c1d5c3d"><div class="ttname"><a href="classrbm__utils_1_1Csv.html#aab8d8f79fb7cf35c3b8e4de20c1d5c3d">rbm_utils::Csv::parametar2csv</a></div><div class="ttdeci">void parametar2csv(rbm::Parametar parametar)</div><div class="ttdoc">parametar2csv</div><div class="ttdef"><b>Definition:</b> csv.cpp:67</div></div>
-<div class="ttc" id="aclassrbm__utils_1_1Csv_html_ae91a55b07fc28e6af8781ba430b81cb4"><div class="ttname"><a href="classrbm__utils_1_1Csv.html#ae91a55b07fc28e6af8781ba430b81cb4">rbm_utils::Csv::set_work_dir</a></div><div class="ttdeci">void set_work_dir(std::string work_dir)</div><div class="ttdef"><b>Definition:</b> csv.cpp:24</div></div>
-<div class="ttc" id="aclassrbm__utils_1_1Csv_html_af9f82310c49d3693a88d7990af531e18"><div class="ttname"><a href="classrbm__utils_1_1Csv.html#af9f82310c49d3693a88d7990af531e18">rbm_utils::Csv::csv2dataset</a></div><div class="ttdeci">rbm::DataSet csv2dataset(std::string file_name)</div><div class="ttdoc">csv2dataset</div><div class="ttdef"><b>Definition:</b> csv.cpp:36</div></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">using namespace </span><a class="code" href="namespacerbm__types.html">rbm_types</a>;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacerbm__utils.html">rbm_utils</a>{</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="classrbm__utils_1_1Csv.html">   20</a></span>&#160;  <span class="keyword">class </span><a class="code" href="classrbm__utils_1_1Csv.html">Csv</a>{</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="classrbm__utils_1_1Csv.html#a242ff3bce38e5ee26dc06a01db49317b">   22</a></span>&#160;      std::string <a class="code" href="classrbm__utils_1_1Csv.html#a242ff3bce38e5ee26dc06a01db49317b">work_dir</a>;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;      <a class="code" href="classrbm__utils_1_1Csv.html">Csv</a>();</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;      <a class="code" href="classrbm__utils_1_1Csv.html">Csv</a>(std::string work_dir);</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;      ~<a class="code" href="classrbm__utils_1_1Csv.html">Csv</a>();</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;      <span class="keywordtype">void</span> set_work_dir(std::string work_dir);</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;      <span class="keywordtype">void</span> vector2csv(std::vector&lt;double&gt; vector, std::string file_name);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;      <span class="keywordtype">void</span> dataset2csv(<a class="code" href="structrbm__types_1_1DataSet.html">DataSet</a> data_set, std::string file_name);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;      <a class="code" href="structrbm__types_1_1DataSet.html">DataSet</a> csv2dataset(std::string file_name);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;      <span class="keywordtype">void</span> parametar2csv(<a class="code" href="classrbm__types_1_1Parametar.html">Parametar</a> parametar);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
+<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="classrbm__utils_1_1Csv.html#af0b06da0147adcae39ee82db94f99be7">   66</a></span>&#160;      <a class="code" href="classrbm__types_1_1Parametar.html">Parametar</a> <a class="code" href="classrbm__utils_1_1Csv.html#af0b06da0147adcae39ee82db94f99be7">csv2parametar</a>(std::string file_name);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  };</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;}</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aclassrbm__types_1_1Parametar_html"><div class="ttname"><a href="classrbm__types_1_1Parametar.html">rbm_types::Parametar</a></div><div class="ttdoc">Parametar型の定義</div><div class="ttdef"><b>Definition:</b> parametar.h:12</div></div>
+<div class="ttc" id="aclassrbm__utils_1_1Csv_html"><div class="ttname"><a href="classrbm__utils_1_1Csv.html">rbm_utils::Csv</a></div><div class="ttdef"><b>Definition:</b> csv.h:20</div></div>
+<div class="ttc" id="aclassrbm__utils_1_1Csv_html_a242ff3bce38e5ee26dc06a01db49317b"><div class="ttname"><a href="classrbm__utils_1_1Csv.html#a242ff3bce38e5ee26dc06a01db49317b">rbm_utils::Csv::work_dir</a></div><div class="ttdeci">std::string work_dir</div><div class="ttdef"><b>Definition:</b> csv.h:22</div></div>
+<div class="ttc" id="aclassrbm__utils_1_1Csv_html_af0b06da0147adcae39ee82db94f99be7"><div class="ttname"><a href="classrbm__utils_1_1Csv.html#af0b06da0147adcae39ee82db94f99be7">rbm_utils::Csv::csv2parametar</a></div><div class="ttdeci">Parametar csv2parametar(std::string file_name)</div><div class="ttdoc">csv2parametar</div></div>
 <div class="ttc" id="adata_8h_html"><div class="ttname"><a href="data_8h.html">data.h</a></div><div class="ttdoc">バイナリのRBMで扱うデータ型</div></div>
-<div class="ttc" id="anamespacerbm__utils_html"><div class="ttname"><a href="namespacerbm__utils.html">rbm_utils</a></div><div class="ttdef"><b>Definition:</b> binary.h:9</div></div>
+<div class="ttc" id="anamespacerbm__types_html"><div class="ttname"><a href="namespacerbm__types.html">rbm_types</a></div><div class="ttdef"><b>Definition:</b> bias.h:14</div></div>
+<div class="ttc" id="anamespacerbm__utils_html"><div class="ttname"><a href="namespacerbm__utils.html">rbm_utils</a></div><div class="ttdef"><b>Definition:</b> binary.h:11</div></div>
 <div class="ttc" id="aparametar_8h_html"><div class="ttname"><a href="parametar_8h.html">parametar.h</a></div></div>
-<div class="ttc" id="astructrbm_1_1DataSet_html"><div class="ttname"><a href="structrbm_1_1DataSet.html">rbm::DataSet</a></div><div class="ttdef"><b>Definition:</b> data.h:32</div></div>
+<div class="ttc" id="astructrbm__types_1_1DataSet_html"><div class="ttname"><a href="structrbm__types_1_1DataSet.html">rbm_types::DataSet</a></div><div class="ttdef"><b>Definition:</b> data.h:32</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

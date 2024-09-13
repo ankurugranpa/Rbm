@@ -1,6 +1,7 @@
 <map id="src/utils/sigmoid.h" name="src/utils/sigmoid.h">
-<area shape="rect" id="node1" title=" " alt="" coords="169,5,310,32"/>
-<area shape="rect" id="node2" href="$sampling_8cpp.html" title=" " alt="" coords="5,80,137,107"/>
-<area shape="rect" id="node3" href="$sigmoid_8cpp.html" title=" " alt="" coords="161,80,317,107"/>
-<area shape="rect" id="node4" href="$sigmoid__test_8cpp.html" title=" " alt="" coords="342,80,505,107"/>
+<area shape="rect" id="node1" title=" " alt="" coords="214,5,355,32"/>
+<area shape="rect" id="node2" href="$learn_8cpp.html" title=" " alt="" coords="5,80,111,107"/>
+<area shape="rect" id="node3" href="$sampling_8cpp.html" title=" " alt="" coords="135,80,267,107"/>
+<area shape="rect" id="node4" href="$sigmoid_8cpp.html" title=" " alt="" coords="291,80,447,107"/>
+<area shape="rect" id="node5" href="$sigmoid__test_8cpp.html" title=" " alt="" coords="471,80,634,107"/>
 </map>

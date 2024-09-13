@@ -1,9 +1,13 @@
 var searchData=
 [
-  ['weight_58',['Weight',['../classrbm_1_1Weight.html',1,'rbm']]],
-  ['weight_59',['weight',['../classrbm_1_1Parametar.html#a07888c65ccb2d327cc530eae5f54e168',1,'rbm::Parametar']]],
-  ['weight_60',['Weight',['../classrbm_1_1Weight.html#aced6c627aa4778c25d94238e04c29001',1,'rbm::Weight::Weight()'],['../classrbm_1_1Weight.html#a37d35f988c36729838c24d5d1ff03de8',1,'rbm::Weight::Weight(int rows, int cols)'],['../classrbm_1_1Weight.html#ad1a4b59aa682f3a90f81b7d3a5929eda',1,'rbm::Weight::Weight(const Eigen::MatrixXd &amp;other)']]],
-  ['weight_2ecpp_61',['weight.cpp',['../weight_8cpp.html',1,'']]],
-  ['weight_2eh_62',['weight.h',['../weight_8h.html',1,'']]],
-  ['work_5fdir_63',['work_dir',['../classrbm__utils_1_1Csv.html#a242ff3bce38e5ee26dc06a01db49317b',1,'rbm_utils::Csv']]]
+  ['sampling_62',['Sampling',['../classrbm_1_1Sampling.html',1,'rbm::Sampling'],['../classrbm_1_1Sampling.html#af9663da4dc646edd685544522fa39c0f',1,'rbm::Sampling::Sampling()']]],
+  ['sampling_2ecpp_63',['sampling.cpp',['../sampling_8cpp.html',1,'']]],
+  ['sampling_2eh_64',['sampling.h',['../sampling_8h.html',1,'']]],
+  ['seg_5fepsilon_65',['seg_epsilon',['../classrbm_1_1Learn.html#a490affa7c23f96da4aa0fbc6876e6663',1,'rbm::Learn']]],
+  ['set_5fparameter_66',['set_parameter',['../classrbm_1_1Model.html#a2d7a7fe105aa17aa3be00b500334d822',1,'rbm::Model']]],
+  ['set_5fwork_5fdir_67',['set_work_dir',['../classrbm__utils_1_1Csv.html#ae91a55b07fc28e6af8781ba430b81cb4',1,'rbm_utils::Csv']]],
+  ['sig_68',['sig',['../namespacerbm__utils.html#af60332fbf0bcb0204d4b8dcd65bf3b81',1,'rbm_utils::sig(double x)'],['../namespacerbm__utils.html#a0fac32678fcf6384c97a5c36ff0b1005',1,'rbm_utils::sig(Bias x)'],['../namespacerbm__utils.html#a59e42edb878ab011318c1dea7e50603f',1,'rbm_utils::sig(Eigen::VectorXd x)']]],
+  ['sigmoid_2ecpp_69',['sigmoid.cpp',['../sigmoid_8cpp.html',1,'']]],
+  ['sigmoid_2eh_70',['sigmoid.h',['../sigmoid_8h.html',1,'']]],
+  ['sigmoid_5ftest_2ecpp_71',['sigmoid_test.cpp',['../sigmoid__test_8cpp.html',1,'']]]
 ];

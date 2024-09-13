@@ -1,4 +1,8 @@
 var searchData=
 [
-  ['test_5ff_126',['TEST_F',['../binary__test_8cpp.html#af3f4ddbc5aa2cc19276d6a1d0b7ea122',1,'TEST_F(BinaryTest, num1binary):&#160;binary_test.cpp'],['../rbm__test_8cpp.html#a56ca6fb5fdc8823c88a0e2cfa7cb2928',1,'TEST_F(RbmTest, Constructor):&#160;rbm_test.cpp'],['../rbm__test_8cpp.html#a576e37e44f5b359f6f3d3d888ed13c35',1,'TEST_F(RbmTest, LambdaVisible):&#160;rbm_test.cpp'],['../rbm__test_8cpp.html#a89dd171a8cb5e4bab0c8711e923c01a4',1,'TEST_F(RbmTest, LambdaHidenn):&#160;rbm_test.cpp'],['../rbm__test_8cpp.html#a758c7114a9ea439c80f36dac5078ee61',1,'TEST_F(RbmTest, CostFunc):&#160;rbm_test.cpp'],['../sigmoid__test_8cpp.html#abc1dfec33132cfc1a5fc2ef938782693',1,'TEST_F(SigmoidTest, double):&#160;sigmoid_test.cpp'],['../sigmoid__test_8cpp.html#ab33e241b5b967ed67e61384b814ee71d',1,'TEST_F(SigmoidTest, Bias):&#160;sigmoid_test.cpp'],['../sigmoid__test_8cpp.html#a0dec11fc0cefaa17dce4fa154f35c1ad',1,'TEST_F(SigmoidTest, Sigmoid_VECTOR_D):&#160;sigmoid_test.cpp']]]
+  ['operator_2a_154',['operator*',['../classrbm__types_1_1Grad.html#a366fb99c05e98c77605716e157ae7db3',1,'rbm_types::Grad']]],
+  ['operator_2b_155',['operator+',['../classrbm__types_1_1Grad.html#a03ed3cfced8487f782b931a9c363dac4',1,'rbm_types::Grad']]],
+  ['operator_2d_156',['operator-',['../classrbm__types_1_1Grad.html#a2133243859cd64ec6665f545004a2c0e',1,'rbm_types::Grad']]],
+  ['operator_2f_157',['operator/',['../classrbm__types_1_1Grad.html#a1e28504f582243b15258f22b7579e291',1,'rbm_types::Grad']]],
+  ['operator_3d_158',['operator=',['../classrbm__types_1_1Bias.html#af7e4965cb442609b171ce09553fc500b',1,'rbm_types::Bias::operator=()'],['../classrbm__types_1_1Data.html#a3ad8a4ee9c6007d4a265413c975a184f',1,'rbm_types::Data::operator=()'],['../classrbm__types_1_1Weight.html#a3ed94531e95f06d64825ad60d38d104a',1,'rbm_types::Weight::operator=()']]]
 ];

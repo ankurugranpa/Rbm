@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['model_73',['Model',['../classrbm_1_1Model.html',1,'rbm']]]
+  ['grad_94',['Grad',['../classrbm__types_1_1Grad.html',1,'rbm_types']]]
 ];

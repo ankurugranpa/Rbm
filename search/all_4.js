@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['lambda_5fhidden_24',['lambda_hidden',['../classrbm_1_1Model.html#afa97d6bccaf2f99eed01ec8800091675',1,'rbm::Model']]],
-  ['lambda_5fvisible_25',['lambda_visible',['../classrbm_1_1Model.html#a187c24b014e169aa55293d6640beeb25',1,'rbm::Model']]],
-  ['learn_2ecpp_26',['learn.cpp',['../learn_8cpp.html',1,'']]],
-  ['learn_2eh_27',['learn.h',['../learn_8h.html',1,'']]]
+  ['grad_27',['Grad',['../classrbm__types_1_1Grad.html#af3838505888ce0aa9839bba111ba366e',1,'rbm_types::Grad::Grad()'],['../classrbm__types_1_1Grad.html',1,'rbm_types::Grad']]],
+  ['grad_2ecpp_28',['grad.cpp',['../grad_8cpp.html',1,'']]],
+  ['grad_2eh_29',['grad.h',['../grad_8h.html',1,'']]],
+  ['grad_5ftest_2ecpp_30',['grad_test.cpp',['../grad__test_8cpp.html',1,'']]]
 ];

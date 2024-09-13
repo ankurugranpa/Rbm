@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['data_113',['Data',['../classrbm_1_1Data.html#afc11af93df3f0b31652e2d5b5d51de7b',1,'rbm::Data::Data()'],['../classrbm_1_1Data.html#ac8d8c8b959ae424ce89fc2e6acb53b56',1,'rbm::Data::Data(int size)'],['../classrbm_1_1Data.html#a4f2bafed08f72370c2f3118e646bfbdf',1,'rbm::Data::Data(const Eigen::VectorXi &amp;other)']]],
-  ['dataset2csv_114',['dataset2csv',['../classrbm__utils_1_1Csv.html#a75542603a4fbca0ef6fb0ad371580ab4',1,'rbm_utils::Csv']]]
+  ['data_143',['Data',['../classrbm__types_1_1Data.html#a1c0739582ee9841775ee6c35f9378a4c',1,'rbm_types::Data::Data()'],['../classrbm__types_1_1Data.html#ac5f4f26b378e7dc71752fc8d75e2bcad',1,'rbm_types::Data::Data(int size)'],['../classrbm__types_1_1Data.html#a2472d516ded5c54aa5778dfebf5cc9ed',1,'rbm_types::Data::Data(const Eigen::VectorXi &amp;other)']]],
+  ['dataset2csv_144',['dataset2csv',['../classrbm__utils_1_1Csv.html#af9186ec2042b0bc8b5b1501cf84dea8b',1,'rbm_utils::Csv']]]
 ];

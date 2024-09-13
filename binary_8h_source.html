@@ -77,27 +77,27 @@ $(function() {
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include&lt;<a class="code" href="data_8h.html">data.h</a>&gt;</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
-<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="namespacerbm__utils.html">    9</a></span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacerbm__utils.html">rbm_utils</a>{</div>
-<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="classrbm__utils_1_1Binary.html">   10</a></span>&#160;  <span class="keyword">class </span><a class="code" href="classrbm__utils_1_1Binary.html">Binary</a>{</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="classrbm__utils_1_1Binary.html#adad1dc44ed66ec7b36b1408550a72fdc">   13</a></span>&#160;      <span class="keywordtype">int</span> <a class="code" href="classrbm__utils_1_1Binary.html#adad1dc44ed66ec7b36b1408550a72fdc">bit_num</a>;</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;      <a class="code" href="classrbm__utils_1_1Binary.html#a36c18a53576b0adf396b386e02485bd0">Binary</a>();</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;      <a class="code" href="classrbm__utils_1_1Binary.html#a36c18a53576b0adf396b386e02485bd0">Binary</a>(<span class="keywordtype">int</span> <a class="code" href="classrbm__utils_1_1Binary.html#adad1dc44ed66ec7b36b1408550a72fdc">bit_num</a>);</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;      <a class="code" href="classrbm__utils_1_1Binary.html#a4fbd77e23f7ee92af0e4bc74e6857a10">~Binary</a>();</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;      <a class="code" href="classrbm_1_1Data.html">rbm::Data</a> <a class="code" href="classrbm__utils_1_1Binary.html#a769e7938ef122712f2a7a175a59d789b">num2binary</a>(<span class="keywordtype">int</span> num);</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  };</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;}</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="aclassrbm_1_1Data_html"><div class="ttname"><a href="classrbm_1_1Data.html">rbm::Data</a></div><div class="ttdoc">Dataの型定義</div><div class="ttdef"><b>Definition:</b> data.h:16</div></div>
-<div class="ttc" id="aclassrbm__utils_1_1Binary_html"><div class="ttname"><a href="classrbm__utils_1_1Binary.html">rbm_utils::Binary</a></div><div class="ttdef"><b>Definition:</b> binary.h:10</div></div>
-<div class="ttc" id="aclassrbm__utils_1_1Binary_html_a36c18a53576b0adf396b386e02485bd0"><div class="ttname"><a href="classrbm__utils_1_1Binary.html#a36c18a53576b0adf396b386e02485bd0">rbm_utils::Binary::Binary</a></div><div class="ttdeci">Binary()</div><div class="ttdef"><b>Definition:</b> binary.cpp:4</div></div>
-<div class="ttc" id="aclassrbm__utils_1_1Binary_html_a4fbd77e23f7ee92af0e4bc74e6857a10"><div class="ttname"><a href="classrbm__utils_1_1Binary.html#a4fbd77e23f7ee92af0e4bc74e6857a10">rbm_utils::Binary::~Binary</a></div><div class="ttdeci">~Binary()</div><div class="ttdef"><b>Definition:</b> binary.cpp:5</div></div>
-<div class="ttc" id="aclassrbm__utils_1_1Binary_html_a769e7938ef122712f2a7a175a59d789b"><div class="ttname"><a href="classrbm__utils_1_1Binary.html#a769e7938ef122712f2a7a175a59d789b">rbm_utils::Binary::num2binary</a></div><div class="ttdeci">rbm::Data num2binary(int num)</div><div class="ttdoc">num2binary</div><div class="ttdef"><b>Definition:</b> binary.cpp:11</div></div>
-<div class="ttc" id="aclassrbm__utils_1_1Binary_html_adad1dc44ed66ec7b36b1408550a72fdc"><div class="ttname"><a href="classrbm__utils_1_1Binary.html#adad1dc44ed66ec7b36b1408550a72fdc">rbm_utils::Binary::bit_num</a></div><div class="ttdeci">int bit_num</div><div class="ttdoc">データの次元</div><div class="ttdef"><b>Definition:</b> binary.h:13</div></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">using namespace </span><a class="code" href="namespacerbm__types.html">rbm_types</a>;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="namespacerbm__utils.html">   11</a></span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacerbm__utils.html">rbm_utils</a>{</div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="classrbm__utils_1_1Binary.html">   12</a></span>&#160;  <span class="keyword">class </span><a class="code" href="classrbm__utils_1_1Binary.html">Binary</a>{</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="classrbm__utils_1_1Binary.html#adad1dc44ed66ec7b36b1408550a72fdc">   15</a></span>&#160;      <span class="keywordtype">int</span> <a class="code" href="classrbm__utils_1_1Binary.html#adad1dc44ed66ec7b36b1408550a72fdc">bit_num</a>;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;      <a class="code" href="classrbm__utils_1_1Binary.html">Binary</a>();</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;      <a class="code" href="classrbm__utils_1_1Binary.html">Binary</a>(<span class="keywordtype">int</span> bit_num);</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;      ~<a class="code" href="classrbm__utils_1_1Binary.html">Binary</a>();</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;      <a class="code" href="classrbm__types_1_1Data.html">Data</a> num2binary(<span class="keywordtype">int</span> num);</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  };</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;}</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aclassrbm__types_1_1Data_html"><div class="ttname"><a href="classrbm__types_1_1Data.html">rbm_types::Data</a></div><div class="ttdoc">Dataの型定義</div><div class="ttdef"><b>Definition:</b> data.h:16</div></div>
+<div class="ttc" id="aclassrbm__utils_1_1Binary_html"><div class="ttname"><a href="classrbm__utils_1_1Binary.html">rbm_utils::Binary</a></div><div class="ttdef"><b>Definition:</b> binary.h:12</div></div>
+<div class="ttc" id="aclassrbm__utils_1_1Binary_html_adad1dc44ed66ec7b36b1408550a72fdc"><div class="ttname"><a href="classrbm__utils_1_1Binary.html#adad1dc44ed66ec7b36b1408550a72fdc">rbm_utils::Binary::bit_num</a></div><div class="ttdeci">int bit_num</div><div class="ttdoc">データの次元</div><div class="ttdef"><b>Definition:</b> binary.h:15</div></div>
 <div class="ttc" id="adata_8h_html"><div class="ttname"><a href="data_8h.html">data.h</a></div><div class="ttdoc">バイナリのRBMで扱うデータ型</div></div>
-<div class="ttc" id="anamespacerbm__utils_html"><div class="ttname"><a href="namespacerbm__utils.html">rbm_utils</a></div><div class="ttdef"><b>Definition:</b> binary.h:9</div></div>
+<div class="ttc" id="anamespacerbm__types_html"><div class="ttname"><a href="namespacerbm__types.html">rbm_types</a></div><div class="ttdef"><b>Definition:</b> bias.h:14</div></div>
+<div class="ttc" id="anamespacerbm__utils_html"><div class="ttname"><a href="namespacerbm__utils.html">rbm_utils</a></div><div class="ttdef"><b>Definition:</b> binary.h:11</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
