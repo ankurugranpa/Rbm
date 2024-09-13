@@ -12,8 +12,8 @@ double rbm_utils::sig(double x){
 }
 
 
-rbm::Bias rbm_utils::sig(rbm::Bias x){
-  rbm::Bias sig_X(x.size());
+Bias rbm_utils::sig(Bias x){
+  Bias sig_X(x.size());
   for(int i=0; i<x.size(); i++){
     sig_X(i) = sig(x(i));
   }

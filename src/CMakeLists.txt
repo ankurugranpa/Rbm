@@ -31,6 +31,9 @@ add_library(libsampling
             SHARED
             sampling.cpp)
 
+add_library(liblearn
+            SHARED
+            learn.cpp)
 
 # Utils
 add_library(libsigmoid
@@ -63,6 +66,9 @@ add_library(libdata
             SHARED
             data_types/data.cpp)
 
+add_library(libgrad
+            SHARED
+            data_types/grad.cpp)
 
 
 target_compile_definitions(libmodel PRIVATE EIGEN_MPL2_ONLY)
@@ -75,6 +81,9 @@ target_include_directories(libsampling
   PUBLIC . 
   PUBLIC ${EIGEN3_INCLUDE_DIR})
 
+target_include_directories(liblearn
+  PUBLIC . 
+  PUBLIC ${EIGEN3_INCLUDE_DIR})
 
 #Utils
 
@@ -109,6 +118,9 @@ target_include_directories(libdata
   PUBLIC ./data_types
   PUBLIC ${EIGEN3_INCLUDE_DIR})
 
+target_include_directories(libgrad
+  PUBLIC ./data_types
+  PUBLIC ${EIGEN3_INCLUDE_DIR})
 
 target_link_libraries(
   libmodel
@@ -121,6 +133,12 @@ target_link_libraries(
   libdata
   libsigmoid
   Eigen3::Eigen)
+
+target_link_libraries(
+  liblearn
+  libmodel
+  libsigmoid
+  libgrad)
 
 # Utils
 target_link_libraries(

@@ -12,7 +12,7 @@
 
 #include<Eigen/Dense>
 
-namespace rbm{
+namespace rbm_types{
   class Data : public Eigen::VectorXi {
     public:
         Data() : Eigen::VectorXi() {}

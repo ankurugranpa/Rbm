@@ -8,7 +8,8 @@ using namespace rbm;
 
 Model::Model(): visible_dim(0), hidden_dim(0), parametar(0, 0) {}
 
-Model::Model(int visible_dim, int hidden_dim): visible_dim(visible_dim), hidden_dim(hidden_dim), parametar(visible_dim, hidden_dim)
+Model::Model(int visible_dim, int hidden_dim): 
+  visible_dim(visible_dim), hidden_dim(hidden_dim), parametar(visible_dim, hidden_dim)
 {
   // パラメータの初期化
   std::random_device rd;
@@ -26,6 +27,15 @@ Model::Model(int visible_dim, int hidden_dim): visible_dim(visible_dim), hidden_
   }
 
 }
+
+Model::Model(int visible_dim, int hidden_dim, Parametar parametar):
+  visible_dim(visible_dim), hidden_dim(hidden_dim), parametar(visible_dim, hidden_dim)
+{
+  this->parametar.visible_bias = parametar.visible_bias;
+  this->parametar.hidden_bias = parametar.hidden_bias;
+  this->parametar.weight = parametar.weight;
+}
+
 
 Model::~Model(){}
 
@@ -62,3 +72,9 @@ double Model::cost_v(const Parametar& parametar, const Eigen::VectorXi& rand_vis
   return result;
 }
 
+
+void Model::set_parameter(Parametar parametar){
+  this->parametar.visible_bias = parametar.visible_bias;
+  this->parametar.hidden_bias = parametar.hidden_bias;
+  this->parametar.weight = parametar.weight;
+}

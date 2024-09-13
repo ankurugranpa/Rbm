@@ -3,6 +3,7 @@
 #include<Eigen/Dense>
 
 #include<bias.h>
+using namespace rbm_types;
 
 
 namespace rbm_utils{
@@ -30,7 +31,7 @@ namespace rbm_utils{
   *  @return double シグモイド関数の計算結果
   *  @details sig(x) = 1/(1+exp(-x)
   */
-  rbm::Bias sig(rbm::Bias x);
+  Bias sig(Bias x);
 
   /**
   *  @brief calc sigmoid 

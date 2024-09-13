@@ -5,7 +5,7 @@
 namespace {
   class SigmoidTest: public testing::Test{
     protected:
-      // rbm::Model calc_rbm;
+      // Model calc_rbm;
 
       virtual void SetUp() {
         // calc_rbm = Rbm(2, 2);
@@ -23,12 +23,12 @@ TEST_F(SigmoidTest, double){
 
 
 TEST_F(SigmoidTest, Bias){
-  rbm::Bias in(3);
+  Bias in(3);
   in << 5.0,
         0.0,
        -5.0;
 
-  rbm::Bias out(3);
+  Bias out(3);
   out << 0.9933071490757153,
          0.5,
          0.006692850924284856;
