@@ -13,6 +13,8 @@
 #include<model.h>
 #include<grad.h>
 #include<data.h>
+#include<file.h>
+#include<sampling.h>
 using namespace rbm_types;
 
 namespace rbm{
@@ -48,24 +50,52 @@ namespace rbm{
                               const int max_step=100,
                               const double nabla=0.5,
                               std::string result_file_name="learn_process_exact_calc.csv",
-                              int* result_step = nullptr);
-      void seg_epsilon(double value);
+                              int* result_step=nullptr);
+
+      /**
+       *  @brief Contrastive Divergence(CD法)
+       *  @param[in] before_learn_model 学習に使用するするモデル
+       *  @param[in] data_set 学習に使用するデータセット
+       *  @param[in] max_step step数の最大値(100)
+       *  @param[in] result_file_name 学習過程の保存ファイル
+       *  @param[in] result_step パラメーター更新の最終step数
+       *  @details CD法を使用した学習, ミニバッチ学習を行う
+       */
+      Model contrastive_divergence(const Model& before_learn_model,
+                                   const DataSet& data_set,
+                                   const double nabla=0.5,
+                                   const int epoch=100,
+                                   const int batch_size=100,
+                                   std::string result_file_name = "learn_process_exact_calc.csv",
+                                   int cd_k_num=1,
+                                   int* result_epoch=nullptr,
+                                   int* result_batch_time=nullptr);
+
+      void set_epsilon(double value);
     private: 
       /**
-       *  @brief 厳密計算で学習
+       *  @brief データ平均
        *  @param[in] model_object  パラメーター更新に使用するmodel
-       *  @param[in] result_step パラメーター更新の最終step数
-       *  @details 厳密計算を使用した学習, データの次元が多いと学習が終わらないので注意
+       *  @param[in] data_set 観測データ
+       *  @details データ平均を計算する
        */
       Grad calc_data_mean(const Model& model_object, const DataSet& data_set);
 
       /**
-       *  @brief 厳密計算で学習
+       *  @brief 厳密計算でのモデル平均
        *  @param[in] model_object  パラメーター更新に使用するmodel
        *  @param[in] data_set パラメーター更新の最終step数
-       *  @details 厳密計算を使用した学習, データの次元が多いと学習が終わらないので注意
+       *  @details 厳密計算を使用したモデル平均の計算を行う, データの次元が多いと学習が終わらないので注意
        */
-      Grad calc_model_mean(const Model& model_object, const DataSet& data_set);
+      Grad calc_model_mean(const Model& model_object);
+
+      /**
+       *  @brief Contrastive Divergence(CD法)でのモデル平均
+       *  @param[in] model_object  パラメーター更新に使用するmodel
+       *  @param[in] data_set パラメーター更新の最終step数
+       *  @details cd法を使用したモデル平均の計算を行う
+       */
+      Grad calc_model_mean_cd(const Model& model_object, const DataSet& data_set, int sampring_rate=1);
 
       double calc_grad(const Grad& grad_data);
 

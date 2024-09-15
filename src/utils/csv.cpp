@@ -53,7 +53,7 @@ DataSet Csv::csv2dataset(std::string file_name){
     }
 
     Eigen::VectorXi buf_vec(row.size());
-    for(int i=0; i<row.size(); i++){
+    for(auto i=0u; i<row.size(); i++){
       buf_vec(i) = row[i];
     }
     result_data.push_back(buf_vec);

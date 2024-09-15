@@ -1,4 +1,6 @@
 #include<random>
+#include<cmath>
+#include<iostream>
 
 #include<sigmoid.h>
 
@@ -10,16 +12,16 @@ Sampling::Sampling(){}
 Sampling::~Sampling(){}
 
 
-std::tuple<DataSet, DataSet> Sampling::block_gibbs_sampling(const DataSet& observation_data, const rbm::Model& model_object, int sampling_rate){
+std::tuple<DataSet, DataSet> Sampling::block_gibbs_sampling(const DataSet& data_set, const rbm::Model& model, int sampling_rate){
   DataSet visible_gen_data_set; // 作成したデータの格納先
   DataSet hidden_gen_data_set; // 作成したデータの格納先
-  Data visible_gen_data(model_object.visible_dim); // 作成したデータ
-  Data hidden_gen_data(model_object.hidden_dim);  // 作成したデータ
+  Data visible_gen_data(model.visible_dim); // 作成したデータ
+  Data hidden_gen_data(model.hidden_dim);  // 作成したデータ
   
   // Eigen::VectorXi hidden_gen_data(model_object.hidden_dim);
 
-  Eigen::VectorXd P_v(model_object.visible_dim); // 確率P(h|v.theta)
-  Eigen::VectorXd P_h(model_object.hidden_dim);  // 確率P(v|h.theta)
+  Eigen::VectorXd P_v(model.visible_dim); // 確率P(h|v.theta)
+  Eigen::VectorXd P_h(model.hidden_dim);  // 確率P(v|h.theta)
 
 
 
@@ -29,20 +31,22 @@ std::tuple<DataSet, DataSet> Sampling::block_gibbs_sampling(const DataSet& obser
 
 
 
-  for(int data_set_num=0; data_set_num<observation_data.size(); data_set_num++){
+  Eigen::VectorXd lambda_hidden; 
+  Eigen::VectorXd lambda_visible; 
+
+  for(auto data_set_num=0u; data_set_num<data_set.size(); data_set_num++){
     // Data buf_data(observation_data[data_set_num]);
-    visible_gen_data = observation_data[data_set_num];
+    visible_gen_data = data_set[data_set_num];
 
     for(int time=0; time<sampling_rate+1; time++){
       //
       // V->Hのターム(準備)
-      Eigen::VectorXd lambda_hidden; 
-      Eigen::VectorXd P_h(model_object.hidden_dim); //P_v(ℎ| 𝒗(0), 𝜽)
+      // Eigen::VectorXd P_h(model.hidden_dim); //P_h(ℎ| 𝒗(0), 𝜽)
                                                     
       // V(0)->H(0)のターム
-      lambda_hidden = model_object.lambda_hidden(model_object.parametar, visible_gen_data); 
+      lambda_hidden = model.lambda_hidden(model.parametar, visible_gen_data); 
       P_h = rbm_utils::sig(lambda_hidden);
-      for(int n=0; n<model_object.hidden_dim; n++){
+      for(int n=0; n<model.hidden_dim; n++){
         if(P_h(n) >= dis(gen)){
           hidden_gen_data(n) = 1;
         }else{
@@ -54,13 +58,11 @@ std::tuple<DataSet, DataSet> Sampling::block_gibbs_sampling(const DataSet& obser
       
 
       // H->Vのターム準備
-      Eigen::VectorXd lambda_visible; 
-      Eigen::VectorXd P_v(model_object.visible_dim); //P_v(ℎ| 𝒗(0), 𝜽)
                                                      
       // H(0)->V(1)のターム
-      lambda_visible = model_object.lambda_visible(model_object.parametar, hidden_gen_data);
+      lambda_visible = model.lambda_visible(model.parametar, hidden_gen_data);
       P_v = rbm_utils::sig(lambda_visible);
-      for(int n=0; n<model_object.visible_dim; n++){
+      for(int n=0; n<model.visible_dim; n++){
         if(P_v(n) >= dis(gen)){
           visible_gen_data(n) = 1;
         }else{

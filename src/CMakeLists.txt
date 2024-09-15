@@ -48,6 +48,9 @@ add_library(libcsv
             SHARED
             utils/csv.cpp)
 
+add_library(libfile
+            SHARED
+            utils/file.cpp)
 
 # data_type
 add_library(libbias
@@ -100,6 +103,8 @@ target_include_directories(libbinary
 target_include_directories(libcsv
   PUBLIC ./utils)
 
+target_include_directories(libfile
+  PUBLIC ./utils)
 
 # data_type
 target_include_directories(libbias
@@ -125,6 +130,7 @@ target_include_directories(libgrad
 target_link_libraries(
   libmodel
   libparametar
+  libbinary
   ${Boost_LIBRARIES}
   Eigen3::Eigen)
 
@@ -138,6 +144,8 @@ target_link_libraries(
   liblearn
   libmodel
   libsigmoid
+  libfile
+  libsampling
   libgrad)
 
 # Utils
@@ -156,6 +164,9 @@ target_link_libraries(
   libcsv
   libparametar)
   
+target_link_libraries(
+  libfile
+  libparametar)
 
 # data_type
 target_link_libraries(

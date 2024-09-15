@@ -1,5 +1,7 @@
 #include<random>
-#include<iostream>
+
+#include<data.h>
+#include<binary.h>
 
 #include"model.h"
 
@@ -77,4 +79,42 @@ void Model::set_parameter(Parametar parametar){
   this->parametar.visible_bias = parametar.visible_bias;
   this->parametar.hidden_bias = parametar.hidden_bias;
   this->parametar.weight = parametar.weight;
+}
+
+double Model::kl_divergence(const Model& model){
+  double result=0;
+  std::vector<double> q_d, p_v;
+  DataSet status = all_status();
+  
+  for(const auto& st:status){
+    q_d.push_back(std::exp(-model.cost_v(model.parametar, st)));
+    p_v.push_back(std::exp(-cost_v(parametar, st)));
+  }
+
+  double q_d_z = std::reduce(std::begin(q_d), std::end(q_d));
+  double p_v_z = std::reduce(std::begin(p_v), std::end(p_v));
+
+  for(auto& item: q_d){
+    item = item/q_d_z;
+  }
+  for(auto& item: p_v){
+    item = item/p_v_z;
+  }
+
+  // for(int i=0; i<q_d.size(); i++){
+  for(auto i = 0u; i < q_d.size(); i++){
+    if (q_d[i] > 0 && p_v[i] > 0) {  // ゼロ割りを防ぐ
+        result += q_d[i] * std::log(q_d[i]/p_v[i]);
+    }
+  }
+  return result;
+}
+
+DataSet Model::all_status(){
+  DataSet st;
+  rbm_utils::Binary binaryer(visible_dim);
+  for(int i=0; i<std::pow(visible_dim, 2); i++){
+    st.push_back(binaryer.num2binary(i));
+  }
+  return st;
 }
