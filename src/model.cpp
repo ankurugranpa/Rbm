@@ -8,7 +8,7 @@
 using namespace rbm;
 
 
-Model::Model(): visible_dim(0), hidden_dim(0), parametar(0, 0) {}
+Model::Model():  parametar() {}
 
 Model::Model(int visible_dim, int hidden_dim): 
   visible_dim(visible_dim), hidden_dim(hidden_dim), parametar(visible_dim, hidden_dim)
@@ -30,9 +30,11 @@ Model::Model(int visible_dim, int hidden_dim):
 
 }
 
-Model::Model(int visible_dim, int hidden_dim, Parametar parametar):
-  visible_dim(visible_dim), hidden_dim(hidden_dim), parametar(visible_dim, hidden_dim)
+Model::Model(Parametar parametar): parametar()
 {
+  this->visible_dim = parametar.visible_bias.size();
+  this->hidden_dim = parametar.hidden_bias.size();
+
   this->parametar.visible_bias = parametar.visible_bias;
   this->parametar.hidden_bias = parametar.hidden_bias;
   this->parametar.weight = parametar.weight;
@@ -58,7 +60,7 @@ double Model::cost_func(const Parametar& parametar, const Eigen::VectorXi& rand_
   double visible_bias_term, hideen_bias_term, weight_bias_term;
   visible_bias_term = parametar.visible_bias.transpose()*rand_visible.cast<double>();
   hideen_bias_term = parametar.hidden_bias.transpose()*rand_hidden.cast<double>();
-  weight_bias_term = (parametar.weight.transpose()*rand_visible.cast<double>()).transpose()*rand_hidden.cast<double>();
+  weight_bias_term = (rand_visible.transpose().cast<double>() * parametar.weight * rand_hidden.cast<double>());
   return - (visible_bias_term + hideen_bias_term + weight_bias_term);
 }
 

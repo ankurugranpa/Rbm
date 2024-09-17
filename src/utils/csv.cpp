@@ -33,6 +33,17 @@ void Csv::dataset2csv(DataSet data_set, std::string file_name){
    }
 }
 
+void Csv::data2csv(Data data, std::string file_name){
+   std::ofstream data_file(work_dir+ "/" + file_name);
+   for(int i=0; i<data.size(); i++){
+     if(i != data.size()-1){
+      data_file << data(i) << ",";
+     }else{
+      data_file << data(i) << "\n";
+     }
+   }
+}
+
 DataSet Csv::csv2dataset(std::string file_name){
   DataSet result_data;
   std::ifstream file(work_dir+ "/" + file_name);

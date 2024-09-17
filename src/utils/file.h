@@ -1,6 +1,5 @@
 #ifndef FILE_H
 #define FILE_H 
-#include<fstream>
 #include <filesystem>
 
 #include<parametar.h>
@@ -38,6 +37,38 @@ namespace rbm_utils{
       *  @details 数字をバイナリデータに変換する関数
       */
       std::vector<Weight> read_weight_file(fs::path file_name); 
+
+      /**
+      *  @brief get_line_parametar
+      *  @param[in] data_num 取得するファイル名
+      *  @param[in] visible_file 取得するデータの場所(1つ目とか)
+      *  @param[in] hidden_file 取得するデータの場所(1つ目とか)
+      *  @param[in] weight_file 取得するデータの場所(1つ目とか)
+      *  @return Parametar 取得したパラメーター
+      *  @details ファイルからデータを1つ取り出す関数
+      */
+      Parametar get_line_parametar(int data_num,
+                                   fs::path visible_file="visible_bias",
+                                   fs::path hidden_file="hidden_bias",
+                                   fs::path weight_file="weight_bias");
+
+      /**
+      *  @brief get_line_bias
+      *  @param[in] file_name 取得するファイル名
+      *  @param[in] data_num 取得するデータの場所(1つ目とか)
+      *  @return Bias 取得したデータ
+      *  @details ファイルからデータを1つ取り出す関数
+      */
+      Bias get_line_bias(fs::path file_name, int data_num);
+
+      /**
+      *  @brief get_line_weight
+      *  @param[in] file_name 取得するファイル名
+      *  @param[in] data_num 取得するデータの場所(1つ目とか)
+      *  @return Weight 取得したデータ
+      *  @details ファイルからデータを1つ取り出す関数
+      */
+      Weight get_line_weight(fs::path file_name, int data_num);
       
 
       /**

@@ -51,7 +51,7 @@ namespace rbm{
        *  @param[in] parametar 初期パラメータ 
        *  @details 任意のパラメーターを初期値の演算が行われないため初期値を自分で設定する必要がある
        */
-      Model(int visible_dim, int hidden_dim, Parametar parametar);
+      Model(Parametar parametar);
       ~Model();
 
       /**

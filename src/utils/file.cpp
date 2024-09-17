@@ -1,4 +1,5 @@
 #include<iostream>
+#include<fstream>
 
 #include"file.h"
 
@@ -116,6 +117,130 @@ File::File(fs::path work_dir){
   if (!fs::exists(work_dir)) { fs::create_directory(work_dir); }
 };
 
+
+Parametar File::get_line_parametar(int data_num,
+                                   fs::path visible_file,
+                                   fs::path hidden_file,
+                                   fs::path weight_file){
+  Parametar result;
+  result.visible_bias = get_line_bias(visible_file, data_num);
+  result.hidden_bias = get_line_bias(hidden_file, data_num);
+  result.weight = get_line_weight(weight_file, data_num);
+
+  return result;
+}
+
+Bias File::get_line_bias(fs::path file_name, int data_num){
+  fs::path full_path = absolute_path(work_dir, file_name);
+    if (!is_extension(full_path, extension_bias)) {
+        full_path.replace_extension(extension_bias);
+    }
+
+    if (!fs::exists(full_path)) {
+        std::cerr << "ファイルが存在しません: " << full_path << std::endl;
+        throw std::runtime_error("File not found");
+    }
+
+    std::ifstream file(full_path);
+    if (!file.is_open()) {
+        std::cerr << "ファイルを開けませんでした: " << full_path << std::endl;
+        throw std::runtime_error("Unable to open file");
+    }
+
+    // 1行目に次元数が書かれている
+    std::string line;
+    std::getline(file, line);
+    std::istringstream dimensions_stream(line);
+    size_t dimension_count;
+    dimensions_stream >> dimension_count;
+
+    // 指定された行番号までスキップ
+    int current_line = 0;
+    while (current_line < data_num && std::getline(file, line)) {
+        current_line++;
+    }
+
+    // 指定された行がファイル内に存在しない場合
+    if (current_line != data_num || line.empty()) {
+        std::cerr << "指定された行番号がファイル内に存在しません: " << data_num << std::endl;
+        throw std::out_of_range("Line number out of range");
+    }
+
+    // データを読み取る
+    Bias bias_data(static_cast<Eigen::Index>(dimension_count));
+    std::istringstream line_stream(line);
+    std::string value;
+    size_t index = 0;
+    while (std::getline(line_stream, value, ',')) {
+        if (!value.empty() && index < dimension_count) {
+            bias_data(index) = std::stoi(value);
+            ++index;
+        }
+    }
+
+    if (index != dimension_count) {
+        std::cerr << "警告: 行データのサイズが期待されたものと異なります。" << std::endl;
+        throw std::runtime_error("Invalid data size");
+    }
+
+    file.close();
+    return bias_data;
+}
+Weight File::get_line_weight(fs::path file_name, int data_num){
+
+    std::vector<Weight> weight_set;
+    fs::path full_path = absolute_path(work_dir, file_name);
+    if (!is_extension(full_path, extension_weight)) full_path.replace_extension(extension_weight);
+
+    if (!fs::exists(full_path)) {
+        std::cerr << "ファイルが存在しません: " << full_path << std::endl;
+        throw std::runtime_error("File not found");
+    }
+
+    std::ifstream file(full_path);
+    if (!file.is_open()) {
+        std::cerr << "ファイルを開けませんでした: " << full_path << std::endl;
+        throw std::runtime_error("Unable to open file");
+    }
+
+    std::string line;
+    std::getline(file, line);
+    std::istringstream dimensions_stream(line);
+    size_t rows, cols;
+    char comma;
+    dimensions_stream >> rows >> comma >> cols;
+
+    // 指定された行番号までスキップ
+    int current_line = 0;
+    while (current_line < data_num && std::getline(file, line)) {
+        current_line++;
+    }
+
+    // 指定された行がファイル内に存在しない場合
+    if (current_line != data_num || line.empty()) {
+        std::cerr << "指定された行番号がファイル内に存在しません: " << data_num << std::endl;
+        throw std::out_of_range("Line number out of range");
+    }
+    // データを読み取る
+    std::vector<double> values;
+    std::istringstream line_stream(line);
+    std::string value;
+    while (std::getline(line_stream, value, ',')) {
+        if (!value.empty()) {
+            values.push_back(std::stod(value));
+        }
+    }
+
+    Weight weight_data(rows, cols);
+    for (size_t i = 0; i < rows; ++i) {
+        for (size_t j = 0; j < cols; ++j) {
+            weight_data(i, j) = values[i * cols + j];
+        }
+    }
+
+    file.close();
+    return weight_data;
+}
 
 bool File::gen_file(Parametar parametar){
   if(!gen_file(parametar.visible_bias, "visible_bias")) return false;

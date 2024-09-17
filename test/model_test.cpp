@@ -116,6 +116,7 @@ TEST_F(ModelTest, AllStatus){
 
   // std::cout << status.size() << std::endl;
   for(auto i=0u; i<status.size(); i++){
+    std::cout << status[i].transpose() << std::endl;
     ASSERT_EQ(status[i], gen_bit.num2binary(i));
   }
 }
