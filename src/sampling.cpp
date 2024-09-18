@@ -7,6 +7,7 @@
 #include"sampling.h"
 
 using namespace rbm;
+using namespace rbm_utils;
 
 Sampling::Sampling(){}
 Sampling::~Sampling(){}
@@ -53,7 +54,6 @@ std::tuple<DataSet, DataSet> Sampling::block_gibbs_sampling(const DataSet& data_
         hidden_gen_data_set.push_back(hidden_gen_data);
       }
 
-      // if(time!=sampling_rate){
         // H->Vのターム準備
                                                        
         // H(0)->V(1)のターム
@@ -66,19 +66,12 @@ std::tuple<DataSet, DataSet> Sampling::block_gibbs_sampling(const DataSet& data_
             visible_gen_data(n) = 0;
           }
         }
-      // }
-      // V(T)を保存する(-tはV(T)の方が1周期早く取得できるから
+      // V(T)を保存する(-1はV(T)の方が1周期早く取得できるから付けている)
       if(time == sampling_rate -1){
         visible_gen_data_set.push_back(visible_gen_data);
       }
     }
   }
-  // std::cout << "visible_size" << visible_gen_data_set.size() << std::endl;
-  // std::cout << "visible_size" << visible_gen_data_set[0].size() << std::endl;
-
-  // std::cout << "hidden_size"  << hidden_gen_data_set.size() << std::endl;
-  // std::cout << "hidden_size"  << hidden_gen_data_set[0].size() << std::endl;
-  // exit(1);
   return {visible_gen_data_set, hidden_gen_data_set};
 }
 
@@ -109,14 +102,6 @@ DataSet Sampling::create_data_set(const rbm::Model& model,int data_num, int samp
 }
 
 Data Sampling::create_data(const rbm::Model& model, Data base_data, int sampling_rate){
-  // dataの初期値の作成
-  std::random_device rd;
-  std::mt19937 gen(rd());
-  std::uniform_real_distribution<> dis(0.0, 1.0);
-
-  Eigen::VectorXi init_data(model.visible_dim);
-
-  
   // sampling
   DataSet data_set;
   data_set.push_back(base_data);

@@ -78,10 +78,12 @@ Model Learn::contrastive_divergence(const Model& model,
 
 
   // 初期パラメータの保存
+  Parametar buf = model.parametar;
 
   for(int e=0; e<epoch; e++){
     // 学習に使用するパラメータの保存
     file_engine.gen_file(result_model.parametar);
+
     std::cout << "シャッフル" << std::endl;
     *result_epoch = e+1;
     // 観測データのシャッフル
@@ -228,52 +230,6 @@ Grad Learn::calc_model_mean_cd(const Model& model, const DataSet& data_set, int 
   Sampling sampler;
   auto [visible_t, hidden_t] = sampler.block_gibbs_sampling(data_set, model, sampling_rate);
 
-  // visible
-  // for(auto mu=0u; mu<data_set.size(); mu++){
-  //   for(auto i=0u; i<model.visible_dim; i++){
-  //     result_model_mean.visible_grad(i) += (data_set[mu](i) - visible_t[mu](i));
-  //   }
-  // }
-
-  // // hidden
-  // for(int mu=0; mu<data_num; mu++){
-  //   Eigen::VectorXd data_mean = sig(model.lambda_hidden(model.parametar, data_set[mu]));
-  //   Eigen::VectorXd model_mean = sig(model.lambda_hidden(model.parametar, visible_t[mu]));
-
-  //   for(int j=0; j<model.hidden_dim; j++){
-  //     result_model_mean.hidden_grad(j) += (data_mean(j) - model_mean(j) );
-  //     for(auto i=0u; i<model.visible_dim; i++){
-  //       result_model_mean.weight_grad(i, j) += ( data_set[mu](i)*data_mean(j) - visible_t[mu](i)*model_mean(j) );
-  //     }
-  //   }
-  // }
-
-  
-  
-
-  // 周辺化バージョン
-  // std::cout << "モデル平均の計算おわり1" << std::endl;
-  // for(const auto& v_t: visible_t){
-  //   for(auto i=0; i<v_t.size(); i++){
-  //     result_model_mean.visible_grad(i) += v_t(i);
-  //   }
-  // }
-
-  // std::cout << "モデル平均の計算おわり2" << std::endl;
-
-  // for(const auto& v_t: visible_t){
-  //   for(auto i=0; i<model.visible_dim; i++){
-  //     result_model_mean.visible_grad(i) += v_t(i);
-
-  //     Eigen::VectorXd buf =   model.lambda_hidden(model.parametar, v_t);
-  //     for(auto j=0; j<model.hidden_dim; j++){
-  //       if(i==0) { result_model_mean.hidden_grad(j) += buf(j);}
-  //       result_model_mean.weight_grad(i, j) += v_t(i)*buf(j);
-  //     }
-  //   }
-  // }
-
-  // std::cout << "モデル平均の計算おわり3" << std::endl;
   for(const auto& v_t: visible_t){
     for(auto i=0; i<v_t.size(); i++){
       result_model_mean.visible_grad(i) += v_t(i);
@@ -293,27 +249,10 @@ Grad Learn::calc_model_mean_cd(const Model& model, const DataSet& data_set, int 
          }
        }
   }
-  
-  // weight
-  // for(const auto& v_t: visible_t){
-  //   for(const auto& h_t: hidden_t) {
-  //     for(auto i=0; i<v_t.size(); i++){
-  //       for(auto j=0; j<h_t.size(); j++){
-  //         result_model_mean.weight_grad(i, j) += v_t(i)*h_t(j);
-  //       }
-  //     }
-  //   }
-  // }
-  // std::cout << " #### " << std::endl;
-  // std::cout << result_model_mean.weight_grad << std::endl;
-  // std::cout << " #### " << std::endl;
-
-  
 
   result_model_mean.visible_grad /= data_num;
   result_model_mean.hidden_grad /= data_num;
   result_model_mean.weight_grad /= data_num;
-  // std::cout << "モデル平均の計算おわり" << std::endl;
   return result_model_mean;
 }
 

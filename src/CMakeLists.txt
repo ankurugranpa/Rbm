@@ -138,6 +138,7 @@ target_link_libraries(
   libsampling
   libdata
   libsigmoid
+  libmodel
   Eigen3::Eigen)
 
 target_link_libraries(
