@@ -84,7 +84,7 @@ rbm::Learn 連携図</div>
 <div class="dyncontent">
 <div class="center"><img src="classrbm_1_1Learn__coll__graph.png" border="0" usemap="#arbm_1_1Learn_coll__map" alt="Collaboration graph"/></div>
 <map name="arbm_1_1Learn_coll__map" id="arbm_1_1Learn_coll__map">
-<area shape="rect" title="rbmの学習" alt="" coords="5,5,167,215"/>
+<area shape="rect" title="rbmの学習" alt="" coords="5,5,204,244"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -100,8 +100,11 @@ rbm::Learn 連携図</div>
 <tr class="memitem:a99850d29970f9310b26e41a5f4a1c46e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classrbm_1_1Model.html">Model</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrbm_1_1Learn.html#a99850d29970f9310b26e41a5f4a1c46e">exact_calculation</a> (const <a class="el" href="classrbm_1_1Model.html">Model</a> &amp;before_learn_model, const <a class="el" href="structrbm__types_1_1DataSet.html">DataSet</a> &amp;data_set, const int max_step=100, const double nabla=0.5, std::string result_file_name=&quot;learn_process_exact_calc.csv&quot;, int *result_step=nullptr)</td></tr>
 <tr class="memdesc:a99850d29970f9310b26e41a5f4a1c46e"><td class="mdescLeft">&#160;</td><td class="mdescRight">厳密計算で学習  <a href="classrbm_1_1Learn.html#a99850d29970f9310b26e41a5f4a1c46e">[詳解]</a><br /></td></tr>
 <tr class="separator:a99850d29970f9310b26e41a5f4a1c46e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a490affa7c23f96da4aa0fbc6876e6663"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrbm_1_1Learn.html#a490affa7c23f96da4aa0fbc6876e6663">seg_epsilon</a> (double value)</td></tr>
-<tr class="separator:a490affa7c23f96da4aa0fbc6876e6663"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea5ae36bb1c582b4039837db3750f553"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classrbm_1_1Model.html">Model</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrbm_1_1Learn.html#aea5ae36bb1c582b4039837db3750f553">contrastive_divergence</a> (const <a class="el" href="classrbm_1_1Model.html">Model</a> &amp;before_learn_model, const <a class="el" href="structrbm__types_1_1DataSet.html">DataSet</a> &amp;data_set, const double nabla=0.5, const int epoch=100, const int batch_size=100, std::string result_file_name=&quot;learn_process_exact_calc.csv&quot;, int cd_k_num=1, int *result_epoch=nullptr, int *result_batch_time=nullptr)</td></tr>
+<tr class="memdesc:aea5ae36bb1c582b4039837db3750f553"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contrastive Divergence(CD法)  <a href="classrbm_1_1Learn.html#aea5ae36bb1c582b4039837db3750f553">[詳解]</a><br /></td></tr>
+<tr class="separator:aea5ae36bb1c582b4039837db3750f553"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:affa9c2200d2b62d254fa831bb82fad1d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrbm_1_1Learn.html#affa9c2200d2b62d254fa831bb82fad1d">set_epsilon</a> (double value)</td></tr>
+<tr class="separator:affa9c2200d2b62d254fa831bb82fad1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 公開変数類</h2></td></tr>
@@ -114,11 +117,14 @@ rbm::Learn 連携図</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 非公開メンバ関数</h2></td></tr>
 <tr class="memitem:abc6fbf8c11670664518049bee83bf2b4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classrbm__types_1_1Grad.html">Grad</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrbm_1_1Learn.html#abc6fbf8c11670664518049bee83bf2b4">calc_data_mean</a> (const <a class="el" href="classrbm_1_1Model.html">Model</a> &amp;model_object, const <a class="el" href="structrbm__types_1_1DataSet.html">DataSet</a> &amp;data_set)</td></tr>
-<tr class="memdesc:abc6fbf8c11670664518049bee83bf2b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">厳密計算で学習  <a href="classrbm_1_1Learn.html#abc6fbf8c11670664518049bee83bf2b4">[詳解]</a><br /></td></tr>
+<tr class="memdesc:abc6fbf8c11670664518049bee83bf2b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">データ平均  <a href="classrbm_1_1Learn.html#abc6fbf8c11670664518049bee83bf2b4">[詳解]</a><br /></td></tr>
 <tr class="separator:abc6fbf8c11670664518049bee83bf2b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a82ade89cc364dc8b63386df1dddbcfd3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classrbm__types_1_1Grad.html">Grad</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrbm_1_1Learn.html#a82ade89cc364dc8b63386df1dddbcfd3">calc_model_mean</a> (const <a class="el" href="classrbm_1_1Model.html">Model</a> &amp;model_object, const <a class="el" href="structrbm__types_1_1DataSet.html">DataSet</a> &amp;data_set)</td></tr>
-<tr class="memdesc:a82ade89cc364dc8b63386df1dddbcfd3"><td class="mdescLeft">&#160;</td><td class="mdescRight">厳密計算で学習  <a href="classrbm_1_1Learn.html#a82ade89cc364dc8b63386df1dddbcfd3">[詳解]</a><br /></td></tr>
-<tr class="separator:a82ade89cc364dc8b63386df1dddbcfd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a122f7afc523febfde32c14076c759e2c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classrbm__types_1_1Grad.html">Grad</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrbm_1_1Learn.html#a122f7afc523febfde32c14076c759e2c">calc_model_mean</a> (const <a class="el" href="classrbm_1_1Model.html">Model</a> &amp;model_object)</td></tr>
+<tr class="memdesc:a122f7afc523febfde32c14076c759e2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">厳密計算でのモデル平均  <a href="classrbm_1_1Learn.html#a122f7afc523febfde32c14076c759e2c">[詳解]</a><br /></td></tr>
+<tr class="separator:a122f7afc523febfde32c14076c759e2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad441a7fe5b8f48f13d0e10b77e9aeb05"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classrbm__types_1_1Grad.html">Grad</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrbm_1_1Learn.html#ad441a7fe5b8f48f13d0e10b77e9aeb05">calc_model_mean_cd</a> (const <a class="el" href="classrbm_1_1Model.html">Model</a> &amp;model_object, const <a class="el" href="structrbm__types_1_1DataSet.html">DataSet</a> &amp;data_set, int sampring_rate=1)</td></tr>
+<tr class="memdesc:ad441a7fe5b8f48f13d0e10b77e9aeb05"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contrastive Divergence(CD法)でのモデル平均  <a href="classrbm_1_1Learn.html#ad441a7fe5b8f48f13d0e10b77e9aeb05">[詳解]</a><br /></td></tr>
+<tr class="separator:ad441a7fe5b8f48f13d0e10b77e9aeb05"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acd1c978bb6a3471760ac2bb7229d85e9"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrbm_1_1Learn.html#acd1c978bb6a3471760ac2bb7229d85e9">calc_grad</a> (const <a class="el" href="classrbm__types_1_1Grad.html">Grad</a> &amp;grad_data)</td></tr>
 <tr class="separator:acd1c978bb6a3471760ac2bb7229d85e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3007d01d42932014a8e25cc7bfbf814f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrbm_1_1Learn.html#a3007d01d42932014a8e25cc7bfbf814f">is_zero</a> (double value)</td></tr>
@@ -222,21 +228,21 @@ rbm::Learn 連携図</div>
 </table>
 </div><div class="memdoc">
 
-<p>厳密計算で学習 </p>
+<p>データ平均 </p>
 <dl class="params"><dt>引数</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">model_object</td><td>パラメーター更新に使用するmodel </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">result_step</td><td>パラメーター更新の最終step数</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">data_set</td><td>観測データ</td></tr>
   </table>
   </dd>
 </dl>
-<p>厳密計算を使用した学習, データの次元が多いと学習が終わらないので注意 </p>
+<p>データ平均を計算する </p>
 <div class="dynheader">
 呼び出し関係図:</div>
 <div class="dyncontent">
 <div class="center"><img src="classrbm_1_1Learn_abc6fbf8c11670664518049bee83bf2b4_cgraph.png" border="0" usemap="#aclassrbm_1_1Learn_abc6fbf8c11670664518049bee83bf2b4_cgraph" alt=""/></div>
 <map name="aclassrbm_1_1Learn_abc6fbf8c11670664518049bee83bf2b4_cgraph" id="aclassrbm_1_1Learn_abc6fbf8c11670664518049bee83bf2b4_cgraph">
-<area shape="rect" title="厳密計算で学習" alt="" coords="5,42,212,69"/>
+<area shape="rect" title="データ平均" alt="" coords="5,42,212,69"/>
 <area shape="rect" href="classrbm_1_1Model.html#afa97d6bccaf2f99eed01ec8800091675" title="Init Rbm" alt="" coords="260,5,413,47"/>
 <area shape="rect" href="namespacerbm__utils.html#af60332fbf0bcb0204d4b8dcd65bf3b81" title="calc sigmoid" alt="" coords="281,71,392,98"/>
 </map>
@@ -270,8 +276,8 @@ rbm::Learn 連携図</div>
 
 </div>
 </div>
-<a id="a82ade89cc364dc8b63386df1dddbcfd3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a82ade89cc364dc8b63386df1dddbcfd3">&#9670;&nbsp;</a></span>calc_model_mean()</h2>
+<a id="a122f7afc523febfde32c14076c759e2c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a122f7afc523febfde32c14076c759e2c">&#9670;&nbsp;</a></span>calc_model_mean()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -283,13 +289,65 @@ rbm::Learn 連携図</div>
           <td class="memname"><a class="el" href="classrbm__types_1_1Grad.html">Grad</a> Learn::calc_model_mean </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classrbm_1_1Model.html">Model</a> &amp;&#160;</td>
+          <td class="paramname"><em>model_object</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>厳密計算でのモデル平均 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">model_object</td><td>パラメーター更新に使用するmodel </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">data_set</td><td>パラメーター更新の最終step数</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>厳密計算を使用したモデル平均の計算を行う, データの次元が多いと学習が終わらないので注意 </p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classrbm_1_1Learn_a122f7afc523febfde32c14076c759e2c_cgraph.png" border="0" usemap="#aclassrbm_1_1Learn_a122f7afc523febfde32c14076c759e2c_cgraph" alt=""/></div>
+<map name="aclassrbm_1_1Learn_a122f7afc523febfde32c14076c759e2c_cgraph" id="aclassrbm_1_1Learn_a122f7afc523febfde32c14076c759e2c_cgraph">
+<area shape="rect" title="厳密計算でのモデル平均" alt="" coords="5,35,224,61"/>
+<area shape="rect" href="classrbm_1_1Model.html#aadf0dbfeca23a4969b4b7ef55fc9fb97" title="Rbmのコスト関数" alt="" coords="272,5,439,32"/>
+<area shape="rect" href="classrbm__utils_1_1Binary.html#a4aba7f2d7b5f9dcf7c4d0b4c0b0a41de" title="num2binary" alt="" coords="285,57,425,98"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ad441a7fe5b8f48f13d0e10b77e9aeb05"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad441a7fe5b8f48f13d0e10b77e9aeb05">&#9670;&nbsp;</a></span>calc_model_mean_cd()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classrbm__types_1_1Grad.html">Grad</a> Learn::calc_model_mean_cd </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classrbm_1_1Model.html">Model</a> &amp;&#160;</td>
           <td class="paramname"><em>model_object</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const <a class="el" href="structrbm__types_1_1DataSet.html">DataSet</a> &amp;&#160;</td>
-          <td class="paramname"><em>data_set</em>&#160;</td>
+          <td class="paramname"><em>data_set</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>sampring_rate</em> = <code>1</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -304,7 +362,7 @@ rbm::Learn 連携図</div>
 </table>
 </div><div class="memdoc">
 
-<p>厳密計算で学習 </p>
+<p>Contrastive Divergence(CD法)でのモデル平均 </p>
 <dl class="params"><dt>引数</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">model_object</td><td>パラメーター更新に使用するmodel </td></tr>
@@ -312,15 +370,109 @@ rbm::Learn 連携図</div>
   </table>
   </dd>
 </dl>
-<p>厳密計算を使用した学習, データの次元が多いと学習が終わらないので注意 </p>
+<p>cd法を使用したモデル平均の計算を行う </p>
 <div class="dynheader">
 呼び出し関係図:</div>
 <div class="dyncontent">
-<div class="center"><img src="classrbm_1_1Learn_a82ade89cc364dc8b63386df1dddbcfd3_cgraph.png" border="0" usemap="#aclassrbm_1_1Learn_a82ade89cc364dc8b63386df1dddbcfd3_cgraph" alt=""/></div>
-<map name="aclassrbm_1_1Learn_a82ade89cc364dc8b63386df1dddbcfd3_cgraph" id="aclassrbm_1_1Learn_a82ade89cc364dc8b63386df1dddbcfd3_cgraph">
-<area shape="rect" title="厳密計算で学習" alt="" coords="5,35,224,61"/>
-<area shape="rect" href="classrbm_1_1Model.html#aadf0dbfeca23a4969b4b7ef55fc9fb97" title="Init Rbm" alt="" coords="272,5,439,32"/>
-<area shape="rect" href="classrbm__utils_1_1Binary.html#a4aba7f2d7b5f9dcf7c4d0b4c0b0a41de" title="num2binary" alt="" coords="285,57,425,98"/>
+<div class="center"><img src="classrbm_1_1Learn_ad441a7fe5b8f48f13d0e10b77e9aeb05_cgraph.png" border="0" usemap="#aclassrbm_1_1Learn_ad441a7fe5b8f48f13d0e10b77e9aeb05_cgraph" alt=""/></div>
+<map name="aclassrbm_1_1Learn_ad441a7fe5b8f48f13d0e10b77e9aeb05_cgraph" id="aclassrbm_1_1Learn_ad441a7fe5b8f48f13d0e10b77e9aeb05_cgraph">
+<area shape="rect" title="Contrastive Divergence(CD法)でのモデル平均" alt="" coords="5,71,180,112"/>
+<area shape="rect" href="classrbm_1_1Sampling.html#a0b829f0de29e159598f36130bd5408c8" title="ブロック化ギブスサンプリング" alt="" coords="228,71,388,112"/>
+<area shape="rect" href="classrbm_1_1Model.html#afa97d6bccaf2f99eed01ec8800091675" title="Init Rbm" alt="" coords="436,5,589,47"/>
+<area shape="rect" href="classrbm_1_1Model.html#a187c24b014e169aa55293d6640beeb25" title="Init Rbm" alt="" coords="436,71,589,112"/>
+<area shape="rect" href="namespacerbm__utils.html#af60332fbf0bcb0204d4b8dcd65bf3b81" title="calc sigmoid" alt="" coords="457,137,568,163"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aea5ae36bb1c582b4039837db3750f553"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea5ae36bb1c582b4039837db3750f553">&#9670;&nbsp;</a></span>contrastive_divergence()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classrbm_1_1Model.html">Model</a> Learn::contrastive_divergence </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classrbm_1_1Model.html">Model</a> &amp;&#160;</td>
+          <td class="paramname"><em>before_learn_model</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structrbm__types_1_1DataSet.html">DataSet</a> &amp;&#160;</td>
+          <td class="paramname"><em>data_set</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em>nabla</em> = <code>0.5</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>epoch</em> = <code>100</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>batch_size</em> = <code>100</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>result_file_name</em> = <code>&quot;learn_process_exact_calc.csv&quot;</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>cd_k_num</em> = <code>1</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>result_epoch</em> = <code>nullptr</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>result_batch_time</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Contrastive Divergence(CD法) </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">before_learn_model</td><td>学習に使用するするモデル </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">data_set</td><td>学習に使用するデータセット </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">max_step</td><td>step数の最大値(100) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">result_file_name</td><td>学習過程の保存ファイル </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">result_step</td><td>パラメーター更新の最終step数</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>CD法を使用した学習, ミニバッチ学習を行う </p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classrbm_1_1Learn_aea5ae36bb1c582b4039837db3750f553_cgraph.png" border="0" usemap="#aclassrbm_1_1Learn_aea5ae36bb1c582b4039837db3750f553_cgraph" alt=""/></div>
+<map name="aclassrbm_1_1Learn_aea5ae36bb1c582b4039837db3750f553_cgraph" id="aclassrbm_1_1Learn_aea5ae36bb1c582b4039837db3750f553_cgraph">
+<area shape="rect" title="Contrastive Divergence(CD法)" alt="" coords="5,5,179,47"/>
+<area shape="rect" href="classrbm__utils_1_1File.html#a24f359f108a0dc0599cb32a666f3906d" title="gen_file" alt="" coords="227,13,400,39"/>
 </map>
 </div>
 
@@ -393,15 +545,8 @@ rbm::Learn 連携図</div>
 <div class="dyncontent">
 <div class="center"><img src="classrbm_1_1Learn_a99850d29970f9310b26e41a5f4a1c46e_cgraph.png" border="0" usemap="#aclassrbm_1_1Learn_a99850d29970f9310b26e41a5f4a1c46e_cgraph" alt=""/></div>
 <map name="aclassrbm_1_1Learn_a99850d29970f9310b26e41a5f4a1c46e_cgraph" id="aclassrbm_1_1Learn_a99850d29970f9310b26e41a5f4a1c46e_cgraph">
-<area shape="rect" title="厳密計算で学習" alt="" coords="5,135,220,162"/>
-<area shape="rect" href="classrbm_1_1Learn.html#abc6fbf8c11670664518049bee83bf2b4" title="厳密計算で学習" alt="" coords="274,59,481,86"/>
-<area shape="rect" href="classrbm_1_1Learn.html#acd1c978bb6a3471760ac2bb7229d85e9" title=" " alt="" coords="296,110,459,137"/>
-<area shape="rect" href="classrbm_1_1Learn.html#a82ade89cc364dc8b63386df1dddbcfd3" title="厳密計算で学習" alt="" coords="268,161,487,187"/>
-<area shape="rect" href="classrbm_1_1Learn.html#a3007d01d42932014a8e25cc7bfbf814f" title=" " alt="" coords="304,211,451,238"/>
-<area shape="rect" href="classrbm_1_1Model.html#afa97d6bccaf2f99eed01ec8800091675" title="Init Rbm" alt="" coords="541,5,695,47"/>
-<area shape="rect" href="namespacerbm__utils.html#af60332fbf0bcb0204d4b8dcd65bf3b81" title="calc sigmoid" alt="" coords="563,71,673,98"/>
-<area shape="rect" href="classrbm_1_1Model.html#aadf0dbfeca23a4969b4b7ef55fc9fb97" title="Init Rbm" alt="" coords="535,147,701,174"/>
-<area shape="rect" href="classrbm__utils_1_1Binary.html#a4aba7f2d7b5f9dcf7c4d0b4c0b0a41de" title="num2binary" alt="" coords="548,199,688,240"/>
+<area shape="rect" title="厳密計算で学習" alt="" coords="5,5,220,32"/>
+<area shape="rect" href="classrbm__utils_1_1File.html#a24f359f108a0dc0599cb32a666f3906d" title="gen_file" alt="" coords="268,5,441,32"/>
 </map>
 </div>
 
@@ -433,14 +578,14 @@ rbm::Learn 連携図</div>
 
 </div>
 </div>
-<a id="a490affa7c23f96da4aa0fbc6876e6663"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a490affa7c23f96da4aa0fbc6876e6663">&#9670;&nbsp;</a></span>seg_epsilon()</h2>
+<a id="affa9c2200d2b62d254fa831bb82fad1d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#affa9c2200d2b62d254fa831bb82fad1d">&#9670;&nbsp;</a></span>set_epsilon()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Learn::seg_epsilon </td>
+          <td class="memname">void Learn::set_epsilon </td>
           <td>(</td>
           <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>value</em></td><td>)</td>

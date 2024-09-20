@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['grad_27',['Grad',['../classrbm__types_1_1Grad.html#af3838505888ce0aa9839bba111ba366e',1,'rbm_types::Grad::Grad()'],['../classrbm__types_1_1Grad.html',1,'rbm_types::Grad']]],
-  ['grad_2ecpp_28',['grad.cpp',['../grad_8cpp.html',1,'']]],
-  ['grad_2eh_29',['grad.h',['../grad_8h.html',1,'']]],
-  ['grad_5ftest_2ecpp_30',['grad_test.cpp',['../grad__test_8cpp.html',1,'']]]
+  ['epsilon_35',['epsilon',['../classrbm_1_1Learn.html#a72e3bea6529aefbb4b57a852ad05b652',1,'rbm::Learn']]],
+  ['exact_5fcalculation_36',['exact_calculation',['../classrbm_1_1Learn.html#a99850d29970f9310b26e41a5f4a1c46e',1,'rbm::Learn']]],
+  ['extension_5fbias_37',['extension_bias',['../classrbm__utils_1_1File.html#a3cea3818343d26629e6f1cbdbd8835a1',1,'rbm_utils::File']]],
+  ['extension_5fweight_38',['extension_weight',['../classrbm__utils_1_1File.html#a6d8a764899f529ad25dc212c882f8093',1,'rbm_utils::File']]]
 ];

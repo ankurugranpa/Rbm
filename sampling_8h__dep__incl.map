@@ -1,6 +1,10 @@
 <map id="src/sampling.h" name="src/sampling.h">
-<area shape="rect" id="node1" title=" " alt="" coords="107,5,224,32"/>
-<area shape="rect" id="node2" href="$main_8cpp.html" title=" " alt="" coords="5,80,88,107"/>
-<area shape="rect" id="node3" href="$learn_8cpp.html" title=" " alt="" coords="113,80,218,107"/>
-<area shape="rect" id="node4" href="$sampling_8cpp.html" title=" " alt="" coords="242,80,374,107"/>
+<area shape="rect" id="node1" title=" " alt="" coords="431,5,549,32"/>
+<area shape="rect" id="node2" href="$learn__exact_8cpp.html" title=" " alt="" coords="5,155,183,196"/>
+<area shape="rect" id="node3" href="$gendata_8cpp.html" title=" " alt="" coords="207,155,386,196"/>
+<area shape="rect" id="node4" href="$learn__mnist_8cpp.html" title=" " alt="" coords="410,155,589,196"/>
+<area shape="rect" id="node5" href="$main_8cpp.html" title=" " alt="" coords="578,80,661,107"/>
+<area shape="rect" id="node6" href="$learn_8cpp.html" title=" " alt="" coords="613,162,719,189"/>
+<area shape="rect" id="node7" href="$learn_8h.html" title="RBMの学習クラス" alt="" coords="362,80,453,107"/>
+<area shape="rect" id="node8" href="$sampling_8cpp.html" title=" " alt="" coords="685,80,817,107"/>
 </map>

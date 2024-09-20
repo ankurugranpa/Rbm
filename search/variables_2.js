@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['hidden_5fbias_176',['hidden_bias',['../classrbm__types_1_1Parametar.html#a4e8ee448958d31b40e855e83493c631e',1,'rbm_types::Parametar']]],
-  ['hidden_5fdim_177',['hidden_dim',['../classrbm_1_1Model.html#a55b047818f1b8ef7b9ddbe1e9784fbba',1,'rbm::Model']]],
-  ['hidden_5fgrad_178',['hidden_grad',['../classrbm__types_1_1Grad.html#a5cdae67cc45adb47a3d17375c10d25e4',1,'rbm_types::Grad']]]
+  ['epsilon_243',['epsilon',['../classrbm_1_1Learn.html#a72e3bea6529aefbb4b57a852ad05b652',1,'rbm::Learn']]],
+  ['extension_5fbias_244',['extension_bias',['../classrbm__utils_1_1File.html#a3cea3818343d26629e6f1cbdbd8835a1',1,'rbm_utils::File']]],
+  ['extension_5fweight_245',['extension_weight',['../classrbm__utils_1_1File.html#a6d8a764899f529ad25dc212c882f8093',1,'rbm_utils::File']]]
 ];

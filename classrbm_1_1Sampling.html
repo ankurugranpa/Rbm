@@ -82,7 +82,7 @@ rbm::Sampling 連携図</div>
 <div class="dyncontent">
 <div class="center"><img src="classrbm_1_1Sampling__coll__graph.png" border="0" usemap="#arbm_1_1Sampling_coll__map" alt="Collaboration graph"/></div>
 <map name="arbm_1_1Sampling_coll__map" id="arbm_1_1Sampling_coll__map">
-<area shape="rect" title="Samplingを行うクラス" alt="" coords="5,5,196,127"/>
+<area shape="rect" title="Samplingを行うクラス" alt="" coords="5,5,196,141"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -98,6 +98,9 @@ rbm::Sampling 連携図</div>
 <tr class="memitem:abe332d1d121220df60321d3075245f4d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structrbm__types_1_1DataSet.html">DataSet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrbm_1_1Sampling.html#abe332d1d121220df60321d3075245f4d">create_data_set</a> (const <a class="el" href="classrbm_1_1Model.html">rbm::Model</a> &amp;model_object, int data_num, int sampling_rate)</td></tr>
 <tr class="memdesc:abe332d1d121220df60321d3075245f4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">バイナリデータセットの作成  <a href="classrbm_1_1Sampling.html#abe332d1d121220df60321d3075245f4d">[詳解]</a><br /></td></tr>
 <tr class="separator:abe332d1d121220df60321d3075245f4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ba4ee7c7e3b2bf53e98187858bc31e5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classrbm__types_1_1Data.html">Data</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrbm_1_1Sampling.html#a2ba4ee7c7e3b2bf53e98187858bc31e5">create_data</a> (const <a class="el" href="classrbm_1_1Model.html">rbm::Model</a> &amp;model_object, <a class="el" href="classrbm__types_1_1Data.html">Data</a> base_data, int sampling_rate)</td></tr>
+<tr class="memdesc:a2ba4ee7c7e3b2bf53e98187858bc31e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">バイナリデータセットの作成  <a href="classrbm_1_1Sampling.html#a2ba4ee7c7e3b2bf53e98187858bc31e5">[詳解]</a><br /></td></tr>
+<tr class="separator:a2ba4ee7c7e3b2bf53e98187858bc31e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
 <div class="textblock"><p>Samplingを行うクラス </p>
@@ -193,6 +196,50 @@ rbm::Sampling 連携図</div>
 
 </div>
 </div>
+<a id="a2ba4ee7c7e3b2bf53e98187858bc31e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ba4ee7c7e3b2bf53e98187858bc31e5">&#9670;&nbsp;</a></span>create_data()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classrbm__types_1_1Data.html">Data</a> Sampling::create_data </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classrbm_1_1Model.html">rbm::Model</a> &amp;&#160;</td>
+          <td class="paramname"><em>model_object</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classrbm__types_1_1Data.html">Data</a>&#160;</td>
+          <td class="paramname"><em>base_data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>sampling_rate</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>バイナリデータセットの作成 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">model_object</td><td>モデルデータ </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">data_num</td><td>データの数 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sampling_rate</td><td>サンプリングの周期 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="abe332d1d121220df60321d3075245f4d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abe332d1d121220df60321d3075245f4d">&#9670;&nbsp;</a></span>create_data_set()</h2>
 
@@ -234,18 +281,6 @@ rbm::Sampling 連携図</div>
   </table>
   </dd>
 </dl>
-<div class="dynheader">
-呼び出し関係図:</div>
-<div class="dyncontent">
-<div class="center"><img src="classrbm_1_1Sampling_abe332d1d121220df60321d3075245f4d_cgraph.png" border="0" usemap="#aclassrbm_1_1Sampling_abe332d1d121220df60321d3075245f4d_cgraph" alt=""/></div>
-<map name="aclassrbm_1_1Sampling_abe332d1d121220df60321d3075245f4d_cgraph" id="aclassrbm_1_1Sampling_abe332d1d121220df60321d3075245f4d_cgraph">
-<area shape="rect" title="バイナリデータセットの作成" alt="" coords="5,71,172,112"/>
-<area shape="rect" href="classrbm_1_1Sampling.html#a0b829f0de29e159598f36130bd5408c8" title="ブロック化ギブスサンプリング" alt="" coords="220,71,380,112"/>
-<area shape="rect" href="classrbm_1_1Model.html#afa97d6bccaf2f99eed01ec8800091675" title="Init Rbm" alt="" coords="428,5,581,47"/>
-<area shape="rect" href="classrbm_1_1Model.html#a187c24b014e169aa55293d6640beeb25" title="Init Rbm" alt="" coords="428,71,581,112"/>
-<area shape="rect" href="namespacerbm__utils.html#af60332fbf0bcb0204d4b8dcd65bf3b81" title="calc sigmoid" alt="" coords="449,137,560,163"/>
-</map>
-</div>
 
 </div>
 </div>

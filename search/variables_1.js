@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['epsilon_175',['epsilon',['../classrbm_1_1Learn.html#a72e3bea6529aefbb4b57a852ad05b652',1,'rbm::Learn']]]
+  ['bit_5fnum_242',['bit_num',['../classrbm__utils_1_1Binary.html#adad1dc44ed66ec7b36b1408550a72fdc',1,'rbm_utils::Binary']]]
 ];

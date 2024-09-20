@@ -1,0 +1,172 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>My Project: experiment/learn_mnist/genpng/gendata.cpp ファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_e3d235265a98282195efca54a39d1899.html">experiment</a></li><li class="navelem"><a class="el" href="dir_926e68101963b31eec7483db63b10fdc.html">learn_mnist</a></li><li class="navelem"><a class="el" href="dir_1844e56319fd494ba06098f04f1f0bb7.html">genpng</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">関数</a>  </div>
+  <div class="headertitle">
+<div class="title">gendata.cpp ファイル</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="data_8h_source.html">data.h</a>&quot;</code><br />
+<code>#include &lt;iostream&gt;</code><br />
+<code>#include &lt;string&gt;</code><br />
+<code>#include &lt;filesystem&gt;</code><br />
+<code>#include &lt;random&gt;</code><br />
+<code>#include &lt;fstream&gt;</code><br />
+<code>#include &lt;tuple&gt;</code><br />
+<code>#include &lt;boost/program_options.hpp&gt;</code><br />
+<code>#include &lt;<a class="el" href="model_8h_source.html">model.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="learn_8h_source.html">learn.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="csv_8h_source.html">csv.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="sampling_8h_source.html">sampling.h</a>&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+gendata.cpp の依存先関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="gendata_8cpp__incl.png" border="0" usemap="#aexperiment_2learn__mnist_2genpng_2gendata_8cpp" alt=""/></div>
+<map name="aexperiment_2learn__mnist_2genpng_2gendata_8cpp" id="aexperiment_2learn__mnist_2genpng_2gendata_8cpp">
+<area shape="rect" title=" " alt="" coords="297,5,476,47"/>
+<area shape="rect" href="data_8h.html" title="バイナリのRBMで扱うデータ型" alt="" coords="98,319,161,345"/>
+<area shape="rect" title=" " alt="" coords="460,95,540,121"/>
+<area shape="rect" title=" " alt="" coords="564,95,623,121"/>
+<area shape="rect" title=" " alt="" coords="507,244,597,271"/>
+<area shape="rect" title=" " alt="" coords="647,95,719,121"/>
+<area shape="rect" title=" " alt="" coords="743,95,817,121"/>
+<area shape="rect" title=" " alt="" coords="111,244,166,271"/>
+<area shape="rect" title=" " alt="" coords="840,95,1040,121"/>
+<area shape="rect" href="model_8h.html" title=" " alt="" coords="307,244,381,271"/>
+<area shape="rect" href="learn_8h.html" title="RBMの学習クラス" alt="" coords="319,95,385,121"/>
+<area shape="rect" href="sampling_8h.html" title=" " alt="" coords="134,169,229,196"/>
+<area shape="rect" href="csv_8h.html" title="csv ユーティリティ" alt="" coords="33,244,87,271"/>
+<area shape="rect" title=" " alt="" coords="29,393,91,420"/>
+<area shape="rect" title=" " alt="" coords="250,468,353,495"/>
+<area shape="rect" href="parametar_8h.html" title=" " alt="" coords="231,319,332,345"/>
+<area shape="rect" href="bias_8h.html" title=" " alt="" coords="271,393,332,420"/>
+<area shape="rect" href="weight_8h.html" title=" " alt="" coords="167,393,246,420"/>
+<area shape="rect" href="grad_8h.html" title=" " alt="" coords="407,319,470,345"/>
+<area shape="rect" href="file_8h.html" title=" " alt="" coords="457,169,511,196"/>
+</map>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+関数</h2></td></tr>
+<tr class="memitem:adca6d2010873dec3865ceee870b278c0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gendata_8cpp.html#adca6d2010873dec3865ceee870b278c0">main</a> (const int argc, const char *const *const argv)</td></tr>
+<tr class="separator:adca6d2010873dec3865ceee870b278c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">関数詳解</h2>
+<a id="adca6d2010873dec3865ceee870b278c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adca6d2010873dec3865ceee870b278c0">&#9670;&nbsp;</a></span>main()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int main </td>
+          <td>(</td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>argc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *const *const&#160;</td>
+          <td class="paramname"><em>argv</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="gendata_8cpp_adca6d2010873dec3865ceee870b278c0_cgraph.png" border="0" usemap="#agendata_8cpp_adca6d2010873dec3865ceee870b278c0_cgraph" alt=""/></div>
+<map name="agendata_8cpp_adca6d2010873dec3865ceee870b278c0_cgraph" id="agendata_8cpp_adca6d2010873dec3865ceee870b278c0_cgraph">
+<area shape="rect" title=" " alt="" coords="5,187,60,214"/>
+<area shape="rect" href="classrbm_1_1Sampling.html#a0b829f0de29e159598f36130bd5408c8" title="ブロック化ギブスサンプリング" alt="" coords="129,71,289,112"/>
+<area shape="rect" href="classrbm__utils_1_1Csv.html#acd4df329a753e812f50ebdd7f284d9fe" title="csv2dataset" alt="" coords="108,137,309,163"/>
+<area shape="rect" href="classrbm__utils_1_1Csv.html#acf4799675d49d7bbae70153d598f58bc" title="data2csv" alt="" coords="118,187,299,214"/>
+<area shape="rect" href="classrbm__utils_1_1File.html#aeec3b0e8cdf14b4bc035fbd4315ef913" title="read_bias_file" alt="" coords="133,304,284,345"/>
+<area shape="rect" href="classrbm__utils_1_1File.html#ac81b752ff428b50b91dc25afdc2a33af" title="read_weight_file" alt="" coords="133,239,284,280"/>
+<area shape="rect" href="classrbm_1_1Model.html#afa97d6bccaf2f99eed01ec8800091675" title="Init Rbm" alt="" coords="388,5,541,47"/>
+<area shape="rect" href="classrbm_1_1Model.html#a187c24b014e169aa55293d6640beeb25" title="Init Rbm" alt="" coords="388,71,541,112"/>
+<area shape="rect" href="namespacerbm__utils.html#af60332fbf0bcb0204d4b8dcd65bf3b81" title="calc sigmoid" alt="" coords="409,137,520,163"/>
+<area shape="rect" href="classrbm__utils_1_1File.html#a2d9887e2885162f32210344038c15db7" title="gen_path" alt="" coords="357,309,572,335"/>
+<area shape="rect" href="classrbm__utils_1_1File.html#ac0e03e8f65002d8a1235ed9ae5dc276c" title=" " alt="" coords="398,241,531,283"/>
+</map>
+</div>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

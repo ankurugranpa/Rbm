@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['sampling_98',['Sampling',['../classrbm_1_1Sampling.html',1,'rbm']]]
+  ['parametar_133',['Parametar',['../classrbm__types_1_1Parametar.html',1,'rbm_types']]]
 ];

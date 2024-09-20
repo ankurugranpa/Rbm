@@ -1,10 +1,13 @@
 var searchData=
 [
-  ['weight_77',['Weight',['../classrbm__types_1_1Weight.html',1,'rbm_types']]],
-  ['weight_78',['weight',['../classrbm__types_1_1Parametar.html#ad2fe1b7c5543a197a37babd93c7684f2',1,'rbm_types::Parametar']]],
-  ['weight_79',['Weight',['../classrbm__types_1_1Weight.html#a0541149928651ae38f671d3ce5633419',1,'rbm_types::Weight::Weight()'],['../classrbm__types_1_1Weight.html#a72bba341138ef9b55d8fe36f5b48a6e6',1,'rbm_types::Weight::Weight(int rows, int cols)'],['../classrbm__types_1_1Weight.html#a31c336ed5142435748bbb80ed47654c7',1,'rbm_types::Weight::Weight(const Eigen::MatrixXd &amp;other)']]],
-  ['weight_2ecpp_80',['weight.cpp',['../weight_8cpp.html',1,'']]],
-  ['weight_2eh_81',['weight.h',['../weight_8h.html',1,'']]],
-  ['weight_5fgrad_82',['weight_grad',['../classrbm__types_1_1Grad.html#a3a4304eb4e421cb2ac4a18c71751ee7d',1,'rbm_types::Grad']]],
-  ['work_5fdir_83',['work_dir',['../classrbm_1_1Learn.html#a2367128151447894932115e09241c2af',1,'rbm::Learn::work_dir()'],['../classrbm__utils_1_1Csv.html#a242ff3bce38e5ee26dc06a01db49317b',1,'rbm_utils::Csv::work_dir()']]]
+  ['sampling_96',['Sampling',['../classrbm_1_1Sampling.html',1,'rbm::Sampling'],['../classrbm_1_1Sampling.html#af9663da4dc646edd685544522fa39c0f',1,'rbm::Sampling::Sampling()']]],
+  ['sampling_2ecpp_97',['sampling.cpp',['../sampling_8cpp.html',1,'']]],
+  ['sampling_2eh_98',['sampling.h',['../sampling_8h.html',1,'']]],
+  ['set_5fepsilon_99',['set_epsilon',['../classrbm_1_1Learn.html#affa9c2200d2b62d254fa831bb82fad1d',1,'rbm::Learn']]],
+  ['set_5fparameter_100',['set_parameter',['../classrbm_1_1Model.html#a2d7a7fe105aa17aa3be00b500334d822',1,'rbm::Model']]],
+  ['set_5fwork_5fdir_101',['set_work_dir',['../classrbm__utils_1_1Csv.html#ae91a55b07fc28e6af8781ba430b81cb4',1,'rbm_utils::Csv']]],
+  ['sig_102',['sig',['../namespacerbm__utils.html#af60332fbf0bcb0204d4b8dcd65bf3b81',1,'rbm_utils::sig(double x)'],['../namespacerbm__utils.html#a0fac32678fcf6384c97a5c36ff0b1005',1,'rbm_utils::sig(Bias x)'],['../namespacerbm__utils.html#a59e42edb878ab011318c1dea7e50603f',1,'rbm_utils::sig(Eigen::VectorXd x)']]],
+  ['sigmoid_2ecpp_103',['sigmoid.cpp',['../sigmoid_8cpp.html',1,'']]],
+  ['sigmoid_2eh_104',['sigmoid.h',['../sigmoid_8h.html',1,'']]],
+  ['sigmoid_5ftest_2ecpp_105',['sigmoid_test.cpp',['../sigmoid__test_8cpp.html',1,'']]]
 ];

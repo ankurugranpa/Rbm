@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['learn_95',['Learn',['../classrbm_1_1Learn.html',1,'rbm']]]
+  ['grad_130',['Grad',['../classrbm__types_1_1Grad.html',1,'rbm_types']]]
 ];

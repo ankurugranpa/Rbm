@@ -1,8 +1,9 @@
 var searchData=
 [
-  ['parametar_51',['parametar',['../classrbm_1_1Model.html#aff2acad3651ec863e60c155b8c3bb4f9',1,'rbm::Model']]],
-  ['parametar_52',['Parametar',['../classrbm__types_1_1Parametar.html#a6cfb85cc7e75390e8019bea4398d9f86',1,'rbm_types::Parametar::Parametar()'],['../classrbm__types_1_1Parametar.html',1,'rbm_types::Parametar']]],
-  ['parametar_2ecpp_53',['parametar.cpp',['../parametar_8cpp.html',1,'']]],
-  ['parametar_2eh_54',['parametar.h',['../parametar_8h.html',1,'']]],
-  ['parametar2csv_55',['parametar2csv',['../classrbm__utils_1_1Csv.html#afdad382f11135e081e8aa8f2971c5475',1,'rbm_utils::Csv']]]
+  ['main_67',['main',['../learn__exact_8cpp.html#adca6d2010873dec3865ceee870b278c0',1,'main():&#160;learn_exact.cpp'],['../namespacelearn__exact.html#aa8a80b4cb239854d206b898125c11d8c',1,'learn_exact.main()'],['../namespacedata2png.html#af890229c7b2d330a4ead7a32dec934db',1,'data2png.main()'],['../gendata_8cpp.html#adca6d2010873dec3865ceee870b278c0',1,'main(const int argc, const char *const *const argv):&#160;gendata.cpp'],['../learn__mnist_8cpp.html#adca6d2010873dec3865ceee870b278c0',1,'main(const int argc, const char *const *const argv):&#160;learn_mnist.cpp'],['../main_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe',1,'main(void):&#160;main.cpp']]],
+  ['main_2ecpp_68',['main.cpp',['../main_8cpp.html',1,'']]],
+  ['model_69',['Model',['../classrbm_1_1Model.html#ae3b375de5f6df4faf74a95d64748e048',1,'rbm::Model::Model()'],['../classrbm_1_1Model.html#aca7feac5ae78f995b64b5075e509d9e7',1,'rbm::Model::Model(int visible_dim, int hidden_dim)'],['../classrbm_1_1Model.html#a05c85d79a96c824c3d4ffcbbf0dd7a45',1,'rbm::Model::Model(Parametar parametar)'],['../classrbm_1_1Model.html',1,'rbm::Model']]],
+  ['model_2ecpp_70',['model.cpp',['../model_8cpp.html',1,'']]],
+  ['model_2eh_71',['model.h',['../model_8h.html',1,'']]],
+  ['model_5ftest_2ecpp_72',['model_test.cpp',['../model__test_8cpp.html',1,'']]]
 ];

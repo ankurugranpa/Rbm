@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['num2binary_153',['num2binary',['../classrbm__utils_1_1Binary.html#a4aba7f2d7b5f9dcf7c4d0b4c0b0a41de',1,'rbm_utils::Binary']]]
+  ['kl_5fdivergence_207',['kl_divergence',['../classrbm_1_1Model.html#afb7eb22c4e149e4850ffc2ba0836368b',1,'rbm::Model']]]
 ];

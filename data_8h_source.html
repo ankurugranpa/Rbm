@@ -90,9 +90,11 @@ $(function() {
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        }</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  };</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
-<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="structrbm__types_1_1DataSet.html">   32</a></span>&#160;  <span class="keyword">struct </span><a class="code" href="structrbm__types_1_1DataSet.html">DataSet</a>: std::vector&lt;Data&gt;{};</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;}</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="structrbm__types_1_1DataSet.html">   32</a></span>&#160;  <span class="keyword">struct </span><a class="code" href="structrbm__types_1_1DataSet.html">DataSet</a> : <span class="keyword">public</span> std::vector&lt;Data&gt; {</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;      <span class="keyword">using</span> std::vector&lt;Data&gt;::vector;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  };</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;}</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="aclassrbm__types_1_1Data_html"><div class="ttname"><a href="classrbm__types_1_1Data.html">rbm_types::Data</a></div><div class="ttdoc">Dataの型定義</div><div class="ttdef"><b>Definition:</b> data.h:16</div></div>
 <div class="ttc" id="aclassrbm__types_1_1Data_html_a1c0739582ee9841775ee6c35f9378a4c"><div class="ttname"><a href="classrbm__types_1_1Data.html#a1c0739582ee9841775ee6c35f9378a4c">rbm_types::Data::Data</a></div><div class="ttdeci">Data()</div><div class="ttdef"><b>Definition:</b> data.h:18</div></div>
 <div class="ttc" id="aclassrbm__types_1_1Data_html_a2472d516ded5c54aa5778dfebf5cc9ed"><div class="ttname"><a href="classrbm__types_1_1Data.html#a2472d516ded5c54aa5778dfebf5cc9ed">rbm_types::Data::Data</a></div><div class="ttdeci">Data(const Eigen::VectorXi &amp;other)</div><div class="ttdef"><b>Definition:</b> data.h:22</div></div>
