@@ -32,31 +32,44 @@ std::vector<Bias> File::read_bias_file(fs::path file_name){
   std::istringstream first_line_stream(first_line);
   size_t dimension_count;
   first_line_stream >> dimension_count;
+
   // Bias オブジェクトを作成
   Bias bias_data(static_cast<Eigen::Index>(dimension_count));
 
   // bias_num + 1 行目のデータを取得
 
   std::string line;
-  size_t index = 0;
 
   while (std::getline(file, line)) {
        std::istringstream line_stream(line);
        std::string value;
+       std::vector<double> values;
+       Bias bias_data(dimension_count);
 
        while (std::getline(line_stream, value, ',')) {
-           if (index < dimension_count) {
-               bias_data(index) = std::stoi(value);
+           if (!value.empty()) {
+               values.push_back(std::stod(value));
            }
-           ++index;
+       }
+       if (values.size() ==  dimension_count) {
+           for(int i=0; i<dimension_count; i++){
+             bias_data(i) = values[i];
+           }
+       } else {
+           std::cerr << "警告: 無効なデータ行をスキップします。期待される要素数: " 
+                     << dimension_count << ", 実際の要素数: " << values.size() << std::endl;
        }
        bias_set.push_back(bias_data);
-       index = 0;
   }
+
+
+  
+  
 
   file.close();
   return bias_set;
 }
+
 std::vector<Weight> File::read_weight_file(fs::path file_name) {
     std::vector<Weight> weight_set;
     fs::path full_path = absolute_path(work_dir, file_name);
@@ -317,8 +330,8 @@ bool File::gen_file(Weight weight, fs::path file_name){
   }
 
   // weight をカンマ区切りで書き込む
-  for (int j = 0; j < weight.cols(); ++j) {
-      for (int i = 0; i < weight.rows(); ++i) {
+  for (int i = 0; i < weight.rows(); i++) {
+      for (int j = 0; j < weight.cols(); j++) {
           if (i > 0 || j > 0) {
               file_object << ",";  // カンマで区切る
           }
@@ -332,6 +345,32 @@ bool File::gen_file(Weight weight, fs::path file_name){
       return false;
   }
 
+  return true;
+}
+
+bool File::gen_file(std::string text_data , fs::path file_name){
+  fs::path full_path = absolute_path(work_dir, file_name);
+  full_path.replace_extension(".txt");
+
+  bool file_exists = fs::exists(full_path);
+  std::ofstream file_object;
+
+  if (file_exists) {
+      file_object.open(full_path, std::ios::app);
+  } else {
+      file_object.open(full_path, std::ios::out);
+      if (!file_object.is_open()) {
+          std::cerr << "ファイルを開けませんでした: " << full_path << std::endl;
+          return false;
+      }
+  }
+
+  file_object << text_data << "\n";
+
+  if (file_object.fail()) {
+      std::cerr << "データの書き込みに失敗しました: " << full_path << std::endl;
+      return false;
+  }
   return true;
 }
 

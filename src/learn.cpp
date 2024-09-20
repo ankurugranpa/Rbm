@@ -31,6 +31,8 @@ Model Learn::exact_calculation(const Model& model,
   Grad diff(result_model.visible_dim, result_model.hidden_dim);
   double grad;
 
+  File file_engine(work_dir);
+
   // 学習
   for(int step=1; step<max_step+1; step++){
     // *result_step = step;
@@ -38,8 +40,6 @@ Model Learn::exact_calculation(const Model& model,
     // std::cout << "hidden " <<  diff.hidden_grad.transpose() << std::endl;
     diff = calc_data_mean(result_model, data_set) - calc_model_mean(result_model);
 
-    // diff = calc_model_mean_cd(model, data_set, 1);
-    // diff = calc_data_mean(model, data_set) - calc_model_mean_cd(model, data_set, 1);
     grad = calc_grad(diff);
     result_file << "step:" << step << " " << "grad" << grad << "\n";
     std::cout << "step:" << step << " " << "grad" << grad << std::endl;
@@ -52,6 +52,8 @@ Model Learn::exact_calculation(const Model& model,
     result_model.parametar.visible_bias += nabla*diff.visible_grad;
     result_model.parametar.hidden_bias +=  nabla*diff.hidden_grad;
     result_model.parametar.weight +=  nabla*diff.weight_grad;
+    if(step != max_step+1) file_engine.gen_file(result_model.parametar); 
+    
   }
   return result_model;
 }
@@ -84,7 +86,6 @@ Model Learn::contrastive_divergence(const Model& model,
     // 学習に使用するパラメータの保存
     file_engine.gen_file(result_model.parametar);
 
-    std::cout << "シャッフル" << std::endl;
     *result_epoch = e+1;
     // 観測データのシャッフル
     std::random_device rd;
@@ -99,6 +100,7 @@ Model Learn::contrastive_divergence(const Model& model,
       DataSet::const_iterator iterator_start;
       DataSet::const_iterator iterator_end;
 
+      // イテレータの範囲設定
       if(b == batch_time-1){
         iterator_start = data_set_buf.begin() + iterator_buf;
         iterator_end = data_set_buf.end();
@@ -106,19 +108,10 @@ Model Learn::contrastive_divergence(const Model& model,
         iterator_start = data_set_buf.begin() + iterator_buf;
         iterator_end = data_set_buf.begin() + (iterator_buf+batch_size);
       }
+
       DataSet batch_data(iterator_start, iterator_end);
-      // diff = calc_model_mean_cd(model, batch_data, cd_k_num);
-      // std::cout << "ここ" << std::endl;
-
       diff = calc_data_mean(result_model, batch_data) - calc_model_mean_cd(result_model, batch_data, cd_k_num);
-      // std::cout << "あ" << std::endl;
-      // diff = calc_data_mean(result_model, batch_data) - calc_model_mean(result_model);
       grad = calc_grad(diff);
-
-      // diff = calc_data_mean(result_model, data_set) - calc_model_mean(result_model);
-      // grad = calc_grad(diff);
-      // result_file << "step:" << step << " " << "grad" << grad << "\n";
-      // std::cout << "step:" << step << " " << "grad" << grad << std::endl;
 
       result_file << "epoch:" << e+1 << " "  <<"step:" << b+1 <<  " " << "grad" << grad << "\n";
       std::cout << "epoch:" << e+1 << " "  <<"step:" << b+1 <<  " " << "grad" << grad << std::endl;
@@ -147,11 +140,12 @@ Grad Learn::calc_data_mean(const Model& model, const DataSet& data_set){
       result_data_mean.visible_grad(i) += data_set[mu](i);
     }
 
+    // hidden
     for(int  j=0; j<model.hidden_dim; j++){
        result_data_mean.hidden_grad(j) += buf_sig(j); 
     }
     
-    // hidden
+    // weight
     for(int  j=0; j<model.hidden_dim; j++){
       for(int i=0; i<model.visible_dim; i++){
         result_data_mean.weight_grad(i, j) += data_set[mu](i)*buf_sig(j);
@@ -163,7 +157,6 @@ Grad Learn::calc_data_mean(const Model& model, const DataSet& data_set){
   result_data_mean.visible_grad /= data_set.size();
   result_data_mean.hidden_grad /= data_set.size();
   result_data_mean.weight_grad /= data_set.size();
-  // std::cout << "データ平均の計算おわり" << std::endl;
   
   return result_data_mean;
 }
@@ -228,7 +221,9 @@ Grad Learn::calc_model_mean_cd(const Model& model, const DataSet& data_set, int 
   Grad result_model_mean(model.visible_dim, model.hidden_dim);
 
   Sampling sampler;
-  auto [visible_t, hidden_t] = sampler.block_gibbs_sampling(data_set, model, sampling_rate);
+  DataSet visible_t, hidden_t;
+  std::tie(visible_t, hidden_t) = sampler.block_gibbs_sampling(data_set, model, sampling_rate);
+  // auto [visible_t, hidden_t] = sampler.block_gibbs_sampling(data_set, model, sampling_rate);
 
   for(const auto& v_t: visible_t){
     for(auto i=0; i<v_t.size(); i++){
@@ -259,17 +254,10 @@ Grad Learn::calc_model_mean_cd(const Model& model, const DataSet& data_set, int 
 double Learn::calc_grad(const Grad& grad_data){
   double numerator=0, denominator=0, grad = 0;
   
-  // std::cout << "visible" << std::endl;
-  // std::cout<< grad_data.visible_grad.transpose() << std::endl;
-  // std::cout << "hidden" << std::endl;
-  // std::cout << grad_data.hidden_grad.transpose() << std::endl;
-  // std::cout << "weight" << std::endl;
-  // std::cout << grad_data.weight_grad << std::endl;
-  // std::cout<< grad_data.visible_grad.size() << " "<< grad_data.hidden_grad.size() << " " << grad_data.weight_grad.size() << std::endl;
   numerator = grad_data.visible_grad.array().square().sum() + grad_data.hidden_grad.array().square().sum() + grad_data.weight_grad.array().square().sum();
   denominator = grad_data.visible_grad.size() + grad_data.hidden_grad.size() + grad_data.weight_grad.size();
-  // std::cout << (std::sqrt(numerator)) << std::endl;
-  grad = (std::sqrt(numerator) / denominator);
+  grad =  numerator / denominator;
+  grad = std::sqrt(grad);
   return grad;
 }
 

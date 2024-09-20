@@ -54,18 +54,18 @@ std::tuple<DataSet, DataSet> Sampling::block_gibbs_sampling(const DataSet& data_
         hidden_gen_data_set.push_back(hidden_gen_data);
       }
 
-        // H->Vのターム準備
-                                                       
-        // H(0)->V(1)のターム
-        lambda_visible = model.lambda_visible(model.parametar, hidden_gen_data);
-        P_v = rbm_utils::sig(lambda_visible);
-        for(int n=0; n<model.visible_dim; n++){
-          if(P_v(n) >= dis(gen)){
-            visible_gen_data(n) = 1;
-          }else{
-            visible_gen_data(n) = 0;
-          }
+      // H->Vのターム準備
+                                                     
+      // H(0)->V(1)のターム
+      lambda_visible = model.lambda_visible(model.parametar, hidden_gen_data);
+      P_v = rbm_utils::sig(lambda_visible);
+      for(int n=0; n<model.visible_dim; n++){
+        if(P_v(n) >= dis(gen)){
+          visible_gen_data(n) = 1;
+        }else{
+          visible_gen_data(n) = 0;
         }
+      }
       // V(T)を保存する(-1はV(T)の方が1周期早く取得できるから付けている)
       if(time == sampling_rate -1){
         visible_gen_data_set.push_back(visible_gen_data);

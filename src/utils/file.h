@@ -95,6 +95,8 @@ namespace rbm_utils{
       */
       bool gen_file(Weight weight, fs::path file_name="weight.weight");
 
+      bool gen_file(std::string text_data , fs::path file_name="hoge.txt");
+
     private: 
       std::string extension_bias=".bias", extension_weight=".weight";
       /**
