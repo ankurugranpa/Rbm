@@ -9,6 +9,6 @@ project(rbm
 
 add_subdirectory(./src)
 add_subdirectory(./test)
-add_subdirectory(./experiment)
+add_subdirectory(./exsamples)
 add_executable(${PROJECT_NAME} ./main.cpp)
 target_link_libraries(${PROJECT_NAME} libmodel libsampling)
