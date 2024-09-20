@@ -1,10 +1,20 @@
-// grad.h
+/**
+* @file grad.h 
+* @brief RBMの勾配のデータ型
+* @author ankuru
+* @date 2024/9/12
+*
+* @details RBMの勾配のデータ型
+*/
 #ifndef GRAD_H
 #define GRAD_H
 
 #include <Eigen/Dense>
 
 namespace rbm_types {
+  /*! @class Grad
+    @brief  Grad型定義
+  */
   class Grad {
   public:
     Eigen::VectorXd visible_grad;

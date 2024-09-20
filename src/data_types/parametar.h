@@ -1,3 +1,11 @@
+/**
+* @file parametar.h
+* @brief RBMのパラメータのデータ型
+* @author ankuru
+* @date 2024/9/12
+*
+* @details RBMの勾配のデータ型
+*/
 #ifndef PARAMETAR_H
 #define PARAMETAR_H
 

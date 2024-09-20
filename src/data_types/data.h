@@ -13,6 +13,9 @@
 #include<Eigen/Dense>
 
 namespace rbm_types{
+  /*! @class Data 
+    @brief  Data型定義
+  */
   class Data : public Eigen::VectorXi {
     public:
         Data() : Eigen::VectorXi() {}

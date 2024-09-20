@@ -3,9 +3,7 @@
 * @brief csv ユーティリティ
 * @author ankuru
 * @date 2024/9/13
-*
 * @details csv ユーティリティ
- 
 */
 
 #ifndef CSV_H
@@ -17,6 +15,9 @@
 using namespace rbm_types;
 
 namespace rbm_utils{
+  /*! @class csv
+    @brief  csvユーティリティ
+  */
   class Csv{
     public:
       std::string work_dir;

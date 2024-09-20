@@ -1,3 +1,10 @@
+/**
+* @file file.h 
+* @brief sigmoid関数
+* @author ankuru
+* @date 2024/9/13
+* @details ファイルioのユーティリティ
+*/
 #ifndef FILE_H
 #define FILE_H 
 #include <filesystem>

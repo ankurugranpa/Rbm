@@ -1,3 +1,11 @@
+/**
+* @file 
+* @brief samplingクラス
+* @author ankuru
+* @date 2024/9/11
+*
+* @details Rbmのサンプリングの定義
+*/
 #ifndef SAMPLING_H
 #define SAMPLING_H
 
