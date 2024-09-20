@@ -1,10 +1,10 @@
 /**
 * @file learn.h 
-* @brief RBMの学習クラス
-* @author ankuru
+* @brief Learn クラス
+* * @author ankuru
 * @date 2024/9/11
 *
-* @details RBMクラス
+* @details RBMの学習の定義
 */
 
 #ifndef LEARN_H
@@ -34,6 +34,10 @@ namespace rbm{
        *  @param[in] work_dir 学習結果などを保存するディレクトリ 
        */
       Learn(std::string work_dir);
+
+      /**
+       *  @brief デストラクタ
+       */
       ~Learn();
 
       /**
@@ -43,6 +47,7 @@ namespace rbm{
        *  @param[in] max_step step数の最大値(100)
        *  @param[in] result_file_name 学習過程の保存ファイル
        *  @param[in] result_step パラメーター更新の最終step数
+       *  @return Model 学習後のモデル
        *  @details 厳密計算を使用した学習, データの次元が多いと学習が終わらないので注意
        */
       Model exact_calculation(const Model& before_learn_model,
@@ -59,6 +64,7 @@ namespace rbm{
        *  @param[in] max_step step数の最大値(100)
        *  @param[in] result_file_name 学習過程の保存ファイル
        *  @param[in] result_step パラメーター更新の最終step数
+       *  @return Model 学習後のモデル
        *  @details CD法を使用した学習, ミニバッチ学習を行う
        */
       Model contrastive_divergence(const Model& before_learn_model,
@@ -78,6 +84,7 @@ namespace rbm{
        *  @param[in] model_object  パラメーター更新に使用するmodel
        *  @param[in] data_set 観測データ
        *  @details データ平均を計算する
+       *  @return Grad データ平均
        */
       Grad calc_data_mean(const Model& model_object, const DataSet& data_set);
 
@@ -85,6 +92,7 @@ namespace rbm{
        *  @brief 厳密計算でのモデル平均
        *  @param[in] model_object  パラメーター更新に使用するmodel
        *  @param[in] data_set パラメーター更新の最終step数
+       *  @return Grad モデル平均
        *  @details 厳密計算を使用したモデル平均の計算を行う, データの次元が多いと学習が終わらないので注意
        */
       Grad calc_model_mean(const Model& model_object);
@@ -93,15 +101,26 @@ namespace rbm{
        *  @brief Contrastive Divergence(CD法)でのモデル平均
        *  @param[in] model_object  パラメーター更新に使用するmodel
        *  @param[in] data_set パラメーター更新の最終step数
+       *  @return Grad モデル平均
        *  @details cd法を使用したモデル平均の計算を行う
        */
       Grad calc_model_mean_cd(const Model& model_object, const DataSet& data_set, int sampring_rate=1);
 
+      /**
+       *  @brief 勾配計算
+       *  @param[in] grad_data 計算する勾配の入力
+       *  @details 各パラメータから勾配を計算する
+       *  @return double 勾配
+       */
       double calc_grad(const Grad& grad_data);
 
+      /**
+       *  @brief ゼロ判定
+       *  @param[in] grad_data 計算する勾配の入力
+       *  @return bool ゼロかどうか
+       *  @details 各パラメータから勾配を計算する
+       */
       bool is_zero(double value);
-      
-
   };
 }
 

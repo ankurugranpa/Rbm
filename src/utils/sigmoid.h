@@ -1,3 +1,10 @@
+/**
+* @file sigmoid.h 
+* @brief sigmoid関数
+* @author ankuru
+* @date 2024/9/13
+* @details sigmoid ユーティリティ
+*/
 #ifndef SIGMOID_H
 #define SIGMOID_H 
 #include<Eigen/Dense>

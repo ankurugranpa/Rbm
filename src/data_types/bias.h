@@ -1,5 +1,5 @@
 /**
-* @file rbm.h 
+* @file bias.h 
 * @brief RBMのバイアスのデータ型
 * @author ankuru
 * @date 2024/9/12

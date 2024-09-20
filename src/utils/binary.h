@@ -1,3 +1,10 @@
+/**
+* @file binary.h
+* @brief binary ユーティリティ
+* @author ankuru
+* @date 2024/9/13
+* @details binary ユーティリティ
+*/
 #ifndef BINARY_H
 #define BINARY_H
 
