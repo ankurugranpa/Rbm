@@ -1,9 +1,9 @@
 <map id="src/model.h" name="src/model.h">
-<area shape="rect" id="node1" title=" " alt="" coords="51,5,150,32"/>
+<area shape="rect" id="node1" title="Modelクラス" alt="" coords="51,5,150,32"/>
 <area shape="rect" id="node2" title=" " alt="" coords="53,229,156,256"/>
-<area shape="rect" id="node3" href="$parametar_8h.html" title=" " alt="" coords="50,80,151,107"/>
+<area shape="rect" id="node3" href="$parametar_8h.html" title="RBMのパラメータのデータ型" alt="" coords="50,80,151,107"/>
 <area shape="rect" id="node6" href="$data_8h.html" title="バイナリのRBMで扱うデータ型" alt="" coords="198,80,261,107"/>
-<area shape="rect" id="node4" href="$bias_8h.html" title=" " alt="" coords="27,155,88,181"/>
+<area shape="rect" id="node4" href="$bias_8h.html" title="RBMのバイアスのデータ型" alt="" coords="27,155,88,181"/>
 <area shape="rect" id="node5" href="$weight_8h.html" title=" " alt="" coords="113,155,192,181"/>
 <area shape="rect" id="node7" title=" " alt="" coords="268,155,330,181"/>
 </map>

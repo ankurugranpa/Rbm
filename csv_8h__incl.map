@@ -2,8 +2,8 @@
 <area shape="rect" id="node1" title="csv ユーティリティ" alt="" coords="51,5,161,32"/>
 <area shape="rect" id="node2" title=" " alt="" coords="5,155,68,181"/>
 <area shape="rect" id="node3" href="$data_8h.html" title="バイナリのRBMで扱うデータ型" alt="" coords="75,80,137,107"/>
-<area shape="rect" id="node5" href="$parametar_8h.html" title=" " alt="" coords="162,80,263,107"/>
+<area shape="rect" id="node5" href="$parametar_8h.html" title="RBMのパラメータのデータ型" alt="" coords="162,80,263,107"/>
 <area shape="rect" id="node4" title=" " alt="" coords="123,229,225,256"/>
-<area shape="rect" id="node6" href="$bias_8h.html" title=" " alt="" coords="143,155,205,181"/>
+<area shape="rect" id="node6" href="$bias_8h.html" title="RBMのバイアスのデータ型" alt="" coords="143,155,205,181"/>
 <area shape="rect" id="node7" href="$weight_8h.html" title=" " alt="" coords="229,155,308,181"/>
 </map>

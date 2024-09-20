@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>My Project: src/utils/file.h ソースファイル</title>
+<title>Rbm: src/utils/file.h ソースファイル</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">My Project
+   <div id="projectname">Rbm
    </div>
   </td>
  </tr>
@@ -69,73 +69,74 @@ $(function() {
 <div class="title">file.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="file_8h.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef FILE_H</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define FILE_H </span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;filesystem&gt;</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include&lt;<a class="code" href="parametar_8h.html">parametar.h</a>&gt;</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">namespace </span>fs = std::filesystem;</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacerbm__utils.html">rbm_utils</a>{</div>
-<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="classrbm__utils_1_1File.html">   13</a></span>&#160;  <span class="keyword">class </span><a class="code" href="classrbm__utils_1_1File.html">File</a>{</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="classrbm__utils_1_1File.html#a6072c31706ae3db1bdbb9be33f26b753">   15</a></span>&#160;      fs::path <a class="code" href="classrbm__utils_1_1File.html#a6072c31706ae3db1bdbb9be33f26b753">work_dir</a>;</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;      <a class="code" href="classrbm__utils_1_1File.html#ae039af5807fc385f41b60644725d15d0">File</a>();</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;      <a class="code" href="classrbm__utils_1_1File.html#ae039af5807fc385f41b60644725d15d0">File</a>(fs::path <a class="code" href="classrbm__utils_1_1File.html#a6072c31706ae3db1bdbb9be33f26b753">work_dir</a>);</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;      <a class="code" href="classrbm__utils_1_1File.html#ac704ebdf5f57d7a1c5ddf409d797fb69">~File</a>();</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;      std::vector&lt;Bias&gt; <a class="code" href="classrbm__utils_1_1File.html#aeec3b0e8cdf14b4bc035fbd4315ef913">read_bias_file</a>(fs::path file_name); </div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;      std::vector&lt;Weight&gt; <a class="code" href="classrbm__utils_1_1File.html#ac81b752ff428b50b91dc25afdc2a33af">read_weight_file</a>(fs::path file_name); </div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;      <a class="code" href="classrbm__types_1_1Parametar.html">Parametar</a> <a class="code" href="classrbm__utils_1_1File.html#ab1545fa8b951c71775295a5581e21c4a">get_line_parametar</a>(<span class="keywordtype">int</span> data_num,</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                                   fs::path visible_file=<span class="stringliteral">&quot;visible_bias&quot;</span>,</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                                   fs::path hidden_file=<span class="stringliteral">&quot;hidden_bias&quot;</span>,</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                                   fs::path weight_file=<span class="stringliteral">&quot;weight_bias&quot;</span>);</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;      <a class="code" href="classrbm__types_1_1Bias.html">Bias</a> <a class="code" href="classrbm__utils_1_1File.html#a09928d1b200d21cbf96e2b4b4e47b869">get_line_bias</a>(fs::path file_name, <span class="keywordtype">int</span> data_num);</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;      <a class="code" href="classrbm__types_1_1Weight.html">Weight</a> <a class="code" href="classrbm__utils_1_1File.html#a1e6fd9c8206f59ff7721bca152194ed8">get_line_weight</a>(fs::path file_name, <span class="keywordtype">int</span> data_num);</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;      </div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;      <span class="keywordtype">bool</span> <a class="code" href="classrbm__utils_1_1File.html#a24f359f108a0dc0599cb32a666f3906d">gen_file</a>(<a class="code" href="classrbm__types_1_1Parametar.html">Parametar</a> parametar);</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;      <span class="keywordtype">bool</span> <a class="code" href="classrbm__utils_1_1File.html#a24f359f108a0dc0599cb32a666f3906d">gen_file</a>(<a class="code" href="classrbm__types_1_1Bias.html">Bias</a> bias, fs::path file_name=<span class="stringliteral">&quot;bias.bias&quot;</span>);</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;      <span class="keywordtype">bool</span> <a class="code" href="classrbm__utils_1_1File.html#a24f359f108a0dc0599cb32a666f3906d">gen_file</a>(<a class="code" href="classrbm__types_1_1Weight.html">Weight</a> weight, fs::path file_name=<span class="stringliteral">&quot;weight.weight&quot;</span>);</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;      <span class="keywordtype">bool</span> <a class="code" href="classrbm__utils_1_1File.html#a24f359f108a0dc0599cb32a666f3906d">gen_file</a>(std::string text_data , fs::path file_name=<span class="stringliteral">&quot;hoge.txt&quot;</span>);</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keyword">private</span>: </div>
-<div class="line"><a name="l00101"></a><span class="lineno"><a class="line" href="classrbm__utils_1_1File.html#a3cea3818343d26629e6f1cbdbd8835a1">  101</a></span>&#160;      std::string <a class="code" href="classrbm__utils_1_1File.html#a3cea3818343d26629e6f1cbdbd8835a1">extension_bias</a>=<span class="stringliteral">&quot;.bias&quot;</span>, <a class="code" href="classrbm__utils_1_1File.html#a6d8a764899f529ad25dc212c882f8093">extension_weight</a>=<span class="stringliteral">&quot;.weight&quot;</span>;</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;      fs::path <a class="code" href="classrbm__utils_1_1File.html#a2d9887e2885162f32210344038c15db7">absolute_path</a>(fs::path dir, fs::path file_name);</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160; </div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160; </div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;      <span class="keywordtype">bool</span> <a class="code" href="classrbm__utils_1_1File.html#ac0e03e8f65002d8a1235ed9ae5dc276c">is_extension</a>(<span class="keyword">const</span> fs::path&amp; file_path, <span class="keyword">const</span> std::string&amp; ext);</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;  };</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;}</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="preprocessor">#endif</span></div>
+<a href="file_8h.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#ifndef FILE_H</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#define FILE_H </span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;filesystem&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include&lt;<a class="code" href="parametar_8h.html">parametar.h</a>&gt;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">namespace </span>fs = std::filesystem;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacerbm__utils.html">rbm_utils</a>{</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="classrbm__utils_1_1File.html">   20</a></span>&#160;  <span class="keyword">class </span><a class="code" href="classrbm__utils_1_1File.html">File</a>{</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="classrbm__utils_1_1File.html#a6072c31706ae3db1bdbb9be33f26b753">   22</a></span>&#160;      fs::path <a class="code" href="classrbm__utils_1_1File.html#a6072c31706ae3db1bdbb9be33f26b753">work_dir</a>;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;      <a class="code" href="classrbm__utils_1_1File.html#ae039af5807fc385f41b60644725d15d0">File</a>();</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;      <a class="code" href="classrbm__utils_1_1File.html#ae039af5807fc385f41b60644725d15d0">File</a>(fs::path <a class="code" href="classrbm__utils_1_1File.html#a6072c31706ae3db1bdbb9be33f26b753">work_dir</a>);</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;      <a class="code" href="classrbm__utils_1_1File.html#ac704ebdf5f57d7a1c5ddf409d797fb69">~File</a>();</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;      std::vector&lt;Bias&gt; <a class="code" href="classrbm__utils_1_1File.html#aeec3b0e8cdf14b4bc035fbd4315ef913">read_bias_file</a>(fs::path file_name); </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;      std::vector&lt;Weight&gt; <a class="code" href="classrbm__utils_1_1File.html#ac81b752ff428b50b91dc25afdc2a33af">read_weight_file</a>(fs::path file_name); </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;      <a class="code" href="classrbm__types_1_1Parametar.html">Parametar</a> <a class="code" href="classrbm__utils_1_1File.html#ab1545fa8b951c71775295a5581e21c4a">get_line_parametar</a>(<span class="keywordtype">int</span> data_num,</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                                   fs::path visible_file=<span class="stringliteral">&quot;visible_bias&quot;</span>,</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                                   fs::path hidden_file=<span class="stringliteral">&quot;hidden_bias&quot;</span>,</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                                   fs::path weight_file=<span class="stringliteral">&quot;weight_bias&quot;</span>);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;      <a class="code" href="classrbm__types_1_1Bias.html">Bias</a> <a class="code" href="classrbm__utils_1_1File.html#a09928d1b200d21cbf96e2b4b4e47b869">get_line_bias</a>(fs::path file_name, <span class="keywordtype">int</span> data_num);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;      <a class="code" href="classrbm__types_1_1Weight.html">Weight</a> <a class="code" href="classrbm__utils_1_1File.html#a1e6fd9c8206f59ff7721bca152194ed8">get_line_weight</a>(fs::path file_name, <span class="keywordtype">int</span> data_num);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;      </div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;      <span class="keywordtype">bool</span> <a class="code" href="classrbm__utils_1_1File.html#a24f359f108a0dc0599cb32a666f3906d">gen_file</a>(<a class="code" href="classrbm__types_1_1Parametar.html">Parametar</a> parametar);</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;      <span class="keywordtype">bool</span> <a class="code" href="classrbm__utils_1_1File.html#a24f359f108a0dc0599cb32a666f3906d">gen_file</a>(<a class="code" href="classrbm__types_1_1Bias.html">Bias</a> bias, fs::path file_name=<span class="stringliteral">&quot;bias.bias&quot;</span>);</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;      <span class="keywordtype">bool</span> <a class="code" href="classrbm__utils_1_1File.html#a24f359f108a0dc0599cb32a666f3906d">gen_file</a>(<a class="code" href="classrbm__types_1_1Weight.html">Weight</a> weight, fs::path file_name=<span class="stringliteral">&quot;weight.weight&quot;</span>);</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160; </div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;      <span class="keywordtype">bool</span> <a class="code" href="classrbm__utils_1_1File.html#a24f359f108a0dc0599cb32a666f3906d">gen_file</a>(std::string text_data , fs::path file_name=<span class="stringliteral">&quot;hoge.txt&quot;</span>);</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160; </div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="keyword">private</span>: </div>
+<div class="line"><a name="l00108"></a><span class="lineno"><a class="line" href="classrbm__utils_1_1File.html#a3cea3818343d26629e6f1cbdbd8835a1">  108</a></span>&#160;      std::string <a class="code" href="classrbm__utils_1_1File.html#a3cea3818343d26629e6f1cbdbd8835a1">extension_bias</a>=<span class="stringliteral">&quot;.bias&quot;</span>, <a class="code" href="classrbm__utils_1_1File.html#a6d8a764899f529ad25dc212c882f8093">extension_weight</a>=<span class="stringliteral">&quot;.weight&quot;</span>;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;      fs::path <a class="code" href="classrbm__utils_1_1File.html#a2d9887e2885162f32210344038c15db7">absolute_path</a>(fs::path dir, fs::path file_name);</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160; </div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160; </div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;      <span class="keywordtype">bool</span> <a class="code" href="classrbm__utils_1_1File.html#ac0e03e8f65002d8a1235ed9ae5dc276c">is_extension</a>(<span class="keyword">const</span> fs::path&amp; file_path, <span class="keyword">const</span> std::string&amp; ext);</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;  };</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;}</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="aclassrbm__types_1_1Bias_html"><div class="ttname"><a href="classrbm__types_1_1Bias.html">rbm_types::Bias</a></div><div class="ttdoc">Biasの型定義</div><div class="ttdef"><b>Definition:</b> bias.h:18</div></div>
-<div class="ttc" id="aclassrbm__types_1_1Parametar_html"><div class="ttname"><a href="classrbm__types_1_1Parametar.html">rbm_types::Parametar</a></div><div class="ttdoc">Parametar型の定義</div><div class="ttdef"><b>Definition:</b> parametar.h:12</div></div>
+<div class="ttc" id="aclassrbm__types_1_1Parametar_html"><div class="ttname"><a href="classrbm__types_1_1Parametar.html">rbm_types::Parametar</a></div><div class="ttdoc">Parametar型の定義</div><div class="ttdef"><b>Definition:</b> parametar.h:20</div></div>
 <div class="ttc" id="aclassrbm__types_1_1Weight_html"><div class="ttname"><a href="classrbm__types_1_1Weight.html">rbm_types::Weight</a></div><div class="ttdoc">Weight(重み)の型定義</div><div class="ttdef"><b>Definition:</b> weight.h:19</div></div>
-<div class="ttc" id="aclassrbm__utils_1_1File_html"><div class="ttname"><a href="classrbm__utils_1_1File.html">rbm_utils::File</a></div><div class="ttdoc">Fileの操作</div><div class="ttdef"><b>Definition:</b> file.h:13</div></div>
+<div class="ttc" id="aclassrbm__utils_1_1File_html"><div class="ttname"><a href="classrbm__utils_1_1File.html">rbm_utils::File</a></div><div class="ttdoc">Fileの操作</div><div class="ttdef"><b>Definition:</b> file.h:20</div></div>
 <div class="ttc" id="aclassrbm__utils_1_1File_html_a09928d1b200d21cbf96e2b4b4e47b869"><div class="ttname"><a href="classrbm__utils_1_1File.html#a09928d1b200d21cbf96e2b4b4e47b869">rbm_utils::File::get_line_bias</a></div><div class="ttdeci">Bias get_line_bias(fs::path file_name, int data_num)</div><div class="ttdoc">get_line_bias</div><div class="ttdef"><b>Definition:</b> file.cpp:146</div></div>
 <div class="ttc" id="aclassrbm__utils_1_1File_html_a1e6fd9c8206f59ff7721bca152194ed8"><div class="ttname"><a href="classrbm__utils_1_1File.html#a1e6fd9c8206f59ff7721bca152194ed8">rbm_utils::File::get_line_weight</a></div><div class="ttdeci">Weight get_line_weight(fs::path file_name, int data_num)</div><div class="ttdoc">get_line_weight</div><div class="ttdef"><b>Definition:</b> file.cpp:202</div></div>
 <div class="ttc" id="aclassrbm__utils_1_1File_html_a24f359f108a0dc0599cb32a666f3906d"><div class="ttname"><a href="classrbm__utils_1_1File.html#a24f359f108a0dc0599cb32a666f3906d">rbm_utils::File::gen_file</a></div><div class="ttdeci">bool gen_file(Parametar parametar)</div><div class="ttdoc">gen_file</div><div class="ttdef"><b>Definition:</b> file.cpp:258</div></div>
 <div class="ttc" id="aclassrbm__utils_1_1File_html_a2d9887e2885162f32210344038c15db7"><div class="ttname"><a href="classrbm__utils_1_1File.html#a2d9887e2885162f32210344038c15db7">rbm_utils::File::absolute_path</a></div><div class="ttdeci">fs::path absolute_path(fs::path dir, fs::path file_name)</div><div class="ttdoc">gen_path</div><div class="ttdef"><b>Definition:</b> file.cpp:377</div></div>
-<div class="ttc" id="aclassrbm__utils_1_1File_html_a3cea3818343d26629e6f1cbdbd8835a1"><div class="ttname"><a href="classrbm__utils_1_1File.html#a3cea3818343d26629e6f1cbdbd8835a1">rbm_utils::File::extension_bias</a></div><div class="ttdeci">std::string extension_bias</div><div class="ttdef"><b>Definition:</b> file.h:101</div></div>
-<div class="ttc" id="aclassrbm__utils_1_1File_html_a6072c31706ae3db1bdbb9be33f26b753"><div class="ttname"><a href="classrbm__utils_1_1File.html#a6072c31706ae3db1bdbb9be33f26b753">rbm_utils::File::work_dir</a></div><div class="ttdeci">fs::path work_dir</div><div class="ttdef"><b>Definition:</b> file.h:15</div></div>
-<div class="ttc" id="aclassrbm__utils_1_1File_html_a6d8a764899f529ad25dc212c882f8093"><div class="ttname"><a href="classrbm__utils_1_1File.html#a6d8a764899f529ad25dc212c882f8093">rbm_utils::File::extension_weight</a></div><div class="ttdeci">std::string extension_weight</div><div class="ttdef"><b>Definition:</b> file.h:101</div></div>
+<div class="ttc" id="aclassrbm__utils_1_1File_html_a3cea3818343d26629e6f1cbdbd8835a1"><div class="ttname"><a href="classrbm__utils_1_1File.html#a3cea3818343d26629e6f1cbdbd8835a1">rbm_utils::File::extension_bias</a></div><div class="ttdeci">std::string extension_bias</div><div class="ttdef"><b>Definition:</b> file.h:108</div></div>
+<div class="ttc" id="aclassrbm__utils_1_1File_html_a6072c31706ae3db1bdbb9be33f26b753"><div class="ttname"><a href="classrbm__utils_1_1File.html#a6072c31706ae3db1bdbb9be33f26b753">rbm_utils::File::work_dir</a></div><div class="ttdeci">fs::path work_dir</div><div class="ttdef"><b>Definition:</b> file.h:22</div></div>
+<div class="ttc" id="aclassrbm__utils_1_1File_html_a6d8a764899f529ad25dc212c882f8093"><div class="ttname"><a href="classrbm__utils_1_1File.html#a6d8a764899f529ad25dc212c882f8093">rbm_utils::File::extension_weight</a></div><div class="ttdeci">std::string extension_weight</div><div class="ttdef"><b>Definition:</b> file.h:108</div></div>
 <div class="ttc" id="aclassrbm__utils_1_1File_html_ab1545fa8b951c71775295a5581e21c4a"><div class="ttname"><a href="classrbm__utils_1_1File.html#ab1545fa8b951c71775295a5581e21c4a">rbm_utils::File::get_line_parametar</a></div><div class="ttdeci">Parametar get_line_parametar(int data_num, fs::path visible_file=&quot;visible_bias&quot;, fs::path hidden_file=&quot;hidden_bias&quot;, fs::path weight_file=&quot;weight_bias&quot;)</div><div class="ttdoc">get_line_parametar</div><div class="ttdef"><b>Definition:</b> file.cpp:134</div></div>
 <div class="ttc" id="aclassrbm__utils_1_1File_html_ac0e03e8f65002d8a1235ed9ae5dc276c"><div class="ttname"><a href="classrbm__utils_1_1File.html#ac0e03e8f65002d8a1235ed9ae5dc276c">rbm_utils::File::is_extension</a></div><div class="ttdeci">bool is_extension(const fs::path &amp;file_path, const std::string &amp;ext)</div><div class="ttdef"><b>Definition:</b> file.cpp:381</div></div>
 <div class="ttc" id="aclassrbm__utils_1_1File_html_ac704ebdf5f57d7a1c5ddf409d797fb69"><div class="ttname"><a href="classrbm__utils_1_1File.html#ac704ebdf5f57d7a1c5ddf409d797fb69">rbm_utils::File::~File</a></div><div class="ttdeci">~File()</div><div class="ttdef"><b>Definition:</b> file.cpp:10</div></div>
 <div class="ttc" id="aclassrbm__utils_1_1File_html_ac81b752ff428b50b91dc25afdc2a33af"><div class="ttname"><a href="classrbm__utils_1_1File.html#ac81b752ff428b50b91dc25afdc2a33af">rbm_utils::File::read_weight_file</a></div><div class="ttdeci">std::vector&lt; Weight &gt; read_weight_file(fs::path file_name)</div><div class="ttdoc">read_weight_file</div><div class="ttdef"><b>Definition:</b> file.cpp:73</div></div>
 <div class="ttc" id="aclassrbm__utils_1_1File_html_ae039af5807fc385f41b60644725d15d0"><div class="ttname"><a href="classrbm__utils_1_1File.html#ae039af5807fc385f41b60644725d15d0">rbm_utils::File::File</a></div><div class="ttdeci">File()</div><div class="ttdef"><b>Definition:</b> file.cpp:9</div></div>
 <div class="ttc" id="aclassrbm__utils_1_1File_html_aeec3b0e8cdf14b4bc035fbd4315ef913"><div class="ttname"><a href="classrbm__utils_1_1File.html#aeec3b0e8cdf14b4bc035fbd4315ef913">rbm_utils::File::read_bias_file</a></div><div class="ttdeci">std::vector&lt; Bias &gt; read_bias_file(fs::path file_name)</div><div class="ttdoc">read_bias_file</div><div class="ttdef"><b>Definition:</b> file.cpp:12</div></div>
-<div class="ttc" id="anamespacerbm__utils_html"><div class="ttname"><a href="namespacerbm__utils.html">rbm_utils</a></div><div class="ttdef"><b>Definition:</b> binary.h:11</div></div>
-<div class="ttc" id="aparametar_8h_html"><div class="ttname"><a href="parametar_8h.html">parametar.h</a></div></div>
+<div class="ttc" id="anamespacerbm__utils_html"><div class="ttname"><a href="namespacerbm__utils.html">rbm_utils</a></div><div class="ttdef"><b>Definition:</b> binary.h:18</div></div>
+<div class="ttc" id="aparametar_8h_html"><div class="ttname"><a href="parametar_8h.html">parametar.h</a></div><div class="ttdoc">RBMのパラメータのデータ型</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

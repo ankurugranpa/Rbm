@@ -1,4 +1,3 @@
 <map id="クラス階層図" name="クラス階層図">
-<area shape="rect" id="node1" title=" " alt="" coords="5,5,131,32"/>
-<area shape="rect" id="node2" href="$classrbm__types_1_1Weight.html" title="Weight(重み)の型定義" alt="" coords="179,5,323,32"/>
+<area shape="rect" id="node1" href="$classrbm__types_1_1Parametar.html" title="Parametar型の定義" alt="" coords="5,5,172,32"/>
 </map>

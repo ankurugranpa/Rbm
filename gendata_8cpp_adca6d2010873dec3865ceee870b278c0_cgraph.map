@@ -1,13 +1,12 @@
 <map id="main" name="main">
-<area shape="rect" id="node1" title=" " alt="" coords="5,187,60,214"/>
-<area shape="rect" id="node2" href="$classrbm_1_1Sampling.html#a0b829f0de29e159598f36130bd5408c8" title="ブロック化ギブスサンプリング" alt="" coords="129,71,289,112"/>
-<area shape="rect" id="node6" href="$classrbm__utils_1_1Csv.html#acd4df329a753e812f50ebdd7f284d9fe" title="csv2dataset" alt="" coords="108,137,309,163"/>
-<area shape="rect" id="node7" href="$classrbm__utils_1_1Csv.html#acf4799675d49d7bbae70153d598f58bc" title="data2csv" alt="" coords="118,187,299,214"/>
-<area shape="rect" id="node8" href="$classrbm__utils_1_1File.html#aeec3b0e8cdf14b4bc035fbd4315ef913" title="read_bias_file" alt="" coords="133,304,284,345"/>
-<area shape="rect" id="node11" href="$classrbm__utils_1_1File.html#ac81b752ff428b50b91dc25afdc2a33af" title="read_weight_file" alt="" coords="133,239,284,280"/>
-<area shape="rect" id="node3" href="$classrbm_1_1Model.html#afa97d6bccaf2f99eed01ec8800091675" title="Init Rbm" alt="" coords="388,5,541,47"/>
-<area shape="rect" id="node4" href="$classrbm_1_1Model.html#a187c24b014e169aa55293d6640beeb25" title="Init Rbm" alt="" coords="388,71,541,112"/>
-<area shape="rect" id="node5" href="$namespacerbm__utils.html#af60332fbf0bcb0204d4b8dcd65bf3b81" title="calc sigmoid" alt="" coords="409,137,520,163"/>
-<area shape="rect" id="node9" href="$classrbm__utils_1_1File.html#a2d9887e2885162f32210344038c15db7" title="gen_path" alt="" coords="357,309,572,335"/>
-<area shape="rect" id="node10" href="$classrbm__utils_1_1File.html#ac0e03e8f65002d8a1235ed9ae5dc276c" title=" " alt="" coords="398,241,531,283"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,166,60,193"/>
+<area shape="rect" id="node2" href="$classrbm_1_1Sampling.html#a0b829f0de29e159598f36130bd5408c8" title="ブロック化ギブスサンプリング" alt="" coords="119,71,279,112"/>
+<area shape="rect" id="node6" href="$classrbm__utils_1_1Csv.html#acf4799675d49d7bbae70153d598f58bc" title="data2csv" alt="" coords="108,137,289,163"/>
+<area shape="rect" id="node7" href="$classrbm__utils_1_1File.html#aeec3b0e8cdf14b4bc035fbd4315ef913" title="read_bias_file" alt="" coords="123,188,274,229"/>
+<area shape="rect" id="node10" href="$classrbm__utils_1_1File.html#ac81b752ff428b50b91dc25afdc2a33af" title="read_weight_file" alt="" coords="123,253,274,295"/>
+<area shape="rect" id="node3" href="$classrbm_1_1Model.html#afa97d6bccaf2f99eed01ec8800091675" title="Init Rbm" alt="" coords="368,5,521,47"/>
+<area shape="rect" id="node4" href="$classrbm_1_1Model.html#a187c24b014e169aa55293d6640beeb25" title="Init Rbm" alt="" coords="368,71,521,112"/>
+<area shape="rect" id="node5" href="$namespacerbm__utils.html#af60332fbf0bcb0204d4b8dcd65bf3b81" title="calc sigmoid" alt="" coords="389,137,500,163"/>
+<area shape="rect" id="node8" href="$classrbm__utils_1_1File.html#a2d9887e2885162f32210344038c15db7" title="gen_path" alt="" coords="337,258,552,285"/>
+<area shape="rect" id="node9" href="$classrbm__utils_1_1File.html#ac0e03e8f65002d8a1235ed9ae5dc276c" title=" " alt="" coords="378,189,511,231"/>
 </map>

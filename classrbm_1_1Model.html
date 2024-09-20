@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>My Project: rbm::Model クラス</title>
+<title>Rbm: rbm::Model クラス</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">My Project
+   <div id="projectname">Rbm
    </div>
   </td>
  </tr>
@@ -103,6 +103,7 @@ rbm::Model 連携図</div>
 <tr class="memdesc:a05c85d79a96c824c3d4ffcbbf0dd7a45"><td class="mdescLeft">&#160;</td><td class="mdescRight">Init Rbm  <a href="classrbm_1_1Model.html#a05c85d79a96c824c3d4ffcbbf0dd7a45">[詳解]</a><br /></td></tr>
 <tr class="separator:a05c85d79a96c824c3d4ffcbbf0dd7a45"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad6ebd2062a0b823db841a0b88baac4c0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrbm_1_1Model.html#ad6ebd2062a0b823db841a0b88baac4c0">~Model</a> ()</td></tr>
+<tr class="memdesc:ad6ebd2062a0b823db841a0b88baac4c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">デストラクタ  <a href="classrbm_1_1Model.html#ad6ebd2062a0b823db841a0b88baac4c0">[詳解]</a><br /></td></tr>
 <tr class="separator:ad6ebd2062a0b823db841a0b88baac4c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a187c24b014e169aa55293d6640beeb25"><td class="memItemLeft" align="right" valign="top">Eigen::VectorXd&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrbm_1_1Model.html#a187c24b014e169aa55293d6640beeb25">lambda_visible</a> (const <a class="el" href="classrbm__types_1_1Parametar.html">Parametar</a> &amp;<a class="el" href="classrbm_1_1Model.html#aff2acad3651ec863e60c155b8c3bb4f9">parametar</a>, const Eigen::VectorXi &amp;rand_hidden) const</td></tr>
 <tr class="memdesc:a187c24b014e169aa55293d6640beeb25"><td class="mdescLeft">&#160;</td><td class="mdescRight">Init Rbm  <a href="classrbm_1_1Model.html#a187c24b014e169aa55293d6640beeb25">[詳解]</a><br /></td></tr>
@@ -117,6 +118,7 @@ rbm::Model 連携図</div>
 <tr class="memdesc:ae24367a3bf9bc0f336bf703a4a487123"><td class="mdescLeft">&#160;</td><td class="mdescRight">calc Rbmのコスト関数を周辺化したもの  <a href="classrbm_1_1Model.html#ae24367a3bf9bc0f336bf703a4a487123">[詳解]</a><br /></td></tr>
 <tr class="separator:ae24367a3bf9bc0f336bf703a4a487123"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2d7a7fe105aa17aa3be00b500334d822"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrbm_1_1Model.html#a2d7a7fe105aa17aa3be00b500334d822">set_parameter</a> (<a class="el" href="classrbm__types_1_1Parametar.html">Parametar</a> <a class="el" href="classrbm_1_1Model.html#aff2acad3651ec863e60c155b8c3bb4f9">parametar</a>)</td></tr>
+<tr class="memdesc:a2d7a7fe105aa17aa3be00b500334d822"><td class="mdescLeft">&#160;</td><td class="mdescRight">パラメータを再設定  <a href="classrbm_1_1Model.html#a2d7a7fe105aa17aa3be00b500334d822">[詳解]</a><br /></td></tr>
 <tr class="separator:a2d7a7fe105aa17aa3be00b500334d822"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afb7eb22c4e149e4850ffc2ba0836368b"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrbm_1_1Model.html#afb7eb22c4e149e4850ffc2ba0836368b">kl_divergence</a> (const <a class="el" href="classrbm_1_1Model.html">Model</a> &amp;model)</td></tr>
 <tr class="memdesc:afb7eb22c4e149e4850ffc2ba0836368b"><td class="mdescLeft">&#160;</td><td class="mdescRight">KLダイバージェンス  <a href="classrbm_1_1Model.html#afb7eb22c4e149e4850ffc2ba0836368b">[詳解]</a><br /></td></tr>
@@ -190,10 +192,11 @@ rbm::Model 連携図</div>
 <dl class="params"><dt>引数</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">visible_dim</td><td>可視変数の次元 </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">hidden_dim</td><td>隠れ変数の次元</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">hidden_dim</td><td>隠れ変数の次元 </td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>戻り値</dt><dd><a class="el" href="classrbm_1_1Model.html" title="Modelの型定義">Model</a> 定義されたモデル</dd></dl>
 <p>パラメータを自動で初期化する </p>
 
 </div>
@@ -219,10 +222,11 @@ rbm::Model 連携図</div>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">visible_dim</td><td>可視変数の次元 </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">hidden_dim</td><td>隠れ変数の次元 </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">parametar</td><td>初期パラメータ</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">parametar</td><td>初期パラメータ </td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>戻り値</dt><dd><a class="el" href="classrbm_1_1Model.html" title="Modelの型定義">Model</a> 定義されたモデル</dd></dl>
 <p>任意のパラメーターを初期値の演算が行われないため初期値を自分で設定する必要がある </p>
 
 </div>
@@ -241,6 +245,8 @@ rbm::Model 連携図</div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>デストラクタ </p>
 
 </div>
 </div>
@@ -316,6 +322,7 @@ rbm::Model 連携図</div>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>戻り値</dt><dd>double Rbmのエネルギー </dd></dl>
 
 </div>
 </div>
@@ -411,7 +418,9 @@ rbm::Model 連携図</div>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>戻り値</dt><dd>double kl距離を返す</dd></dl>
+<dl class="section return"><dt>戻り値</dt><dd>double kl距離を返す </dd>
+<dd>
+double klダイバージェンス</dd></dl>
 <p>自分と引き数とのKL距離を算出する </p>
 <div class="dynheader">
 呼び出し関係図:</div>
@@ -462,6 +471,7 @@ rbm::Model 連携図</div>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>戻り値</dt><dd>Eigen::VectorXd lambda_hiddenの値 </dd></dl>
 
 </div>
 </div>
@@ -499,6 +509,7 @@ rbm::Model 連携図</div>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>戻り値</dt><dd>Eigen::VectorXd lambda_visibleの値 </dd></dl>
 
 </div>
 </div>
@@ -517,6 +528,14 @@ rbm::Model 連携図</div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>パラメータを再設定 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">parametar</td><td>パラメーター </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

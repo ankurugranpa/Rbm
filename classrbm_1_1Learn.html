@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>My Project: rbm::Learn クラス</title>
+<title>Rbm: rbm::Learn クラス</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">My Project
+   <div id="projectname">Rbm
    </div>
   </td>
  </tr>
@@ -96,6 +96,7 @@ rbm::Learn 連携図</div>
 <tr class="memdesc:aeb943acc9a3398dede811092650da950"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rbm <a class="el" href="classrbm_1_1Learn.html" title="rbmの学習">Learn</a>  <a href="classrbm_1_1Learn.html#aeb943acc9a3398dede811092650da950">[詳解]</a><br /></td></tr>
 <tr class="separator:aeb943acc9a3398dede811092650da950"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9eda04ac0c1b50a7881816901c3028bd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrbm_1_1Learn.html#a9eda04ac0c1b50a7881816901c3028bd">~Learn</a> ()</td></tr>
+<tr class="memdesc:a9eda04ac0c1b50a7881816901c3028bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">デストラクタ  <a href="classrbm_1_1Learn.html#a9eda04ac0c1b50a7881816901c3028bd">[詳解]</a><br /></td></tr>
 <tr class="separator:a9eda04ac0c1b50a7881816901c3028bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a99850d29970f9310b26e41a5f4a1c46e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classrbm_1_1Model.html">Model</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrbm_1_1Learn.html#a99850d29970f9310b26e41a5f4a1c46e">exact_calculation</a> (const <a class="el" href="classrbm_1_1Model.html">Model</a> &amp;before_learn_model, const <a class="el" href="structrbm__types_1_1DataSet.html">DataSet</a> &amp;data_set, const int max_step=100, const double nabla=0.5, std::string result_file_name=&quot;learn_process_exact_calc.csv&quot;, int *result_step=nullptr)</td></tr>
 <tr class="memdesc:a99850d29970f9310b26e41a5f4a1c46e"><td class="mdescLeft">&#160;</td><td class="mdescRight">厳密計算で学習  <a href="classrbm_1_1Learn.html#a99850d29970f9310b26e41a5f4a1c46e">[詳解]</a><br /></td></tr>
@@ -126,8 +127,10 @@ rbm::Learn 連携図</div>
 <tr class="memdesc:ad441a7fe5b8f48f13d0e10b77e9aeb05"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contrastive Divergence(CD法)でのモデル平均  <a href="classrbm_1_1Learn.html#ad441a7fe5b8f48f13d0e10b77e9aeb05">[詳解]</a><br /></td></tr>
 <tr class="separator:ad441a7fe5b8f48f13d0e10b77e9aeb05"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acd1c978bb6a3471760ac2bb7229d85e9"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrbm_1_1Learn.html#acd1c978bb6a3471760ac2bb7229d85e9">calc_grad</a> (const <a class="el" href="classrbm__types_1_1Grad.html">Grad</a> &amp;grad_data)</td></tr>
+<tr class="memdesc:acd1c978bb6a3471760ac2bb7229d85e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">勾配計算  <a href="classrbm_1_1Learn.html#acd1c978bb6a3471760ac2bb7229d85e9">[詳解]</a><br /></td></tr>
 <tr class="separator:acd1c978bb6a3471760ac2bb7229d85e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3007d01d42932014a8e25cc7bfbf814f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrbm_1_1Learn.html#a3007d01d42932014a8e25cc7bfbf814f">is_zero</a> (double value)</td></tr>
+<tr class="memdesc:a3007d01d42932014a8e25cc7bfbf814f"><td class="mdescLeft">&#160;</td><td class="mdescRight">ゼロ判定  <a href="classrbm_1_1Learn.html#a3007d01d42932014a8e25cc7bfbf814f">[詳解]</a><br /></td></tr>
 <tr class="separator:a3007d01d42932014a8e25cc7bfbf814f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
@@ -191,6 +194,8 @@ rbm::Learn 連携図</div>
       </table>
 </div><div class="memdoc">
 
+<p>デストラクタ </p>
+
 </div>
 </div>
 <h2 class="groupheader">関数詳解</h2>
@@ -236,7 +241,7 @@ rbm::Learn 連携図</div>
   </table>
   </dd>
 </dl>
-<p>データ平均を計算する </p>
+<p>データ平均を計算する </p><dl class="section return"><dt>戻り値</dt><dd>Grad データ平均 </dd></dl>
 <div class="dynheader">
 呼び出し関係図:</div>
 <div class="dyncontent">
@@ -274,6 +279,15 @@ rbm::Learn 連携図</div>
 </table>
 </div><div class="memdoc">
 
+<p>勾配計算 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">grad_data</td><td>計算する勾配の入力</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>各パラメータから勾配を計算する </p><dl class="section return"><dt>戻り値</dt><dd>double 勾配 </dd></dl>
+
 </div>
 </div>
 <a id="a122f7afc523febfde32c14076c759e2c"></a>
@@ -304,10 +318,11 @@ rbm::Learn 連携図</div>
 <dl class="params"><dt>引数</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">model_object</td><td>パラメーター更新に使用するmodel </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">data_set</td><td>パラメーター更新の最終step数</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">data_set</td><td>パラメーター更新の最終step数 </td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>戻り値</dt><dd>Grad モデル平均</dd></dl>
 <p>厳密計算を使用したモデル平均の計算を行う, データの次元が多いと学習が終わらないので注意 </p>
 <div class="dynheader">
 呼び出し関係図:</div>
@@ -366,10 +381,11 @@ rbm::Learn 連携図</div>
 <dl class="params"><dt>引数</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">model_object</td><td>パラメーター更新に使用するmodel </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">data_set</td><td>パラメーター更新の最終step数</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">data_set</td><td>パラメーター更新の最終step数 </td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>戻り値</dt><dd>Grad モデル平均</dd></dl>
 <p>cd法を使用したモデル平均の計算を行う </p>
 <div class="dynheader">
 呼び出し関係図:</div>
@@ -461,10 +477,11 @@ rbm::Learn 連携図</div>
     <tr><td class="paramdir">[in]</td><td class="paramname">data_set</td><td>学習に使用するデータセット </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">max_step</td><td>step数の最大値(100) </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">result_file_name</td><td>学習過程の保存ファイル </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">result_step</td><td>パラメーター更新の最終step数</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">result_step</td><td>パラメーター更新の最終step数 </td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>戻り値</dt><dd><a class="el" href="classrbm_1_1Model.html" title="Modelの型定義">Model</a> 学習後のモデル</dd></dl>
 <p>CD法を使用した学習, ミニバッチ学習を行う </p>
 <div class="dynheader">
 呼び出し関係図:</div>
@@ -535,10 +552,11 @@ rbm::Learn 連携図</div>
     <tr><td class="paramdir">[in]</td><td class="paramname">data_set</td><td>学習に使用するデータセット </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">max_step</td><td>step数の最大値(100) </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">result_file_name</td><td>学習過程の保存ファイル </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">result_step</td><td>パラメーター更新の最終step数</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">result_step</td><td>パラメーター更新の最終step数 </td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>戻り値</dt><dd><a class="el" href="classrbm_1_1Model.html" title="Modelの型定義">Model</a> 学習後のモデル</dd></dl>
 <p>厳密計算を使用した学習, データの次元が多いと学習が終わらないので注意 </p>
 <div class="dynheader">
 呼び出し関係図:</div>
@@ -575,6 +593,16 @@ rbm::Learn 連携図</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>ゼロ判定 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">grad_data</td><td>計算する勾配の入力 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>bool ゼロかどうか</dd></dl>
+<p>各パラメータから勾配を計算する </p>
 
 </div>
 </div>

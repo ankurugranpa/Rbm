@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>My Project: src/data_types/parametar.h ソースファイル</title>
+<title>Rbm: src/data_types/parametar.h ソースファイル</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">My Project
+   <div id="projectname">Rbm
    </div>
   </td>
  </tr>
@@ -69,31 +69,32 @@ $(function() {
 <div class="title">parametar.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="parametar_8h.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef PARAMETAR_H</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define PARAMETAR_H</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include&quot;<a class="code" href="bias_8h.html">bias.h</a>&quot;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include&quot;<a class="code" href="weight_8h.html">weight.h</a>&quot;</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">using namespace </span><a class="code" href="namespacerbm__types.html">rbm_types</a>;</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacerbm__types.html">rbm_types</a>{</div>
-<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="classrbm__types_1_1Parametar.html">   12</a></span>&#160;  <span class="keyword">class </span><a class="code" href="classrbm__types_1_1Parametar.html">Parametar</a> {</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="classrbm__types_1_1Parametar.html#a1a0986deb5b0eed7a3dd1474f81fc5e1">   14</a></span>&#160;      <a class="code" href="classrbm__types_1_1Bias.html">Bias</a> <a class="code" href="classrbm__types_1_1Parametar.html#a1a0986deb5b0eed7a3dd1474f81fc5e1">visible_bias</a>;</div>
-<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="classrbm__types_1_1Parametar.html#a4e8ee448958d31b40e855e83493c631e">   15</a></span>&#160;      <a class="code" href="classrbm__types_1_1Bias.html">Bias</a> <a class="code" href="classrbm__types_1_1Parametar.html#a4e8ee448958d31b40e855e83493c631e">hidden_bias</a>;</div>
-<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="classrbm__types_1_1Parametar.html#ad2fe1b7c5543a197a37babd93c7684f2">   16</a></span>&#160;      <a class="code" href="classrbm__types_1_1Weight.html">Weight</a> <a class="code" href="classrbm__types_1_1Parametar.html#ad2fe1b7c5543a197a37babd93c7684f2">weight</a>;</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;      <a class="code" href="classrbm__types_1_1Parametar.html#ae453ab1090536aa92f3f228d9b543824">Parametar</a>(<span class="keywordtype">int</span> visible_dim, <span class="keywordtype">int</span> hidden_dim);</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;      <a class="code" href="classrbm__types_1_1Parametar.html#ae453ab1090536aa92f3f228d9b543824">Parametar</a>();</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  };</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;}</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="abias_8h_html"><div class="ttname"><a href="bias_8h.html">bias.h</a></div></div>
+<a href="parametar_8h.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#ifndef PARAMETAR_H</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#define PARAMETAR_H</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include&quot;<a class="code" href="bias_8h.html">bias.h</a>&quot;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include&quot;<a class="code" href="weight_8h.html">weight.h</a>&quot;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">using namespace </span><a class="code" href="namespacerbm__types.html">rbm_types</a>;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacerbm__types.html">rbm_types</a>{</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="classrbm__types_1_1Parametar.html">   20</a></span>&#160;  <span class="keyword">class </span><a class="code" href="classrbm__types_1_1Parametar.html">Parametar</a> {</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="classrbm__types_1_1Parametar.html#a1a0986deb5b0eed7a3dd1474f81fc5e1">   22</a></span>&#160;      <a class="code" href="classrbm__types_1_1Bias.html">Bias</a> <a class="code" href="classrbm__types_1_1Parametar.html#a1a0986deb5b0eed7a3dd1474f81fc5e1">visible_bias</a>;</div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="classrbm__types_1_1Parametar.html#a4e8ee448958d31b40e855e83493c631e">   23</a></span>&#160;      <a class="code" href="classrbm__types_1_1Bias.html">Bias</a> <a class="code" href="classrbm__types_1_1Parametar.html#a4e8ee448958d31b40e855e83493c631e">hidden_bias</a>;</div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="classrbm__types_1_1Parametar.html#ad2fe1b7c5543a197a37babd93c7684f2">   24</a></span>&#160;      <a class="code" href="classrbm__types_1_1Weight.html">Weight</a> <a class="code" href="classrbm__types_1_1Parametar.html#ad2fe1b7c5543a197a37babd93c7684f2">weight</a>;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;      <a class="code" href="classrbm__types_1_1Parametar.html#ae453ab1090536aa92f3f228d9b543824">Parametar</a>(<span class="keywordtype">int</span> visible_dim, <span class="keywordtype">int</span> hidden_dim);</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;      <a class="code" href="classrbm__types_1_1Parametar.html#ae453ab1090536aa92f3f228d9b543824">Parametar</a>();</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  };</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;}</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="abias_8h_html"><div class="ttname"><a href="bias_8h.html">bias.h</a></div><div class="ttdoc">RBMのバイアスのデータ型</div></div>
 <div class="ttc" id="aclassrbm__types_1_1Bias_html"><div class="ttname"><a href="classrbm__types_1_1Bias.html">rbm_types::Bias</a></div><div class="ttdoc">Biasの型定義</div><div class="ttdef"><b>Definition:</b> bias.h:18</div></div>
-<div class="ttc" id="aclassrbm__types_1_1Parametar_html"><div class="ttname"><a href="classrbm__types_1_1Parametar.html">rbm_types::Parametar</a></div><div class="ttdoc">Parametar型の定義</div><div class="ttdef"><b>Definition:</b> parametar.h:12</div></div>
-<div class="ttc" id="aclassrbm__types_1_1Parametar_html_a1a0986deb5b0eed7a3dd1474f81fc5e1"><div class="ttname"><a href="classrbm__types_1_1Parametar.html#a1a0986deb5b0eed7a3dd1474f81fc5e1">rbm_types::Parametar::visible_bias</a></div><div class="ttdeci">Bias visible_bias</div><div class="ttdef"><b>Definition:</b> parametar.h:14</div></div>
-<div class="ttc" id="aclassrbm__types_1_1Parametar_html_a4e8ee448958d31b40e855e83493c631e"><div class="ttname"><a href="classrbm__types_1_1Parametar.html#a4e8ee448958d31b40e855e83493c631e">rbm_types::Parametar::hidden_bias</a></div><div class="ttdeci">Bias hidden_bias</div><div class="ttdef"><b>Definition:</b> parametar.h:15</div></div>
-<div class="ttc" id="aclassrbm__types_1_1Parametar_html_ad2fe1b7c5543a197a37babd93c7684f2"><div class="ttname"><a href="classrbm__types_1_1Parametar.html#ad2fe1b7c5543a197a37babd93c7684f2">rbm_types::Parametar::weight</a></div><div class="ttdeci">Weight weight</div><div class="ttdef"><b>Definition:</b> parametar.h:16</div></div>
+<div class="ttc" id="aclassrbm__types_1_1Parametar_html"><div class="ttname"><a href="classrbm__types_1_1Parametar.html">rbm_types::Parametar</a></div><div class="ttdoc">Parametar型の定義</div><div class="ttdef"><b>Definition:</b> parametar.h:20</div></div>
+<div class="ttc" id="aclassrbm__types_1_1Parametar_html_a1a0986deb5b0eed7a3dd1474f81fc5e1"><div class="ttname"><a href="classrbm__types_1_1Parametar.html#a1a0986deb5b0eed7a3dd1474f81fc5e1">rbm_types::Parametar::visible_bias</a></div><div class="ttdeci">Bias visible_bias</div><div class="ttdef"><b>Definition:</b> parametar.h:22</div></div>
+<div class="ttc" id="aclassrbm__types_1_1Parametar_html_a4e8ee448958d31b40e855e83493c631e"><div class="ttname"><a href="classrbm__types_1_1Parametar.html#a4e8ee448958d31b40e855e83493c631e">rbm_types::Parametar::hidden_bias</a></div><div class="ttdeci">Bias hidden_bias</div><div class="ttdef"><b>Definition:</b> parametar.h:23</div></div>
+<div class="ttc" id="aclassrbm__types_1_1Parametar_html_ad2fe1b7c5543a197a37babd93c7684f2"><div class="ttname"><a href="classrbm__types_1_1Parametar.html#ad2fe1b7c5543a197a37babd93c7684f2">rbm_types::Parametar::weight</a></div><div class="ttdeci">Weight weight</div><div class="ttdef"><b>Definition:</b> parametar.h:24</div></div>
 <div class="ttc" id="aclassrbm__types_1_1Parametar_html_ae453ab1090536aa92f3f228d9b543824"><div class="ttname"><a href="classrbm__types_1_1Parametar.html#ae453ab1090536aa92f3f228d9b543824">rbm_types::Parametar::Parametar</a></div><div class="ttdeci">Parametar()</div><div class="ttdef"><b>Definition:</b> parametar.cpp:4</div></div>
 <div class="ttc" id="aclassrbm__types_1_1Weight_html"><div class="ttname"><a href="classrbm__types_1_1Weight.html">rbm_types::Weight</a></div><div class="ttdoc">Weight(重み)の型定義</div><div class="ttdef"><b>Definition:</b> weight.h:19</div></div>
 <div class="ttc" id="anamespacerbm__types_html"><div class="ttname"><a href="namespacerbm__types.html">rbm_types</a></div><div class="ttdef"><b>Definition:</b> bias.h:14</div></div>
