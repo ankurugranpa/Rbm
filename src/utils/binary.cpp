@@ -12,7 +12,7 @@ Data Binary::num2binary(int num){
   Data result(bit_num);
 
   boost::dynamic_bitset<> binary(bit_num, num);
-  for(int i=0; i< binary.size(); i++){
+  for(auto i=0u; i< binary.size(); i++){
     result(bit_num - 1 - i) = static_cast<int>(binary[i]);
   }
   return result;

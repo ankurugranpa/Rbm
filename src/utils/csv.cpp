@@ -33,6 +33,17 @@ void Csv::dataset2csv(DataSet data_set, std::string file_name){
    }
 }
 
+void Csv::data2csv(Data data, std::string file_name){
+   std::ofstream data_file(work_dir+ "/" + file_name);
+   for(int i=0; i<data.size(); i++){
+     if(i != data.size()-1){
+      data_file << data(i) << ",";
+     }else{
+      data_file << data(i) << "\n";
+     }
+   }
+}
+
 DataSet Csv::csv2dataset(std::string file_name){
   DataSet result_data;
   std::ifstream file(work_dir+ "/" + file_name);
@@ -53,7 +64,7 @@ DataSet Csv::csv2dataset(std::string file_name){
     }
 
     Eigen::VectorXi buf_vec(row.size());
-    for(int i=0; i<row.size(); i++){
+    for(auto i=0u; i<row.size(); i++){
       buf_vec(i) = row[i];
     }
     result_data.push_back(buf_vec);
@@ -77,34 +88,3 @@ void Csv::parametar2csv(Parametar parametar){
    weight_data_file << parametar.weight;
    weight_data_file.close();
 }
-
-// Parametar Csv::csv2parametar(std::string file_name){
-//   DataSet result_data;
-//   std::ifstream file(work_dir+ "/" + file_name);
-//   std::string line;
-//   std::stringstream line_stream(line);
-// 
-//   if(!file.is_open()){
-//      throw std::invalid_argument( "Failed file open" );
-//   }
-//   while(std::getline(file, line)) {
-//     std::stringstream line_stream(line);
-//     std::string cell;
-//     std::vector<int> row;
-//     
-//     // カンマをデリミタとしてセルを読み込む
-//     while (std::getline(line_stream, cell, ',')) {
-//         row.push_back(std::stoi(cell));
-//     }
-// 
-//     Eigen::VectorXi buf_vec(row.size());
-//     for(int i=0; i<row.size(); i++){
-//       buf_vec(i) = row[i];
-//     }
-//     result_data.push_back(buf_vec);
-// 
-//   }
-//   file.close();
-// 
-//   return result_data;
-// }

@@ -29,6 +29,8 @@ namespace rbm_types{
   /*! @struct Data
     @brief  Dataの型定義
   */
-  struct DataSet: std::vector<Data>{};
+  struct DataSet : public std::vector<Data> {
+      using std::vector<Data>::vector;
+  };
 }
 #endif

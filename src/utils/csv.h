@@ -43,6 +43,14 @@ namespace rbm_utils{
       void dataset2csv(DataSet data_set, std::string file_name);
 
       /**
+       *  @brief data2csv
+       *  @param[in] data 保存するデータ
+       *  @param[in] file_name ファイル名
+       *  @details データをcsvファイルに出力するツール
+       */
+      void data2csv(Data data, std::string file_name);
+
+      /**
        *  @brief csv2dataset
        *  @param[in] file_name ファイルの名前
        *  @return DataSet バイナリのデータセット.csv

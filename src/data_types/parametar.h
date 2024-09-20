@@ -15,6 +15,7 @@ namespace rbm_types{
       Bias hidden_bias;
       Weight weight;
       Parametar(int visible_dim, int hidden_dim);
+      Parametar();
   };
 }
 

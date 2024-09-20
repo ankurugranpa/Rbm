@@ -12,6 +12,7 @@
 #include<Eigen/Dense>
 
 #include<parametar.h>
+#include<data.h>
 
 
 
@@ -34,7 +35,6 @@ namespace rbm{
       Parametar parametar;
 
 
-
       Model();
       /**
        *  @brief Init Rbm
@@ -51,7 +51,7 @@ namespace rbm{
        *  @param[in] parametar 初期パラメータ 
        *  @details 任意のパラメーターを初期値の演算が行われないため初期値を自分で設定する必要がある
        */
-      Model(int visible_dim, int hidden_dim, Parametar parametar);
+      Model(Parametar parametar);
       ~Model();
 
       /**
@@ -69,7 +69,7 @@ namespace rbm{
       Eigen::VectorXd lambda_hidden(const Parametar& parametar, const Eigen::VectorXi& rand_visible) const;
 
       /**
-       *  @brief Init Rbm
+       *  @brief Rbmのコスト関数
        *  @param[in] parametar パラメーター
        *  @param[in] rand_visible 可視変数の確率変数
        *  @param[in] rand_hidden 隠れ変数の確率変数
@@ -77,7 +77,7 @@ namespace rbm{
       double cost_func(const Parametar& parametar, const Eigen::VectorXi& rand_visible, const Eigen::VectorXi& rand_hidden) const;
 
       /**
-       *  @brief calc cost function 
+       *  @brief calc Rbmのコスト関数を周辺化したもの
        *  @param[in] parametar パラメーター
        *  @param[in] rand_visible 可視変数の確率変数
        *  @return double calced cost func C_v(v;\theta) 
@@ -87,7 +87,27 @@ namespace rbm{
 
       void set_parameter(Parametar parametar);
 
+      /**
+       *  @brief KLダイバージェンス
+       *  @param[in] model 比較対象のモデル
+       *  @return double kl距離を返す
+       *  @details 自分と引き数とのKL距離を算出する
+       */
+      double kl_divergence(const Model& model);
 
+      /**
+       *  @brief 分布
+       *  @return std::vector<double> 各状態の分布
+       *  @details 各状態の分布を算出する関数
+       */
+      std::vector<double> distribution();
+
+      /**
+       *  @brief すべての状態
+       *  @return DataSet 状態
+       *  @details モデルがとりうるすべての状態を算出する
+       */
+      DataSet all_status();
   };
 }
 

@@ -21,16 +21,16 @@ enable_testing()
 include(GoogleTest)
 
 # Add the executable for the testcase which is using googletest
-add_executable(rbm_test rbm_test.cpp)
+add_executable(model_test model_test.cpp)
 add_executable(sigmoid_test  sigmoid_test.cpp)
 add_executable(binary_test  binary_test.cpp)
 add_executable(grad_test  grad_test.cpp)
 # add_executable(gibbssampling_test  gibbssampling_test/gibbssampling_test.cpp)
 # add_executable(rbm_result_test rbm_result_test/rbm_result_test.cpp)
-# add_executable(cd_rbm_test cd_rbm_test/cd_rbm_test.cpp)
+# add_executable(cd_model_test cd_model_test/cd_model_test.cpp)
 # add_executable(mnist_test mnist_test/mnist_test.cpp)
 
-target_link_libraries(rbm_test PRIVATE libmodel GTest::gtest GTest::gtest_main)
+target_link_libraries(model_test PRIVATE libmodel GTest::gtest GTest::gtest_main)
 target_link_libraries(sigmoid_test PRIVATE libsigmoid GTest::gtest GTest::gtest_main)
 target_link_libraries(binary_test PRIVATE libbinary GTest::gtest GTest::gtest_main)
 target_link_libraries(grad_test PRIVATE libgrad GTest::gtest GTest::gtest_main)
@@ -40,7 +40,7 @@ target_link_libraries(grad_test PRIVATE libgrad GTest::gtest GTest::gtest_main)
 #   PRIVATE arg_config
 #   ${Boost_LIBRARIES}
 # )
-# target_link_libraries(cd_rbm_test
+# target_link_libraries(cd_model_test
 #   PRIVATE libmodel
 #   PRIVATE arg_config
 #   ${Boost_LIBRARIES}
@@ -53,12 +53,12 @@ target_link_libraries(grad_test PRIVATE libgrad GTest::gtest GTest::gtest_main)
 # )
 
 # Discover tests
-gtest_discover_tests(rbm_test)
+gtest_discover_tests(model_test)
 # add_test(NAME SigmoidTest)
-# add_test(NAME RbmTest)
+# add_test(NAME ModelTest)
 
 # ctestの設定
 add_test(NAME SigmoidTests COMMAND sigmoid_test)
 add_test(NAME BinaryTests COMMAND binary_test)
 add_test(NAME GradTests COMMAND grad_test)
-add_test(NAME RBMTests COMMAND rbm_test)
+add_test(NAME ModelTests COMMAND model_test)

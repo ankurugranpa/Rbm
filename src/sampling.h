@@ -32,6 +32,14 @@ namespace rbm{
        *  @param[in] sampling_rate サンプリングの周期
        */
       DataSet create_data_set(const rbm::Model& model_object,int data_num, int sampling_rate);
+
+      /**
+       *  @brief バイナリデータセットの作成
+       *  @param[in] model_object モデルデータ
+       *  @param[in] data_num データの数
+       *  @param[in] sampling_rate サンプリングの周期
+       */
+      Data create_data(const rbm::Model& model_object, Data base_data, int sampling_rate);
   };
 }
 

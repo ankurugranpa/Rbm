@@ -1,12 +1,14 @@
 #include<random>
-#include<iostream>
+
+#include<data.h>
+#include<binary.h>
 
 #include"model.h"
 
 using namespace rbm;
 
 
-Model::Model(): visible_dim(0), hidden_dim(0), parametar(0, 0) {}
+Model::Model():  parametar() {}
 
 Model::Model(int visible_dim, int hidden_dim): 
   visible_dim(visible_dim), hidden_dim(hidden_dim), parametar(visible_dim, hidden_dim)
@@ -28,9 +30,11 @@ Model::Model(int visible_dim, int hidden_dim):
 
 }
 
-Model::Model(int visible_dim, int hidden_dim, Parametar parametar):
-  visible_dim(visible_dim), hidden_dim(hidden_dim), parametar(visible_dim, hidden_dim)
+Model::Model(Parametar parametar): parametar()
 {
+  this->visible_dim = parametar.visible_bias.size();
+  this->hidden_dim = parametar.hidden_bias.size();
+
   this->parametar.visible_bias = parametar.visible_bias;
   this->parametar.hidden_bias = parametar.hidden_bias;
   this->parametar.weight = parametar.weight;
@@ -56,7 +60,7 @@ double Model::cost_func(const Parametar& parametar, const Eigen::VectorXi& rand_
   double visible_bias_term, hideen_bias_term, weight_bias_term;
   visible_bias_term = parametar.visible_bias.transpose()*rand_visible.cast<double>();
   hideen_bias_term = parametar.hidden_bias.transpose()*rand_hidden.cast<double>();
-  weight_bias_term = (parametar.weight.transpose()*rand_visible.cast<double>()).transpose()*rand_hidden.cast<double>();
+  weight_bias_term = (rand_visible.transpose().cast<double>() * parametar.weight * rand_hidden.cast<double>());
   return - (visible_bias_term + hideen_bias_term + weight_bias_term);
 }
 
@@ -77,4 +81,42 @@ void Model::set_parameter(Parametar parametar){
   this->parametar.visible_bias = parametar.visible_bias;
   this->parametar.hidden_bias = parametar.hidden_bias;
   this->parametar.weight = parametar.weight;
+}
+
+double Model::kl_divergence(const Model& model){
+  double result=0;
+  std::vector<double> q_d, p_v;
+  DataSet status = all_status();
+  
+  for(const auto& st:status){
+    q_d.push_back(std::exp(-model.cost_v(model.parametar, st)));
+    p_v.push_back(std::exp(-cost_v(parametar, st)));
+  }
+
+  double q_d_z = std::reduce(std::begin(q_d), std::end(q_d));
+  double p_v_z = std::reduce(std::begin(p_v), std::end(p_v));
+
+  for(auto& item: q_d){
+    item = item/q_d_z;
+  }
+  for(auto& item: p_v){
+    item = item/p_v_z;
+  }
+
+  // for(int i=0; i<q_d.size(); i++){
+  for(auto i = 0u; i < q_d.size(); i++){
+    if (q_d[i] > 0 && p_v[i] > 0) {  // ゼロ割りを防ぐ
+        result += q_d[i] * std::log(q_d[i]/p_v[i]);
+    }
+  }
+  return result;
+}
+
+DataSet Model::all_status(){
+  DataSet st;
+  rbm_utils::Binary binaryer(visible_dim);
+  for(int i=0; i<std::pow(visible_dim, 2); i++){
+    st.push_back(binaryer.num2binary(i));
+  }
+  return st;
 }
