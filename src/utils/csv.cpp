@@ -28,16 +28,22 @@ void Csv::set_work_dir(std::string work_dir){
 void Csv::dataset2csv(DataSet data_set, std::string file_name){
    std::ofstream data_file(work_dir+ "/" + file_name);
    for (auto &&item : data_set ) {
-        data_file << item.transpose();
-        data_file << '\n';
+     for(int i=0; i<item.size(); i++){
+       if(i != item.size()-1){
+         data_file << item(i) << ",";
+       }else{
+        data_file << item(i) << "\n";
+       }
+     }
+     //    data_file << item.transpose();
+     //    data_file << '\n';
    }
 }
 
 void Csv::data2csv(Data data, std::string file_name){
    std::ofstream data_file(work_dir+ "/" + file_name);
    for(int i=0; i<data.size(); i++){
-     if(i != data.size()-1){
-      data_file << data(i) << ",";
+     if(i != data.size()-1){ data_file << data(i) << ",";
      }else{
       data_file << data(i) << "\n";
      }

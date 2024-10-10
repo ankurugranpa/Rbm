@@ -3,7 +3,6 @@
 #include<string>
 #include <filesystem>
 #include<random>
-#include<fstream>
 #include<tuple>
 
 #include<boost/program_options.hpp>
@@ -120,6 +119,8 @@ int main(const int argc, const char* const * const argv){
       // }
       out_csv.data2csv(data_set[rand], ("original_" + std::to_string(num) + ".csv"));
 
+      DataSet result_data_set;
+      result_data_set.clear();
       for(int epoch = 0; epoch <EPOCH_NUM ; epoch++) {
         
         Model train_model(parameter_set[epoch]);
@@ -127,7 +128,8 @@ int main(const int argc, const char* const * const argv){
         DataSet create_data_set;
         buf_data_set.push_back(data_set[rand]);
         std::tie(create_data_set, std::ignore) = sampler.block_gibbs_sampling(buf_data_set, train_model, 1);
-        Data create_data = create_data_set[0];
+        // Data create_data = create_data_set[0];
+        result_data_set.push_back(create_data_set[0]);
 
 
         // for(int i=0; i<create_data.size(); i++){
@@ -138,8 +140,11 @@ int main(const int argc, const char* const * const argv){
         //   }
         // }
 
-        out_csv.data2csv(create_data, ("learned_" + std::to_string(num) + ".csv"));
+        // out_csv.data2csv(create_data, ("learned_" + std::to_string(num) + ".csv"));
       }
+      std::string file_name = ("learned_" + std::to_string(num) + ".csv");
+      out_csv.dataset2csv(result_data_set, file_name);
+      std::cout << "ファイル:" << file_name << "を保存しました"  <<std::endl;
     }
 
   } catch (const boost::bad_any_cast& e) {
