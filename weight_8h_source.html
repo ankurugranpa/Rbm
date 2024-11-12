@@ -92,14 +92,21 @@ $(function() {
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;            this-&gt;Eigen::MatrixXd::operator=(other);</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;            <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        }</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  };</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;}</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <span class="comment">// block()メソッドをラップするメソッドを追加</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="classrbm__types_1_1Weight.html#ab47380d763cb3d47a5ff9c7ffacaa301">   37</a></span>&#160;        <a class="code" href="classrbm__types_1_1Weight.html">Weight</a> <a class="code" href="classrbm__types_1_1Weight.html#ab47380d763cb3d47a5ff9c7ffacaa301">block</a>(<span class="keywordtype">int</span> startRow, <span class="keywordtype">int</span> startCol, <span class="keywordtype">int</span> numRows, <span class="keywordtype">int</span> numCols)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="classrbm__types_1_1Weight.html#a0541149928651ae38f671d3ce5633419">Weight</a>(Eigen::MatrixXd::block(startRow, startCol, numRows, numCols));</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        }</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  };</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;}</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="aclassrbm__types_1_1Weight_html"><div class="ttname"><a href="classrbm__types_1_1Weight.html">rbm_types::Weight</a></div><div class="ttdoc">Weight(重み)の型定義</div><div class="ttdef"><b>Definition:</b> weight.h:19</div></div>
 <div class="ttc" id="aclassrbm__types_1_1Weight_html_a0541149928651ae38f671d3ce5633419"><div class="ttname"><a href="classrbm__types_1_1Weight.html#a0541149928651ae38f671d3ce5633419">rbm_types::Weight::Weight</a></div><div class="ttdeci">Weight()</div><div class="ttdef"><b>Definition:</b> weight.h:22</div></div>
 <div class="ttc" id="aclassrbm__types_1_1Weight_html_a31c336ed5142435748bbb80ed47654c7"><div class="ttname"><a href="classrbm__types_1_1Weight.html#a31c336ed5142435748bbb80ed47654c7">rbm_types::Weight::Weight</a></div><div class="ttdeci">Weight(const Eigen::MatrixXd &amp;other)</div><div class="ttdef"><b>Definition:</b> weight.h:28</div></div>
 <div class="ttc" id="aclassrbm__types_1_1Weight_html_a3ed94531e95f06d64825ad60d38d104a"><div class="ttname"><a href="classrbm__types_1_1Weight.html#a3ed94531e95f06d64825ad60d38d104a">rbm_types::Weight::operator=</a></div><div class="ttdeci">Weight &amp; operator=(const Eigen::MatrixXd &amp;other)</div><div class="ttdef"><b>Definition:</b> weight.h:31</div></div>
 <div class="ttc" id="aclassrbm__types_1_1Weight_html_a72bba341138ef9b55d8fe36f5b48a6e6"><div class="ttname"><a href="classrbm__types_1_1Weight.html#a72bba341138ef9b55d8fe36f5b48a6e6">rbm_types::Weight::Weight</a></div><div class="ttdeci">Weight(int rows, int cols)</div><div class="ttdef"><b>Definition:</b> weight.h:25</div></div>
+<div class="ttc" id="aclassrbm__types_1_1Weight_html_ab47380d763cb3d47a5ff9c7ffacaa301"><div class="ttname"><a href="classrbm__types_1_1Weight.html#ab47380d763cb3d47a5ff9c7ffacaa301">rbm_types::Weight::block</a></div><div class="ttdeci">Weight block(int startRow, int startCol, int numRows, int numCols) const</div><div class="ttdef"><b>Definition:</b> weight.h:37</div></div>
 <div class="ttc" id="anamespacerbm__types_html"><div class="ttname"><a href="namespacerbm__types.html">rbm_types</a></div><div class="ttdef"><b>Definition:</b> bias.h:14</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
