@@ -113,8 +113,8 @@ Model Learn::contrastive_divergence(const Model& model,
       diff = calc_data_mean(result_model, batch_data) - calc_model_mean_cd(result_model, batch_data, cd_k_num);
       grad = calc_grad(diff);
 
-      result_file << "epoch:" << e+1 << " "  <<"step:" << b+1 <<  " " << "grad" << grad << "\n";
-      std::cout << "epoch:" << e+1 << " "  <<"step:" << b+1 <<  " " << "grad" << grad << std::endl;
+      result_file << "epoch:" << e+1 << " "  <<"step:" << b+1 <<  " " << "grad:" << grad << "\n";
+      std::cout << "epoch:" << e+1 << " "  <<"step:" << b+1 <<  " " << "grad:" << grad << std::endl;
 
 
       if(is_zero(grad)){ return result_model; }

@@ -32,6 +32,12 @@ namespace rbm_types{
             this->Eigen::MatrixXd::operator=(other);
             return *this;
         }
+        
+        // block()メソッドをラップするメソッドを追加
+        Weight block(int startRow, int startCol, int numRows, int numCols) const {
+            return Weight(Eigen::MatrixXd::block(startRow, startCol, numRows, numCols));
+        }
+
   };
 }
 #endif

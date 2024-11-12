@@ -26,6 +26,11 @@ namespace rbm_types{
             this->Eigen::VectorXd::operator=(other);
             return *this;
         }
+        
+        // block()メソッドをラップするメソッドを追加
+        Bias block(int start, int size) const {
+            return Bias(Eigen::VectorXd::block(start, 0, size, 1));
+        }
   };
 }
 #endif

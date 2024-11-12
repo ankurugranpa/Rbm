@@ -64,7 +64,7 @@ namespace rbm{
        *  @param[in] rand_hidden 隠れ変数の確率変数
        *  @return Eigen::VectorXd lambda_visibleの値
        */
-      Eigen::VectorXd lambda_visible(const Parametar& parametar, const Eigen::VectorXi& rand_hidden) const;
+      virtual Eigen::VectorXd lambda_visible(const Parametar& parametar, const Eigen::VectorXi& rand_hidden) const;
 
       /**
        *  @brief Init Rbm
@@ -72,7 +72,7 @@ namespace rbm{
        *  @param[in] rand_visible 可視変数の確率変数
        *  @return Eigen::VectorXd lambda_hiddenの値
        */
-      Eigen::VectorXd lambda_hidden(const Parametar& parametar, const Eigen::VectorXi& rand_visible) const;
+      virtual Eigen::VectorXd lambda_hidden(const Parametar& parametar, const Eigen::VectorXi& rand_visible) const;
 
       /**
        *  @brief Rbmのコスト関数
