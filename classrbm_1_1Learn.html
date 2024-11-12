@@ -68,7 +68,6 @@ $(function() {
   <div class="summary">
 <a href="#pub-methods">公開メンバ関数</a> &#124;
 <a href="#pub-attribs">公開変数類</a> &#124;
-<a href="#pri-methods">非公開メンバ関数</a> &#124;
 <a href="classrbm_1_1Learn-members.html">全メンバ一覧</a>  </div>
   <div class="headertitle">
 <div class="title">rbm::Learn クラス</div>  </div>
@@ -106,17 +105,6 @@ rbm::Learn 連携図</div>
 <tr class="separator:aea5ae36bb1c582b4039837db3750f553"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:affa9c2200d2b62d254fa831bb82fad1d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrbm_1_1Learn.html#affa9c2200d2b62d254fa831bb82fad1d">set_epsilon</a> (double value)</td></tr>
 <tr class="separator:affa9c2200d2b62d254fa831bb82fad1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
-公開変数類</h2></td></tr>
-<tr class="memitem:a2367128151447894932115e09241c2af"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrbm_1_1Learn.html#a2367128151447894932115e09241c2af">work_dir</a></td></tr>
-<tr class="memdesc:a2367128151447894932115e09241c2af"><td class="mdescLeft">&#160;</td><td class="mdescRight">学習結果や過程の保存先  <a href="classrbm_1_1Learn.html#a2367128151447894932115e09241c2af">[詳解]</a><br /></td></tr>
-<tr class="separator:a2367128151447894932115e09241c2af"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a72e3bea6529aefbb4b57a852ad05b652"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrbm_1_1Learn.html#a72e3bea6529aefbb4b57a852ad05b652">epsilon</a> = 1e-10</td></tr>
-<tr class="separator:a72e3bea6529aefbb4b57a852ad05b652"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
-非公開メンバ関数</h2></td></tr>
 <tr class="memitem:abc6fbf8c11670664518049bee83bf2b4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classrbm__types_1_1Grad.html">Grad</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrbm_1_1Learn.html#abc6fbf8c11670664518049bee83bf2b4">calc_data_mean</a> (const <a class="el" href="classrbm_1_1Model.html">Model</a> &amp;model_object, const <a class="el" href="structrbm__types_1_1DataSet.html">DataSet</a> &amp;data_set)</td></tr>
 <tr class="memdesc:abc6fbf8c11670664518049bee83bf2b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">データ平均  <a href="classrbm_1_1Learn.html#abc6fbf8c11670664518049bee83bf2b4">[詳解]</a><br /></td></tr>
 <tr class="separator:abc6fbf8c11670664518049bee83bf2b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -132,6 +120,14 @@ rbm::Learn 連携図</div>
 <tr class="memitem:a3007d01d42932014a8e25cc7bfbf814f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrbm_1_1Learn.html#a3007d01d42932014a8e25cc7bfbf814f">is_zero</a> (double value)</td></tr>
 <tr class="memdesc:a3007d01d42932014a8e25cc7bfbf814f"><td class="mdescLeft">&#160;</td><td class="mdescRight">ゼロ判定  <a href="classrbm_1_1Learn.html#a3007d01d42932014a8e25cc7bfbf814f">[詳解]</a><br /></td></tr>
 <tr class="separator:a3007d01d42932014a8e25cc7bfbf814f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+公開変数類</h2></td></tr>
+<tr class="memitem:a2367128151447894932115e09241c2af"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrbm_1_1Learn.html#a2367128151447894932115e09241c2af">work_dir</a></td></tr>
+<tr class="memdesc:a2367128151447894932115e09241c2af"><td class="mdescLeft">&#160;</td><td class="mdescRight">学習結果や過程の保存先  <a href="classrbm_1_1Learn.html#a2367128151447894932115e09241c2af">[詳解]</a><br /></td></tr>
+<tr class="separator:a2367128151447894932115e09241c2af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72e3bea6529aefbb4b57a852ad05b652"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrbm_1_1Learn.html#a72e3bea6529aefbb4b57a852ad05b652">epsilon</a> = 1e-10</td></tr>
+<tr class="separator:a72e3bea6529aefbb4b57a852ad05b652"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
 <div class="textblock"><p>rbmの学習 </p>
@@ -204,9 +200,6 @@ rbm::Learn 連携図</div>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="classrbm__types_1_1Grad.html">Grad</a> Learn::calc_data_mean </td>
@@ -226,11 +219,6 @@ rbm::Learn 連携図</div>
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>データ平均 </p>
@@ -260,9 +248,6 @@ rbm::Learn 連携図</div>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">double Learn::calc_grad </td>
@@ -272,11 +257,6 @@ rbm::Learn 連携図</div>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>勾配計算 </p>
@@ -295,9 +275,6 @@ rbm::Learn 連携図</div>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="classrbm__types_1_1Grad.html">Grad</a> Learn::calc_model_mean </td>
@@ -307,11 +284,6 @@ rbm::Learn 連携図</div>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>厳密計算でのモデル平均 </p>
@@ -342,9 +314,6 @@ rbm::Learn 連携図</div>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="classrbm__types_1_1Grad.html">Grad</a> Learn::calc_model_mean_cd </td>
@@ -370,11 +339,6 @@ rbm::Learn 連携図</div>
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Contrastive Divergence(CD法)でのモデル平均 </p>
@@ -575,9 +539,6 @@ rbm::Learn 連携図</div>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bool Learn::is_zero </td>
@@ -587,11 +548,6 @@ rbm::Learn 連携図</div>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>ゼロ判定 </p>
