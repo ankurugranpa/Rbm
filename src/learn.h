@@ -78,7 +78,7 @@ namespace rbm{
                                    int* result_batch_time=nullptr);
 
       void set_epsilon(double value);
-    private: 
+
       /**
        *  @brief データ平均
        *  @param[in] model_object  パラメーター更新に使用するmodel
