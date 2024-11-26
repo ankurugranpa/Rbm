@@ -118,12 +118,11 @@ Model Learn::contrastive_divergence(const Model& model,
 
 
       if(is_zero(grad)){ return result_model; }
-      
+      // std::cout << "エポック更新" << std::endl;
+      result_model.parametar.visible_bias += nabla*diff.visible_grad;
+      result_model.parametar.hidden_bias +=  nabla*diff.hidden_grad;
+      result_model.parametar.weight +=  nabla*diff.weight_grad;
     }
-    // std::cout << "エポック更新" << std::endl;
-    result_model.parametar.visible_bias += nabla*diff.visible_grad;
-    result_model.parametar.hidden_bias +=  nabla*diff.hidden_grad;
-    result_model.parametar.weight +=  nabla*diff.weight_grad;
   }
   return result_model;
 }
