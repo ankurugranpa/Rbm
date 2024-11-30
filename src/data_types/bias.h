@@ -8,6 +8,7 @@
 */
 #ifndef BIAS_H
 #define BIAS_H 
+#include"data.h"
 
 #include<Eigen/Dense>
 
@@ -25,6 +26,18 @@ namespace rbm_types{
         Bias& operator=(const Eigen::VectorXd& other) {
             this->Eigen::VectorXd::operator=(other);
             return *this;
+        }
+
+        double dot(const Eigen::VectorXd& other) const {
+            return Eigen::VectorXd::dot(other);
+        }
+
+        double dot(const Eigen::VectorXi& other) const {
+            return Eigen::VectorXd::dot(other.cast<double>());
+        }
+
+        double dot(const Data& other) const {
+            return Eigen::VectorXd::dot(other.cast<double>());
         }
         
         // block()メソッドをラップするメソッドを追加
