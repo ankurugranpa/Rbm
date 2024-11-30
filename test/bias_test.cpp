@@ -1,6 +1,9 @@
 #include<gtest/gtest.h>
+#include<iostream>
 
 #include<bias.h>
+#include<data.h>
+
 
 namespace {
   class BiasTest: public testing::Test{
@@ -21,3 +24,28 @@ TEST_F(BiasTest, block){
   ASSERT_EQ(seikai, buf_bias);
 }
 
+TEST_F(BiasTest, dot_data){
+  rbm_types::Bias bias_1(2);
+  bias_1 << 2, 3;
+
+  rbm_types::Data data_1(2);
+  data_1 << -5, 4;
+
+  double seikai = 2;
+  
+  
+  ASSERT_EQ(seikai, bias_1.dot(data_1));
+}
+
+TEST_F(BiasTest, dot_VectorXd){
+  Eigen::VectorXd bias_1(2);
+  bias_1 << 2, 3;
+
+  Eigen::VectorXd data_1(2);
+  data_1 << -5, 4;
+
+  double seikai = 2;
+  std::cout << "dot_VectorXd" << std::endl;
+
+  ASSERT_EQ(seikai, bias_1.dot(data_1));
+}
