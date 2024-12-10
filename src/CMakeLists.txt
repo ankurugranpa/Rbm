@@ -52,6 +52,14 @@ add_library(libfile
             SHARED
             utils/file.cpp)
 
+add_library(libsoftplus
+            SHARED
+            utils/softplus.cpp)
+
+add_library(liblog_sum_exp
+            SHARED
+            utils/log_sum_exp.cpp)
+
 # data_type
 add_library(libbias
             SHARED
@@ -104,6 +112,12 @@ target_include_directories(libcsv
   PUBLIC ./utils)
 
 target_include_directories(libfile
+  PUBLIC ./utils)
+
+target_include_directories(libsoftplus
+  PUBLIC ./utils)
+
+target_include_directories(liblog_sum_exp
   PUBLIC ./utils)
 
 # data_type
