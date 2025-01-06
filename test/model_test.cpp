@@ -112,10 +112,10 @@ TEST_F(ModelTest, CostFunc){
 
 TEST_F(ModelTest, AllStatus){
   DataSet status = rbm_model.all_status();
-  rbm_utils::Binary gen_bit(rbm_model.visible_dim);
+  rbm_utils::Binary gen_bit(rbm_model.visible_dim+rbm_model.hidden_dim);
 
   // std::cout << status.size() << std::endl;
-  for(auto i=0u; i<status.size(); i++){
+  for(auto i=0; i<64; i++){
     std::cout << status[i].transpose() << std::endl;
     ASSERT_EQ(status[i], gen_bit.num2binary(i));
   }

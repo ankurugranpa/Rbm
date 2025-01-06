@@ -114,8 +114,8 @@ double Model::kl_divergence(const Model& model){
 
 DataSet Model::all_status(){
   DataSet st;
-  rbm_utils::Binary binaryer(visible_dim);
-  for(int i=0; i<std::pow(visible_dim, 2); i++){
+  rbm_utils::Binary binaryer(visible_dim+hidden_dim);
+  for(int i=0; i<std::pow(2, visible_dim+hidden_dim); i++){
     st.push_back(binaryer.num2binary(i));
   }
   return st;
