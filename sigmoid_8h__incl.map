@@ -1,5 +1,7 @@
 <map id="src/utils/sigmoid.h" name="src/utils/sigmoid.h">
 <area shape="rect" id="node1" title="sigmoid関数" alt="" coords="5,5,147,32"/>
-<area shape="rect" id="node2" title=" " alt="" coords="25,155,127,181"/>
+<area shape="rect" id="node2" title=" " alt="" coords="23,229,126,256"/>
 <area shape="rect" id="node3" href="$bias_8h.html" title="RBMのバイアスのデータ型" alt="" coords="80,80,141,107"/>
+<area shape="rect" id="node4" href="$data_8h.html" title="バイナリのRBMで扱うデータ型" alt="" coords="131,155,194,181"/>
+<area shape="rect" id="node5" title=" " alt="" coords="150,229,213,256"/>
 </map>

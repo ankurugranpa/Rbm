@@ -8,5 +8,6 @@ var searchData=
   ['data2png_2epy_34',['data2png.py',['../data2png_8py.html',1,'']]],
   ['dataset_35',['DataSet',['../structrbm__types_1_1DataSet.html',1,'rbm_types']]],
   ['dataset2csv_36',['dataset2csv',['../classrbm__utils_1_1Csv.html#af9186ec2042b0bc8b5b1501cf84dea8b',1,'rbm_utils::Csv']]],
-  ['distribution_37',['distribution',['../classrbm_1_1Model.html#a380f0da6be5d8dc82210ea5045a4bc08',1,'rbm::Model']]]
+  ['distribution_37',['distribution',['../classrbm_1_1Model.html#a380f0da6be5d8dc82210ea5045a4bc08',1,'rbm::Model']]],
+  ['dot_38',['dot',['../classrbm__types_1_1Bias.html#a29aa83aeb50d8882632666d285135077',1,'rbm_types::Bias::dot(const Eigen::VectorXd &amp;other) const'],['../classrbm__types_1_1Bias.html#abc7177bbcb3d81869ec0880731897a22',1,'rbm_types::Bias::dot(const Eigen::VectorXi &amp;other) const'],['../classrbm__types_1_1Bias.html#ab3323964a212c2cf85e25711e77090de',1,'rbm_types::Bias::dot(const Data &amp;other) const']]]
 ];

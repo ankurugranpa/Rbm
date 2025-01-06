@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['kl_5fdivergence_216',['kl_divergence',['../classrbm_1_1Model.html#afb7eb22c4e149e4850ffc2ba0836368b',1,'rbm::Model']]]
+  ['kl_5fdivergence_230',['kl_divergence',['../classrbm_1_1Model.html#afb7eb22c4e149e4850ffc2ba0836368b',1,'rbm::Model']]]
 ];

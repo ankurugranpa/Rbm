@@ -2,7 +2,9 @@
 <area shape="rect" id="node1" title="sigmoid関数" alt="" coords="56,5,165,32"/>
 <area shape="rect" id="node2" title=" " alt="" coords="5,80,96,107"/>
 <area shape="rect" id="node3" href="$parametar_8h.html" title="RBMのパラメータのデータ型" alt="" coords="120,80,221,107"/>
-<area shape="rect" id="node4" href="$bias_8h.html" title="RBMのバイアスのデータ型" alt="" coords="92,155,153,181"/>
-<area shape="rect" id="node6" href="$weight_8h.html" title=" " alt="" coords="178,155,257,181"/>
-<area shape="rect" id="node5" title=" " alt="" coords="118,229,221,256"/>
+<area shape="rect" id="node4" href="$bias_8h.html" title="RBMのバイアスのデータ型" alt="" coords="104,155,165,181"/>
+<area shape="rect" id="node8" href="$weight_8h.html" title=" " alt="" coords="173,229,251,256"/>
+<area shape="rect" id="node5" href="$data_8h.html" title="バイナリのRBMで扱うデータ型" alt="" coords="34,229,97,256"/>
+<area shape="rect" id="node7" title=" " alt="" coords="102,304,205,331"/>
+<area shape="rect" id="node6" title=" " alt="" coords="15,304,78,331"/>
 </map>

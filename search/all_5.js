@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['file_42',['File',['../classrbm__utils_1_1File.html#ae039af5807fc385f41b60644725d15d0',1,'rbm_utils::File::File()'],['../classrbm__utils_1_1File.html#ad8fc360512926dcff8dba917609807ea',1,'rbm_utils::File::File(fs::path work_dir)'],['../classrbm__utils_1_1File.html',1,'rbm_utils::File']]],
-  ['file_2ecpp_43',['file.cpp',['../file_8cpp.html',1,'']]],
-  ['file_2eh_44',['file.h',['../file_8h.html',1,'']]]
+  ['file_43',['File',['../classrbm__utils_1_1File.html#ae039af5807fc385f41b60644725d15d0',1,'rbm_utils::File::File()'],['../classrbm__utils_1_1File.html#ad8fc360512926dcff8dba917609807ea',1,'rbm_utils::File::File(fs::path work_dir)'],['../classrbm__utils_1_1File.html',1,'rbm_utils::File']]],
+  ['file_2ecpp_44',['file.cpp',['../file_8cpp.html',1,'']]],
+  ['file_2eh_45',['file.h',['../file_8h.html',1,'']]]
 ];

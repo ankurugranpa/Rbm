@@ -1,11 +1,11 @@
 <map id="src/sampling.h" name="src/sampling.h">
 <area shape="rect" id="node1" title="samplingクラス" alt="" coords="39,5,157,32"/>
 <area shape="rect" id="node2" title=" " alt="" coords="5,80,60,107"/>
-<area shape="rect" id="node3" href="$data_8h.html" title="バイナリのRBMで扱うデータ型" alt="" coords="21,155,159,181"/>
-<area shape="rect" id="node6" href="$model_8h.html" title="Modelクラス" alt="" coords="151,80,226,107"/>
-<area shape="rect" id="node4" title=" " alt="" coords="45,229,108,256"/>
-<area shape="rect" id="node5" title=" " alt="" coords="179,304,281,331"/>
-<area shape="rect" id="node7" href="$parametar_8h.html" title="RBMのパラメータのデータ型" alt="" coords="234,155,335,181"/>
-<area shape="rect" id="node8" href="$bias_8h.html" title="RBMのバイアスのデータ型" alt="" coords="234,229,295,256"/>
-<area shape="rect" id="node9" href="$weight_8h.html" title=" " alt="" coords="320,229,399,256"/>
+<area shape="rect" id="node3" href="$data_8h.html" title="バイナリのRBMで扱うデータ型" alt="" coords="38,304,177,331"/>
+<area shape="rect" id="node6" href="$model_8h.html" title="Modelクラス" alt="" coords="167,80,242,107"/>
+<area shape="rect" id="node4" title=" " alt="" coords="76,379,139,405"/>
+<area shape="rect" id="node5" title=" " alt="" coords="201,379,304,405"/>
+<area shape="rect" id="node7" href="$parametar_8h.html" title="RBMのパラメータのデータ型" alt="" coords="186,155,287,181"/>
+<area shape="rect" id="node8" href="$bias_8h.html" title="RBMのバイアスのデータ型" alt="" coords="186,229,247,256"/>
+<area shape="rect" id="node9" href="$weight_8h.html" title=" " alt="" coords="252,304,331,331"/>
 </map>

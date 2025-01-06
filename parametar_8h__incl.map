@@ -1,6 +1,8 @@
 <map id="src/data_types/parametar.h" name="src/data_types/parametar.h">
-<area shape="rect" id="node1" title="RBMのパラメータのデータ型" alt="" coords="5,5,205,32"/>
-<area shape="rect" id="node2" href="$bias_8h.html" title="RBMのバイアスのデータ型" alt="" coords="28,80,89,107"/>
-<area shape="rect" id="node4" href="$weight_8h.html" title=" " alt="" coords="114,80,193,107"/>
-<area shape="rect" id="node3" title=" " alt="" coords="54,155,157,181"/>
+<area shape="rect" id="node1" title="RBMのパラメータのデータ型" alt="" coords="58,5,258,32"/>
+<area shape="rect" id="node2" href="$bias_8h.html" title="RBMのバイアスのデータ型" alt="" coords="94,80,155,107"/>
+<area shape="rect" id="node6" href="$weight_8h.html" title=" " alt="" coords="163,155,241,181"/>
+<area shape="rect" id="node3" href="$data_8h.html" title="バイナリのRBMで扱うデータ型" alt="" coords="24,155,87,181"/>
+<area shape="rect" id="node5" title=" " alt="" coords="92,229,195,256"/>
+<area shape="rect" id="node4" title=" " alt="" coords="5,229,68,256"/>
 </map>
