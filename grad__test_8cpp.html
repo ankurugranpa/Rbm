@@ -1,9 +1,9 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<meta name="generator" content="Doxygen 1.9.1"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>Rbm: test/grad_test.cpp ファイル</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
@@ -19,8 +19,8 @@
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
  <tbody>
- <tr style="height: 56px;">
-  <td id="projectalign" style="padding-left: 0.5em;">
+ <tr id="projectrow">
+  <td id="projectalign">
    <div id="projectname">Rbm
    </div>
   </td>
@@ -29,21 +29,22 @@
 </table>
 </div>
 <!-- end header part -->
-<!-- 構築: Doxygen 1.9.1 -->
+<!-- 構築: Doxygen 1.9.8 -->
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-var searchBox = new SearchBox("searchBox", "search",false,'検索','.html');
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
 /* @license-end */
 </script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 $(function() {
   initMenu('',true,false,'search.php','検索');
   $(document).ready(function() { init_search(); });
 });
-/* @license-end */</script>
+/* @license-end */
+</script>
 <div id="main-nav"></div>
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -54,9 +55,16 @@ $(function() {
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
-<iframe src="javascript:void(0)" frameborder="0" 
-        name="MSearchResults" id="MSearchResults">
-</iframe>
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
 </div>
 
 <div id="nav-path" class="navpath">
@@ -67,8 +75,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#func-members">関数</a>  </div>
-  <div class="headertitle">
-<div class="title">grad_test.cpp ファイル</div>  </div>
+  <div class="headertitle"><div class="title">grad_test.cpp ファイル</div></div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;gtest/gtest.h&gt;</code><br />
@@ -78,35 +85,38 @@ grad_test.cpp の依存先関係図:</div>
 <div class="dyncontent">
 <div class="center"><img src="grad__test_8cpp__incl.png" border="0" usemap="#atest_2grad__test_8cpp" alt=""/></div>
 <map name="atest_2grad__test_8cpp" id="atest_2grad__test_8cpp">
-<area shape="rect" title=" " alt="" coords="41,5,180,32"/>
-<area shape="rect" title=" " alt="" coords="5,80,109,107"/>
-<area shape="rect" href="grad_8h.html" title="RBMの勾配のデータ型" alt="" coords="134,80,197,107"/>
-<area shape="rect" title=" " alt="" coords="114,155,217,181"/>
+<area shape="rect" title=" " alt="" coords="41,5,180,31"/>
+<area shape="rect" title=" " alt="" coords="5,79,109,104"/>
+<area shape="poly" title=" " alt="" coords="104,33,76,69,72,66,100,29"/>
+<area shape="rect" href="grad_8h.html" title="RBMの勾配のデータ型" alt="" coords="134,79,197,104"/>
+<area shape="poly" title=" " alt="" coords="122,29,150,66,146,69,118,33"/>
+<area shape="rect" title=" " alt="" coords="114,152,217,177"/>
+<area shape="poly" title=" " alt="" coords="168,104,168,138,163,138,163,104"/>
 </map>
 </div>
 </div><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 関数</h2></td></tr>
-<tr class="memitem:af597de86b469cd56df1e1bfc18fed228"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grad__test_8cpp.html#af597de86b469cd56df1e1bfc18fed228">TEST_F</a> (GradTest, plus)</td></tr>
+<tr class="memitem:af597de86b469cd56df1e1bfc18fed228" id="r_af597de86b469cd56df1e1bfc18fed228"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grad__test_8cpp.html#af597de86b469cd56df1e1bfc18fed228">TEST_F</a> (GradTest, plus)</td></tr>
 <tr class="separator:af597de86b469cd56df1e1bfc18fed228"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaffce5639a7cbac6dd56d8f72d176fd9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grad__test_8cpp.html#aaffce5639a7cbac6dd56d8f72d176fd9">TEST_F</a> (GradTest, minus)</td></tr>
+<tr class="memitem:aaffce5639a7cbac6dd56d8f72d176fd9" id="r_aaffce5639a7cbac6dd56d8f72d176fd9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grad__test_8cpp.html#aaffce5639a7cbac6dd56d8f72d176fd9">TEST_F</a> (GradTest, minus)</td></tr>
 <tr class="separator:aaffce5639a7cbac6dd56d8f72d176fd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af79a6ad24ad377d6992b38151e30d4dc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grad__test_8cpp.html#af79a6ad24ad377d6992b38151e30d4dc">TEST_F</a> (GradTest, product)</td></tr>
+<tr class="memitem:af79a6ad24ad377d6992b38151e30d4dc" id="r_af79a6ad24ad377d6992b38151e30d4dc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grad__test_8cpp.html#af79a6ad24ad377d6992b38151e30d4dc">TEST_F</a> (GradTest, product)</td></tr>
 <tr class="separator:af79a6ad24ad377d6992b38151e30d4dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a323e7123e0fa632b0c110de45cdd99a1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grad__test_8cpp.html#a323e7123e0fa632b0c110de45cdd99a1">TEST_F</a> (GradTest, division)</td></tr>
+<tr class="memitem:a323e7123e0fa632b0c110de45cdd99a1" id="r_a323e7123e0fa632b0c110de45cdd99a1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grad__test_8cpp.html#a323e7123e0fa632b0c110de45cdd99a1">TEST_F</a> (GradTest, division)</td></tr>
 <tr class="separator:a323e7123e0fa632b0c110de45cdd99a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab164c83bb01781df334309d65353af4f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grad__test_8cpp.html#ab164c83bb01781df334309d65353af4f">TEST_F</a> (GradTest, plus2)</td></tr>
+<tr class="memitem:ab164c83bb01781df334309d65353af4f" id="r_ab164c83bb01781df334309d65353af4f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grad__test_8cpp.html#ab164c83bb01781df334309d65353af4f">TEST_F</a> (GradTest, plus2)</td></tr>
 <tr class="separator:ab164c83bb01781df334309d65353af4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1d6232b1dfa901571032c806acd8caf2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grad__test_8cpp.html#a1d6232b1dfa901571032c806acd8caf2">TEST_F</a> (GradTest, minus2)</td></tr>
+<tr class="memitem:a1d6232b1dfa901571032c806acd8caf2" id="r_a1d6232b1dfa901571032c806acd8caf2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grad__test_8cpp.html#a1d6232b1dfa901571032c806acd8caf2">TEST_F</a> (GradTest, minus2)</td></tr>
 <tr class="separator:a1d6232b1dfa901571032c806acd8caf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aba75cb78d3d4492328942112c1e15850"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grad__test_8cpp.html#aba75cb78d3d4492328942112c1e15850">TEST_F</a> (GradTest, product2)</td></tr>
+<tr class="memitem:aba75cb78d3d4492328942112c1e15850" id="r_aba75cb78d3d4492328942112c1e15850"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grad__test_8cpp.html#aba75cb78d3d4492328942112c1e15850">TEST_F</a> (GradTest, product2)</td></tr>
 <tr class="separator:aba75cb78d3d4492328942112c1e15850"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae4c614e4d383d1ae1922093a784f43ca"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grad__test_8cpp.html#ae4c614e4d383d1ae1922093a784f43ca">TEST_F</a> (GradTest, division2)</td></tr>
+<tr class="memitem:ae4c614e4d383d1ae1922093a784f43ca" id="r_ae4c614e4d383d1ae1922093a784f43ca"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grad__test_8cpp.html#ae4c614e4d383d1ae1922093a784f43ca">TEST_F</a> (GradTest, division2)</td></tr>
 <tr class="separator:ae4c614e4d383d1ae1922093a784f43ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">関数詳解</h2>
-<a id="a323e7123e0fa632b0c110de45cdd99a1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a323e7123e0fa632b0c110de45cdd99a1">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[1/8]</span></h2>
+<a id="a323e7123e0fa632b0c110de45cdd99a1" name="a323e7123e0fa632b0c110de45cdd99a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a323e7123e0fa632b0c110de45cdd99a1">&#9670;&#160;</a></span>TEST_F() <span class="overload">[1/8]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -133,8 +143,8 @@ grad_test.cpp の依存先関係図:</div>
 
 </div>
 </div>
-<a id="ae4c614e4d383d1ae1922093a784f43ca"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae4c614e4d383d1ae1922093a784f43ca">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[2/8]</span></h2>
+<a id="ae4c614e4d383d1ae1922093a784f43ca" name="ae4c614e4d383d1ae1922093a784f43ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4c614e4d383d1ae1922093a784f43ca">&#9670;&#160;</a></span>TEST_F() <span class="overload">[2/8]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -161,8 +171,8 @@ grad_test.cpp の依存先関係図:</div>
 
 </div>
 </div>
-<a id="aaffce5639a7cbac6dd56d8f72d176fd9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaffce5639a7cbac6dd56d8f72d176fd9">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[3/8]</span></h2>
+<a id="aaffce5639a7cbac6dd56d8f72d176fd9" name="aaffce5639a7cbac6dd56d8f72d176fd9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaffce5639a7cbac6dd56d8f72d176fd9">&#9670;&#160;</a></span>TEST_F() <span class="overload">[3/8]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -189,8 +199,8 @@ grad_test.cpp の依存先関係図:</div>
 
 </div>
 </div>
-<a id="a1d6232b1dfa901571032c806acd8caf2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1d6232b1dfa901571032c806acd8caf2">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[4/8]</span></h2>
+<a id="a1d6232b1dfa901571032c806acd8caf2" name="a1d6232b1dfa901571032c806acd8caf2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d6232b1dfa901571032c806acd8caf2">&#9670;&#160;</a></span>TEST_F() <span class="overload">[4/8]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -217,8 +227,8 @@ grad_test.cpp の依存先関係図:</div>
 
 </div>
 </div>
-<a id="af597de86b469cd56df1e1bfc18fed228"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af597de86b469cd56df1e1bfc18fed228">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[5/8]</span></h2>
+<a id="af597de86b469cd56df1e1bfc18fed228" name="af597de86b469cd56df1e1bfc18fed228"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af597de86b469cd56df1e1bfc18fed228">&#9670;&#160;</a></span>TEST_F() <span class="overload">[5/8]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -245,8 +255,8 @@ grad_test.cpp の依存先関係図:</div>
 
 </div>
 </div>
-<a id="ab164c83bb01781df334309d65353af4f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab164c83bb01781df334309d65353af4f">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[6/8]</span></h2>
+<a id="ab164c83bb01781df334309d65353af4f" name="ab164c83bb01781df334309d65353af4f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab164c83bb01781df334309d65353af4f">&#9670;&#160;</a></span>TEST_F() <span class="overload">[6/8]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -273,8 +283,8 @@ grad_test.cpp の依存先関係図:</div>
 
 </div>
 </div>
-<a id="af79a6ad24ad377d6992b38151e30d4dc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af79a6ad24ad377d6992b38151e30d4dc">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[7/8]</span></h2>
+<a id="af79a6ad24ad377d6992b38151e30d4dc" name="af79a6ad24ad377d6992b38151e30d4dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af79a6ad24ad377d6992b38151e30d4dc">&#9670;&#160;</a></span>TEST_F() <span class="overload">[7/8]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -301,8 +311,8 @@ grad_test.cpp の依存先関係図:</div>
 
 </div>
 </div>
-<a id="aba75cb78d3d4492328942112c1e15850"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aba75cb78d3d4492328942112c1e15850">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[8/8]</span></h2>
+<a id="aba75cb78d3d4492328942112c1e15850" name="aba75cb78d3d4492328942112c1e15850"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba75cb78d3d4492328942112c1e15850">&#9670;&#160;</a></span>TEST_F() <span class="overload">[8/8]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -332,7 +342,7 @@ grad_test.cpp の依存先関係図:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
 </small></address>
 </body>
 </html>

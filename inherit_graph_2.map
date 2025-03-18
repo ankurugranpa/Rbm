@@ -1,3 +1,5 @@
 <map id="クラス階層図" name="クラス階層図">
-<area shape="rect" id="node1" href="$classrbm_1_1Model.html" title="Modelの型定義" alt="" coords="5,5,101,32"/>
+<area shape="rect" id="Node000000" title=" " alt="" coords="5,5,129,31"/>
+<area shape="rect" id="Node000001" href="$classrbm__types_1_1Bias.html" title="Biasの型定義" alt="" coords="177,5,304,31"/>
+<area shape="poly" id="edge2_Node000000_Node000001" title=" " alt="" coords="143,15,177,15,177,21,143,21"/>
 </map>

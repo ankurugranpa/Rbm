@@ -1,9 +1,9 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<meta name="generator" content="Doxygen 1.9.1"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>Rbm: src/learn.h ソースファイル</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
@@ -19,8 +19,8 @@
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
  <tbody>
- <tr style="height: 56px;">
-  <td id="projectalign" style="padding-left: 0.5em;">
+ <tr id="projectrow">
+  <td id="projectalign">
    <div id="projectname">Rbm
    </div>
   </td>
@@ -29,22 +29,28 @@
 </table>
 </div>
 <!-- end header part -->
-<!-- 構築: Doxygen 1.9.1 -->
+<!-- 構築: Doxygen 1.9.8 -->
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-var searchBox = new SearchBox("searchBox", "search",false,'検索','.html');
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
 /* @license-end */
 </script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 $(function() {
   initMenu('',true,false,'search.php','検索');
   $(document).ready(function() { init_search(); });
 });
-/* @license-end */</script>
+/* @license-end */
+</script>
 <div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function() { init_codefold(0); });
+/* @license-end */
+</script>
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -54,9 +60,16 @@ $(function() {
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
-<iframe src="javascript:void(0)" frameborder="0" 
-        name="MSearchResults" id="MSearchResults">
-</iframe>
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
 </div>
 
 <div id="nav-path" class="navpath">
@@ -65,82 +78,96 @@ $(function() {
 </div>
 </div><!-- top -->
 <div class="header">
-  <div class="headertitle">
-<div class="title">learn.h</div>  </div>
+  <div class="headertitle"><div class="title">learn.h</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="learn_8h.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#ifndef LEARN_H</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#define LEARN_H </span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include&lt;<a class="code" href="model_8h.html">model.h</a>&gt;</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include&lt;<a class="code" href="grad_8h.html">grad.h</a>&gt;</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include&lt;<a class="code" href="data_8h.html">data.h</a>&gt;</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include&lt;<a class="code" href="file_8h.html">file.h</a>&gt;</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include&lt;<a class="code" href="sampling_8h.html">sampling.h</a>&gt;</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">using namespace </span><a class="code" href="namespacerbm__types.html">rbm_types</a>;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
-<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="namespacerbm.html">   20</a></span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacerbm.html">rbm</a>{</div>
-<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="classrbm_1_1Learn.html">   24</a></span>&#160;  <span class="keyword">class </span><a class="code" href="classrbm_1_1Learn.html">Learn</a>{</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="classrbm_1_1Learn.html#a2367128151447894932115e09241c2af">   27</a></span>&#160;      std::string <a class="code" href="classrbm_1_1Learn.html#a2367128151447894932115e09241c2af">work_dir</a>;</div>
-<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="classrbm_1_1Learn.html#a72e3bea6529aefbb4b57a852ad05b652">   28</a></span>&#160;      <span class="keywordtype">double</span> epsilon = 1e-10;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;      <a class="code" href="classrbm_1_1Learn.html">Learn</a>();</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;      </div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;      <a class="code" href="classrbm_1_1Learn.html">Learn</a>(std::string work_dir);</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;      ~<a class="code" href="classrbm_1_1Learn.html">Learn</a>();</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;      <a class="code" href="classrbm_1_1Model.html">Model</a> exact_calculation(<span class="keyword">const</span> <a class="code" href="classrbm_1_1Model.html">Model</a>&amp; before_learn_model,</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                              <span class="keyword">const</span> <a class="code" href="structrbm__types_1_1DataSet.html">DataSet</a>&amp; data_set,</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                              <span class="keyword">const</span> <span class="keywordtype">int</span> max_step=100,</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                              <span class="keyword">const</span> <span class="keywordtype">double</span> nabla=0.5,</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                              std::string result_file_name=<span class="stringliteral">&quot;learn_process_exact_calc.csv&quot;</span>,</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                              <span class="keywordtype">int</span>* result_step=<span class="keyword">nullptr</span>);</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;      <a class="code" href="classrbm_1_1Model.html">Model</a> contrastive_divergence(<span class="keyword">const</span> <a class="code" href="classrbm_1_1Model.html">Model</a>&amp; before_learn_model,</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                                   <span class="keyword">const</span> <a class="code" href="structrbm__types_1_1DataSet.html">DataSet</a>&amp; data_set,</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                                   <span class="keyword">const</span> <span class="keywordtype">double</span> nabla=0.5,</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                                   <span class="keyword">const</span> <span class="keywordtype">int</span> epoch=100,</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                                   <span class="keyword">const</span> <span class="keywordtype">int</span> batch_size=100,</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;                                   std::string result_file_name = <span class="stringliteral">&quot;learn_process_exact_calc.csv&quot;</span>,</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;                                   <span class="keywordtype">int</span> cd_k_num=1,</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;                                   <span class="keywordtype">int</span>* result_epoch=<span class="keyword">nullptr</span>,</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;                                   <span class="keywordtype">int</span>* result_batch_time=<span class="keyword">nullptr</span>);</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;      <span class="keywordtype">void</span> set_epsilon(<span class="keywordtype">double</span> value);</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;      <a class="code" href="classrbm__types_1_1Grad.html">Grad</a> calc_data_mean(<span class="keyword">const</span> <a class="code" href="classrbm_1_1Model.html">Model</a>&amp; model_object, <span class="keyword">const</span> <a class="code" href="structrbm__types_1_1DataSet.html">DataSet</a>&amp; data_set);</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;      <a class="code" href="classrbm__types_1_1Grad.html">Grad</a> calc_model_mean(<span class="keyword">const</span> <a class="code" href="classrbm_1_1Model.html">Model</a>&amp; model_object);</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;      <a class="code" href="classrbm__types_1_1Grad.html">Grad</a> calc_model_mean_cd(<span class="keyword">const</span> <a class="code" href="classrbm_1_1Model.html">Model</a>&amp; model_object, <span class="keyword">const</span> <a class="code" href="structrbm__types_1_1DataSet.html">DataSet</a>&amp; data_set, <span class="keywordtype">int</span> sampring_rate=1);</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160; </div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;      <span class="keywordtype">double</span> calc_grad(<span class="keyword">const</span> <a class="code" href="classrbm__types_1_1Grad.html">Grad</a>&amp; grad_data);</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160; </div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;      <span class="keywordtype">bool</span> is_zero(<span class="keywordtype">double</span> value);</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;  };</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;}</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160; </div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160; </div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="aclassrbm_1_1Learn_html"><div class="ttname"><a href="classrbm_1_1Learn.html">rbm::Learn</a></div><div class="ttdoc">rbmの学習</div><div class="ttdef"><b>Definition:</b> learn.h:24</div></div>
-<div class="ttc" id="aclassrbm_1_1Learn_html_a2367128151447894932115e09241c2af"><div class="ttname"><a href="classrbm_1_1Learn.html#a2367128151447894932115e09241c2af">rbm::Learn::work_dir</a></div><div class="ttdeci">std::string work_dir</div><div class="ttdoc">学習結果や過程の保存先</div><div class="ttdef"><b>Definition:</b> learn.h:27</div></div>
-<div class="ttc" id="aclassrbm_1_1Model_html"><div class="ttname"><a href="classrbm_1_1Model.html">rbm::Model</a></div><div class="ttdoc">Modelの型定義</div><div class="ttdef"><b>Definition:</b> model.h:23</div></div>
-<div class="ttc" id="aclassrbm__types_1_1Grad_html"><div class="ttname"><a href="classrbm__types_1_1Grad.html">rbm_types::Grad</a></div><div class="ttdoc">Grad型定義</div><div class="ttdef"><b>Definition:</b> grad.h:18</div></div>
+<a href="learn_8h.html">[詳解]</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#ifndef LEARN_H</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#define LEARN_H </span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include&lt;<a class="code" href="model_8h.html">model.h</a>&gt;</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include&lt;<a class="code" href="grad_8h.html">grad.h</a>&gt;</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include&lt;<a class="code" href="data_8h.html">data.h</a>&gt;</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include&lt;<a class="code" href="file_8h.html">file.h</a>&gt;</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#include&lt;<a class="code" href="sampling_8h.html">sampling.h</a>&gt;</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keyword">using namespace </span><a class="code hl_namespace" href="namespacerbm__types.html">rbm_types</a>;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="foldopen" id="foldopen00020" data-start="{" data-end="}">
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="namespacerbm.html">   20</a></span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacerbm.html">rbm</a>{</div>
+<div class="foldopen" id="foldopen00024" data-start="{" data-end="};">
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="classrbm_1_1Learn.html">   24</a></span>  <span class="keyword">class </span><a class="code hl_class" href="classrbm_1_1Learn.html">Learn</a>{</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="classrbm_1_1Learn.html#a2367128151447894932115e09241c2af">   27</a></span>      std::string <a class="code hl_variable" href="classrbm_1_1Learn.html#a2367128151447894932115e09241c2af">work_dir</a>;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="classrbm_1_1Learn.html#a72e3bea6529aefbb4b57a852ad05b652">   28</a></span>      <span class="keywordtype">double</span> <a class="code hl_variable" href="classrbm_1_1Learn.html#a72e3bea6529aefbb4b57a852ad05b652">epsilon</a> = 1e-10;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>      <a class="code hl_function" href="classrbm_1_1Learn.html#ad98834484e2daab5e0a24d29d6d2e627">Learn</a>();</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>      </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>      <a class="code hl_function" href="classrbm_1_1Learn.html#ad98834484e2daab5e0a24d29d6d2e627">Learn</a>(std::string <a class="code hl_variable" href="classrbm_1_1Learn.html#a2367128151447894932115e09241c2af">work_dir</a>);</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>      <a class="code hl_function" href="classrbm_1_1Learn.html#a9eda04ac0c1b50a7881816901c3028bd">~Learn</a>();</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>      <a class="code hl_class" href="classrbm_1_1Model.html">Model</a> <a class="code hl_function" href="classrbm_1_1Learn.html#a99850d29970f9310b26e41a5f4a1c46e">exact_calculation</a>(<span class="keyword">const</span> <a class="code hl_class" href="classrbm_1_1Model.html">Model</a>&amp; before_learn_model,</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>                              <span class="keyword">const</span> <a class="code hl_struct" href="structrbm__types_1_1DataSet.html">DataSet</a>&amp; data_set,</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>                              <span class="keyword">const</span> <span class="keywordtype">int</span> max_step=100,</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>                              <span class="keyword">const</span> <span class="keywordtype">double</span> nabla=0.5,</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>                              std::string result_file_name=<span class="stringliteral">&quot;learn_process_exact_calc.csv&quot;</span>,</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>                              <span class="keywordtype">int</span>* result_step=<span class="keyword">nullptr</span>);</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>      <a class="code hl_class" href="classrbm_1_1Model.html">Model</a> <a class="code hl_function" href="classrbm_1_1Learn.html#aea5ae36bb1c582b4039837db3750f553">contrastive_divergence</a>(<span class="keyword">const</span> <a class="code hl_class" href="classrbm_1_1Model.html">Model</a>&amp; before_learn_model,</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>                                   <span class="keyword">const</span> <a class="code hl_struct" href="structrbm__types_1_1DataSet.html">DataSet</a>&amp; data_set,</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>                                   <span class="keyword">const</span> <span class="keywordtype">double</span> nabla=0.5,</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>                                   <span class="keyword">const</span> <span class="keywordtype">int</span> epoch=100,</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>                                   <span class="keyword">const</span> <span class="keywordtype">int</span> batch_size=100,</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>                                   std::string result_file_name = <span class="stringliteral">&quot;learn_process_exact_calc.csv&quot;</span>,</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>                                   <span class="keywordtype">int</span> cd_k_num=1,</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>                                   <span class="keywordtype">int</span>* result_epoch=<span class="keyword">nullptr</span>,</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>                                   <span class="keywordtype">int</span>* result_batch_time=<span class="keyword">nullptr</span>);</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>      <span class="keywordtype">void</span> <a class="code hl_function" href="classrbm_1_1Learn.html#affa9c2200d2b62d254fa831bb82fad1d">set_epsilon</a>(<span class="keywordtype">double</span> value);</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>      <a class="code hl_class" href="classrbm__types_1_1Grad.html">Grad</a> <a class="code hl_function" href="classrbm_1_1Learn.html#abc6fbf8c11670664518049bee83bf2b4">calc_data_mean</a>(<span class="keyword">const</span> <a class="code hl_class" href="classrbm_1_1Model.html">Model</a>&amp; model_object, <span class="keyword">const</span> <a class="code hl_struct" href="structrbm__types_1_1DataSet.html">DataSet</a>&amp; data_set);</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>      <a class="code hl_class" href="classrbm__types_1_1Grad.html">Grad</a> <a class="code hl_function" href="classrbm_1_1Learn.html#a122f7afc523febfde32c14076c759e2c">calc_model_mean</a>(<span class="keyword">const</span> <a class="code hl_class" href="classrbm_1_1Model.html">Model</a>&amp; model_object);</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span> </div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>      <a class="code hl_class" href="classrbm__types_1_1Grad.html">Grad</a> <a class="code hl_function" href="classrbm_1_1Learn.html#ad441a7fe5b8f48f13d0e10b77e9aeb05">calc_model_mean_cd</a>(<span class="keyword">const</span> <a class="code hl_class" href="classrbm_1_1Model.html">Model</a>&amp; model_object, <span class="keyword">const</span> <a class="code hl_struct" href="structrbm__types_1_1DataSet.html">DataSet</a>&amp; data_set, <span class="keywordtype">int</span> sampring_rate=1);</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span> </div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>      <span class="keywordtype">double</span> <a class="code hl_function" href="classrbm_1_1Learn.html#acd1c978bb6a3471760ac2bb7229d85e9">calc_grad</a>(<span class="keyword">const</span> <a class="code hl_class" href="classrbm__types_1_1Grad.html">Grad</a>&amp; grad_data);</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span> </div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>      <span class="keywordtype">bool</span> <a class="code hl_function" href="classrbm_1_1Learn.html#a3007d01d42932014a8e25cc7bfbf814f">is_zero</a>(<span class="keywordtype">double</span> value);</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>  };</div>
+</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>}</div>
+</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span> </div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span> </div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aclassrbm_1_1Learn_html"><div class="ttname"><a href="classrbm_1_1Learn.html">rbm::Learn</a></div><div class="ttdoc">rbmの学習</div><div class="ttdef"><b>Definition</b> learn.h:24</div></div>
+<div class="ttc" id="aclassrbm_1_1Learn_html_a122f7afc523febfde32c14076c759e2c"><div class="ttname"><a href="classrbm_1_1Learn.html#a122f7afc523febfde32c14076c759e2c">rbm::Learn::calc_model_mean</a></div><div class="ttdeci">Grad calc_model_mean(const Model &amp;model_object)</div><div class="ttdoc">厳密計算でのモデル平均</div><div class="ttdef"><b>Definition</b> learn.cpp:167</div></div>
+<div class="ttc" id="aclassrbm_1_1Learn_html_a2367128151447894932115e09241c2af"><div class="ttname"><a href="classrbm_1_1Learn.html#a2367128151447894932115e09241c2af">rbm::Learn::work_dir</a></div><div class="ttdeci">std::string work_dir</div><div class="ttdoc">学習結果や過程の保存先</div><div class="ttdef"><b>Definition</b> learn.h:27</div></div>
+<div class="ttc" id="aclassrbm_1_1Learn_html_a3007d01d42932014a8e25cc7bfbf814f"><div class="ttname"><a href="classrbm_1_1Learn.html#a3007d01d42932014a8e25cc7bfbf814f">rbm::Learn::is_zero</a></div><div class="ttdeci">bool is_zero(double value)</div><div class="ttdoc">ゼロ判定</div><div class="ttdef"><b>Definition</b> learn.cpp:263</div></div>
+<div class="ttc" id="aclassrbm_1_1Learn_html_a72e3bea6529aefbb4b57a852ad05b652"><div class="ttname"><a href="classrbm_1_1Learn.html#a72e3bea6529aefbb4b57a852ad05b652">rbm::Learn::epsilon</a></div><div class="ttdeci">double epsilon</div><div class="ttdef"><b>Definition</b> learn.h:28</div></div>
+<div class="ttc" id="aclassrbm_1_1Learn_html_a99850d29970f9310b26e41a5f4a1c46e"><div class="ttname"><a href="classrbm_1_1Learn.html#a99850d29970f9310b26e41a5f4a1c46e">rbm::Learn::exact_calculation</a></div><div class="ttdeci">Model exact_calculation(const Model &amp;before_learn_model, const DataSet &amp;data_set, const int max_step=100, const double nabla=0.5, std::string result_file_name=&quot;learn_process_exact_calc.csv&quot;, int *result_step=nullptr)</div><div class="ttdoc">厳密計算で学習</div><div class="ttdef"><b>Definition</b> learn.cpp:21</div></div>
+<div class="ttc" id="aclassrbm_1_1Learn_html_a9eda04ac0c1b50a7881816901c3028bd"><div class="ttname"><a href="classrbm_1_1Learn.html#a9eda04ac0c1b50a7881816901c3028bd">rbm::Learn::~Learn</a></div><div class="ttdeci">~Learn()</div><div class="ttdoc">デストラクタ</div><div class="ttdef"><b>Definition</b> learn.cpp:19</div></div>
+<div class="ttc" id="aclassrbm_1_1Learn_html_abc6fbf8c11670664518049bee83bf2b4"><div class="ttname"><a href="classrbm_1_1Learn.html#abc6fbf8c11670664518049bee83bf2b4">rbm::Learn::calc_data_mean</a></div><div class="ttdeci">Grad calc_data_mean(const Model &amp;model_object, const DataSet &amp;data_set)</div><div class="ttdoc">データ平均</div><div class="ttdef"><b>Definition</b> learn.cpp:130</div></div>
+<div class="ttc" id="aclassrbm_1_1Learn_html_acd1c978bb6a3471760ac2bb7229d85e9"><div class="ttname"><a href="classrbm_1_1Learn.html#acd1c978bb6a3471760ac2bb7229d85e9">rbm::Learn::calc_grad</a></div><div class="ttdeci">double calc_grad(const Grad &amp;grad_data)</div><div class="ttdoc">勾配計算</div><div class="ttdef"><b>Definition</b> learn.cpp:253</div></div>
+<div class="ttc" id="aclassrbm_1_1Learn_html_ad441a7fe5b8f48f13d0e10b77e9aeb05"><div class="ttname"><a href="classrbm_1_1Learn.html#ad441a7fe5b8f48f13d0e10b77e9aeb05">rbm::Learn::calc_model_mean_cd</a></div><div class="ttdeci">Grad calc_model_mean_cd(const Model &amp;model_object, const DataSet &amp;data_set, int sampring_rate=1)</div><div class="ttdoc">Contrastive Divergence(CD法)でのモデル平均</div><div class="ttdef"><b>Definition</b> learn.cpp:218</div></div>
+<div class="ttc" id="aclassrbm_1_1Learn_html_ad98834484e2daab5e0a24d29d6d2e627"><div class="ttname"><a href="classrbm_1_1Learn.html#ad98834484e2daab5e0a24d29d6d2e627">rbm::Learn::Learn</a></div><div class="ttdeci">Learn()</div><div class="ttdef"><b>Definition</b> learn.cpp:14</div></div>
+<div class="ttc" id="aclassrbm_1_1Learn_html_aea5ae36bb1c582b4039837db3750f553"><div class="ttname"><a href="classrbm_1_1Learn.html#aea5ae36bb1c582b4039837db3750f553">rbm::Learn::contrastive_divergence</a></div><div class="ttdeci">Model contrastive_divergence(const Model &amp;before_learn_model, const DataSet &amp;data_set, const double nabla=0.5, const int epoch=100, const int batch_size=100, std::string result_file_name=&quot;learn_process_exact_calc.csv&quot;, int cd_k_num=1, int *result_epoch=nullptr, int *result_batch_time=nullptr)</div><div class="ttdoc">Contrastive Divergence(CD法)</div><div class="ttdef"><b>Definition</b> learn.cpp:61</div></div>
+<div class="ttc" id="aclassrbm_1_1Learn_html_affa9c2200d2b62d254fa831bb82fad1d"><div class="ttname"><a href="classrbm_1_1Learn.html#affa9c2200d2b62d254fa831bb82fad1d">rbm::Learn::set_epsilon</a></div><div class="ttdeci">void set_epsilon(double value)</div><div class="ttdef"><b>Definition</b> learn.cpp:163</div></div>
+<div class="ttc" id="aclassrbm_1_1Model_html"><div class="ttname"><a href="classrbm_1_1Model.html">rbm::Model</a></div><div class="ttdoc">Modelの型定義</div><div class="ttdef"><b>Definition</b> model.h:23</div></div>
+<div class="ttc" id="aclassrbm__types_1_1Grad_html"><div class="ttname"><a href="classrbm__types_1_1Grad.html">rbm_types::Grad</a></div><div class="ttdoc">Grad型定義</div><div class="ttdef"><b>Definition</b> grad.h:18</div></div>
 <div class="ttc" id="adata_8h_html"><div class="ttname"><a href="data_8h.html">data.h</a></div><div class="ttdoc">バイナリのRBMで扱うデータ型</div></div>
 <div class="ttc" id="afile_8h_html"><div class="ttname"><a href="file_8h.html">file.h</a></div><div class="ttdoc">sigmoid関数</div></div>
 <div class="ttc" id="agrad_8h_html"><div class="ttname"><a href="grad_8h.html">grad.h</a></div><div class="ttdoc">RBMの勾配のデータ型</div></div>
 <div class="ttc" id="amodel_8h_html"><div class="ttname"><a href="model_8h.html">model.h</a></div><div class="ttdoc">Modelクラス</div></div>
-<div class="ttc" id="anamespacerbm__types_html"><div class="ttname"><a href="namespacerbm__types.html">rbm_types</a></div><div class="ttdef"><b>Definition:</b> bias.h:15</div></div>
-<div class="ttc" id="anamespacerbm_html"><div class="ttname"><a href="namespacerbm.html">rbm</a></div><div class="ttdef"><b>Definition:</b> learn.h:20</div></div>
+<div class="ttc" id="anamespacerbm__types_html"><div class="ttname"><a href="namespacerbm__types.html">rbm_types</a></div><div class="ttdef"><b>Definition</b> bias.h:15</div></div>
+<div class="ttc" id="anamespacerbm_html"><div class="ttname"><a href="namespacerbm.html">rbm</a></div><div class="ttdef"><b>Definition</b> learn.h:20</div></div>
 <div class="ttc" id="asampling_8h_html"><div class="ttname"><a href="sampling_8h.html">sampling.h</a></div><div class="ttdoc">samplingクラス</div></div>
-<div class="ttc" id="astructrbm__types_1_1DataSet_html"><div class="ttname"><a href="structrbm__types_1_1DataSet.html">rbm_types::DataSet</a></div><div class="ttdef"><b>Definition:</b> data.h:35</div></div>
+<div class="ttc" id="astructrbm__types_1_1DataSet_html"><div class="ttname"><a href="structrbm__types_1_1DataSet.html">rbm_types::DataSet</a></div><div class="ttdef"><b>Definition</b> data.h:35</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
 </small></address>
 </body>
 </html>

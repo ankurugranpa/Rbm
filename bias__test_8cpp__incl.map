@@ -1,9 +1,17 @@
 <map id="test/bias_test.cpp" name="test/bias_test.cpp">
-<area shape="rect" id="node1" title=" " alt="" coords="143,5,281,32"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,80,109,107"/>
-<area shape="rect" id="node3" title=" " alt="" coords="133,80,213,107"/>
-<area shape="rect" id="node4" href="$bias_8h.html" title="RBMのバイアスのデータ型" alt="" coords="288,80,349,107"/>
-<area shape="rect" id="node5" href="$data_8h.html" title="バイナリのRBMで扱うデータ型" alt="" coords="219,155,282,181"/>
-<area shape="rect" id="node7" title=" " alt="" coords="269,229,371,256"/>
-<area shape="rect" id="node6" title=" " alt="" coords="182,229,245,256"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="143,5,281,31"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,79,109,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="188,33,96,75,94,70,186,28"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="133,79,213,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="208,32,188,68,184,65,203,30"/>
+<area shape="rect" id="Node000004" href="$bias_8h.html" title="RBMのバイアスのデータ型" alt="" coords="288,79,349,104"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="231,28,291,69,288,73,228,33"/>
+<area shape="rect" id="Node000005" href="$data_8h.html" title="バイナリのRBMで扱うデータ型" alt="" coords="219,152,282,177"/>
+<area shape="poly" id="edge8_Node000001_Node000005" title=" " alt="" coords="218,30,247,138,241,139,213,32"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="309,106,273,144,269,140,306,102"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="269,225,371,251"/>
+<area shape="poly" id="edge7_Node000004_Node000007" title=" " alt="" coords="321,104,322,212,317,212,316,104"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="182,225,245,251"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="247,179,228,215,223,212,242,176"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="264,176,301,214,297,217,260,180"/>
 </map>

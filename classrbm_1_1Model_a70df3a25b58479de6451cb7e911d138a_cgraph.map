@@ -1,4 +1,5 @@
 <map id="rbm::Model::all_status" name="rbm::Model::all_status">
-<area shape="rect" id="node1" title="すべての状態" alt="" coords="5,13,172,39"/>
-<area shape="rect" id="node2" href="$classrbm__utils_1_1Binary.html#a4aba7f2d7b5f9dcf7c4d0b4c0b0a41de" title="num2binary" alt="" coords="220,5,360,47"/>
+<area shape="rect" id="Node000001" title="すべての状態" alt="" coords="5,13,172,38"/>
+<area shape="rect" id="Node000002" href="$classrbm__utils_1_1Binary.html#a4aba7f2d7b5f9dcf7c4d0b4c0b0a41de" title="num2binary" alt="" coords="220,5,360,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="173,23,206,23,206,28,173,28"/>
 </map>

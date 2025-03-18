@@ -1,22 +1,58 @@
 <map id="exsamples/learn_mnist/genpng/gendata.cpp" name="exsamples/learn_mnist/genpng/gendata.cpp">
-<area shape="rect" id="node1" title=" " alt="" coords="394,5,569,47"/>
-<area shape="rect" id="node2" href="$data_8h.html" title="バイナリのRBMで扱うデータ型" alt="" coords="572,468,634,495"/>
-<area shape="rect" id="node5" title=" " alt="" coords="34,95,114,121"/>
-<area shape="rect" id="node6" title=" " alt="" coords="138,95,196,121"/>
-<area shape="rect" id="node7" title=" " alt="" coords="7,244,98,271"/>
-<area shape="rect" id="node8" title=" " alt="" coords="311,95,383,121"/>
-<area shape="rect" id="node9" title=" " alt="" coords="408,95,481,121"/>
-<area shape="rect" id="node10" title=" " alt="" coords="694,244,749,271"/>
-<area shape="rect" id="node11" title=" " alt="" coords="556,95,756,121"/>
-<area shape="rect" id="node12" href="$model_8h.html" title="Modelクラス" alt="" coords="468,244,543,271"/>
-<area shape="rect" id="node16" href="$learn_8h.html" title="Learn クラス" alt="" coords="220,95,287,121"/>
-<area shape="rect" id="node19" href="$sampling_8h.html" title="samplingクラス" alt="" coords="581,169,676,196"/>
-<area shape="rect" id="node20" href="$csv_8h.html" title="csv ユーティリティ" alt="" coords="826,244,881,271"/>
-<area shape="rect" id="node3" title=" " alt="" coords="781,543,844,569"/>
-<area shape="rect" id="node4" title=" " alt="" coords="370,543,473,569"/>
-<area shape="rect" id="node13" href="$parametar_8h.html" title="RBMのパラメータのデータ型" alt="" coords="338,319,439,345"/>
-<area shape="rect" id="node14" href="$bias_8h.html" title="RBMのバイアスのデータ型" alt="" coords="378,393,439,420"/>
-<area shape="rect" id="node15" href="$weight_8h.html" title=" " alt="" coords="305,468,384,495"/>
-<area shape="rect" id="node17" href="$grad_8h.html" title="RBMの勾配のデータ型" alt="" coords="236,319,298,345"/>
-<area shape="rect" id="node18" href="$file_8h.html" title="sigmoid関数" alt="" coords="174,169,229,196"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="394,5,569,45"/>
+<area shape="rect" id="Node000002" href="$data_8h.html" title="バイナリのRBMで扱うデータ型" alt="" coords="571,460,634,485"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="569,28,632,34,702,46,775,64,845,91,916,121,929,130,939,142,946,158,948,178,948,327,946,351,939,371,928,390,914,406,877,431,832,450,783,462,734,470,648,475,647,470,733,464,782,457,830,445,874,427,910,402,924,386,934,369,940,349,943,327,943,178,940,159,935,145,925,134,913,125,843,96,774,69,701,51,631,40,569,33"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="33,93,113,119"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="394,45,127,96,126,90,393,40"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="137,93,196,119"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="402,48,210,96,209,90,401,43"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="7,240,97,265"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="394,29,292,32,181,43,129,51,83,63,47,77,23,95,14,110,10,126,12,162,24,197,39,227,35,230,19,199,7,163,4,126,9,108,19,92,45,73,82,58,128,46,180,37,291,27,394,24"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="311,93,383,119"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="450,48,379,89,377,84,448,43"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="407,93,481,119"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="475,47,458,82,453,80,470,44"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="694,240,749,265"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="569,31,634,39,700,51,757,68,778,79,793,92,802,109,805,128,802,148,794,167,771,203,746,232,742,228,767,200,789,164,797,146,799,128,797,111,789,95,775,84,755,73,699,56,633,44,568,36"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="556,93,756,119"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="524,43,619,85,617,90,522,48"/>
+<area shape="rect" id="Node000012" href="$model_8h.html" title="Modelクラス" alt="" coords="468,240,543,265"/>
+<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="487,45,495,93,506,226,501,226,489,94,482,46"/>
+<area shape="rect" id="Node000016" href="$learn_8h.html" title="Learn クラス" alt="" coords="220,93,287,119"/>
+<area shape="poly" id="edge20_Node000001_Node000016" title=" " alt="" coords="427,48,301,91,299,86,426,43"/>
+<area shape="rect" id="Node000019" href="$sampling_8h.html" title="samplingクラス" alt="" coords="581,167,675,192"/>
+<area shape="poly" id="edge36_Node000001_Node000019" title=" " alt="" coords="569,33,629,41,688,54,738,70,757,80,770,92,777,105,777,118,770,129,758,139,726,156,689,168,687,163,724,151,755,135,766,126,771,117,772,106,766,95,754,85,736,75,687,59,628,46,568,38"/>
+<area shape="rect" id="Node000020" href="$csv_8h.html" title="csv ユーティリティ" alt="" coords="826,240,881,265"/>
+<area shape="poly" id="edge32_Node000001_Node000020" title=" " alt="" coords="569,31,640,39,713,51,776,69,800,79,818,91,840,123,852,159,857,195,858,226,852,226,852,196,847,160,835,125,814,95,798,84,774,74,711,57,639,44,568,36"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="781,533,843,559"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="635,482,768,527,767,532,633,487"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="370,533,473,559"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="574,488,465,531,463,526,572,483"/>
+<area shape="poly" id="edge19_Node000012_Node000002" title=" " alt="" coords="517,264,548,312,578,384,598,446,593,448,573,386,543,315,512,267"/>
+<area shape="poly" id="edge12_Node000012_Node000004" title=" " alt="" coords="505,266,431,521,426,519,499,265"/>
+<area shape="rect" id="Node000013" href="$parametar_8h.html" title="RBMのパラメータのデータ型" alt="" coords="337,313,439,339"/>
+<area shape="poly" id="edge13_Node000012_Node000013" title=" " alt="" coords="488,268,420,308,417,304,485,263"/>
+<area shape="rect" id="Node000014" href="$bias_8h.html" title="RBMのバイアスのデータ型" alt="" coords="377,387,439,412"/>
+<area shape="poly" id="edge14_Node000013_Node000014" title=" " alt="" coords="394,338,404,373,398,374,389,340"/>
+<area shape="rect" id="Node000015" href="$weight_8h.html" title=" " alt="" coords="305,460,383,485"/>
+<area shape="poly" id="edge17_Node000013_Node000015" title=" " alt="" coords="385,340,368,387,352,447,347,446,363,386,380,338"/>
+<area shape="poly" id="edge15_Node000014_Node000002" title=" " alt="" coords="440,409,559,453,558,458,438,414"/>
+<area shape="poly" id="edge16_Node000014_Node000004" title=" " alt="" coords="412,412,422,519,416,520,406,413"/>
+<area shape="poly" id="edge18_Node000015_Node000004" title=" " alt="" coords="358,483,400,522,397,526,355,487"/>
+<area shape="poly" id="edge24_Node000016_Node000002" title=" " alt="" coords="266,117,584,448,580,452,263,121"/>
+<area shape="poly" id="edge21_Node000016_Node000012" title=" " alt="" coords="288,113,370,137,410,151,437,164,470,194,494,226,489,229,466,198,434,169,408,156,369,142,286,118"/>
+<area shape="rect" id="Node000017" href="$grad_8h.html" title="RBMの勾配のデータ型" alt="" coords="235,313,298,339"/>
+<area shape="poly" id="edge22_Node000016_Node000017" title=" " alt="" coords="257,119,268,299,262,299,251,119"/>
+<area shape="rect" id="Node000018" href="$file_8h.html" title="sigmoid関数" alt="" coords="174,167,229,192"/>
+<area shape="poly" id="edge25_Node000016_Node000018" title=" " alt="" coords="247,121,220,157,216,154,243,117"/>
+<area shape="poly" id="edge28_Node000016_Node000019" title=" " alt="" coords="287,113,299,116,443,144,567,166,566,171,442,149,298,121,286,119"/>
+<area shape="poly" id="edge23_Node000017_Node000004" title=" " alt="" coords="268,339,266,368,267,406,275,447,294,484,323,509,358,527,355,531,320,514,290,487,270,448,262,406,260,368,262,339"/>
+<area shape="poly" id="edge26_Node000018_Node000007" title=" " alt="" coords="178,194,90,236,88,232,176,190"/>
+<area shape="poly" id="edge27_Node000018_Node000013" title=" " alt="" coords="218,190,364,303,361,307,215,195"/>
+<area shape="poly" id="edge30_Node000019_Node000002" title=" " alt="" coords="630,192,607,446,602,446,624,192"/>
+<area shape="poly" id="edge29_Node000019_Node000010" title=" " alt="" coords="645,190,697,229,694,234,641,194"/>
+<area shape="poly" id="edge31_Node000019_Node000012" title=" " alt="" coords="610,194,538,235,536,231,607,190"/>
+<area shape="poly" id="edge34_Node000020_Node000002" title=" " alt="" coords="842,267,628,452,625,448,838,263"/>
+<area shape="poly" id="edge33_Node000020_Node000003" title=" " alt="" coords="854,266,818,520,813,519,849,265"/>
+<area shape="poly" id="edge35_Node000020_Node000013" title=" " alt="" coords="826,261,453,318,452,312,825,256"/>
 </map>

@@ -1,9 +1,9 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<meta name="generator" content="Doxygen 1.9.1"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>Rbm: src/model.cpp ファイル</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
@@ -19,8 +19,8 @@
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
  <tbody>
- <tr style="height: 56px;">
-  <td id="projectalign" style="padding-left: 0.5em;">
+ <tr id="projectrow">
+  <td id="projectalign">
    <div id="projectname">Rbm
    </div>
   </td>
@@ -29,21 +29,22 @@
 </table>
 </div>
 <!-- end header part -->
-<!-- 構築: Doxygen 1.9.1 -->
+<!-- 構築: Doxygen 1.9.8 -->
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-var searchBox = new SearchBox("searchBox", "search",false,'検索','.html');
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
 /* @license-end */
 </script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 $(function() {
   initMenu('',true,false,'search.php','検索');
   $(document).ready(function() { init_search(); });
 });
-/* @license-end */</script>
+/* @license-end */
+</script>
 <div id="main-nav"></div>
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -54,9 +55,16 @@ $(function() {
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
-<iframe src="javascript:void(0)" frameborder="0" 
-        name="MSearchResults" id="MSearchResults">
-</iframe>
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
 </div>
 
 <div id="nav-path" class="navpath">
@@ -65,8 +73,7 @@ $(function() {
 </div>
 </div><!-- top -->
 <div class="header">
-  <div class="headertitle">
-<div class="title">model.cpp ファイル</div>  </div>
+  <div class="headertitle"><div class="title">model.cpp ファイル</div></div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;random&gt;</code><br />
@@ -78,24 +85,41 @@ model.cpp の依存先関係図:</div>
 <div class="dyncontent">
 <div class="center"><img src="model_8cpp__incl.png" border="0" usemap="#asrc_2model_8cpp" alt=""/></div>
 <map name="asrc_2model_8cpp" id="asrc_2model_8cpp">
-<area shape="rect" title=" " alt="" coords="347,5,461,32"/>
-<area shape="rect" title=" " alt="" coords="207,80,279,107"/>
-<area shape="rect" href="data_8h.html" title="バイナリのRBMで扱うデータ型" alt="" coords="477,319,539,345"/>
-<area shape="rect" href="binary_8h.html" title="binary ユーティリティ" alt="" coords="303,80,377,107"/>
-<area shape="rect" href="model_8h.html" title="Modelクラス" alt="" coords="537,80,612,107"/>
-<area shape="rect" title=" " alt="" coords="477,393,539,420"/>
-<area shape="rect" title=" " alt="" coords="583,393,686,420"/>
-<area shape="rect" title=" " alt="" coords="34,162,225,189"/>
-<area shape="rect" title=" " alt="" coords="249,155,431,196"/>
-<area shape="rect" href="parametar_8h.html" title="RBMのパラメータのデータ型" alt="" coords="556,162,657,189"/>
-<area shape="rect" href="bias_8h.html" title="RBMのバイアスのデータ型" alt="" coords="556,244,617,271"/>
-<area shape="rect" href="weight_8h.html" title=" " alt="" coords="615,319,694,345"/>
+<area shape="rect" title=" " alt="" coords="347,5,461,31"/>
+<area shape="rect" title=" " alt="" coords="207,79,279,104"/>
+<area shape="poly" title=" " alt="" coords="379,33,283,75,280,71,377,28"/>
+<area shape="rect" href="data_8h.html" title="バイナリのRBMで扱うデータ型" alt="" coords="477,313,539,339"/>
+<area shape="poly" title=" " alt="" coords="410,30,502,299,497,301,405,32"/>
+<area shape="rect" href="binary_8h.html" title="binary ユーティリティ" alt="" coords="303,79,377,104"/>
+<area shape="poly" title=" " alt="" coords="395,33,361,70,357,67,391,29"/>
+<area shape="rect" href="model_8h.html" title="Modelクラス" alt="" coords="537,79,612,104"/>
+<area shape="poly" title=" " alt="" coords="432,28,535,71,533,76,430,33"/>
+<area shape="rect" title=" " alt="" coords="477,387,539,412"/>
+<area shape="poly" title=" " alt="" coords="511,339,511,373,505,373,505,339"/>
+<area shape="rect" title=" " alt="" coords="583,387,686,412"/>
+<area shape="poly" title=" " alt="" coords="530,336,603,377,601,382,527,341"/>
+<area shape="poly" title=" " alt="" coords="303,104,291,107,241,114,186,117,81,123,41,129,15,142,10,150,8,160,13,174,23,190,53,215,99,237,157,257,222,274,356,301,463,317,463,322,355,306,221,280,155,262,97,242,50,220,19,194,8,176,3,161,5,148,12,138,40,124,81,117,186,112,240,108,290,101,302,99"/>
+<area shape="rect" title=" " alt="" coords="34,159,225,185"/>
+<area shape="poly" title=" " alt="" coords="310,107,174,157,172,152,308,102"/>
+<area shape="rect" title=" " alt="" coords="249,152,431,192"/>
+<area shape="poly" title=" " alt="" coords="343,104,343,138,337,138,337,104"/>
+<area shape="poly" title=" " alt="" coords="570,105,546,153,525,233,514,300,508,299,520,231,541,151,565,103"/>
+<area shape="poly" title=" " alt="" coords="606,102,641,121,671,150,694,191,703,227,709,313,712,326,709,340,692,363,670,381,667,377,688,360,704,338,706,326,704,314,698,228,689,193,667,154,637,125,603,106"/>
+<area shape="rect" href="parametar_8h.html" title="RBMのパラメータのデータ型" alt="" coords="556,159,657,185"/>
+<area shape="poly" title=" " alt="" coords="582,103,599,145,594,147,577,105"/>
+<area shape="rect" href="bias_8h.html" title="RBMのバイアスのデータ型" alt="" coords="556,240,617,265"/>
+<area shape="poly" title=" " alt="" coords="606,186,596,227,590,226,601,184"/>
+<area shape="rect" href="weight_8h.html" title=" " alt="" coords="615,313,694,339"/>
+<area shape="poly" title=" " alt="" coords="613,184,632,239,650,299,645,301,627,241,608,186"/>
+<area shape="poly" title=" " alt="" coords="576,267,533,306,529,302,572,263"/>
+<area shape="poly" title=" " alt="" coords="591,265,596,298,606,338,623,374,618,376,601,340,591,300,585,266"/>
+<area shape="poly" title=" " alt="" coords="654,340,644,374,639,373,649,338"/>
 </map>
 </div>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
 </small></address>
 </body>
 </html>

@@ -1,4 +1,5 @@
 <map id="rbm_types::Data" name="rbm_types::Data">
-<area shape="rect" id="node1" title="Data型定義" alt="" coords="5,131,136,252"/>
-<area shape="rect" id="node2" title=" " alt="" coords="11,5,131,83"/>
+<area shape="rect" id="Node000001" title="Data型定義" alt="" coords="5,119,128,244"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="11,5,123,71"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="69,85,69,119,64,119,64,85"/>
 </map>

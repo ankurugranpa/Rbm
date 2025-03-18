@@ -1,9 +1,9 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<meta name="generator" content="Doxygen 1.9.1"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>Rbm: rbm_types::Bias クラス</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
@@ -19,8 +19,8 @@
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
  <tbody>
- <tr style="height: 56px;">
-  <td id="projectalign" style="padding-left: 0.5em;">
+ <tr id="projectrow">
+  <td id="projectalign">
    <div id="projectname">Rbm
    </div>
   </td>
@@ -29,21 +29,22 @@
 </table>
 </div>
 <!-- end header part -->
-<!-- 構築: Doxygen 1.9.1 -->
+<!-- 構築: Doxygen 1.9.8 -->
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-var searchBox = new SearchBox("searchBox", "search",false,'検索','.html');
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
 /* @license-end */
 </script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 $(function() {
   initMenu('',true,false,'search.php','検索');
   $(document).ready(function() { init_search(); });
 });
-/* @license-end */</script>
+/* @license-end */
+</script>
 <div id="main-nav"></div>
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -54,9 +55,16 @@ $(function() {
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
-<iframe src="javascript:void(0)" frameborder="0" 
-        name="MSearchResults" id="MSearchResults">
-</iframe>
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
 </div>
 
 <div id="nav-path" class="navpath">
@@ -68,8 +76,7 @@ $(function() {
   <div class="summary">
 <a href="#pub-methods">公開メンバ関数</a> &#124;
 <a href="classrbm__types_1_1Bias-members.html">全メンバ一覧</a>  </div>
-  <div class="headertitle">
-<div class="title">rbm_types::Bias クラス</div>  </div>
+  <div class="headertitle"><div class="title">rbm_types::Bias クラス</div></div>
 </div><!--header-->
 <div class="contents">
 
@@ -82,8 +89,9 @@ rbm_types::Bias の継承関係図</div>
 <div class="dyncontent">
 <div class="center"><img src="classrbm__types_1_1Bias__inherit__graph.png" border="0" usemap="#arbm__types_1_1Bias_inherit__map" alt="Inheritance graph"/></div>
 <map name="arbm__types_1_1Bias_inherit__map" id="arbm__types_1_1Bias_inherit__map">
-<area shape="rect" title="Biasの型定義" alt="" coords="5,131,132,311"/>
-<area shape="rect" title=" " alt="" coords="7,5,131,83"/>
+<area shape="rect" title="Biasの型定義" alt="" coords="5,119,124,324"/>
+<area shape="rect" title=" " alt="" coords="7,5,123,71"/>
+<area shape="poly" title=" " alt="" coords="67,84,67,119,62,119,62,84"/>
 </map>
 </div>
 <div class="dynheader">
@@ -91,35 +99,36 @@ rbm_types::Bias 連携図</div>
 <div class="dyncontent">
 <div class="center"><img src="classrbm__types_1_1Bias__coll__graph.png" border="0" usemap="#arbm__types_1_1Bias_coll__map" alt="Collaboration graph"/></div>
 <map name="arbm__types_1_1Bias_coll__map" id="arbm__types_1_1Bias_coll__map">
-<area shape="rect" title="Biasの型定義" alt="" coords="5,131,132,311"/>
-<area shape="rect" title=" " alt="" coords="7,5,131,83"/>
+<area shape="rect" title="Biasの型定義" alt="" coords="5,119,124,324"/>
+<area shape="rect" title=" " alt="" coords="7,5,123,71"/>
+<area shape="poly" title=" " alt="" coords="67,84,67,119,62,119,62,84"/>
 </map>
 </div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 公開メンバ関数</h2></td></tr>
-<tr class="memitem:a540b3dd638b6193aa09f7ba995e8d493"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrbm__types_1_1Bias.html#a540b3dd638b6193aa09f7ba995e8d493">Bias</a> ()</td></tr>
+<tr class="memitem:a540b3dd638b6193aa09f7ba995e8d493" id="r_a540b3dd638b6193aa09f7ba995e8d493"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrbm__types_1_1Bias.html#a540b3dd638b6193aa09f7ba995e8d493">Bias</a> ()</td></tr>
 <tr class="separator:a540b3dd638b6193aa09f7ba995e8d493"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa725db8f46481300d760906de9e989f8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrbm__types_1_1Bias.html#aa725db8f46481300d760906de9e989f8">Bias</a> (int size)</td></tr>
+<tr class="memitem:aa725db8f46481300d760906de9e989f8" id="r_aa725db8f46481300d760906de9e989f8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrbm__types_1_1Bias.html#aa725db8f46481300d760906de9e989f8">Bias</a> (int size)</td></tr>
 <tr class="separator:aa725db8f46481300d760906de9e989f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6a7909157c7c1c94642a403e949eb172"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrbm__types_1_1Bias.html#a6a7909157c7c1c94642a403e949eb172">Bias</a> (const Eigen::VectorXd &amp;other)</td></tr>
+<tr class="memitem:a6a7909157c7c1c94642a403e949eb172" id="r_a6a7909157c7c1c94642a403e949eb172"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrbm__types_1_1Bias.html#a6a7909157c7c1c94642a403e949eb172">Bias</a> (const Eigen::VectorXd &amp;other)</td></tr>
 <tr class="separator:a6a7909157c7c1c94642a403e949eb172"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af7e4965cb442609b171ce09553fc500b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classrbm__types_1_1Bias.html">Bias</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrbm__types_1_1Bias.html#af7e4965cb442609b171ce09553fc500b">operator=</a> (const Eigen::VectorXd &amp;other)</td></tr>
-<tr class="separator:af7e4965cb442609b171ce09553fc500b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a29aa83aeb50d8882632666d285135077"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrbm__types_1_1Bias.html#a29aa83aeb50d8882632666d285135077">dot</a> (const Eigen::VectorXd &amp;other) const</td></tr>
+<tr class="memitem:a4fc1fca18fc4b2472140fac74789b56a" id="r_a4fc1fca18fc4b2472140fac74789b56a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classrbm__types_1_1Bias.html">Bias</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrbm__types_1_1Bias.html#a4fc1fca18fc4b2472140fac74789b56a">operator=</a> (const Eigen::VectorXd &amp;other)</td></tr>
+<tr class="separator:a4fc1fca18fc4b2472140fac74789b56a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29aa83aeb50d8882632666d285135077" id="r_a29aa83aeb50d8882632666d285135077"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrbm__types_1_1Bias.html#a29aa83aeb50d8882632666d285135077">dot</a> (const Eigen::VectorXd &amp;other) const</td></tr>
 <tr class="separator:a29aa83aeb50d8882632666d285135077"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abc7177bbcb3d81869ec0880731897a22"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrbm__types_1_1Bias.html#abc7177bbcb3d81869ec0880731897a22">dot</a> (const Eigen::VectorXi &amp;other) const</td></tr>
+<tr class="memitem:abc7177bbcb3d81869ec0880731897a22" id="r_abc7177bbcb3d81869ec0880731897a22"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrbm__types_1_1Bias.html#abc7177bbcb3d81869ec0880731897a22">dot</a> (const Eigen::VectorXi &amp;other) const</td></tr>
 <tr class="separator:abc7177bbcb3d81869ec0880731897a22"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab3323964a212c2cf85e25711e77090de"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrbm__types_1_1Bias.html#ab3323964a212c2cf85e25711e77090de">dot</a> (const <a class="el" href="classrbm__types_1_1Data.html">Data</a> &amp;other) const</td></tr>
+<tr class="memitem:ab3323964a212c2cf85e25711e77090de" id="r_ab3323964a212c2cf85e25711e77090de"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrbm__types_1_1Bias.html#ab3323964a212c2cf85e25711e77090de">dot</a> (const <a class="el" href="classrbm__types_1_1Data.html">Data</a> &amp;other) const</td></tr>
 <tr class="separator:ab3323964a212c2cf85e25711e77090de"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af740a088b54a214ada2e7cc1261cfbb9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classrbm__types_1_1Bias.html">Bias</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrbm__types_1_1Bias.html#af740a088b54a214ada2e7cc1261cfbb9">block</a> (int start, int size) const</td></tr>
+<tr class="memitem:af740a088b54a214ada2e7cc1261cfbb9" id="r_af740a088b54a214ada2e7cc1261cfbb9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classrbm__types_1_1Bias.html">Bias</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrbm__types_1_1Bias.html#af740a088b54a214ada2e7cc1261cfbb9">block</a> (int start, int size) const</td></tr>
 <tr class="separator:af740a088b54a214ada2e7cc1261cfbb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
 <div class="textblock"><p>Biasの型定義 </p>
 </div><h2 class="groupheader">構築子と解体子</h2>
-<a id="a540b3dd638b6193aa09f7ba995e8d493"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a540b3dd638b6193aa09f7ba995e8d493">&#9670;&nbsp;</a></span>Bias() <span class="overload">[1/3]</span></h2>
+<a id="a540b3dd638b6193aa09f7ba995e8d493" name="a540b3dd638b6193aa09f7ba995e8d493"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a540b3dd638b6193aa09f7ba995e8d493">&#9670;&#160;</a></span>Bias() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -143,8 +152,8 @@ rbm_types::Bias 連携図</div>
 
 </div>
 </div>
-<a id="aa725db8f46481300d760906de9e989f8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa725db8f46481300d760906de9e989f8">&#9670;&nbsp;</a></span>Bias() <span class="overload">[2/3]</span></h2>
+<a id="aa725db8f46481300d760906de9e989f8" name="aa725db8f46481300d760906de9e989f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa725db8f46481300d760906de9e989f8">&#9670;&#160;</a></span>Bias() <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -169,8 +178,8 @@ rbm_types::Bias 連携図</div>
 
 </div>
 </div>
-<a id="a6a7909157c7c1c94642a403e949eb172"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6a7909157c7c1c94642a403e949eb172">&#9670;&nbsp;</a></span>Bias() <span class="overload">[3/3]</span></h2>
+<a id="a6a7909157c7c1c94642a403e949eb172" name="a6a7909157c7c1c94642a403e949eb172"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a7909157c7c1c94642a403e949eb172">&#9670;&#160;</a></span>Bias() <span class="overload">[3/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -196,8 +205,8 @@ rbm_types::Bias 連携図</div>
 </div>
 </div>
 <h2 class="groupheader">関数詳解</h2>
-<a id="af740a088b54a214ada2e7cc1261cfbb9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af740a088b54a214ada2e7cc1261cfbb9">&#9670;&nbsp;</a></span>block()</h2>
+<a id="af740a088b54a214ada2e7cc1261cfbb9" name="af740a088b54a214ada2e7cc1261cfbb9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af740a088b54a214ada2e7cc1261cfbb9">&#9670;&#160;</a></span>block()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -234,15 +243,16 @@ rbm_types::Bias 連携図</div>
 <div class="dyncontent">
 <div class="center"><img src="classrbm__types_1_1Bias_af740a088b54a214ada2e7cc1261cfbb9_cgraph.png" border="0" usemap="#aclassrbm__types_1_1Bias_af740a088b54a214ada2e7cc1261cfbb9_cgraph" alt=""/></div>
 <map name="aclassrbm__types_1_1Bias_af740a088b54a214ada2e7cc1261cfbb9_cgraph" id="aclassrbm__types_1_1Bias_af740a088b54a214ada2e7cc1261cfbb9_cgraph">
-<area shape="rect" title=" " alt="" coords="5,5,176,32"/>
-<area shape="rect" href="classrbm__types_1_1Bias.html#a540b3dd638b6193aa09f7ba995e8d493" title=" " alt="" coords="224,5,387,32"/>
+<area shape="rect" title=" " alt="" coords="5,5,176,31"/>
+<area shape="rect" href="classrbm__types_1_1Bias.html#a540b3dd638b6193aa09f7ba995e8d493" title=" " alt="" coords="224,5,387,31"/>
+<area shape="poly" title=" " alt="" coords="176,15,210,15,210,21,176,21"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="ab3323964a212c2cf85e25711e77090de"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab3323964a212c2cf85e25711e77090de">&#9670;&nbsp;</a></span>dot() <span class="overload">[1/3]</span></h2>
+<a id="ab3323964a212c2cf85e25711e77090de" name="ab3323964a212c2cf85e25711e77090de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab3323964a212c2cf85e25711e77090de">&#9670;&#160;</a></span>dot() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -267,8 +277,8 @@ rbm_types::Bias 連携図</div>
 
 </div>
 </div>
-<a id="a29aa83aeb50d8882632666d285135077"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a29aa83aeb50d8882632666d285135077">&#9670;&nbsp;</a></span>dot() <span class="overload">[2/3]</span></h2>
+<a id="a29aa83aeb50d8882632666d285135077" name="a29aa83aeb50d8882632666d285135077"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29aa83aeb50d8882632666d285135077">&#9670;&#160;</a></span>dot() <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -293,8 +303,8 @@ rbm_types::Bias 連携図</div>
 
 </div>
 </div>
-<a id="abc7177bbcb3d81869ec0880731897a22"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abc7177bbcb3d81869ec0880731897a22">&#9670;&nbsp;</a></span>dot() <span class="overload">[3/3]</span></h2>
+<a id="abc7177bbcb3d81869ec0880731897a22" name="abc7177bbcb3d81869ec0880731897a22"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc7177bbcb3d81869ec0880731897a22">&#9670;&#160;</a></span>dot() <span class="overload">[3/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -319,8 +329,8 @@ rbm_types::Bias 連携図</div>
 
 </div>
 </div>
-<a id="af7e4965cb442609b171ce09553fc500b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af7e4965cb442609b171ce09553fc500b">&#9670;&nbsp;</a></span>operator=()</h2>
+<a id="a4fc1fca18fc4b2472140fac74789b56a" name="a4fc1fca18fc4b2472140fac74789b56a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4fc1fca18fc4b2472140fac74789b56a">&#9670;&#160;</a></span>operator=()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -329,7 +339,7 @@ rbm_types::Bias 連携図</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classrbm__types_1_1Bias.html">Bias</a>&amp; rbm_types::Bias::operator= </td>
+          <td class="memname"><a class="el" href="classrbm__types_1_1Bias.html">Bias</a> &amp; rbm_types::Bias::operator= </td>
           <td>(</td>
           <td class="paramtype">const Eigen::VectorXd &amp;&#160;</td>
           <td class="paramname"><em>other</em></td><td>)</td>
@@ -351,7 +361,7 @@ rbm_types::Bias 連携図</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
 </small></address>
 </body>
 </html>

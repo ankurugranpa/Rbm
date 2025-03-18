@@ -1,7 +1,11 @@
 <map id="rbm::Model::kl_divergence" name="rbm::Model::kl_divergence">
-<area shape="rect" id="node1" title="KLダイバージェンス" alt="" coords="5,46,200,73"/>
-<area shape="rect" id="node2" href="$classrbm_1_1Model.html#a70df3a25b58479de6451cb7e911d138a" title="すべての状態" alt="" coords="248,17,415,43"/>
-<area shape="rect" id="node4" href="$classrbm_1_1Model.html#ae24367a3bf9bc0f336bf703a4a487123" title="calc Rbmのコスト関数を周辺化したもの" alt="" coords="258,71,405,98"/>
-<area shape="rect" id="node3" href="$classrbm__utils_1_1Binary.html#a4aba7f2d7b5f9dcf7c4d0b4c0b0a41de" title="num2binary" alt="" coords="469,5,609,47"/>
-<area shape="rect" id="node5" href="$classrbm_1_1Model.html#afa97d6bccaf2f99eed01ec8800091675" title="Init Rbm" alt="" coords="463,71,616,112"/>
+<area shape="rect" id="Node000001" title="KLダイバージェンス" alt="" coords="5,46,200,71"/>
+<area shape="rect" id="Node000002" href="$classrbm_1_1Model.html#a70df3a25b58479de6451cb7e911d138a" title="すべての状態" alt="" coords="248,17,415,42"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="200,43,234,39,235,44,201,49"/>
+<area shape="rect" id="Node000004" href="$classrbm_1_1Model.html#ae24367a3bf9bc0f336bf703a4a487123" title="calc Rbmのコスト関数を周辺化したもの" alt="" coords="258,70,405,95"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="201,66,245,71,244,76,200,72"/>
+<area shape="rect" id="Node000003" href="$classrbm__utils_1_1Binary.html#a4aba7f2d7b5f9dcf7c4d0b4c0b0a41de" title="num2binary" alt="" coords="469,5,609,45"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="415,25,455,24,455,30,415,30"/>
+<area shape="rect" id="Node000005" href="$classrbm_1_1Model.html#afa97d6bccaf2f99eed01ec8800091675" title="Init Rbm" alt="" coords="463,69,616,109"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="405,82,449,84,449,89,405,88"/>
 </map>

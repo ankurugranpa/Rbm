@@ -1,8 +1,10 @@
 <map id="exsamples" name="exsamples">
-<area shape="rect" id="node2" href="dir_ed99099ce1b31f32dd14d4cc7e4183ef.html" title="learn_exact" alt="" coords="149,27,248,75"/>
-<area shape="rect" id="node4" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html" title="src" alt="" coords="101,123,173,171"/>
-<area shape="rect" id="edge1-headlabel" href="dir_000001_000004.html" title="6" alt="" coords="165,105,174,119"/>
-<area shape="rect" id="node3" href="dir_09e3ae42ddad8102998f39da818368b0.html" title="learn_mnist" alt="" coords="27,27,125,75"/>
-<area shape="rect" id="edge2-headlabel" href="dir_000002_000004.html" title="9" alt="" coords="115,95,124,110"/>
-<area shape="rect" id="clust1" href="dir_65f2ef684e2277eb32f5cf1c06f8a33a.html" alt="" coords="16,16,376,85"/>
+<area shape="rect" id="node2" href="dir_ed99099ce1b31f32dd14d4cc7e4183ef.html" title="learn_exact" alt="" coords="149,27,248,52"/>
+<area shape="rect" id="node4" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html" title="src" alt="" coords="117,100,158,125"/>
+<area shape="poly" id="edge1" href="dir_000003_000005.html" alt="" coords="191,54,158,91,154,88,187,51"/>
+<area shape="rect" id="edge1-headlabel" href="dir_000003_000005.html" title="6" alt="" coords="161,84,170,99"/>
+<area shape="rect" id="node3" href="dir_09e3ae42ddad8102998f39da818368b0.html" title="learn_mnist" alt="" coords="27,27,125,52"/>
+<area shape="poly" id="edge2" href="dir_000004_000005.html" alt="" coords="88,51,120,88,116,91,84,54"/>
+<area shape="rect" id="edge2-headlabel" href="dir_000004_000005.html" title="9" alt="" coords="117,73,127,88"/>
+<area shape="rect" id="clust1" href="dir_65f2ef684e2277eb32f5cf1c06f8a33a.html" alt="" coords="16,16,376,63"/>
 </map>

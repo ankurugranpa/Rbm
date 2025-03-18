@@ -1,12 +1,23 @@
 <map id="main" name="main">
-<area shape="rect" id="node1" title=" " alt="" coords="5,166,60,193"/>
-<area shape="rect" id="node2" href="$classrbm_1_1Sampling.html#a0b829f0de29e159598f36130bd5408c8" title="ブロック化ギブスサンプリング" alt="" coords="119,71,279,112"/>
-<area shape="rect" id="node6" href="$classrbm__utils_1_1Csv.html#acf4799675d49d7bbae70153d598f58bc" title="data2csv" alt="" coords="108,137,289,163"/>
-<area shape="rect" id="node7" href="$classrbm__utils_1_1File.html#aeec3b0e8cdf14b4bc035fbd4315ef913" title="read_bias_file" alt="" coords="123,188,274,229"/>
-<area shape="rect" id="node10" href="$classrbm__utils_1_1File.html#ac81b752ff428b50b91dc25afdc2a33af" title="read_weight_file" alt="" coords="123,253,274,295"/>
-<area shape="rect" id="node3" href="$classrbm_1_1Model.html#afa97d6bccaf2f99eed01ec8800091675" title="Init Rbm" alt="" coords="368,5,521,47"/>
-<area shape="rect" id="node4" href="$classrbm_1_1Model.html#a187c24b014e169aa55293d6640beeb25" title="Init Rbm" alt="" coords="368,71,521,112"/>
-<area shape="rect" id="node5" href="$namespacerbm__utils.html#af60332fbf0bcb0204d4b8dcd65bf3b81" title="calc sigmoid" alt="" coords="389,137,500,163"/>
-<area shape="rect" id="node8" href="$classrbm__utils_1_1File.html#a2d9887e2885162f32210344038c15db7" title="gen_path" alt="" coords="337,258,552,285"/>
-<area shape="rect" id="node9" href="$classrbm__utils_1_1File.html#ac0e03e8f65002d8a1235ed9ae5dc276c" title=" " alt="" coords="378,189,511,231"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,163,60,189"/>
+<area shape="rect" id="Node000002" href="$classrbm_1_1Sampling.html#a0b829f0de29e159598f36130bd5408c8" title="ブロック化ギブスサンプリング" alt="" coords="119,69,279,109"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="47,161,74,140,107,119,120,112,123,117,109,124,77,144,50,165"/>
+<area shape="rect" id="Node000006" href="$classrbm__utils_1_1Csv.html#acf4799675d49d7bbae70153d598f58bc" title="data2csv" alt="" coords="108,134,289,159"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="60,169,113,159,114,164,61,174"/>
+<area shape="rect" id="Node000007" href="$classrbm__utils_1_1File.html#aeec3b0e8cdf14b4bc035fbd4315ef913" title="read_bias_file" alt="" coords="123,184,274,224"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="61,178,110,186,110,192,60,183"/>
+<area shape="rect" id="Node000010" href="$classrbm__utils_1_1File.html#ac81b752ff428b50b91dc25afdc2a33af" title="read_weight_file" alt="" coords="123,248,274,288"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="49,187,76,210,109,234,122,240,119,245,107,238,72,215,45,191"/>
+<area shape="rect" id="Node000003" href="$classrbm_1_1Model.html#afa97d6bccaf2f99eed01ec8800091675" title="Init Rbm" alt="" coords="368,5,521,45"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="276,67,354,46,355,51,277,72"/>
+<area shape="rect" id="Node000004" href="$classrbm_1_1Model.html#a187c24b014e169aa55293d6640beeb25" title="Init Rbm" alt="" coords="368,69,521,109"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="279,87,354,87,354,92,279,92"/>
+<area shape="rect" id="Node000005" href="$namespacerbm__utils.html#af60332fbf0bcb0204d4b8dcd65bf3b81" title="calc sigmoid" alt="" coords="389,134,500,159"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="279,105,377,128,376,134,278,110"/>
+<area shape="rect" id="Node000008" href="$classrbm__utils_1_1File.html#a2d9887e2885162f32210344038c15db7" title="gen_path" alt="" coords="337,253,552,278"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="275,220,380,247,379,252,274,225"/>
+<area shape="rect" id="Node000009" href="$classrbm__utils_1_1File.html#ac0e03e8f65002d8a1235ed9ae5dc276c" title=" " alt="" coords="378,185,511,225"/>
+<area shape="poly" id="edge8_Node000007_Node000009" title=" " alt="" coords="274,202,364,202,364,208,274,207"/>
+<area shape="poly" id="edge10_Node000010_Node000008" title=" " alt="" coords="274,265,324,264,324,269,274,270"/>
+<area shape="poly" id="edge11_Node000010_Node000009" title=" " alt="" coords="274,246,364,223,365,228,275,251"/>
 </map>

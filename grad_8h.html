@@ -1,9 +1,9 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<meta name="generator" content="Doxygen 1.9.1"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>Rbm: src/data_types/grad.h ファイル</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
@@ -19,8 +19,8 @@
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
  <tbody>
- <tr style="height: 56px;">
-  <td id="projectalign" style="padding-left: 0.5em;">
+ <tr id="projectrow">
+  <td id="projectalign">
    <div id="projectname">Rbm
    </div>
   </td>
@@ -29,21 +29,22 @@
 </table>
 </div>
 <!-- end header part -->
-<!-- 構築: Doxygen 1.9.1 -->
+<!-- 構築: Doxygen 1.9.8 -->
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-var searchBox = new SearchBox("searchBox", "search",false,'検索','.html');
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
 /* @license-end */
 </script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 $(function() {
   initMenu('',true,false,'search.php','検索');
   $(document).ready(function() { init_search(); });
 });
-/* @license-end */</script>
+/* @license-end */
+</script>
 <div id="main-nav"></div>
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -54,9 +55,16 @@ $(function() {
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
-<iframe src="javascript:void(0)" frameborder="0" 
-        name="MSearchResults" id="MSearchResults">
-</iframe>
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
 </div>
 
 <div id="nav-path" class="navpath">
@@ -68,8 +76,7 @@ $(function() {
   <div class="summary">
 <a href="#nested-classes">クラス</a> &#124;
 <a href="#namespaces">名前空間</a>  </div>
-  <div class="headertitle">
-<div class="title">grad.h ファイル</div>  </div>
+  <div class="headertitle"><div class="title">grad.h ファイル</div></div>
 </div><!--header-->
 <div class="contents">
 
@@ -81,8 +88,9 @@ grad.h の依存先関係図:</div>
 <div class="dyncontent">
 <div class="center"><img src="grad_8h__incl.png" border="0" usemap="#asrc_2data__types_2grad_8h" alt=""/></div>
 <map name="asrc_2data__types_2grad_8h" id="asrc_2data__types_2grad_8h">
-<area shape="rect" title="RBMの勾配のデータ型" alt="" coords="5,5,168,32"/>
-<area shape="rect" title=" " alt="" coords="35,80,138,107"/>
+<area shape="rect" title="RBMの勾配のデータ型" alt="" coords="5,5,168,31"/>
+<area shape="rect" title=" " alt="" coords="35,79,138,104"/>
+<area shape="poly" title=" " alt="" coords="89,31,89,65,84,65,84,31"/>
 </map>
 </div>
 </div><div class="textblock"><div class="dynheader">
@@ -90,28 +98,35 @@ grad.h の依存先関係図:</div>
 <div class="dyncontent">
 <div class="center"><img src="grad_8h__dep__incl.png" border="0" usemap="#asrc_2data__types_2grad_8hdep" alt=""/></div>
 <map name="asrc_2data__types_2grad_8hdep" id="asrc_2data__types_2grad_8hdep">
-<area shape="rect" title="RBMの勾配のデータ型" alt="" coords="308,5,471,32"/>
-<area shape="rect" href="grad_8cpp.html" title=" " alt="" coords="142,80,319,107"/>
-<area shape="rect" href="learn_8h.html" title="Learn クラス" alt="" coords="344,80,435,107"/>
-<area shape="rect" href="grad__test_8cpp.html" title=" " alt="" coords="459,80,597,107"/>
-<area shape="rect" href="learn__exact_8cpp.html" title=" " alt="" coords="5,155,179,196"/>
-<area shape="rect" href="gendata_8cpp.html" title=" " alt="" coords="203,155,378,196"/>
-<area shape="rect" href="learn__mnist_8cpp.html" title=" " alt="" coords="402,155,577,196"/>
-<area shape="rect" href="learn_8cpp.html" title=" " alt="" coords="601,162,706,189"/>
+<area shape="rect" title="RBMの勾配のデータ型" alt="" coords="308,5,471,31"/>
+<area shape="rect" href="grad_8cpp.html" title=" " alt="" coords="142,79,319,104"/>
+<area shape="poly" title=" " alt="" coords="353,39,258,81,256,76,351,34"/>
+<area shape="rect" href="learn_8h.html" title="Learn クラス" alt="" coords="344,79,435,104"/>
+<area shape="poly" title=" " alt="" coords="392,44,392,79,387,79,387,44"/>
+<area shape="rect" href="grad__test_8cpp.html" title=" " alt="" coords="459,79,597,104"/>
+<area shape="poly" title=" " alt="" coords="425,34,507,76,504,81,422,39"/>
+<area shape="rect" href="learn__exact_8cpp.html" title=" " alt="" coords="5,152,179,192"/>
+<area shape="poly" title=" " alt="" coords="334,110,164,154,163,149,332,105"/>
+<area shape="rect" href="gendata_8cpp.html" title=" " alt="" coords="203,152,378,192"/>
+<area shape="poly" title=" " alt="" coords="366,115,316,154,313,150,362,111"/>
+<area shape="rect" href="learn__mnist_8cpp.html" title=" " alt="" coords="402,152,577,192"/>
+<area shape="poly" title=" " alt="" coords="417,111,467,150,464,154,413,115"/>
+<area shape="rect" href="learn_8cpp.html" title=" " alt="" coords="601,159,706,185"/>
+<area shape="poly" title=" " alt="" coords="442,105,616,157,614,162,440,110"/>
 </map>
 </div>
 </div>
 <p><a href="grad_8h_source.html">[ソースコード]</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 クラス</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrbm__types_1_1Grad.html">rbm_types::Grad</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Grad型定義  <a href="classrbm__types_1_1Grad.html#details">[詳解]</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 名前空間</h2></td></tr>
-<tr class="memitem:namespacerbm__types"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacerbm__types.html">rbm_types</a></td></tr>
+<tr class="memitem:namespacerbm__types" id="r_namespacerbm__types"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacerbm__types.html">rbm_types</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
@@ -122,7 +137,7 @@ grad.h の依存先関係図:</div>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
 </small></address>
 </body>
 </html>

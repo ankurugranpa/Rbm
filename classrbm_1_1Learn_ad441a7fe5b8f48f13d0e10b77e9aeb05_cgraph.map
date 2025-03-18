@@ -1,7 +1,11 @@
 <map id="rbm::Learn::calc_model_mean_cd" name="rbm::Learn::calc_model_mean_cd">
-<area shape="rect" id="node1" title="Contrastive Divergence(CD法)でのモデル平均" alt="" coords="5,71,180,112"/>
-<area shape="rect" id="node2" href="$classrbm_1_1Sampling.html#a0b829f0de29e159598f36130bd5408c8" title="ブロック化ギブスサンプリング" alt="" coords="228,71,388,112"/>
-<area shape="rect" id="node3" href="$classrbm_1_1Model.html#afa97d6bccaf2f99eed01ec8800091675" title="Init Rbm" alt="" coords="436,5,589,47"/>
-<area shape="rect" id="node4" href="$classrbm_1_1Model.html#a187c24b014e169aa55293d6640beeb25" title="Init Rbm" alt="" coords="436,71,589,112"/>
-<area shape="rect" id="node5" href="$namespacerbm__utils.html#af60332fbf0bcb0204d4b8dcd65bf3b81" title="calc sigmoid" alt="" coords="457,137,568,163"/>
+<area shape="rect" id="Node000001" title="Contrastive Divergence(CD法)でのモデル平均" alt="" coords="5,69,180,109"/>
+<area shape="rect" id="Node000002" href="$classrbm_1_1Sampling.html#a0b829f0de29e159598f36130bd5408c8" title="ブロック化ギブスサンプリング" alt="" coords="228,69,388,109"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="180,87,214,87,214,92,180,92"/>
+<area shape="rect" id="Node000003" href="$classrbm_1_1Model.html#afa97d6bccaf2f99eed01ec8800091675" title="Init Rbm" alt="" coords="436,5,589,45"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="372,67,434,47,436,52,373,72"/>
+<area shape="rect" id="Node000004" href="$classrbm_1_1Model.html#a187c24b014e169aa55293d6640beeb25" title="Init Rbm" alt="" coords="436,69,589,109"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="388,87,423,87,423,92,388,92"/>
+<area shape="rect" id="Node000005" href="$namespacerbm__utils.html#af60332fbf0bcb0204d4b8dcd65bf3b81" title="calc sigmoid" alt="" coords="457,134,568,159"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="381,107,454,128,453,133,379,112"/>
 </map>

@@ -1,9 +1,9 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<meta name="generator" content="Doxygen 1.9.1"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>Rbm: クラス階層</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
@@ -19,8 +19,8 @@
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
  <tbody>
- <tr style="height: 56px;">
-  <td id="projectalign" style="padding-left: 0.5em;">
+ <tr id="projectrow">
+  <td id="projectalign">
    <div id="projectname">Rbm
    </div>
   </td>
@@ -29,21 +29,22 @@
 </table>
 </div>
 <!-- end header part -->
-<!-- 構築: Doxygen 1.9.1 -->
+<!-- 構築: Doxygen 1.9.8 -->
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-var searchBox = new SearchBox("searchBox", "search",false,'検索','.html');
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
 /* @license-end */
 </script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 $(function() {
   initMenu('',true,false,'search.php','検索');
   $(document).ready(function() { init_search(); });
 });
-/* @license-end */</script>
+/* @license-end */
+</script>
 <div id="main-nav"></div>
 </div><!-- top -->
 <!-- window showing the filter options -->
@@ -55,14 +56,20 @@ $(function() {
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
-<iframe src="javascript:void(0)" frameborder="0" 
-        name="MSearchResults" id="MSearchResults">
-</iframe>
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
 </div>
 
 <div class="header">
-  <div class="headertitle">
-<div class="title">クラス階層</div>  </div>
+  <div class="headertitle"><div class="title">クラス階層</div></div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock">
@@ -70,78 +77,82 @@ $(function() {
 </div><table border="0" cellspacing="10" cellpadding="0">
 <tr><td><img src="inherit_graph_0.png" border="0" usemap="#acsv" alt=""/>
 <map name="acsv" id="acsv">
-<area shape="rect" href="classcsv.html" title="csvユーティリティ" alt="" coords="5,5,49,32"/>
+<area shape="rect" href="classcsv.html" title="csvユーティリティ" alt="" coords="5,5,49,31"/>
 </map>
 </td></tr>
-<tr><td><img src="inherit_graph_1.png" border="0" usemap="#arbm_1_1Learn" alt=""/>
+<tr><td><img src="inherit_graph_1.png" border="0" usemap="#aEigen_1_1MatrixXd" alt=""/>
+<map name="aEigen_1_1MatrixXd" id="aEigen_1_1MatrixXd">
+<area shape="rect" title=" " alt="" coords="5,5,131,31"/>
+<area shape="rect" href="classrbm__types_1_1Weight.html" title="Weight(重み)の型定義" alt="" coords="179,5,323,31"/>
+<area shape="poly" title=" " alt="" coords="144,15,178,15,178,21,144,21"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_2.png" border="0" usemap="#aEigen_1_1VectorXd" alt=""/>
+<map name="aEigen_1_1VectorXd" id="aEigen_1_1VectorXd">
+<area shape="rect" title=" " alt="" coords="5,5,129,31"/>
+<area shape="rect" href="classrbm__types_1_1Bias.html" title="Biasの型定義" alt="" coords="177,5,304,31"/>
+<area shape="poly" title=" " alt="" coords="143,15,177,15,177,21,143,21"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_3.png" border="0" usemap="#aEigen_1_1VectorXi" alt=""/>
+<map name="aEigen_1_1VectorXi" id="aEigen_1_1VectorXi">
+<area shape="rect" title=" " alt="" coords="5,5,125,31"/>
+<area shape="rect" href="classrbm__types_1_1Data.html" title="Data型定義" alt="" coords="173,5,304,31"/>
+<area shape="poly" title=" " alt="" coords="139,15,173,15,173,21,139,21"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_4.png" border="0" usemap="#arbm_1_1Learn" alt=""/>
 <map name="arbm_1_1Learn" id="arbm_1_1Learn">
-<area shape="rect" href="classrbm_1_1Learn.html" title="rbmの学習" alt="" coords="5,5,97,32"/>
+<area shape="rect" href="classrbm_1_1Learn.html" title="rbmの学習" alt="" coords="5,5,97,31"/>
 </map>
 </td></tr>
-<tr><td><img src="inherit_graph_2.png" border="0" usemap="#arbm_1_1Model" alt=""/>
+<tr><td><img src="inherit_graph_5.png" border="0" usemap="#arbm_1_1Model" alt=""/>
 <map name="arbm_1_1Model" id="arbm_1_1Model">
-<area shape="rect" href="classrbm_1_1Model.html" title="Modelの型定義" alt="" coords="5,5,101,32"/>
+<area shape="rect" href="classrbm_1_1Model.html" title="Modelの型定義" alt="" coords="5,5,101,31"/>
 </map>
 </td></tr>
-<tr><td><img src="inherit_graph_3.png" border="0" usemap="#arbm_1_1Sampling" alt=""/>
+<tr><td><img src="inherit_graph_6.png" border="0" usemap="#arbm_1_1Sampling" alt=""/>
 <map name="arbm_1_1Sampling" id="arbm_1_1Sampling">
-<area shape="rect" href="classrbm_1_1Sampling.html" title="Samplingを行うクラス" alt="" coords="5,5,123,32"/>
-</map>
-</td></tr>
-<tr><td><img src="inherit_graph_4.png" border="0" usemap="#arbm__types_1_1Bias" alt=""/>
-<map name="arbm__types_1_1Bias" id="arbm__types_1_1Bias">
-<area shape="rect" title=" " alt="" coords="5,5,129,32"/>
-<area shape="rect" href="classrbm__types_1_1Bias.html" title="Biasの型定義" alt="" coords="177,5,304,32"/>
-</map>
-</td></tr>
-<tr><td><img src="inherit_graph_5.png" border="0" usemap="#arbm__types_1_1Data" alt=""/>
-<map name="arbm__types_1_1Data" id="arbm__types_1_1Data">
-<area shape="rect" title=" " alt="" coords="5,5,125,32"/>
-<area shape="rect" href="classrbm__types_1_1Data.html" title="Data型定義" alt="" coords="173,5,304,32"/>
-</map>
-</td></tr>
-<tr><td><img src="inherit_graph_6.png" border="0" usemap="#arbm__types_1_1DataSet" alt=""/>
-<map name="arbm__types_1_1DataSet" id="arbm__types_1_1DataSet">
-<area shape="rect" title=" " alt="" coords="5,5,96,32"/>
-<area shape="rect" href="structrbm__types_1_1DataSet.html" title=" " alt="" coords="144,5,295,32"/>
+<area shape="rect" href="classrbm_1_1Sampling.html" title="Samplingを行うクラス" alt="" coords="5,5,123,31"/>
 </map>
 </td></tr>
 <tr><td><img src="inherit_graph_7.png" border="0" usemap="#arbm__types_1_1Grad" alt=""/>
 <map name="arbm__types_1_1Grad" id="arbm__types_1_1Grad">
-<area shape="rect" href="classrbm__types_1_1Grad.html" title="Grad型定義" alt="" coords="5,5,136,32"/>
+<area shape="rect" href="classrbm__types_1_1Grad.html" title="Grad型定義" alt="" coords="5,5,136,31"/>
 </map>
 </td></tr>
 <tr><td><img src="inherit_graph_8.png" border="0" usemap="#arbm__types_1_1Parametar" alt=""/>
 <map name="arbm__types_1_1Parametar" id="arbm__types_1_1Parametar">
-<area shape="rect" href="classrbm__types_1_1Parametar.html" title="Parametar型の定義" alt="" coords="5,5,172,32"/>
+<area shape="rect" href="classrbm__types_1_1Parametar.html" title="Parametar型の定義" alt="" coords="5,5,172,31"/>
 </map>
 </td></tr>
-<tr><td><img src="inherit_graph_9.png" border="0" usemap="#arbm__types_1_1Weight" alt=""/>
-<map name="arbm__types_1_1Weight" id="arbm__types_1_1Weight">
-<area shape="rect" title=" " alt="" coords="5,5,131,32"/>
-<area shape="rect" href="classrbm__types_1_1Weight.html" title="Weight(重み)の型定義" alt="" coords="179,5,323,32"/>
-</map>
-</td></tr>
-<tr><td><img src="inherit_graph_10.png" border="0" usemap="#arbm__utils_1_1Binary" alt=""/>
+<tr><td><img src="inherit_graph_9.png" border="0" usemap="#arbm__utils_1_1Binary" alt=""/>
 <map name="arbm__utils_1_1Binary" id="arbm__utils_1_1Binary">
-<area shape="rect" href="classrbm__utils_1_1Binary.html" title=" " alt="" coords="5,5,139,32"/>
+<area shape="rect" href="classrbm__utils_1_1Binary.html" title=" " alt="" coords="5,5,139,31"/>
 </map>
 </td></tr>
-<tr><td><img src="inherit_graph_11.png" border="0" usemap="#arbm__utils_1_1Csv" alt=""/>
+<tr><td><img src="inherit_graph_10.png" border="0" usemap="#arbm__utils_1_1Csv" alt=""/>
 <map name="arbm__utils_1_1Csv" id="arbm__utils_1_1Csv">
-<area shape="rect" href="classrbm__utils_1_1Csv.html" title=" " alt="" coords="5,5,120,32"/>
+<area shape="rect" href="classrbm__utils_1_1Csv.html" title=" " alt="" coords="5,5,120,31"/>
 </map>
 </td></tr>
-<tr><td><img src="inherit_graph_12.png" border="0" usemap="#arbm__utils_1_1File" alt=""/>
+<tr><td><img src="inherit_graph_11.png" border="0" usemap="#arbm__utils_1_1File" alt=""/>
 <map name="arbm__utils_1_1File" id="arbm__utils_1_1File">
-<area shape="rect" href="classrbm__utils_1_1File.html" title="Fileの操作" alt="" coords="5,5,120,32"/>
+<area shape="rect" href="classrbm__utils_1_1File.html" title="Fileの操作" alt="" coords="5,5,120,31"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_12.png" border="0" usemap="#astd_1_1vector" alt=""/>
+<map name="astd_1_1vector" id="astd_1_1vector">
+<area shape="rect" title=" " alt="" coords="5,5,96,31"/>
+<area shape="rect" href="structrbm__types_1_1DataSet.html" title=" " alt="" coords="144,5,295,31"/>
+<area shape="poly" title=" " alt="" coords="110,15,144,15,144,21,110,21"/>
 </map>
 </td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
 </small></address>
 </body>
 </html>

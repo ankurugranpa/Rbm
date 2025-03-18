@@ -1,9 +1,9 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<meta name="generator" content="Doxygen 1.9.1"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>Rbm: src/utils/sigmoid.h ソースファイル</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
@@ -19,8 +19,8 @@
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
  <tbody>
- <tr style="height: 56px;">
-  <td id="projectalign" style="padding-left: 0.5em;">
+ <tr id="projectrow">
+  <td id="projectalign">
    <div id="projectname">Rbm
    </div>
   </td>
@@ -29,22 +29,28 @@
 </table>
 </div>
 <!-- end header part -->
-<!-- 構築: Doxygen 1.9.1 -->
+<!-- 構築: Doxygen 1.9.8 -->
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-var searchBox = new SearchBox("searchBox", "search",false,'検索','.html');
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
 /* @license-end */
 </script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 $(function() {
   initMenu('',true,false,'search.php','検索');
   $(document).ready(function() { init_search(); });
 });
-/* @license-end */</script>
+/* @license-end */
+</script>
 <div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function() { init_codefold(0); });
+/* @license-end */
+</script>
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -54,9 +60,16 @@ $(function() {
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
-<iframe src="javascript:void(0)" frameborder="0" 
-        name="MSearchResults" id="MSearchResults">
-</iframe>
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
 </div>
 
 <div id="nav-path" class="navpath">
@@ -65,38 +78,37 @@ $(function() {
 </div>
 </div><!-- top -->
 <div class="header">
-  <div class="headertitle">
-<div class="title">sigmoid.h</div>  </div>
+  <div class="headertitle"><div class="title">sigmoid.h</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="sigmoid_8h.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#ifndef SIGMOID_H</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#define SIGMOID_H </span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include&lt;Eigen/Dense&gt;</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include&lt;<a class="code" href="bias_8h.html">bias.h</a>&gt;</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">using namespace </span><a class="code" href="namespacerbm__types.html">rbm_types</a>;</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacerbm__utils.html">rbm_utils</a>{</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  <span class="keywordtype">double</span> <a class="code" href="namespacerbm__utils.html#a59e42edb878ab011318c1dea7e50603f">sig</a>(<span class="keywordtype">double</span> x);</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  <span class="comment">// Eigen::VectorXd Sig(Eigen::VectorXd x);</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <a class="code" href="classrbm__types_1_1Bias.html">Bias</a> <a class="code" href="namespacerbm__utils.html#a59e42edb878ab011318c1dea7e50603f">sig</a>(<a class="code" href="classrbm__types_1_1Bias.html">Bias</a> x);</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  Eigen::VectorXd <a class="code" href="namespacerbm__utils.html#a59e42edb878ab011318c1dea7e50603f">sig</a>(Eigen::VectorXd x);</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;} </div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor">#endif</span></div>
+<a href="sigmoid_8h.html">[詳解]</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#ifndef SIGMOID_H</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#define SIGMOID_H </span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include&lt;Eigen/Dense&gt;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include&lt;<a class="code" href="bias_8h.html">bias.h</a>&gt;</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">using namespace </span><a class="code hl_namespace" href="namespacerbm__types.html">rbm_types</a>;</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacerbm__utils.html">rbm_utils</a>{</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>  <span class="keywordtype">double</span> <a class="code hl_function" href="namespacerbm__utils.html#af60332fbf0bcb0204d4b8dcd65bf3b81">sig</a>(<span class="keywordtype">double</span> x);</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>  <span class="comment">// Eigen::VectorXd Sig(Eigen::VectorXd x);</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>  <a class="code hl_class" href="classrbm__types_1_1Bias.html">Bias</a> <a class="code hl_function" href="namespacerbm__utils.html#af60332fbf0bcb0204d4b8dcd65bf3b81">sig</a>(<a class="code hl_class" href="classrbm__types_1_1Bias.html">Bias</a> x);</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>  Eigen::VectorXd <a class="code hl_function" href="namespacerbm__utils.html#af60332fbf0bcb0204d4b8dcd65bf3b81">sig</a>(Eigen::VectorXd x);</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>} </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="preprocessor">#endif</span></div>
 <div class="ttc" id="abias_8h_html"><div class="ttname"><a href="bias_8h.html">bias.h</a></div><div class="ttdoc">RBMのバイアスのデータ型</div></div>
-<div class="ttc" id="aclassrbm__types_1_1Bias_html"><div class="ttname"><a href="classrbm__types_1_1Bias.html">rbm_types::Bias</a></div><div class="ttdoc">Biasの型定義</div><div class="ttdef"><b>Definition:</b> bias.h:19</div></div>
-<div class="ttc" id="anamespacerbm__types_html"><div class="ttname"><a href="namespacerbm__types.html">rbm_types</a></div><div class="ttdef"><b>Definition:</b> bias.h:15</div></div>
-<div class="ttc" id="anamespacerbm__utils_html"><div class="ttname"><a href="namespacerbm__utils.html">rbm_utils</a></div><div class="ttdef"><b>Definition:</b> binary.h:18</div></div>
-<div class="ttc" id="anamespacerbm__utils_html_a59e42edb878ab011318c1dea7e50603f"><div class="ttname"><a href="namespacerbm__utils.html#a59e42edb878ab011318c1dea7e50603f">rbm_utils::sig</a></div><div class="ttdeci">Eigen::VectorXd sig(Eigen::VectorXd x)</div><div class="ttdoc">calc sigmoid</div><div class="ttdef"><b>Definition:</b> sigmoid.cpp:23</div></div>
+<div class="ttc" id="aclassrbm__types_1_1Bias_html"><div class="ttname"><a href="classrbm__types_1_1Bias.html">rbm_types::Bias</a></div><div class="ttdoc">Biasの型定義</div><div class="ttdef"><b>Definition</b> bias.h:19</div></div>
+<div class="ttc" id="anamespacerbm__types_html"><div class="ttname"><a href="namespacerbm__types.html">rbm_types</a></div><div class="ttdef"><b>Definition</b> bias.h:15</div></div>
+<div class="ttc" id="anamespacerbm__utils_html"><div class="ttname"><a href="namespacerbm__utils.html">rbm_utils</a></div><div class="ttdef"><b>Definition</b> binary.h:18</div></div>
+<div class="ttc" id="anamespacerbm__utils_html_af60332fbf0bcb0204d4b8dcd65bf3b81"><div class="ttname"><a href="namespacerbm__utils.html#af60332fbf0bcb0204d4b8dcd65bf3b81">rbm_utils::sig</a></div><div class="ttdeci">double sig(double x)</div><div class="ttdoc">calc sigmoid</div><div class="ttdef"><b>Definition</b> sigmoid.cpp:3</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
 </small></address>
 </body>
 </html>

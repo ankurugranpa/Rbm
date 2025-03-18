@@ -1,9 +1,9 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<meta name="generator" content="Doxygen 1.9.1"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>Rbm: test/model_test.cpp ファイル</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
@@ -19,8 +19,8 @@
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
  <tbody>
- <tr style="height: 56px;">
-  <td id="projectalign" style="padding-left: 0.5em;">
+ <tr id="projectrow">
+  <td id="projectalign">
    <div id="projectname">Rbm
    </div>
   </td>
@@ -29,21 +29,22 @@
 </table>
 </div>
 <!-- end header part -->
-<!-- 構築: Doxygen 1.9.1 -->
+<!-- 構築: Doxygen 1.9.8 -->
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-var searchBox = new SearchBox("searchBox", "search",false,'検索','.html');
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
 /* @license-end */
 </script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 $(function() {
   initMenu('',true,false,'search.php','検索');
   $(document).ready(function() { init_search(); });
 });
-/* @license-end */</script>
+/* @license-end */
+</script>
 <div id="main-nav"></div>
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -54,9 +55,16 @@ $(function() {
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
-<iframe src="javascript:void(0)" frameborder="0" 
-        name="MSearchResults" id="MSearchResults">
-</iframe>
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
 </div>
 
 <div id="nav-path" class="navpath">
@@ -67,8 +75,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#func-members">関数</a>  </div>
-  <div class="headertitle">
-<div class="title">model_test.cpp ファイル</div>  </div>
+  <div class="headertitle"><div class="title">model_test.cpp ファイル</div></div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;gtest/gtest.h&gt;</code><br />
@@ -79,37 +86,53 @@ model_test.cpp の依存先関係図:</div>
 <div class="dyncontent">
 <div class="center"><img src="model__test_8cpp__incl.png" border="0" usemap="#atest_2model__test_8cpp" alt=""/></div>
 <map name="atest_2model__test_8cpp" id="atest_2model__test_8cpp">
-<area shape="rect" title=" " alt="" coords="95,5,246,32"/>
-<area shape="rect" title=" " alt="" coords="5,80,109,107"/>
-<area shape="rect" href="model_8h.html" title="Modelクラス" alt="" coords="133,80,208,107"/>
-<area shape="rect" href="binary_8h.html" title="binary ユーティリティ" alt="" coords="319,80,393,107"/>
-<area shape="rect" title=" " alt="" coords="65,393,167,420"/>
-<area shape="rect" href="parametar_8h.html" title="RBMのパラメータのデータ型" alt="" coords="100,162,201,189"/>
-<area shape="rect" href="data_8h.html" title="バイナリのRBMで扱うデータ型" alt="" coords="211,319,274,345"/>
-<area shape="rect" href="bias_8h.html" title="RBMのバイアスのデータ型" alt="" coords="140,244,201,271"/>
-<area shape="rect" href="weight_8h.html" title=" " alt="" coords="57,319,135,345"/>
-<area shape="rect" title=" " alt="" coords="211,393,274,420"/>
-<area shape="rect" title=" " alt="" coords="327,162,518,189"/>
-<area shape="rect" title=" " alt="" coords="543,155,724,196"/>
+<area shape="rect" title=" " alt="" coords="95,5,246,31"/>
+<area shape="rect" title=" " alt="" coords="5,79,109,104"/>
+<area shape="poly" title=" " alt="" coords="154,33,89,74,86,69,151,28"/>
+<area shape="rect" href="model_8h.html" title="Modelクラス" alt="" coords="133,79,208,104"/>
+<area shape="poly" title=" " alt="" coords="173,31,173,65,168,65,168,31"/>
+<area shape="rect" href="binary_8h.html" title="binary ユーティリティ" alt="" coords="319,79,393,104"/>
+<area shape="poly" title=" " alt="" coords="201,28,314,71,312,76,199,33"/>
+<area shape="rect" title=" " alt="" coords="65,387,167,412"/>
+<area shape="poly" title=" " alt="" coords="148,106,118,126,90,154,67,194,56,228,47,314,44,326,46,338,63,360,84,377,80,381,59,363,42,340,39,326,41,313,51,227,62,192,86,150,114,122,145,102"/>
+<area shape="rect" href="parametar_8h.html" title="RBMのパラメータのデータ型" alt="" coords="100,159,201,185"/>
+<area shape="poly" title=" " alt="" coords="170,105,160,147,154,145,165,104"/>
+<area shape="rect" href="data_8h.html" title="バイナリのRBMで扱うデータ型" alt="" coords="211,313,274,339"/>
+<area shape="poly" title=" " alt="" coords="184,103,201,124,216,151,229,190,237,231,245,299,239,300,232,232,224,192,211,153,196,127,180,106"/>
+<area shape="rect" href="bias_8h.html" title="RBMのバイアスのデータ型" alt="" coords="140,240,201,265"/>
+<area shape="poly" title=" " alt="" coords="156,184,167,226,162,227,151,186"/>
+<area shape="rect" href="weight_8h.html" title=" " alt="" coords="57,313,135,339"/>
+<area shape="poly" title=" " alt="" coords="149,186,107,301,102,299,144,184"/>
+<area shape="poly" title=" " alt="" coords="171,266,163,300,150,340,132,376,128,374,146,338,158,298,166,265"/>
+<area shape="poly" title=" " alt="" coords="184,264,223,302,219,306,181,268"/>
+<area shape="poly" title=" " alt="" coords="224,341,150,382,147,377,221,336"/>
+<area shape="rect" title=" " alt="" coords="211,387,274,412"/>
+<area shape="poly" title=" " alt="" coords="245,339,245,373,240,373,240,339"/>
+<area shape="poly" title=" " alt="" coords="102,338,112,373,107,374,97,340"/>
+<area shape="poly" title=" " alt="" coords="350,106,318,153,280,234,254,301,249,299,276,231,314,151,345,103"/>
+<area shape="rect" title=" " alt="" coords="327,159,518,185"/>
+<area shape="poly" title=" " alt="" coords="368,102,406,147,402,151,364,106"/>
+<area shape="rect" title=" " alt="" coords="543,152,724,192"/>
+<area shape="poly" title=" " alt="" coords="394,100,554,146,553,151,392,106"/>
 </map>
 </div>
 </div><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 関数</h2></td></tr>
-<tr class="memitem:ac8c8bd9b31f33e5efc61e8669841913a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="model__test_8cpp.html#ac8c8bd9b31f33e5efc61e8669841913a">TEST_F</a> (ModelTest, Constructor)</td></tr>
+<tr class="memitem:ac8c8bd9b31f33e5efc61e8669841913a" id="r_ac8c8bd9b31f33e5efc61e8669841913a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="model__test_8cpp.html#ac8c8bd9b31f33e5efc61e8669841913a">TEST_F</a> (ModelTest, Constructor)</td></tr>
 <tr class="separator:ac8c8bd9b31f33e5efc61e8669841913a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad724a2ab09625c4a5c2bfd6a0da28e54"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="model__test_8cpp.html#ad724a2ab09625c4a5c2bfd6a0da28e54">TEST_F</a> (ModelTest, LambdaVisible)</td></tr>
+<tr class="memitem:ad724a2ab09625c4a5c2bfd6a0da28e54" id="r_ad724a2ab09625c4a5c2bfd6a0da28e54"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="model__test_8cpp.html#ad724a2ab09625c4a5c2bfd6a0da28e54">TEST_F</a> (ModelTest, LambdaVisible)</td></tr>
 <tr class="separator:ad724a2ab09625c4a5c2bfd6a0da28e54"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab8e78a5900239b33d9c0f991480aff9a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="model__test_8cpp.html#ab8e78a5900239b33d9c0f991480aff9a">TEST_F</a> (ModelTest, LambdaHidenn)</td></tr>
+<tr class="memitem:ab8e78a5900239b33d9c0f991480aff9a" id="r_ab8e78a5900239b33d9c0f991480aff9a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="model__test_8cpp.html#ab8e78a5900239b33d9c0f991480aff9a">TEST_F</a> (ModelTest, LambdaHidenn)</td></tr>
 <tr class="separator:ab8e78a5900239b33d9c0f991480aff9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a85d75dc9b26ad6e9260c2a9504a8afc1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="model__test_8cpp.html#a85d75dc9b26ad6e9260c2a9504a8afc1">TEST_F</a> (ModelTest, CostFunc)</td></tr>
+<tr class="memitem:a85d75dc9b26ad6e9260c2a9504a8afc1" id="r_a85d75dc9b26ad6e9260c2a9504a8afc1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="model__test_8cpp.html#a85d75dc9b26ad6e9260c2a9504a8afc1">TEST_F</a> (ModelTest, CostFunc)</td></tr>
 <tr class="separator:a85d75dc9b26ad6e9260c2a9504a8afc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad3ac014eb364b45e2ac30555a6c6961f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="model__test_8cpp.html#ad3ac014eb364b45e2ac30555a6c6961f">TEST_F</a> (ModelTest, AllStatus)</td></tr>
+<tr class="memitem:ad3ac014eb364b45e2ac30555a6c6961f" id="r_ad3ac014eb364b45e2ac30555a6c6961f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="model__test_8cpp.html#ad3ac014eb364b45e2ac30555a6c6961f">TEST_F</a> (ModelTest, AllStatus)</td></tr>
 <tr class="separator:ad3ac014eb364b45e2ac30555a6c6961f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">関数詳解</h2>
-<a id="ad3ac014eb364b45e2ac30555a6c6961f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad3ac014eb364b45e2ac30555a6c6961f">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[1/5]</span></h2>
+<a id="ad3ac014eb364b45e2ac30555a6c6961f" name="ad3ac014eb364b45e2ac30555a6c6961f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad3ac014eb364b45e2ac30555a6c6961f">&#9670;&#160;</a></span>TEST_F() <span class="overload">[1/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -138,15 +161,16 @@ model_test.cpp の依存先関係図:</div>
 <div class="dyncontent">
 <div class="center"><img src="model__test_8cpp_ad3ac014eb364b45e2ac30555a6c6961f_cgraph.png" border="0" usemap="#amodel__test_8cpp_ad3ac014eb364b45e2ac30555a6c6961f_cgraph" alt=""/></div>
 <map name="amodel__test_8cpp_ad3ac014eb364b45e2ac30555a6c6961f_cgraph" id="amodel__test_8cpp_ad3ac014eb364b45e2ac30555a6c6961f_cgraph">
-<area shape="rect" title=" " alt="" coords="5,13,75,39"/>
-<area shape="rect" href="classrbm__utils_1_1Binary.html#a4aba7f2d7b5f9dcf7c4d0b4c0b0a41de" title="num2binary" alt="" coords="123,5,263,47"/>
+<area shape="rect" title=" " alt="" coords="5,13,75,38"/>
+<area shape="rect" href="classrbm__utils_1_1Binary.html#a4aba7f2d7b5f9dcf7c4d0b4c0b0a41de" title="num2binary" alt="" coords="123,5,263,45"/>
+<area shape="poly" title=" " alt="" coords="75,23,109,23,109,28,75,28"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="ac8c8bd9b31f33e5efc61e8669841913a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac8c8bd9b31f33e5efc61e8669841913a">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[2/5]</span></h2>
+<a id="ac8c8bd9b31f33e5efc61e8669841913a" name="ac8c8bd9b31f33e5efc61e8669841913a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac8c8bd9b31f33e5efc61e8669841913a">&#9670;&#160;</a></span>TEST_F() <span class="overload">[2/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -173,8 +197,8 @@ model_test.cpp の依存先関係図:</div>
 
 </div>
 </div>
-<a id="a85d75dc9b26ad6e9260c2a9504a8afc1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a85d75dc9b26ad6e9260c2a9504a8afc1">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[3/5]</span></h2>
+<a id="a85d75dc9b26ad6e9260c2a9504a8afc1" name="a85d75dc9b26ad6e9260c2a9504a8afc1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a85d75dc9b26ad6e9260c2a9504a8afc1">&#9670;&#160;</a></span>TEST_F() <span class="overload">[3/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -201,8 +225,8 @@ model_test.cpp の依存先関係図:</div>
 
 </div>
 </div>
-<a id="ab8e78a5900239b33d9c0f991480aff9a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab8e78a5900239b33d9c0f991480aff9a">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[4/5]</span></h2>
+<a id="ab8e78a5900239b33d9c0f991480aff9a" name="ab8e78a5900239b33d9c0f991480aff9a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab8e78a5900239b33d9c0f991480aff9a">&#9670;&#160;</a></span>TEST_F() <span class="overload">[4/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -229,8 +253,8 @@ model_test.cpp の依存先関係図:</div>
 
 </div>
 </div>
-<a id="ad724a2ab09625c4a5c2bfd6a0da28e54"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad724a2ab09625c4a5c2bfd6a0da28e54">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[5/5]</span></h2>
+<a id="ad724a2ab09625c4a5c2bfd6a0da28e54" name="ad724a2ab09625c4a5c2bfd6a0da28e54"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad724a2ab09625c4a5c2bfd6a0da28e54">&#9670;&#160;</a></span>TEST_F() <span class="overload">[5/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -260,7 +284,7 @@ model_test.cpp の依存先関係図:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
 </small></address>
 </body>
 </html>

@@ -1,9 +1,9 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<meta name="generator" content="Doxygen 1.9.1"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>Rbm: メンバ一覧</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
@@ -19,8 +19,8 @@
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
  <tbody>
- <tr style="height: 56px;">
-  <td id="projectalign" style="padding-left: 0.5em;">
+ <tr id="projectrow">
+  <td id="projectalign">
    <div id="projectname">Rbm
    </div>
   </td>
@@ -29,21 +29,22 @@
 </table>
 </div>
 <!-- end header part -->
-<!-- 構築: Doxygen 1.9.1 -->
+<!-- 構築: Doxygen 1.9.8 -->
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-var searchBox = new SearchBox("searchBox", "search",false,'検索','.html');
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
 /* @license-end */
 </script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 $(function() {
   initMenu('',true,false,'search.php','検索');
   $(document).ready(function() { init_search(); });
 });
-/* @license-end */</script>
+/* @license-end */
+</script>
 <div id="main-nav"></div>
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -54,9 +55,16 @@ $(function() {
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
-<iframe src="javascript:void(0)" frameborder="0" 
-        name="MSearchResults" id="MSearchResults">
-</iframe>
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
 </div>
 
 <div id="nav-path" class="navpath">
@@ -65,32 +73,31 @@ $(function() {
 </div>
 </div><!-- top -->
 <div class="header">
-  <div class="headertitle">
-<div class="title">rbm::Model メンバ一覧</div>  </div>
+  <div class="headertitle"><div class="title">rbm::Model メンバ一覧</div></div>
 </div><!--header-->
 <div class="contents">
 
 <p>継承メンバを含む <a class="el" href="classrbm_1_1Model.html">rbm::Model</a> の全メンバ一覧です。</p>
 <table class="directory">
   <tr class="even"><td class="entry"><a class="el" href="classrbm_1_1Model.html#a70df3a25b58479de6451cb7e911d138a">all_status</a>()</td><td class="entry"><a class="el" href="classrbm_1_1Model.html">rbm::Model</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classrbm_1_1Model.html#aadf0dbfeca23a4969b4b7ef55fc9fb97">cost_func</a>(const Parametar &amp;parametar, const Eigen::VectorXi &amp;rand_visible, const Eigen::VectorXi &amp;rand_hidden) const</td><td class="entry"><a class="el" href="classrbm_1_1Model.html">rbm::Model</a></td><td class="entry"></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classrbm_1_1Model.html#aadf0dbfeca23a4969b4b7ef55fc9fb97">cost_func</a>(const Parametar &amp;parametar, const Eigen::VectorXi &amp;rand_visible, const Eigen::VectorXi &amp;rand_hidden) const</td><td class="entry"><a class="el" href="classrbm_1_1Model.html">rbm::Model</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classrbm_1_1Model.html#ae24367a3bf9bc0f336bf703a4a487123">cost_v</a>(const Parametar &amp;parametar, const Eigen::VectorXi &amp;rand_visible) const</td><td class="entry"><a class="el" href="classrbm_1_1Model.html">rbm::Model</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classrbm_1_1Model.html#a380f0da6be5d8dc82210ea5045a4bc08">distribution</a>()</td><td class="entry"><a class="el" href="classrbm_1_1Model.html">rbm::Model</a></td><td class="entry"></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classrbm_1_1Model.html#afafb727c3a4930b008389ac2ef688449">distribution</a>()</td><td class="entry"><a class="el" href="classrbm_1_1Model.html">rbm::Model</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classrbm_1_1Model.html#a55b047818f1b8ef7b9ddbe1e9784fbba">hidden_dim</a></td><td class="entry"><a class="el" href="classrbm_1_1Model.html">rbm::Model</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classrbm_1_1Model.html#afb7eb22c4e149e4850ffc2ba0836368b">kl_divergence</a>(const Model &amp;model)</td><td class="entry"><a class="el" href="classrbm_1_1Model.html">rbm::Model</a></td><td class="entry"></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classrbm_1_1Model.html#afb7eb22c4e149e4850ffc2ba0836368b">kl_divergence</a>(const Model &amp;model)</td><td class="entry"><a class="el" href="classrbm_1_1Model.html">rbm::Model</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classrbm_1_1Model.html#afa97d6bccaf2f99eed01ec8800091675">lambda_hidden</a>(const Parametar &amp;parametar, const Eigen::VectorXi &amp;rand_visible) const</td><td class="entry"><a class="el" href="classrbm_1_1Model.html">rbm::Model</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classrbm_1_1Model.html#a187c24b014e169aa55293d6640beeb25">lambda_visible</a>(const Parametar &amp;parametar, const Eigen::VectorXi &amp;rand_hidden) const</td><td class="entry"><a class="el" href="classrbm_1_1Model.html">rbm::Model</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classrbm_1_1Model.html#a187c24b014e169aa55293d6640beeb25">lambda_visible</a>(const Parametar &amp;parametar, const Eigen::VectorXi &amp;rand_hidden) const</td><td class="entry"><a class="el" href="classrbm_1_1Model.html">rbm::Model</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classrbm_1_1Model.html#ae3b375de5f6df4faf74a95d64748e048">Model</a>()</td><td class="entry"><a class="el" href="classrbm_1_1Model.html">rbm::Model</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classrbm_1_1Model.html#aca7feac5ae78f995b64b5075e509d9e7">Model</a>(int visible_dim, int hidden_dim)</td><td class="entry"><a class="el" href="classrbm_1_1Model.html">rbm::Model</a></td><td class="entry"></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classrbm_1_1Model.html#aca7feac5ae78f995b64b5075e509d9e7">Model</a>(int visible_dim, int hidden_dim)</td><td class="entry"><a class="el" href="classrbm_1_1Model.html">rbm::Model</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classrbm_1_1Model.html#a05c85d79a96c824c3d4ffcbbf0dd7a45">Model</a>(Parametar parametar)</td><td class="entry"><a class="el" href="classrbm_1_1Model.html">rbm::Model</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classrbm_1_1Model.html#aff2acad3651ec863e60c155b8c3bb4f9">parametar</a></td><td class="entry"><a class="el" href="classrbm_1_1Model.html">rbm::Model</a></td><td class="entry"></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classrbm_1_1Model.html#aff2acad3651ec863e60c155b8c3bb4f9">parametar</a></td><td class="entry"><a class="el" href="classrbm_1_1Model.html">rbm::Model</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classrbm_1_1Model.html#a2d7a7fe105aa17aa3be00b500334d822">set_parameter</a>(Parametar parametar)</td><td class="entry"><a class="el" href="classrbm_1_1Model.html">rbm::Model</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classrbm_1_1Model.html#a31d11dee3b4dc1bca434fef62826a169">visible_dim</a></td><td class="entry"><a class="el" href="classrbm_1_1Model.html">rbm::Model</a></td><td class="entry"></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classrbm_1_1Model.html#a31d11dee3b4dc1bca434fef62826a169">visible_dim</a></td><td class="entry"><a class="el" href="classrbm_1_1Model.html">rbm::Model</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classrbm_1_1Model.html#ad6ebd2062a0b823db841a0b88baac4c0">~Model</a>()</td><td class="entry"><a class="el" href="classrbm_1_1Model.html">rbm::Model</a></td><td class="entry"></td></tr>
 </table></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
 </small></address>
 </body>
 </html>

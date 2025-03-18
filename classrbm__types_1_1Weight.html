@@ -1,9 +1,9 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<meta name="generator" content="Doxygen 1.9.1"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>Rbm: rbm_types::Weight クラス</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
@@ -19,8 +19,8 @@
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
  <tbody>
- <tr style="height: 56px;">
-  <td id="projectalign" style="padding-left: 0.5em;">
+ <tr id="projectrow">
+  <td id="projectalign">
    <div id="projectname">Rbm
    </div>
   </td>
@@ -29,21 +29,22 @@
 </table>
 </div>
 <!-- end header part -->
-<!-- 構築: Doxygen 1.9.1 -->
+<!-- 構築: Doxygen 1.9.8 -->
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-var searchBox = new SearchBox("searchBox", "search",false,'検索','.html');
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
 /* @license-end */
 </script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 $(function() {
   initMenu('',true,false,'search.php','検索');
   $(document).ready(function() { init_search(); });
 });
-/* @license-end */</script>
+/* @license-end */
+</script>
 <div id="main-nav"></div>
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -54,9 +55,16 @@ $(function() {
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
-<iframe src="javascript:void(0)" frameborder="0" 
-        name="MSearchResults" id="MSearchResults">
-</iframe>
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
 </div>
 
 <div id="nav-path" class="navpath">
@@ -68,8 +76,7 @@ $(function() {
   <div class="summary">
 <a href="#pub-methods">公開メンバ関数</a> &#124;
 <a href="classrbm__types_1_1Weight-members.html">全メンバ一覧</a>  </div>
-  <div class="headertitle">
-<div class="title">rbm_types::Weight クラス</div>  </div>
+  <div class="headertitle"><div class="title">rbm_types::Weight クラス</div></div>
 </div><!--header-->
 <div class="contents">
 
@@ -82,8 +89,9 @@ rbm_types::Weight の継承関係図</div>
 <div class="dyncontent">
 <div class="center"><img src="classrbm__types_1_1Weight__inherit__graph.png" border="0" usemap="#arbm__types_1_1Weight_inherit__map" alt="Inheritance graph"/></div>
 <map name="arbm__types_1_1Weight_inherit__map" id="arbm__types_1_1Weight_inherit__map">
-<area shape="rect" title="Weight(重み)の型定義" alt="" coords="5,131,149,267"/>
-<area shape="rect" title=" " alt="" coords="15,5,140,83"/>
+<area shape="rect" title="Weight(重み)の型定義" alt="" coords="5,119,141,264"/>
+<area shape="rect" title=" " alt="" coords="15,5,132,71"/>
+<area shape="poly" title=" " alt="" coords="76,84,76,118,71,118,71,84"/>
 </map>
 </div>
 <div class="dynheader">
@@ -91,29 +99,30 @@ rbm_types::Weight 連携図</div>
 <div class="dyncontent">
 <div class="center"><img src="classrbm__types_1_1Weight__coll__graph.png" border="0" usemap="#arbm__types_1_1Weight_coll__map" alt="Collaboration graph"/></div>
 <map name="arbm__types_1_1Weight_coll__map" id="arbm__types_1_1Weight_coll__map">
-<area shape="rect" title="Weight(重み)の型定義" alt="" coords="5,131,149,267"/>
-<area shape="rect" title=" " alt="" coords="15,5,140,83"/>
+<area shape="rect" title="Weight(重み)の型定義" alt="" coords="5,119,141,264"/>
+<area shape="rect" title=" " alt="" coords="15,5,132,71"/>
+<area shape="poly" title=" " alt="" coords="76,84,76,118,71,118,71,84"/>
 </map>
 </div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 公開メンバ関数</h2></td></tr>
-<tr class="memitem:a0541149928651ae38f671d3ce5633419"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrbm__types_1_1Weight.html#a0541149928651ae38f671d3ce5633419">Weight</a> ()</td></tr>
+<tr class="memitem:a0541149928651ae38f671d3ce5633419" id="r_a0541149928651ae38f671d3ce5633419"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrbm__types_1_1Weight.html#a0541149928651ae38f671d3ce5633419">Weight</a> ()</td></tr>
 <tr class="separator:a0541149928651ae38f671d3ce5633419"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a72bba341138ef9b55d8fe36f5b48a6e6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrbm__types_1_1Weight.html#a72bba341138ef9b55d8fe36f5b48a6e6">Weight</a> (int rows, int cols)</td></tr>
+<tr class="memitem:a72bba341138ef9b55d8fe36f5b48a6e6" id="r_a72bba341138ef9b55d8fe36f5b48a6e6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrbm__types_1_1Weight.html#a72bba341138ef9b55d8fe36f5b48a6e6">Weight</a> (int rows, int cols)</td></tr>
 <tr class="separator:a72bba341138ef9b55d8fe36f5b48a6e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a31c336ed5142435748bbb80ed47654c7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrbm__types_1_1Weight.html#a31c336ed5142435748bbb80ed47654c7">Weight</a> (const Eigen::MatrixXd &amp;other)</td></tr>
+<tr class="memitem:a31c336ed5142435748bbb80ed47654c7" id="r_a31c336ed5142435748bbb80ed47654c7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrbm__types_1_1Weight.html#a31c336ed5142435748bbb80ed47654c7">Weight</a> (const Eigen::MatrixXd &amp;other)</td></tr>
 <tr class="separator:a31c336ed5142435748bbb80ed47654c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3ed94531e95f06d64825ad60d38d104a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classrbm__types_1_1Weight.html">Weight</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrbm__types_1_1Weight.html#a3ed94531e95f06d64825ad60d38d104a">operator=</a> (const Eigen::MatrixXd &amp;other)</td></tr>
-<tr class="separator:a3ed94531e95f06d64825ad60d38d104a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab47380d763cb3d47a5ff9c7ffacaa301"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classrbm__types_1_1Weight.html">Weight</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrbm__types_1_1Weight.html#ab47380d763cb3d47a5ff9c7ffacaa301">block</a> (int startRow, int startCol, int numRows, int numCols) const</td></tr>
+<tr class="memitem:a42ca1e8b1e157cc5ceba99f5e0d758d8" id="r_a42ca1e8b1e157cc5ceba99f5e0d758d8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classrbm__types_1_1Weight.html">Weight</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrbm__types_1_1Weight.html#a42ca1e8b1e157cc5ceba99f5e0d758d8">operator=</a> (const Eigen::MatrixXd &amp;other)</td></tr>
+<tr class="separator:a42ca1e8b1e157cc5ceba99f5e0d758d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab47380d763cb3d47a5ff9c7ffacaa301" id="r_ab47380d763cb3d47a5ff9c7ffacaa301"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classrbm__types_1_1Weight.html">Weight</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrbm__types_1_1Weight.html#ab47380d763cb3d47a5ff9c7ffacaa301">block</a> (int startRow, int startCol, int numRows, int numCols) const</td></tr>
 <tr class="separator:ab47380d763cb3d47a5ff9c7ffacaa301"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
 <div class="textblock"><p><a class="el" href="classrbm__types_1_1Weight.html" title="Weight(重み)の型定義">Weight</a>(重み)の型定義 </p>
 </div><h2 class="groupheader">構築子と解体子</h2>
-<a id="a0541149928651ae38f671d3ce5633419"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0541149928651ae38f671d3ce5633419">&#9670;&nbsp;</a></span>Weight() <span class="overload">[1/3]</span></h2>
+<a id="a0541149928651ae38f671d3ce5633419" name="a0541149928651ae38f671d3ce5633419"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0541149928651ae38f671d3ce5633419">&#9670;&#160;</a></span>Weight() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -137,8 +146,8 @@ rbm_types::Weight 連携図</div>
 
 </div>
 </div>
-<a id="a72bba341138ef9b55d8fe36f5b48a6e6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a72bba341138ef9b55d8fe36f5b48a6e6">&#9670;&nbsp;</a></span>Weight() <span class="overload">[2/3]</span></h2>
+<a id="a72bba341138ef9b55d8fe36f5b48a6e6" name="a72bba341138ef9b55d8fe36f5b48a6e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a72bba341138ef9b55d8fe36f5b48a6e6">&#9670;&#160;</a></span>Weight() <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -173,8 +182,8 @@ rbm_types::Weight 連携図</div>
 
 </div>
 </div>
-<a id="a31c336ed5142435748bbb80ed47654c7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a31c336ed5142435748bbb80ed47654c7">&#9670;&nbsp;</a></span>Weight() <span class="overload">[3/3]</span></h2>
+<a id="a31c336ed5142435748bbb80ed47654c7" name="a31c336ed5142435748bbb80ed47654c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a31c336ed5142435748bbb80ed47654c7">&#9670;&#160;</a></span>Weight() <span class="overload">[3/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -200,8 +209,8 @@ rbm_types::Weight 連携図</div>
 </div>
 </div>
 <h2 class="groupheader">関数詳解</h2>
-<a id="ab47380d763cb3d47a5ff9c7ffacaa301"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab47380d763cb3d47a5ff9c7ffacaa301">&#9670;&nbsp;</a></span>block()</h2>
+<a id="ab47380d763cb3d47a5ff9c7ffacaa301" name="ab47380d763cb3d47a5ff9c7ffacaa301"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab47380d763cb3d47a5ff9c7ffacaa301">&#9670;&#160;</a></span>block()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -250,15 +259,16 @@ rbm_types::Weight 連携図</div>
 <div class="dyncontent">
 <div class="center"><img src="classrbm__types_1_1Weight_ab47380d763cb3d47a5ff9c7ffacaa301_cgraph.png" border="0" usemap="#aclassrbm__types_1_1Weight_ab47380d763cb3d47a5ff9c7ffacaa301_cgraph" alt=""/></div>
 <map name="aclassrbm__types_1_1Weight_ab47380d763cb3d47a5ff9c7ffacaa301_cgraph" id="aclassrbm__types_1_1Weight_ab47380d763cb3d47a5ff9c7ffacaa301_cgraph">
-<area shape="rect" title=" " alt="" coords="5,5,157,47"/>
-<area shape="rect" href="classrbm__types_1_1Weight.html#a0541149928651ae38f671d3ce5633419" title=" " alt="" coords="205,5,357,47"/>
+<area shape="rect" title=" " alt="" coords="5,5,157,45"/>
+<area shape="rect" href="classrbm__types_1_1Weight.html#a0541149928651ae38f671d3ce5633419" title=" " alt="" coords="205,5,357,45"/>
+<area shape="poly" title=" " alt="" coords="158,23,191,23,191,28,158,28"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="a3ed94531e95f06d64825ad60d38d104a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3ed94531e95f06d64825ad60d38d104a">&#9670;&nbsp;</a></span>operator=()</h2>
+<a id="a42ca1e8b1e157cc5ceba99f5e0d758d8" name="a42ca1e8b1e157cc5ceba99f5e0d758d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a42ca1e8b1e157cc5ceba99f5e0d758d8">&#9670;&#160;</a></span>operator=()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -267,7 +277,7 @@ rbm_types::Weight 連携図</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classrbm__types_1_1Weight.html">Weight</a>&amp; rbm_types::Weight::operator= </td>
+          <td class="memname"><a class="el" href="classrbm__types_1_1Weight.html">Weight</a> &amp; rbm_types::Weight::operator= </td>
           <td>(</td>
           <td class="paramtype">const Eigen::MatrixXd &amp;&#160;</td>
           <td class="paramname"><em>other</em></td><td>)</td>
@@ -289,7 +299,7 @@ rbm_types::Weight 連携図</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
 </small></address>
 </body>
 </html>

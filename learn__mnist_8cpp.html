@@ -1,9 +1,9 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<meta name="generator" content="Doxygen 1.9.1"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>Rbm: exsamples/learn_mnist/learn_mnist.cpp ファイル</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
@@ -19,8 +19,8 @@
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
  <tbody>
- <tr style="height: 56px;">
-  <td id="projectalign" style="padding-left: 0.5em;">
+ <tr id="projectrow">
+  <td id="projectalign">
    <div id="projectname">Rbm
    </div>
   </td>
@@ -29,21 +29,22 @@
 </table>
 </div>
 <!-- end header part -->
-<!-- 構築: Doxygen 1.9.1 -->
+<!-- 構築: Doxygen 1.9.8 -->
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-var searchBox = new SearchBox("searchBox", "search",false,'検索','.html');
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
 /* @license-end */
 </script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 $(function() {
   initMenu('',true,false,'search.php','検索');
   $(document).ready(function() { init_search(); });
 });
-/* @license-end */</script>
+/* @license-end */
+</script>
 <div id="main-nav"></div>
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -54,9 +55,16 @@ $(function() {
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
-<iframe src="javascript:void(0)" frameborder="0" 
-        name="MSearchResults" id="MSearchResults">
-</iframe>
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
 </div>
 
 <div id="nav-path" class="navpath">
@@ -67,8 +75,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#func-members">関数</a>  </div>
-  <div class="headertitle">
-<div class="title">learn_mnist.cpp ファイル</div>  </div>
+  <div class="headertitle"><div class="title">learn_mnist.cpp ファイル</div></div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;iostream&gt;</code><br />
@@ -83,35 +90,66 @@ learn_mnist.cpp の依存先関係図:</div>
 <div class="dyncontent">
 <div class="center"><img src="learn__mnist_8cpp__incl.png" border="0" usemap="#aexsamples_2learn__mnist_2learn__mnist_8cpp" alt=""/></div>
 <map name="aexsamples_2learn__mnist_2learn__mnist_8cpp" id="aexsamples_2learn__mnist_2learn__mnist_8cpp">
-<area shape="rect" title=" " alt="" coords="342,5,517,47"/>
-<area shape="rect" title=" " alt="" coords="5,95,85,121"/>
-<area shape="rect" title=" " alt="" coords="109,95,168,121"/>
-<area shape="rect" title=" " alt="" coords="192,95,392,121"/>
-<area shape="rect" href="model_8h.html" title="Modelクラス" alt="" coords="427,244,501,271"/>
-<area shape="rect" href="learn_8h.html" title="Learn クラス" alt="" coords="467,95,533,121"/>
-<area shape="rect" href="sampling_8h.html" title="samplingクラス" alt="" coords="382,169,477,196"/>
-<area shape="rect" href="csv_8h.html" title="csv ユーティリティ" alt="" coords="793,244,847,271"/>
-<area shape="rect" title=" " alt="" coords="453,543,555,569"/>
-<area shape="rect" href="parametar_8h.html" title="RBMのパラメータのデータ型" alt="" coords="512,319,613,345"/>
-<area shape="rect" href="data_8h.html" title="バイナリのRBMで扱うデータ型" alt="" coords="619,468,682,495"/>
-<area shape="rect" href="bias_8h.html" title="RBMのバイアスのデータ型" alt="" coords="552,393,613,420"/>
-<area shape="rect" href="weight_8h.html" title=" " alt="" coords="465,468,543,495"/>
-<area shape="rect" title=" " alt="" coords="722,543,785,569"/>
-<area shape="rect" href="grad_8h.html" title="RBMの勾配のデータ型" alt="" coords="295,319,358,345"/>
-<area shape="rect" href="file_8h.html" title="sigmoid関数" alt="" coords="609,169,663,196"/>
-<area shape="rect" title=" " alt="" coords="627,244,717,271"/>
-<area shape="rect" title=" " alt="" coords="347,244,402,271"/>
+<area shape="rect" title=" " alt="" coords="342,5,517,45"/>
+<area shape="rect" title=" " alt="" coords="5,93,85,119"/>
+<area shape="poly" title=" " alt="" coords="342,46,99,96,98,90,341,41"/>
+<area shape="rect" title=" " alt="" coords="109,93,168,119"/>
+<area shape="poly" title=" " alt="" coords="360,48,182,96,180,90,358,43"/>
+<area shape="rect" title=" " alt="" coords="192,93,392,119"/>
+<area shape="poly" title=" " alt="" coords="398,48,326,89,323,84,395,43"/>
+<area shape="rect" href="model_8h.html" title="Modelクラス" alt="" coords="427,240,501,265"/>
+<area shape="poly" title=" " alt="" coords="488,43,521,63,548,92,555,111,556,131,551,151,542,170,518,205,491,232,487,229,513,201,538,167,546,149,550,130,550,112,543,95,518,67,486,48"/>
+<area shape="rect" href="learn_8h.html" title="Learn クラス" alt="" coords="467,93,533,119"/>
+<area shape="poly" title=" " alt="" coords="448,44,482,81,478,85,444,47"/>
+<area shape="rect" href="sampling_8h.html" title="samplingクラス" alt="" coords="382,167,477,192"/>
+<area shape="poly" title=" " alt="" coords="432,46,432,153,427,153,427,46"/>
+<area shape="rect" href="csv_8h.html" title="csv ユーティリティ" alt="" coords="793,240,847,265"/>
+<area shape="poly" title=" " alt="" coords="518,42,579,60,647,86,714,121,775,165,799,195,814,226,809,228,794,197,771,169,712,125,645,91,578,65,516,47"/>
+<area shape="rect" title=" " alt="" coords="453,533,555,559"/>
+<area shape="poly" title=" " alt="" coords="463,266,453,304,444,359,442,422,446,454,454,484,466,505,481,522,477,526,462,508,450,486,441,455,437,423,438,358,448,303,458,265"/>
+<area shape="rect" href="parametar_8h.html" title="RBMのパラメータのデータ型" alt="" coords="512,313,613,339"/>
+<area shape="poly" title=" " alt="" coords="481,263,537,303,534,307,478,268"/>
+<area shape="rect" href="data_8h.html" title="バイナリのRBMで扱うデータ型" alt="" coords="619,460,682,485"/>
+<area shape="poly" title=" " alt="" coords="469,265,492,332,513,373,542,410,573,434,608,452,605,457,571,439,538,414,509,376,487,334,464,266"/>
+<area shape="rect" href="bias_8h.html" title="RBMのバイアスのデータ型" alt="" coords="552,387,613,412"/>
+<area shape="poly" title=" " alt="" coords="569,338,578,373,573,374,563,340"/>
+<area shape="rect" href="weight_8h.html" title=" " alt="" coords="465,460,543,485"/>
+<area shape="poly" title=" " alt="" coords="560,340,516,448,511,446,555,338"/>
+<area shape="poly" title=" " alt="" coords="583,413,575,447,558,487,529,525,524,522,554,484,570,445,578,412"/>
+<area shape="poly" title=" " alt="" coords="596,410,632,448,628,452,592,414"/>
+<area shape="poly" title=" " alt="" coords="628,488,541,530,539,525,626,483"/>
+<area shape="rect" title=" " alt="" coords="722,533,785,559"/>
+<area shape="poly" title=" " alt="" coords="669,483,727,523,724,527,666,488"/>
+<area shape="poly" title=" " alt="" coords="507,486,507,520,501,520,501,486"/>
+<area shape="poly" title=" " alt="" coords="502,119,499,153,492,193,478,229,473,227,487,191,494,152,497,119"/>
+<area shape="poly" title=" " alt="" coords="534,108,598,120,635,130,671,144,705,163,732,187,750,216,757,251,757,328,749,366,730,401,704,431,679,454,676,450,701,427,725,398,744,365,752,327,752,252,746,218,728,190,702,167,669,149,633,135,597,125,533,113"/>
+<area shape="rect" href="grad_8h.html" title="RBMの勾配のデータ型" alt="" coords="295,313,358,339"/>
+<area shape="poly" title=" " alt="" coords="467,118,418,137,393,151,371,168,350,199,337,234,331,270,329,300,323,300,325,269,332,233,345,196,367,165,390,146,416,132,465,113"/>
+<area shape="rect" href="file_8h.html" title="sigmoid関数" alt="" coords="609,167,663,192"/>
+<area shape="poly" title=" " alt="" coords="523,116,603,158,601,163,521,121"/>
+<area shape="poly" title=" " alt="" coords="490,121,452,159,448,155,486,117"/>
+<area shape="poly" title=" " alt="" coords="331,338,351,405,370,446,397,484,426,508,459,525,456,530,423,512,393,487,366,449,346,407,326,339"/>
+<area shape="poly" title=" " alt="" coords="632,194,577,302,572,300,628,191"/>
+<area shape="rect" title=" " alt="" coords="627,240,717,265"/>
+<area shape="poly" title=" " alt="" coords="644,191,662,226,658,229,640,194"/>
+<area shape="poly" title=" " alt="" coords="437,191,455,226,450,229,433,194"/>
+<area shape="poly" title=" " alt="" coords="461,190,500,207,546,234,591,269,628,312,643,346,652,382,655,446,650,446,647,383,638,348,623,315,587,272,543,238,497,212,459,194"/>
+<area shape="rect" title=" " alt="" coords="347,240,402,265"/>
+<area shape="poly" title=" " alt="" coords="422,194,394,231,390,228,418,191"/>
+<area shape="poly" title=" " alt="" coords="793,264,618,312,616,307,792,259"/>
+<area shape="poly" title=" " alt="" coords="822,266,820,294,813,333,799,375,775,414,758,430,738,444,696,462,694,457,735,439,755,426,771,410,794,373,808,332,815,294,817,265"/>
+<area shape="poly" title=" " alt="" coords="826,265,832,298,832,339,819,392,802,443,768,522,763,520,797,441,814,390,827,338,827,299,821,266"/>
 </map>
 </div>
 </div><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 関数</h2></td></tr>
-<tr class="memitem:adca6d2010873dec3865ceee870b278c0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="learn__mnist_8cpp.html#adca6d2010873dec3865ceee870b278c0">main</a> (const int argc, const char *const *const argv)</td></tr>
+<tr class="memitem:adca6d2010873dec3865ceee870b278c0" id="r_adca6d2010873dec3865ceee870b278c0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="learn__mnist_8cpp.html#adca6d2010873dec3865ceee870b278c0">main</a> (const int argc, const char *const *const argv)</td></tr>
 <tr class="separator:adca6d2010873dec3865ceee870b278c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">関数詳解</h2>
-<a id="adca6d2010873dec3865ceee870b278c0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adca6d2010873dec3865ceee870b278c0">&#9670;&nbsp;</a></span>main()</h2>
+<a id="adca6d2010873dec3865ceee870b278c0" name="adca6d2010873dec3865ceee870b278c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adca6d2010873dec3865ceee870b278c0">&#9670;&#160;</a></span>main()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -140,9 +178,30 @@ learn_mnist.cpp の依存先関係図:</div>
 <div class="dyncontent">
 <div class="center"><img src="learn__mnist_8cpp_adca6d2010873dec3865ceee870b278c0_cgraph.png" border="0" usemap="#alearn__mnist_8cpp_adca6d2010873dec3865ceee870b278c0_cgraph" alt=""/></div>
 <map name="alearn__mnist_8cpp_adca6d2010873dec3865ceee870b278c0_cgraph" id="alearn__mnist_8cpp_adca6d2010873dec3865ceee870b278c0_cgraph">
-<area shape="rect" title=" " alt="" coords="5,13,60,39"/>
-<area shape="rect" href="classrbm_1_1Learn.html#aea5ae36bb1c582b4039837db3750f553" title="Contrastive Divergence(CD法)" alt="" coords="108,5,281,47"/>
-<area shape="rect" href="classrbm__utils_1_1File.html#a24f359f108a0dc0599cb32a666f3906d" title="gen_file" alt="" coords="329,13,503,39"/>
+<area shape="rect" title=" " alt="" coords="5,120,60,145"/>
+<area shape="rect" href="classrbm_1_1Learn.html#aea5ae36bb1c582b4039837db3750f553" title="Contrastive Divergence(CD法)" alt="" coords="108,113,281,153"/>
+<area shape="poly" title=" " alt="" coords="60,130,94,130,94,135,60,135"/>
+<area shape="rect" href="classrbm_1_1Learn.html#abc6fbf8c11670664518049bee83bf2b4" title="データ平均" alt="" coords="552,5,759,31"/>
+<area shape="poly" title=" " alt="" coords="216,110,265,73,296,55,328,41,381,26,435,17,538,10,538,16,435,22,382,32,330,46,298,60,268,78,220,115"/>
+<area shape="rect" href="classrbm_1_1Learn.html#acd1c978bb6a3471760ac2bb7229d85e9" title="勾配計算" alt="" coords="335,120,498,145"/>
+<area shape="poly" title=" " alt="" coords="281,130,321,130,321,135,281,135"/>
+<area shape="rect" href="classrbm_1_1Learn.html#ad441a7fe5b8f48f13d0e10b77e9aeb05" title="Contrastive Divergence(CD法)でのモデル平均" alt="" coords="329,55,504,95"/>
+<area shape="poly" title=" " alt="" coords="272,110,325,96,326,101,273,115"/>
+<area shape="rect" href="classrbm__utils_1_1File.html#a24f359f108a0dc0599cb32a666f3906d" title="gen_file" alt="" coords="330,193,503,219"/>
+<area shape="poly" title=" " alt="" coords="257,150,365,186,363,191,255,155"/>
+<area shape="rect" href="classrbm_1_1Learn.html#a3007d01d42932014a8e25cc7bfbf814f" title="ゼロ判定" alt="" coords="343,243,490,268"/>
+<area shape="poly" title=" " alt="" coords="220,151,268,190,331,229,346,236,344,241,328,234,265,195,216,155"/>
+<area shape="rect" href="classrbm_1_1Model.html#afa97d6bccaf2f99eed01ec8800091675" title="Init Rbm" alt="" coords="807,55,960,95"/>
+<area shape="poly" title=" " alt="" coords="709,28,759,41,794,50,793,55,758,46,708,33"/>
+<area shape="rect" href="namespacerbm__utils.html#af60332fbf0bcb0204d4b8dcd65bf3b81" title="calc sigmoid" alt="" coords="828,5,939,31"/>
+<area shape="poly" title=" " alt="" coords="759,15,814,15,814,21,759,21"/>
+<area shape="rect" href="classrbm_1_1Sampling.html#a0b829f0de29e159598f36130bd5408c8" title="ブロック化ギブスサンプリング" alt="" coords="575,55,735,95"/>
+<area shape="poly" title=" " alt="" coords="504,73,562,73,562,78,504,78"/>
+<area shape="poly" title=" " alt="" coords="735,73,793,73,793,78,735,78"/>
+<area shape="poly" title=" " alt="" coords="735,53,818,31,820,37,736,58"/>
+<area shape="rect" href="classrbm_1_1Model.html#a187c24b014e169aa55293d6640beeb25" title="Init Rbm" alt="" coords="807,119,960,159"/>
+<area shape="poly" title=" " alt="" coords="728,93,799,113,797,118,727,98"/>
+<area shape="poly" title=" " alt="" coords="381,195,373,185,377,175,392,169,417,167,447,170,460,179,456,184,445,175,417,172,393,174,380,179,378,184,385,192"/>
 </map>
 </div>
 
@@ -151,7 +210,7 @@ learn_mnist.cpp の依存先関係図:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
 </small></address>
 </body>
 </html>

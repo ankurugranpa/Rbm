@@ -1,9 +1,9 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<meta name="generator" content="Doxygen 1.9.1"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>Rbm: src/learn.h ファイル</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
@@ -19,8 +19,8 @@
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
  <tbody>
- <tr style="height: 56px;">
-  <td id="projectalign" style="padding-left: 0.5em;">
+ <tr id="projectrow">
+  <td id="projectalign">
    <div id="projectname">Rbm
    </div>
   </td>
@@ -29,21 +29,22 @@
 </table>
 </div>
 <!-- end header part -->
-<!-- 構築: Doxygen 1.9.1 -->
+<!-- 構築: Doxygen 1.9.8 -->
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-var searchBox = new SearchBox("searchBox", "search",false,'検索','.html');
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
 /* @license-end */
 </script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 $(function() {
   initMenu('',true,false,'search.php','検索');
   $(document).ready(function() { init_search(); });
 });
-/* @license-end */</script>
+/* @license-end */
+</script>
 <div id="main-nav"></div>
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -54,9 +55,16 @@ $(function() {
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
-<iframe src="javascript:void(0)" frameborder="0" 
-        name="MSearchResults" id="MSearchResults">
-</iframe>
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
 </div>
 
 <div id="nav-path" class="navpath">
@@ -68,8 +76,7 @@ $(function() {
   <div class="summary">
 <a href="#nested-classes">クラス</a> &#124;
 <a href="#namespaces">名前空間</a>  </div>
-  <div class="headertitle">
-<div class="title">learn.h ファイル</div>  </div>
+  <div class="headertitle"><div class="title">learn.h ファイル</div></div>
 </div><!--header-->
 <div class="contents">
 
@@ -85,19 +92,40 @@ learn.h の依存先関係図:</div>
 <div class="dyncontent">
 <div class="center"><img src="learn_8h__incl.png" border="0" usemap="#asrc_2learn_8h" alt=""/></div>
 <map name="asrc_2learn_8h" id="asrc_2learn_8h">
-<area shape="rect" title="Learn クラス" alt="" coords="221,5,311,32"/>
-<area shape="rect" href="model_8h.html" title="Modelクラス" alt="" coords="239,155,314,181"/>
-<area shape="rect" href="data_8h.html" title="バイナリのRBMで扱うデータ型" alt="" coords="288,379,351,405"/>
-<area shape="rect" href="grad_8h.html" title="RBMの勾配のデータ型" alt="" coords="5,229,68,256"/>
-<area shape="rect" href="file_8h.html" title="sigmoid関数" alt="" coords="173,80,228,107"/>
-<area shape="rect" href="sampling_8h.html" title="samplingクラス" alt="" coords="304,80,399,107"/>
-<area shape="rect" title=" " alt="" coords="140,453,243,480"/>
-<area shape="rect" href="parametar_8h.html" title="RBMのパラメータのデータ型" alt="" coords="111,229,213,256"/>
-<area shape="rect" href="bias_8h.html" title="RBMのバイアスのデータ型" alt="" coords="151,304,213,331"/>
-<area shape="rect" href="weight_8h.html" title=" " alt="" coords="75,379,153,405"/>
-<area shape="rect" title=" " alt="" coords="288,453,351,480"/>
-<area shape="rect" title=" " alt="" coords="74,155,165,181"/>
-<area shape="rect" title=" " alt="" coords="389,155,444,181"/>
+<area shape="rect" title="Learn クラス" alt="" coords="221,5,311,31"/>
+<area shape="rect" href="model_8h.html" title="Modelクラス" alt="" coords="239,152,314,177"/>
+<area shape="poly" title=" " alt="" coords="270,31,277,138,272,138,264,31"/>
+<area shape="rect" href="data_8h.html" title="バイナリのRBMで扱うデータ型" alt="" coords="288,372,351,397"/>
+<area shape="poly" title=" " alt="" coords="313,26,366,42,422,69,447,87,467,109,480,134,485,163,485,240,481,263,473,284,459,304,442,321,403,349,364,369,362,364,401,345,439,317,455,300,468,282,476,262,479,239,479,164,475,136,462,112,443,91,419,74,364,47,311,31"/>
+<area shape="rect" href="grad_8h.html" title="RBMの勾配のデータ型" alt="" coords="5,225,68,251"/>
+<area shape="poly" title=" " alt="" coords="236,33,196,51,150,77,103,111,64,154,50,183,42,213,37,211,45,181,60,150,99,107,147,73,194,46,234,28"/>
+<area shape="rect" href="file_8h.html" title="sigmoid関数" alt="" coords="173,79,228,104"/>
+<area shape="poly" title=" " alt="" coords="257,33,222,70,219,67,253,29"/>
+<area shape="rect" href="sampling_8h.html" title="samplingクラス" alt="" coords="304,79,399,104"/>
+<area shape="poly" title=" " alt="" coords="281,29,329,68,325,72,278,33"/>
+<area shape="rect" title=" " alt="" coords="140,445,243,471"/>
+<area shape="poly" title=" " alt="" coords="276,178,201,433,196,431,271,177"/>
+<area shape="rect" href="parametar_8h.html" title="RBMのパラメータのデータ型" alt="" coords="111,225,213,251"/>
+<area shape="poly" title=" " alt="" coords="260,180,194,220,191,216,257,175"/>
+<area shape="poly" title=" " alt="" coords="282,177,317,358,312,359,276,178"/>
+<area shape="rect" href="bias_8h.html" title="RBMのバイアスのデータ型" alt="" coords="151,299,213,324"/>
+<area shape="poly" title=" " alt="" coords="168,250,178,285,173,286,163,252"/>
+<area shape="rect" href="weight_8h.html" title=" " alt="" coords="75,372,153,397"/>
+<area shape="poly" title=" " alt="" coords="160,252,142,300,123,359,118,358,137,298,155,250"/>
+<area shape="poly" title=" " alt="" coords="185,324,192,431,187,432,180,325"/>
+<area shape="poly" title=" " alt="" coords="205,322,286,363,284,368,203,326"/>
+<area shape="poly" title=" " alt="" coords="300,400,226,441,223,436,297,395"/>
+<area shape="rect" title=" " alt="" coords="288,445,351,471"/>
+<area shape="poly" title=" " alt="" coords="322,398,322,432,317,432,317,398"/>
+<area shape="poly" title=" " alt="" coords="128,395,170,434,167,438,125,399"/>
+<area shape="poly" title=" " alt="" coords="38,251,36,280,37,318,45,359,64,396,93,421,128,439,126,443,90,426,60,399,40,360,32,318,31,280,32,251"/>
+<area shape="poly" title=" " alt="" coords="200,105,171,213,166,211,195,104"/>
+<area shape="rect" title=" " alt="" coords="74,152,165,177"/>
+<area shape="poly" title=" " alt="" coords="189,106,145,145,141,141,186,102"/>
+<area shape="poly" title=" " alt="" coords="341,106,301,144,297,141,338,102"/>
+<area shape="poly" title=" " alt="" coords="353,104,325,358,319,358,347,104"/>
+<area shape="rect" title=" " alt="" coords="389,152,444,177"/>
+<area shape="poly" title=" " alt="" coords="364,103,399,140,395,144,360,106"/>
 </map>
 </div>
 </div><div class="textblock"><div class="dynheader">
@@ -105,25 +133,29 @@ learn.h の依存先関係図:</div>
 <div class="dyncontent">
 <div class="center"><img src="learn_8h__dep__incl.png" border="0" usemap="#asrc_2learn_8hdep" alt=""/></div>
 <map name="asrc_2learn_8hdep" id="asrc_2learn_8hdep">
-<area shape="rect" title="Learn クラス" alt="" coords="344,5,435,32"/>
-<area shape="rect" href="learn__exact_8cpp.html" title=" " alt="" coords="5,80,179,121"/>
-<area shape="rect" href="gendata_8cpp.html" title=" " alt="" coords="203,80,378,121"/>
-<area shape="rect" href="learn__mnist_8cpp.html" title=" " alt="" coords="402,80,577,121"/>
-<area shape="rect" href="learn_8cpp.html" title=" " alt="" coords="601,87,706,114"/>
+<area shape="rect" title="Learn クラス" alt="" coords="344,5,435,31"/>
+<area shape="rect" href="learn__exact_8cpp.html" title=" " alt="" coords="5,79,179,119"/>
+<area shape="poly" title=" " alt="" coords="334,37,164,81,163,76,332,31"/>
+<area shape="rect" href="gendata_8cpp.html" title=" " alt="" coords="203,79,378,119"/>
+<area shape="poly" title=" " alt="" coords="366,41,316,81,313,76,362,37"/>
+<area shape="rect" href="learn__mnist_8cpp.html" title=" " alt="" coords="402,79,577,119"/>
+<area shape="poly" title=" " alt="" coords="417,37,467,76,464,81,413,41"/>
+<area shape="rect" href="learn_8cpp.html" title=" " alt="" coords="601,86,706,111"/>
+<area shape="poly" title=" " alt="" coords="442,32,616,83,614,89,440,37"/>
 </map>
 </div>
 </div>
 <p><a href="learn_8h_source.html">[ソースコード]</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 クラス</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrbm_1_1Learn.html">rbm::Learn</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">rbmの学習  <a href="classrbm_1_1Learn.html#details">[詳解]</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 名前空間</h2></td></tr>
-<tr class="memitem:namespacerbm"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacerbm.html">rbm</a></td></tr>
+<tr class="memitem:namespacerbm" id="r_namespacerbm"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacerbm.html">rbm</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
@@ -136,7 +168,7 @@ RBMの学習の定義 </li>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
 </small></address>
 </body>
 </html>

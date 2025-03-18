@@ -1,5 +1,7 @@
 <map id="rbm_utils::File::get_line_weight" name="rbm_utils::File::get_line_weight">
-<area shape="rect" id="node1" title="get_line_weight" alt="" coords="5,27,148,69"/>
-<area shape="rect" id="node2" href="$classrbm__utils_1_1File.html#a2d9887e2885162f32210344038c15db7" title="gen_path" alt="" coords="196,5,411,32"/>
-<area shape="rect" id="node3" href="$classrbm__utils_1_1File.html#ac0e03e8f65002d8a1235ed9ae5dc276c" title=" " alt="" coords="237,57,370,98"/>
+<area shape="rect" id="Node000001" title="get_line_weight" alt="" coords="5,27,148,67"/>
+<area shape="rect" id="Node000002" href="$classrbm__utils_1_1File.html#a2d9887e2885162f32210344038c15db7" title="gen_path" alt="" coords="196,5,411,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="148,35,191,30,192,35,149,41"/>
+<area shape="rect" id="Node000003" href="$classrbm__utils_1_1File.html#ac0e03e8f65002d8a1235ed9ae5dc276c" title=" " alt="" coords="237,55,370,95"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="149,53,224,63,223,68,148,59"/>
 </map>

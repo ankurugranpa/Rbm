@@ -1,9 +1,9 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<meta name="generator" content="Doxygen 1.9.1"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>Rbm: src/utils/binary.h ファイル</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
@@ -19,8 +19,8 @@
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
  <tbody>
- <tr style="height: 56px;">
-  <td id="projectalign" style="padding-left: 0.5em;">
+ <tr id="projectrow">
+  <td id="projectalign">
    <div id="projectname">Rbm
    </div>
   </td>
@@ -29,21 +29,22 @@
 </table>
 </div>
 <!-- end header part -->
-<!-- 構築: Doxygen 1.9.1 -->
+<!-- 構築: Doxygen 1.9.8 -->
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-var searchBox = new SearchBox("searchBox", "search",false,'検索','.html');
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
 /* @license-end */
 </script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 $(function() {
   initMenu('',true,false,'search.php','検索');
   $(document).ready(function() { init_search(); });
 });
-/* @license-end */</script>
+/* @license-end */
+</script>
 <div id="main-nav"></div>
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -54,9 +55,16 @@ $(function() {
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
-<iframe src="javascript:void(0)" frameborder="0" 
-        name="MSearchResults" id="MSearchResults">
-</iframe>
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
 </div>
 
 <div id="nav-path" class="navpath">
@@ -68,8 +76,7 @@ $(function() {
   <div class="summary">
 <a href="#nested-classes">クラス</a> &#124;
 <a href="#namespaces">名前空間</a>  </div>
-  <div class="headertitle">
-<div class="title">binary.h ファイル</div>  </div>
+  <div class="headertitle"><div class="title">binary.h ファイル</div></div>
 </div><!--header-->
 <div class="contents">
 
@@ -83,12 +90,17 @@ binary.h の依存先関係図:</div>
 <div class="dyncontent">
 <div class="center"><img src="binary_8h__incl.png" border="0" usemap="#asrc_2utils_2binary_8h" alt=""/></div>
 <map name="asrc_2utils_2binary_8h" id="asrc_2utils_2binary_8h">
-<area shape="rect" title="binary ユーティリティ" alt="" coords="247,5,375,32"/>
-<area shape="rect" title=" " alt="" coords="5,87,196,114"/>
-<area shape="rect" title=" " alt="" coords="221,80,402,121"/>
-<area shape="rect" href="data_8h.html" title="バイナリのRBMで扱うデータ型" alt="" coords="427,87,489,114"/>
-<area shape="rect" title=" " alt="" coords="373,169,436,196"/>
-<area shape="rect" title=" " alt="" coords="460,169,563,196"/>
+<area shape="rect" title="binary ユーティリティ" alt="" coords="247,5,375,31"/>
+<area shape="rect" title=" " alt="" coords="5,86,196,111"/>
+<area shape="poly" title=" " alt="" coords="282,33,145,84,143,79,280,28"/>
+<area shape="rect" title=" " alt="" coords="221,79,402,119"/>
+<area shape="poly" title=" " alt="" coords="314,31,314,65,309,65,309,31"/>
+<area shape="rect" href="data_8h.html" title="バイナリのRBMで扱うデータ型" alt="" coords="427,86,489,111"/>
+<area shape="poly" title=" " alt="" coords="334,28,425,77,423,82,332,33"/>
+<area shape="rect" title=" " alt="" coords="373,167,436,192"/>
+<area shape="poly" title=" " alt="" coords="452,113,423,157,418,154,448,110"/>
+<area shape="rect" title=" " alt="" coords="460,167,563,192"/>
+<area shape="poly" title=" " alt="" coords="468,110,498,154,493,157,464,113"/>
 </map>
 </div>
 </div><div class="textblock"><div class="dynheader">
@@ -96,26 +108,32 @@ binary.h の依存先関係図:</div>
 <div class="dyncontent">
 <div class="center"><img src="binary_8h__dep__incl.png" border="0" usemap="#asrc_2utils_2binary_8hdep" alt=""/></div>
 <map name="asrc_2utils_2binary_8hdep" id="asrc_2utils_2binary_8hdep">
-<area shape="rect" title="binary ユーティリティ" alt="" coords="401,5,529,32"/>
-<area shape="rect" href="learn__exact_8cpp.html" title=" " alt="" coords="5,80,179,121"/>
-<area shape="rect" href="learn_8cpp.html" title=" " alt="" coords="203,87,309,114"/>
-<area shape="rect" href="model_8cpp.html" title=" " alt="" coords="333,87,446,114"/>
-<area shape="rect" href="binary_8cpp.html" title=" " alt="" coords="470,87,613,114"/>
-<area shape="rect" href="binary__test_8cpp.html" title=" " alt="" coords="637,87,787,114"/>
-<area shape="rect" href="model__test_8cpp.html" title=" " alt="" coords="811,87,962,114"/>
+<area shape="rect" title="binary ユーティリティ" alt="" coords="401,5,529,31"/>
+<area shape="rect" href="learn__exact_8cpp.html" title=" " alt="" coords="5,79,179,119"/>
+<area shape="poly" title=" " alt="" coords="398,36,179,82,178,77,397,31"/>
+<area shape="rect" href="learn_8cpp.html" title=" " alt="" coords="203,86,309,111"/>
+<area shape="poly" title=" " alt="" coords="423,38,287,88,286,83,421,33"/>
+<area shape="rect" href="model_8cpp.html" title=" " alt="" coords="333,86,446,111"/>
+<area shape="poly" title=" " alt="" coords="447,42,403,88,399,84,443,39"/>
+<area shape="rect" href="binary_8cpp.html" title=" " alt="" coords="470,86,613,111"/>
+<area shape="poly" title=" " alt="" coords="488,39,532,84,528,88,484,42"/>
+<area shape="rect" href="binary__test_8cpp.html" title=" " alt="" coords="637,86,787,111"/>
+<area shape="poly" title=" " alt="" coords="515,32,677,83,675,89,513,37"/>
+<area shape="rect" href="model__test_8cpp.html" title=" " alt="" coords="811,86,962,111"/>
+<area shape="poly" title=" " alt="" coords="544,30,801,76,836,83,835,89,799,81,543,35"/>
 </map>
 </div>
 </div>
 <p><a href="binary_8h_source.html">[ソースコード]</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 クラス</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrbm__utils_1_1Binary.html">rbm_utils::Binary</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 名前空間</h2></td></tr>
-<tr class="memitem:namespacerbm__utils"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacerbm__utils.html">rbm_utils</a></td></tr>
+<tr class="memitem:namespacerbm__utils" id="r_namespacerbm__utils"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacerbm__utils.html">rbm_utils</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
@@ -126,7 +144,7 @@ binary.h の依存先関係図:</div>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
 </small></address>
 </body>
 </html>
