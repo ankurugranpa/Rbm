@@ -41,8 +41,8 @@ Model Learn::exact_calculation(const Model& model,
     diff = calc_data_mean(result_model, data_set) - calc_model_mean(result_model);
 
     grad = calc_grad(diff);
-    result_file << "step:" << step << " " << "grad" << grad << "\n";
-    std::cout << "step:" << step << " " << "grad" << grad << std::endl;
+    result_file << "step:" << step << " " << "grad:" << grad << "\n";
+    std::cout << "step:" << step << " " << "grad:" << grad << std::endl;
 
     
     // ゼロであれば終了する
