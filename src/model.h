@@ -1,4 +1,4 @@
-/**
+/*
 * @file model.h 
 * @brief Modelクラス
 * @author ankuru
