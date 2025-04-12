@@ -1,4 +1,4 @@
-/**
+/*
 * @file learn.h 
 * @brief Learn クラス
 * * @author ankuru
