@@ -1,0 +1,39 @@
+name: Run GTest CI
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'src/*.cpp'
+      - 'src/*.h'
+  
+  pull_request:
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Install dependencies
+        run: sudo apt-get update && sudo apt-get install -y cmake g++ 
+
+      - name: Create build directory
+        run: mkdir build
+
+      - name: Run CMake
+        run: cmake ..
+        working-directory: build
+
+
+      - name: Build
+        run: make -j
+        working-directory: build
+
+      - name: Run tests
+        run: ctest --output-on-failure
+        working-directory: build/test
+
